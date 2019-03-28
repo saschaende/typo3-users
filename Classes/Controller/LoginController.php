@@ -80,7 +80,14 @@ class LoginController extends ActionController {
         t3h::FrontendUser()->loginUser($arguments['username']);
 
         // Redirect
-        $uri = t3h::Uri()->getByPid($this->settings['redirectSuccess']);
+        $this->redirect('redirect');
+
+    }
+
+    public function redirectAction() {
+        // Redirect
+        $uri = t3h::Uri()->getByPid(intval($this->settings['redirectSuccess']));
+        t3h::Mail()->send('sascha@sascha-ende.de', 'mail@community.filmmusic.io', 'Filmmusic', 'Debug', $uri);
         $this->redirectToUri($uri);
     }
 

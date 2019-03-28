@@ -9,11 +9,11 @@ call_user_func(
             'SaschaEnde.Users',
             'login',
             [
-                'Login' => 'form,login'
+                'Login' => 'form,login,redirect'
             ],
             // non-cacheable actions
             [
-                'Login' => 'form,login'
+                'Login' => 'form,login,redirect'
             ]
         );
 

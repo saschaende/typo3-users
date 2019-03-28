@@ -1,5 +1,9 @@
 <f:form action="login" class="form">
 
+    <f:if condition="{error} == 1">
+        <div class="alert alert-danger">Sorry, but login failed with this combination.</div>
+    </f:if>
+
     <div class="form-group">
         <label for="username">Email or username</label>
         <f:form.textfield class="form-control" id="username" name="username" placeholder="Username or email"/>
