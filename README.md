@@ -1,6 +1,6 @@
 # TYPO3 users
 
-Users will bring you all essential plugins to build a community with your TYPO3 system. Based on easy to customize fluid templates.
+Users will bring you all essential plugins to build a community with your TYPO3 system. Based on easy to customize fluid templates. The extension will be available for TYPO3 9 as soon as the development is finished.
 
 * Based on bootstrap 4
 * Easy to customize (Fluid)

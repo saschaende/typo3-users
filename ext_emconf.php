@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Users',
-    'description' => '[STILL IN DEVELOPMENT] Users will bring you all essential plugins to build a community with your TYPO3 system. Based on easy to customize fluid templates.',
+    'description' => '[STILL IN DEVELOPMENT] Users will bring you all essential plugins to build a community with your TYPO3 system. Based on easy to customize fluid templates. The extension will be available for TYPO3 9 as soon as the development is finished.',
     'category' => 'plugin',
     'author' => 'Filmmusic.io',
     'author_email' => 'info@filmmusic.io',
