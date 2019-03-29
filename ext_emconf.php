@@ -2,15 +2,15 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Users',
-    'description' => 'Community essentials for TYPO3: Login, register, forgot pass .... (still in development)',
+    'description' => '[STILL IN DEVELOPMENT] Users will bring you all essential plugins to build a community with your TYPO3 system. Based on easy to customize fluid templates.',
     'category' => 'plugin',
-    'author' => '',
-    'author_email' => '',
+    'author' => 'Filmmusic.io',
+    'author_email' => 'info@filmmusic.io',
     'state' => 'alpha',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '0.1.1beta',
+    'version' => '0.1.1',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-8.9.99',
