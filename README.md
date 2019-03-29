@@ -22,3 +22,9 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * Change profile data
 * Change password
 * Change email (with verficiation of new email)
+
+## Screenshots
+
+### Plugin: Login
+
+![plugin](Documentation/login.jpg)
