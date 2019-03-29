@@ -55,10 +55,11 @@ class LoginController extends ActionController {
         $user = $this->frontendUserRepository->findOneByUsername($arguments['username']);
 
         // Kein User gefunden, dann versuche es mit der E-Mail Adresse
-        if (!$user) {
+        if (!$user && $this->settings['allowEmailLogin']) {
             $user = $this->frontendUserRepository->findOneByEmail($arguments['username']);
         }
 
+        // No user found
         if (!$user) {
             $this->redirect('form', null, null, ['error' => 1]);
             return;
@@ -67,23 +68,29 @@ class LoginController extends ActionController {
         // Check password
         $check = t3h::Password()->checkPassword($arguments['password'], $user->getPassword());
 
+        // Password not correct
         if ($check === false) {
             $this->redirect('form', null, null, ['error' => 1]);
             return;
         }
 
         // ---------------------------------------------------------------
-        // Login erfolgreich
+        // Login success
         // ---------------------------------------------------------------
 
-        // Login
+        // Login now
         t3h::FrontendUser()->loginUser($arguments['username']);
 
-        // Redirect
+        // Redirect to redirect action
         $this->redirect('redirect');
 
     }
 
+    /**
+     * Seperate redirect function because protected URIs are not available for unlogged users. Here the user is logged, to the link will be generated.
+     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
+     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException
+     */
     public function redirectAction() {
         // Redirect
         $uri = t3h::Uri()->getByPid(intval($this->settings['redirectSuccess']));
