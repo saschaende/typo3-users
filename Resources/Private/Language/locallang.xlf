@@ -4,8 +4,11 @@
           product-name="users">
         <header/>
         <body>
+
+
             <trans-unit id="login.error">
-                <source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder
+                <source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
+                    Benutzernamen/E-Mail oder
                     das Passwort falsch eingegeben. Groß-/Kleinschreibung
                     wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser
                     deaktiviert hast.
@@ -32,6 +35,32 @@
             <trans-unit id="login.register">
                 <source>Noch nicht registriert?</source>
             </trans-unit>
+
+
+            <trans-unit id="forgot.title">
+                <source>Passwort vergessen</source>
+            </trans-unit>
+            <trans-unit id="forgot.text">
+                <source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
+                    zum Zurücksetzen des Passworts zugesandt.
+                </source>
+            </trans-unit>
+            <trans-unit id="forgot.usernameemail">
+                <source>Benutzername oder E-Mail</source>
+            </trans-unit>
+            <trans-unit id="forgot.submit">
+                <source>Passwortänderung anfordern</source>
+            </trans-unit>
+            <trans-unit id="forgot.confirm.text">
+                <source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
+                    gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die
+                    E-Mail-Adresse nicht gefunden.
+                </source>
+            </trans-unit>
+            <trans-unit id="forgot.confirm.back">
+                <source>Zurück</source>
+            </trans-unit>
+
         </body>
     </file>
 </xliff>

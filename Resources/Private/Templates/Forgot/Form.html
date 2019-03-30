@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+    <div class="card login-box">
+        <div class="card-body">
+            <h4 class="card-title">
+                <f:translate key="forgot.title"/>
+            </h4>
+            <div class="card-text">
+                <f:form action="formsubmit" class="form">
+
+                    <p><f:translate key="forgot.text"/></p>
+
+
+                    <!-- USERNAME/EMAIL -->
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user fa-fw"></i></span>
+                            </div>
+                            <f:form.textfield class="form-control" id="username" name="username" placeholder="{f:translate(key: 'forgot.usernameemail')}"/>
+                        </div>
+                    </div>
+                    <!-- USERNAME/EMAIL -->
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'forgot.submit')}"/>
+                    <!-- SUBMIT BUTTON -->
+
+                </f:form>
+            </div>
+        </div>
+
+
+    </div>
+
+</f:section>
+</html>

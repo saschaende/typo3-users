@@ -44,6 +44,43 @@
                 <source>Noch nicht registriert?</source>
                 <target>Not registered? Signup now</target>
             </trans-unit>
+
+
+            <trans-unit id="forgot.title">
+                <source>Passwort vergessen</source>
+                <target>Forgot password</target>
+            </trans-unit>
+            <trans-unit id="forgot.text">
+                <source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
+                    zum Zurücksetzen des Passworts zugesandt.
+                </source>
+                <target>Please enter your username or email address. Instructions for resetting the password will be
+                    immediately emailed to you.
+                </target>
+            </trans-unit>
+            <trans-unit id="forgot.usernameemail">
+                <source>Benutzername oder E-Mail</source>
+                <target>Username or email</target>
+            </trans-unit>
+            <trans-unit id="forgot.submit">
+                <source>Passwortänderung anfordern</source>
+                <target>Request password change</target>
+            </trans-unit>
+            <trans-unit id="forgot.confirm.text">
+                <source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
+                    gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die
+                    E-Mail-Adresse nicht gefunden.
+                </source>
+                <target>An email has been sent to the address stored in your account and contains a link to reset your
+                    password. If you do not receive an email, your account or email address was not found.
+                </target>
+            </trans-unit>
+            <trans-unit id="forgot.confirm.back">
+                <source>Zurück</source>
+                <target>Back</target>
+            </trans-unit>
+
+
         </body>
     </file>
 </xliff>

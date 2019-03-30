@@ -29,6 +29,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'forgot',
+            [
+                'Forgot' => 'form,formsubmit,changeform,changeformsubmit'
+            ],
+            // non-cacheable actions
+            [
+                'Forgot' => 'form,formsubmit,changeform,changeformsubmit'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -51,6 +63,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_logout
+                        }
+                    }
+                    users_forgot {
+                        iconIdentifier = users
+                        title = [Users] Forgot password
+                        description = Users can set a new password via email and link
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_forgot
                         }
                     }
                 }

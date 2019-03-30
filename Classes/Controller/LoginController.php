@@ -45,9 +45,6 @@ class LoginController extends ActionController {
     public function loginAction() {
         $arguments = $this->request->getArguments();
 
-        $GLOBALS['TSFE']->fe_user->logoff();
-        $GLOBALS['TSFE']->fe_user->removeSessionData();
-
         if (empty($arguments['username']) || empty($arguments['password'])) {
             $this->redirect('form', null, null, ['error' => 1]);
             return;

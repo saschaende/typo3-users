@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+    <div class="card login-box">
+        <div class="card-body">
+            <h4 class="card-title">
+                <f:translate key="forgot.title"/>
+            </h4>
+            <div class="card-text">
+
+
+                    <p><f:translate key="forgot.confirm.text"/></p>
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <f:link.action action="form" class="btn btn-primary btn-lg">{f:translate(key: 'forgot.confirm.back')}</f:link.action>
+                    <!-- SUBMIT BUTTON -->
+
+            </div>
+        </div>
+
+
+    </div>
+
+</f:section>
+</html>
