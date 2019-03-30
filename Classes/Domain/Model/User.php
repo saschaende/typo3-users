@@ -11,6 +11,16 @@ class User extends FrontendUser {
     protected $usersLastlogin;
 
     /**
+     * @var string
+     */
+    protected $usersForgothash = '';
+
+    /**
+     * @var \DateTime
+     */
+    protected $usersForgothashValid;
+
+    /**
      * @return \DateTime
      */
     public function getUsersLastlogin() {
@@ -22,6 +32,34 @@ class User extends FrontendUser {
      */
     public function setUsersLastlogin(\DateTime $usersLastlogin) {
         $this->usersLastlogin = $usersLastlogin;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsersForgothash(): string {
+        return $this->usersForgothash;
+    }
+
+    /**
+     * @param string $usersForgothash
+     */
+    public function setUsersForgothash(string $usersForgothash) {
+        $this->usersForgothash = $usersForgothash;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getUsersForgothashValid() {
+        return $this->usersForgothashValid;
+    }
+
+    /**
+     * @param \DateTime $usersForgothashValid
+     */
+    public function setUsersForgothashValid(\DateTime $usersForgothashValid) {
+        $this->usersForgothashValid = $usersForgothashValid;
     }
 
 }
