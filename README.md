@@ -27,4 +27,13 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 
 ### Plugin: Login
 
+General settings
 ![plugin](Documentation/login.jpg)
+
+Links
+![plugin](Documentation/login2.jpg)
+
+### Plugin: Logout
+
+General settings
+![plugin](Documentation/logout.jpg)
