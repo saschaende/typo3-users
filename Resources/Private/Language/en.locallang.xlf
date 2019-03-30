@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2018-09-07T22:28:29Z"
+          product-name="users">
+        <header/>
+        <body>
+            <trans-unit id="login.error">
+                <source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
+                    Benutzernamen/E-Mail oder
+                    das Passwort falsch eingegeben. Groß-/Kleinschreibung
+                    wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser
+                    deaktiviert hast.
+                </source>
+                <target>An error occurred during logon. You probably entered your username/email or password
+                    incorrectly. There is a difference between upper and lower case. Another possibility is that you may
+                    have disabled cookies in your web browser.
+                </target>
+            </trans-unit>
+            <trans-unit id="login.title">
+                <source>Jetzt einloggen</source>
+                <target>Login now</target>
+            </trans-unit>
+            <trans-unit id="login.username">
+                <source>Benutzername</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="login.usernameemail">
+                <source>Benutzername oder E-Mail</source>
+                <target>Username or email</target>
+            </trans-unit>
+            <trans-unit id="login.password">
+                <source>Passwort</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="login.submit">
+                <source>Login</source>
+                <target>Login</target>
+            </trans-unit>
+            <trans-unit id="login.forgotpass">
+                <source>Passwort vergessen?</source>
+                <target>Forgot password?</target>
+            </trans-unit>
+            <trans-unit id="login.register">
+                <source>Noch nicht registriert?</source>
+                <target>Not registered? Signup now</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -17,6 +17,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'logout',
+            [
+                'Logout' => 'logout'
+            ],
+            // non-cacheable actions
+            [
+                'Login' => 'logout'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -30,6 +42,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_login
+                        }
+                    }
+                    users_logout {
+                        iconIdentifier = users
+                        title = [Users] Logout
+                        description = Logout for registered users
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_logout
                         }
                     }
                 }

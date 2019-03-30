@@ -10,11 +10,18 @@ call_user_func(
             '[Users] Login'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'logout',
+            '[Users] Logout'
+        );
+
         // --------------------------------------------
         // FLEXFORM
         // --------------------------------------------
 
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('login');
+        \t3h\t3h::Inject()->setExtension('users')->addFlexform('logout');
 
     }
 );

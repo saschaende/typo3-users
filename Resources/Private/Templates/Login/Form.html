@@ -1,18 +1,72 @@
-<f:form action="login" class="form">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
 
-    <f:if condition="{error} == 1">
-        <div class="alert alert-danger">Sorry, but login failed with this combination of username and password.</div>
-    </f:if>
+    <div class="card login-box">
+        <div class="card-body">
+            <h4 class="card-title">
+                <f:translate key="login.title"/>
+            </h4>
+            <div class="card-text">
+                <f:form action="login" class="form">
 
-    <div class="form-group">
-        <label for="username">Email or username</label>
-        <f:form.textfield class="form-control" id="username" name="username" placeholder="Username or email"/>
+                    <f:if condition="{error} == 1">
+                        <div class="alert alert-danger">
+                            <f:translate key="login.error"/>
+                        </div>
+                    </f:if>
+
+                    <div class="form-group">
+
+                        <label for="username">
+                            <f:if condition="{settings.allowEmailLogin}">
+                                <f:then>
+                                    <f:translate key="login.usernameemail"/>
+                                </f:then>
+                                <f:else>
+                                    <f:translate key="login.username"/>
+                                </f:else>
+                            </f:if>
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user fa-fw"></i></span>
+                            </div>
+                            <f:form.textfield class="form-control" id="username" name="username"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            <f:translate key="login.password"/>
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
+                            </div>
+                            <f:form.password class="form-control" id="password" name="password"/>
+                        </div>
+
+                    </div>
+
+                    <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'login.submit')}"/>
+
+                </f:form>
+            </div>
+        </div>
+
+        <f:if condition="{settings.forgotpassPid} || {settings.registerPid}">
+            <div class="card-footer">
+                <f:if condition="{settings.forgotpassPid}">
+                    <f:link.page pageUid="{settings.forgotpassPid}"><i class="fas fa-lock fa-fw"></i> <f:translate key="login.forgotpass"/></f:link.page><br>
+                </f:if>
+
+                <f:if condition="{settings.registerPid}">
+                    <f:link.page pageUid="{settings.registerPid}"><i class="fas fa-user-plus fa-fw"></i> <f:translate key="login.register"/></f:link.page>
+                </f:if>
+            </div>
+        </f:if>
     </div>
 
-    <div class="form-group">
-        <label for="password">Password</label>
-        <f:form.password class="form-control" id="password" name="password"/>
-    </div>
-
-    <f:form.submit class="btn btn-primary" value="Login"/>
-</f:form>
+</f:section>
+</html>

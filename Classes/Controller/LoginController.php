@@ -2,21 +2,21 @@
 
 namespace SaschaEnde\Users\Controller;
 
+use SaschaEnde\Users\Domain\Model\User;
+use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
-use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
-use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 
 class LoginController extends ActionController {
 
     /**
-     * @var FrontendUserRepository
+     * @var UserRepository
      */
     protected $frontendUserRepository;
 
     public function initializeAction() {
-        $this->frontendUserRepository = $this->objectManager->get(FrontendUserRepository::class);
+        $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
 
         /** @var Typo3QuerySettings $querysettings */
         $querysettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings::class);
@@ -45,13 +45,16 @@ class LoginController extends ActionController {
     public function loginAction() {
         $arguments = $this->request->getArguments();
 
+        $GLOBALS['TSFE']->fe_user->logoff();
+        $GLOBALS['TSFE']->fe_user->removeSessionData();
+
         if (empty($arguments['username']) || empty($arguments['password'])) {
             $this->redirect('form', null, null, ['error' => 1]);
             return;
         }
 
         // Load userdata
-        /** @var FrontendUser $user */
+        /** @var User $user */
         $user = $this->frontendUserRepository->findOneByUsername($arguments['username']);
 
         // Kein User gefunden, dann versuche es mit der E-Mail Adresse
@@ -78,8 +81,13 @@ class LoginController extends ActionController {
         // Login success
         // ---------------------------------------------------------------
 
+        // Save last login
+        $dt = new \DateTime();
+        $user->setUsersLastlogin($dt);
+        $this->frontendUserRepository->update($user);
+
         // Login now
-        t3h::FrontendUser()->loginUser($arguments['username']);
+        t3h::FrontendUser()->loginUser($user->getUsername());
 
         // Redirect to redirect action
         $this->redirect('redirect');
@@ -94,7 +102,6 @@ class LoginController extends ActionController {
     public function redirectAction() {
         // Redirect
         $uri = t3h::Uri()->getByPid(intval($this->settings['redirectSuccess']));
-        t3h::Mail()->send('sascha@sascha-ende.de', 'mail@community.filmmusic.io', 'Filmmusic', 'Debug', $uri);
         $this->redirectToUri($uri);
     }
 

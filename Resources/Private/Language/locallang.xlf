@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2018-09-07T22:28:29Z"
+          product-name="users">
+        <header/>
+        <body>
+            <trans-unit id="login.error">
+                <source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder
+                    das Passwort falsch eingegeben. Groß-/Kleinschreibung
+                    wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser
+                    deaktiviert hast.
+                </source>
+            </trans-unit>
+            <trans-unit id="login.title">
+                <source>Jetzt einloggen</source>
+            </trans-unit>
+            <trans-unit id="login.username">
+                <source>Benutzername</source>
+            </trans-unit>
+            <trans-unit id="login.usernameemail">
+                <source>Benutzername oder E-Mail</source>
+            </trans-unit>
+            <trans-unit id="login.password">
+                <source>Passwort</source>
+            </trans-unit>
+            <trans-unit id="login.submit">
+                <source>Login</source>
+            </trans-unit>
+            <trans-unit id="login.forgotpass">
+                <source>Passwort vergessen?</source>
+            </trans-unit>
+            <trans-unit id="login.register">
+                <source>Noch nicht registriert?</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
