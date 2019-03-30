@@ -23,6 +23,12 @@ call_user_func(
         );
 
         // --------------------------------------------
+        // TYPOSCRIPT
+        // --------------------------------------------
+
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('users', 'Configuration/TypoScript', 'Users');
+
+        // --------------------------------------------
         // FLEXFORM
         // --------------------------------------------
 

@@ -33,6 +33,7 @@ class ForgotController extends ActionController {
      * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
      */
     public function formAction(){
+
         if(isset($_GET['uid'])){
             $this->forward('changeform',null,null,$_GET);
         }
@@ -75,13 +76,13 @@ class ForgotController extends ActionController {
             );
 
             // Send email
-            t3h::Mail()->sendTemplate(
+            t3h::Mail()->sendDynamicTemplate(
                 $user->getEmail(),
                 $this->settings['senderEmail'],
                 $this->settings['senderName'],
                 $this->settings['subject'],
-                'users',
-                'Resources/Private/Templates/Forgot/Email.html',
+                'tx_users',
+                'Email',
                 ['user'=>$user,'link'=>$link],
                 [],
                 1,
