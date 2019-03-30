@@ -11,14 +11,18 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 
 I develop this extension in an 8 environment on https://filmmusic.io and will make it compatible to 9 after that.
 
+## READY TO USE
+
+* Login
+* Logout
+
 ## In development
 
-* Login (with username or ALSO email)
+* Forgot password
 
 ## Planned / ToDo
 
 * Register
-* Forgot password
 * Change profile data
 * Change password
 * Change email (with verficiation of new email)
