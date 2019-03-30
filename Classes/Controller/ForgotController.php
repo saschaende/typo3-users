@@ -28,8 +28,14 @@ class ForgotController extends ActionController {
     }
 
 
+    /**
+     * Redirect to change form, if uid found. Otherwise show form with username/email input.
+     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
+     */
     public function formAction(){
-
+        if(isset($_GET['uid'])){
+            $this->forward('changeform',null,null,$_GET);
+        }
     }
 
     public function formsubmitAction(){
@@ -57,6 +63,17 @@ class ForgotController extends ActionController {
             $user->setUsersForgothashValid($dt);
             $this->frontendUserRepository->update($user);
 
+            // Make link, as short as possible
+            $link = t3h::Uri()->getByPid(
+                t3h::Page()->getPid(),
+                false,
+                true,
+                [
+                    'uid'=>$user->getUid(),
+                    'forgotHash'=>$forgotHash
+                ]
+            );
+
             // Send email
             t3h::Mail()->sendTemplate(
                 $user->getEmail(),
@@ -65,7 +82,7 @@ class ForgotController extends ActionController {
                 $this->settings['subject'],
                 'users',
                 'Resources/Private/Templates/Forgot/Email.html',
-                ['user'=>$user],
+                ['user'=>$user,'link'=>$link],
                 [],
                 1,
                 $this->controllerContext
@@ -74,7 +91,8 @@ class ForgotController extends ActionController {
     }
 
     public function changeformAction(){
-
+        $arguments = $this->request->getArguments();
+        DebuggerUtility::var_dump($arguments);
     }
 
     public function changeformsubmitAction(){
