@@ -39,6 +39,11 @@ class ForgotController extends ActionController {
         }
     }
 
+    /**
+     * Submit username or email. Email to user will be sent, if user found.
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
+     */
     public function formsubmitAction(){
         $arguments = $this->request->getArguments();
 
@@ -91,12 +96,100 @@ class ForgotController extends ActionController {
         }
     }
 
+    /**
+     * Form for setting a new password
+     */
     public function changeformAction(){
         $arguments = $this->request->getArguments();
-        DebuggerUtility::var_dump($arguments);
+
+        // Load userdata
+        /** @var User $user */
+        $user = $this->frontendUserRepository->findByUid($arguments['uid']);
+
+        // Überprüfe Hash
+        if($user){
+            $this->view->assignMultiple([
+                'error' => $arguments['error'],
+                'allowed'   => $this->verifyPasswordChange($user,$arguments),
+                'forgotHash'    => $arguments['forgotHash'],
+                'uid'   => $arguments['uid']
+            ]);
+        }else{
+            $this->view->assign('allowed',false);
+        }
     }
 
+    /**
+     * Change the password now
+     * @throws \ReflectionException
+     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
+     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
+     */
     public function changeformsubmitAction(){
+        $arguments = $this->request->getArguments();
 
+        // Load userdata
+        /** @var User $user */
+        $user = $this->frontendUserRepository->findByUid($arguments['uid']);
+
+        if($user && $this->verifyPasswordChange($user,$arguments) && mb_strlen($arguments['password']) >= 6 && $arguments['password'] == $arguments['passwordrepeat']){
+            // Change password
+            $user->setPassword(t3h::Password()->getHashedPassword($arguments['password']));
+            $user->setUsersForgothash('');
+            $user->setUsersForgothashValid(0);
+            $this->frontendUserRepository->update($user);
+
+            // Automatically login?
+            if($this->settings['login']){
+                t3h::FrontendUser()->loginUser($user->getUsername());
+            }
+        }else{
+            $link = t3h::Uri()->getByPid(
+                t3h::Page()->getPid(),
+                false,
+                true,
+                [
+                    'error' => 1,
+                    'uid'=>$arguments['uid'],
+                    'forgotHash'=>$arguments['forgotHash']
+                ]
+            );
+            $this->redirectToUri($link);
+        }
+
+    }
+
+    /**
+     * Seperate redirect ation, so given links will also work with user areas...
+     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
+     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException
+     */
+    public function redirectAction(){
+        $link = t3h::Uri()->getByPid($this->settings['successLink']);
+        $this->redirectToUri($link);
+    }
+
+    /**
+     * Check the data
+     * @param User $user
+     * @param $arguments
+     * @return bool
+     */
+    private function verifyPasswordChange(User $user,$arguments){
+        if(!$user){
+            return false;
+        }
+
+        if($user->getUsersForgothash() != $arguments['forgotHash']){
+            return false;
+        }
+
+        if($user->getUsersForgothashValid()->getTimestamp() < time()){
+            return false;
+        }
+
+        return true;
     }
 }

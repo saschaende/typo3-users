@@ -61,6 +61,71 @@
                 <source>Zurück</source>
             </trans-unit>
 
+
+            <trans-unit id="forgot.email.salutation">
+                <source>Hallo,</source>
+            </trans-unit>
+            <trans-unit id="forgot.email.title">
+                <source>Hier sind die Instruktionen, um das Passwort zurückzusetzen.</source>
+            </trans-unit>
+            <trans-unit id="forgot.email.message">
+                <source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage
+                    nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben,
+                    setzen Sie bitte Ihr Passwort zurück.:
+                </source>
+            </trans-unit>
+            <trans-unit id="forgot.email.button">
+                <source>Passwort zurücksetzen</source>
+            </trans-unit>
+            <trans-unit id="forgot.email.info">
+                <source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren
+                    Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.
+                </source>
+            </trans-unit>
+
+
+            <trans-unit id="forgot.change.title">
+                <source>Passwort ändern</source>
+            </trans-unit>
+            <trans-unit id="forgot.change.text">
+                <source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss
+                    mindestens aus 6 Zeichen bestehen.
+                </source>
+            </trans-unit>
+            <trans-unit id="forgot.change.password">
+                <source>Neues Passwort</source>
+            </trans-unit>
+            <trans-unit id="forgot.change.passwordrepeat">
+                <source>Neues Passwort wiederholen</source>
+            </trans-unit>
+            <trans-unit id="forgot.change.submit">
+                <source>Neues Passwort speichern</source>
+            </trans-unit>
+            <trans-unit id="forgot.change.error">
+                <source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
+                    abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
+                </source>
+            </trans-unit>
+            <trans-unit id="forgot.change.error2">
+                <source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
+                </source>
+            </trans-unit>
+
+
+
+            <trans-unit id="forgot.changeformsubmit.title">
+                <source>Passwort wurde geändert</source>
+            </trans-unit>
+            <trans-unit id="forgot.changeformsubmit.message">
+                <source>Vielen Dank, das Passwort wurde erfolgreich geändert.</source>
+            </trans-unit>
+            <trans-unit id="forgot.changeformsubmit.button">
+                <source>Weiter zur Webseite</source>
+            </trans-unit>
+
+
+
+
         </body>
     </file>
 </xliff>

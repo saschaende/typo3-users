@@ -1,0 +1,96 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+    <!-- NOT ALLOWED -->
+    <f:if condition="!{allowed}">
+        <div class="card login-box">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <f:translate key="forgot.change.title"/>
+                </h4>
+                <div class="card-text">
+                    <f:translate key="forgot.change.error"/>
+                </div>
+            </div>
+        </div>
+    </f:if>
+    <!-- NOT ALLOWED -->
+
+
+    <!-- ALLOWED -->
+    <f:if condition="{allowed}">
+        <div class="card login-box">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <f:translate key="forgot.change.title"/>
+                </h4>
+                <div class="card-text">
+
+                    <!-- Error message: Input not valid (password mismatch or strlen not 6) -->
+                    <f:if condition="{error} == 1">
+                        <div class="alert alert-danger"><f:translate key="forgot.change.error2"/></div>
+                    </f:if>
+
+
+                    <f:form action="changeformsubmit" class="form">
+
+                        <p>
+                            <f:translate key="forgot.change.text"/>
+                        </p>
+
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+                            <label for="password">
+                                <f:translate key="forgot.change.password"/>
+                            </label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
+                                </div>
+                                <f:form.password class="form-control" id="password" name="password"
+                                                 additionalAttributes="{required:'required'}"/>
+                            </div>
+
+                        </div>
+                        <!-- PASSWORD -->
+
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+                            <label for="passwordrepeat">
+                                <f:translate key="forgot.change.passwordrepeat"/>
+                            </label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
+                                </div>
+                                <f:form.password class="form-control" id="passwordrepeat" name="passwordrepeat"
+                                                 additionalAttributes="{required:'required'}"/>
+                            </div>
+
+                        </div>
+                        <!-- PASSWORD -->
+
+                        <f:form.textfield type="hidden" name="uid" value="{uid}"/>
+                        <f:form.textfield type="hidden" name="forgotHash" value="{forgotHash}"/>
+
+
+                        <!-- SUBMIT BUTTON -->
+                        <f:form.submit class="btn btn-primary btn-lg"
+                                       value="{f:translate(key: 'forgot.change.submit')}"/>
+                        <!-- SUBMIT BUTTON -->
+
+                    </f:form>
+                </div>
+            </div>
+
+
+        </div>
+    </f:if>
+    <!-- ALLOWED -->
+
+
+</f:section>
+</html>

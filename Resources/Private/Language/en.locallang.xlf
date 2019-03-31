@@ -80,6 +80,71 @@
                 <target>Back</target>
             </trans-unit>
 
+            <trans-unit id="forgot.email.salutation">
+                <target>Dear Sir/Madam/Customer,</target>
+            </trans-unit>
+            <trans-unit id="forgot.email.title">
+                <target>Here are your password reset instructions.</target>
+            </trans-unit>
+            <trans-unit id="forgot.email.message">
+                <target>A request to reset your Admin password has been made. If you did not
+                    make this request, simply ignore this email. If you did make this request, please reset your
+                    password:</target>
+            </trans-unit>
+            <trans-unit id="forgot.email.button">
+                <target>Reset Password</target>
+            </trans-unit>
+            <trans-unit id="forgot.email.info">
+                <target>If the button above does not work,
+                    try copying and pasting the URL into your browser. If you continue to have problems, please feel free to
+                    contact us.</target>
+            </trans-unit>
+
+
+
+            <trans-unit id="forgot.change.title">
+                <source>Passwort ändern</source>
+                <target>Change password</target>
+            </trans-unit>
+            <trans-unit id="forgot.change.text">
+                <source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss mindestens aus 6 Zeichen bestehen.</source>
+                <target>Enter your new password and repeat it once. The password must be at least 6 characters long.</target>
+            </trans-unit>
+            <trans-unit id="forgot.change.password">
+                <source>Neues Passwort</source>
+                <target>New password</target>
+            </trans-unit>
+            <trans-unit id="forgot.change.passwordrepeat">
+                <source>Neues Passwort wiederholen</source>
+                <target>Repeat new password</target>
+            </trans-unit>
+            <trans-unit id="forgot.change.submit">
+                <source>Neues Passwort speichern</source>
+                <target>Save new password</target>
+            </trans-unit>
+            <trans-unit id="forgot.change.error">
+                <source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
+                    abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
+                </source>
+                <target>Error: Either the link is not valid, the account no longer exists or the link has expired. Links to password change are only valid for one hour.</target>
+            </trans-unit>
+            <trans-unit id="forgot.change.error2">
+                <source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
+                </source>
+                <target>Error: The entries must match and the password must be at least 6 characters long.</target>
+            </trans-unit>
+
+
+            <trans-unit id="forgot.changeformsubmit.title">
+                <source>Password was changed</source>
+            </trans-unit>
+            <trans-unit id="forgot.changeformsubmit.message">
+                <source>Thank you, the password was changed.</source>
+            </trans-unit>
+            <trans-unit id="forgot.changeformsubmit.button">
+                <source>Go to the website</source>
+            </trans-unit>
+
 
         </body>
     </file>

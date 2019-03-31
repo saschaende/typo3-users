@@ -33,11 +33,11 @@ call_user_func(
             'SaschaEnde.Users',
             'forgot',
             [
-                'Forgot' => 'form,formsubmit,changeform,changeformsubmit'
+                'Forgot' => 'form,formsubmit,changeform,changeformsubmit,redirect'
             ],
             // non-cacheable actions
             [
-                'Forgot' => 'form,formsubmit,changeform,changeformsubmit'
+                'Forgot' => 'form,formsubmit,changeform,changeformsubmit,redirect'
             ]
         );
 

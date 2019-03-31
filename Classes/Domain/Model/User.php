@@ -77,7 +77,7 @@ class User extends FrontendUser {
     /**
      * @param \DateTime $usersForgothashValid
      */
-    public function setUsersForgothashValid(\DateTime $usersForgothashValid) {
+    public function setUsersForgothashValid($usersForgothashValid) {
         $this->usersForgothashValid = $usersForgothashValid;
     }
 

@@ -15,14 +15,14 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 
 * Login
 * Logout
+* Forgot password
 
 ## In development
 
-* Forgot password
+* Register
 
 ## Planned / ToDo
 
-* Register
 * Change profile data
 * Change password
 * Change email (with verficiation of new email)
@@ -41,3 +41,11 @@ Links
 
 General settings
 ![plugin](Documentation/logout.jpg)
+
+### Plugin: Forgot password
+
+General settings
+![plugin](Documentation/forgotpass1.jpg)
+
+Email settings
+![plugin](Documentation/forgotpass2.jpg)
