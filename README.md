@@ -27,6 +27,10 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * Change password
 * Change email (with verficiation of new email)
 
+## Important notes
+
+* Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses.
+
 ## Screenshots
 
 ### Plugin: Login
