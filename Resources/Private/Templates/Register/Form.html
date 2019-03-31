@@ -1,0 +1,99 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+    <div class="card login-box">
+        <div class="card-body">
+            <h4 class="card-title">
+                Registrierung
+            </h4>
+            <div class="card-text">
+                <f:form action="submit" class="form" method="POST" object="{registration}" objectName="registration">
+
+                    <f:debug>{errors}</f:debug>
+
+
+                    <!-- USERNAME -->
+                    <div class="form-group">
+
+                        <label for="username">
+                            Gewünschter Benutzername
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user fa-fw"></i></span>
+                            </div>
+                            <f:form.textfield class="form-control{f:if(condition: '{errors.username}',then: ' is-invalid')}" id="username" property="username" additionalAttributes="{autocomplete:'new-password'}"/>
+                        </div>
+                        <small class="form-text text-muted">
+                            Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
+                        </small>
+                    </div>
+                    <!-- USERNAME/EMAIL -->
+
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-Mail Adresse
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-envelope fa-fw"></i></span>
+                            </div>
+                            <f:form.textfield class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}" type="text" id="email" property="email" additionalAttributes="{autocomplete:'new-password'}"/>
+                        </div>
+                        <small class="form-text text-muted">
+                            An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.
+                        </small>
+                    </div>
+                    <!-- EMAIL -->
+
+                    <hr>
+
+                    <!-- PASSWORD -->
+                    <div class="form-group">
+                        <label for="password">
+                            Passwort
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
+                            </div>
+                            <f:form.password class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}" id="password" property="password" additionalAttributes="{autocomplete:'new-password'}"/>
+                        </div>
+                        <small class="form-text text-muted">
+                            Das Passwort muss aus mindestens 6 Zeichen bestehen.
+                        </small>
+                    </div>
+                    <!-- PASSWORD -->
+
+                    <!-- REPEAT PASSWORD -->
+                    <div class="form-group">
+                        <label for="passwordrepeat">
+                            Passwort wiederholen
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
+                            </div>
+                            <f:form.password class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}" id="passwordrepeat" property="passwordrepeat" additionalAttributes="{autocomplete:'new-password'}"/>
+                        </div>
+
+                    </div>
+                    <!-- REPEAT PASSWORD -->
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <f:form.submit class="btn btn-primary btn-lg" value="Jetzt registrieren"/>
+                    <!-- SUBMIT BUTTON -->
+
+                </f:form>
+            </div>
+        </div>
+
+    </div>
+
+</f:section>
+</html>

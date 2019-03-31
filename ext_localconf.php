@@ -41,6 +41,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'register',
+            [
+                'Register' => 'form,submit,confirm'
+            ],
+            // non-cacheable actions
+            [
+                'Register' => 'form,submit,confirm'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -72,6 +84,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_forgot
+                        }
+                    }
+                    users_register {
+                        iconIdentifier = users
+                        title = [Users] Register
+                        description = Users can register and sign up for a new account
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_register
                         }
                     }
                 }

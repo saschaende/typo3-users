@@ -22,6 +22,12 @@ call_user_func(
             '[Users] Forgot password'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'register',
+            '[Users] Register'
+        );
+
         // --------------------------------------------
         // TYPOSCRIPT
         // --------------------------------------------
@@ -35,6 +41,7 @@ call_user_func(
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('login');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('logout');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('forgot');
+        \t3h\t3h::Inject()->setExtension('users')->addFlexform('register');
 
     }
 );

@@ -39,6 +39,27 @@ $temporaryColumns = [
             'default' => '0',
         ],
     ],
+    'users_registerhash' => [
+        'exclude' => true,
+        'label' => 'Register hash',
+        'config' => [
+            'type' => 'input',
+            'size' => 30,
+            'eval' => 'trim'
+        ],
+    ],
+    'disabled' => [
+        'exclude' => true,
+        'label' => 'Disabled',
+        'config' => [
+            'type' => 'check',
+            'items' => [
+                '1' => [
+                    '0' => 'Yes'
+                ]
+            ],
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -48,5 +69,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid'
+    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash'
 );

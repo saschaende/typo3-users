@@ -7,7 +7,6 @@ use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class ForgotController extends ActionController {
 
@@ -32,10 +31,10 @@ class ForgotController extends ActionController {
      * Redirect to change form, if uid found. Otherwise show form with username/email input.
      * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
      */
-    public function formAction(){
+    public function formAction() {
 
-        if(isset($_GET['uid'])){
-            $this->forward('changeform',null,null,$_GET);
+        if (isset($_GET['uid'])) {
+            $this->forward('changeform', null, null, $_GET);
         }
     }
 
@@ -44,7 +43,7 @@ class ForgotController extends ActionController {
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
      */
-    public function formsubmitAction(){
+    public function formsubmitAction() {
         $arguments = $this->request->getArguments();
 
         // Load userdata
@@ -57,10 +56,10 @@ class ForgotController extends ActionController {
         }
 
         // Send email, if user found
-        if($user){
+        if ($user) {
             /** @var User $user */
             // Make string and time
-            $forgotHash = md5(uniqid().time());
+            $forgotHash = md5(uniqid() . time());
             $dt = new \DateTime();
             $dt->modify('+60 minutes');
 
@@ -75,8 +74,8 @@ class ForgotController extends ActionController {
                 false,
                 true,
                 [
-                    'uid'=>$user->getUid(),
-                    'forgotHash'=>$forgotHash
+                    'uid' => $user->getUid(),
+                    'forgotHash' => $forgotHash
                 ]
             );
 
@@ -88,7 +87,7 @@ class ForgotController extends ActionController {
                 $this->settings['subject'],
                 'tx_users',
                 'Email',
-                ['user'=>$user,'link'=>$link],
+                ['user' => $user, 'link' => $link],
                 [],
                 1,
                 $this->controllerContext
@@ -99,7 +98,7 @@ class ForgotController extends ActionController {
     /**
      * Form for setting a new password
      */
-    public function changeformAction(){
+    public function changeformAction() {
         $arguments = $this->request->getArguments();
 
         // Load userdata
@@ -107,15 +106,15 @@ class ForgotController extends ActionController {
         $user = $this->frontendUserRepository->findByUid($arguments['uid']);
 
         // Überprüfe Hash
-        if($user){
+        if ($user) {
             $this->view->assignMultiple([
                 'error' => $arguments['error'],
-                'allowed'   => $this->verifyPasswordChange($user,$arguments),
-                'forgotHash'    => $arguments['forgotHash'],
-                'uid'   => $arguments['uid']
+                'allowed' => $this->verifyPasswordChange($user, $arguments),
+                'forgotHash' => $arguments['forgotHash'],
+                'uid' => $arguments['uid']
             ]);
-        }else{
-            $this->view->assign('allowed',false);
+        } else {
+            $this->view->assign('allowed', false);
         }
     }
 
@@ -127,14 +126,14 @@ class ForgotController extends ActionController {
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
      */
-    public function changeformsubmitAction(){
+    public function changeformsubmitAction() {
         $arguments = $this->request->getArguments();
 
         // Load userdata
         /** @var User $user */
         $user = $this->frontendUserRepository->findByUid($arguments['uid']);
 
-        if($user && $this->verifyPasswordChange($user,$arguments) && mb_strlen($arguments['password']) >= 6 && $arguments['password'] == $arguments['passwordrepeat']){
+        if ($user && $this->verifyPasswordChange($user, $arguments) && mb_strlen($arguments['password']) >= 6 && $arguments['password'] == $arguments['passwordrepeat']) {
             // Change password
             $user->setPassword(t3h::Password()->getHashedPassword($arguments['password']));
             $user->setUsersForgothash('');
@@ -142,18 +141,18 @@ class ForgotController extends ActionController {
             $this->frontendUserRepository->update($user);
 
             // Automatically login?
-            if($this->settings['login']){
+            if ($this->settings['login']) {
                 t3h::FrontendUser()->loginUser($user->getUsername());
             }
-        }else{
+        } else {
             $link = t3h::Uri()->getByPid(
                 t3h::Page()->getPid(),
                 false,
                 true,
                 [
                     'error' => 1,
-                    'uid'=>$arguments['uid'],
-                    'forgotHash'=>$arguments['forgotHash']
+                    'uid' => $arguments['uid'],
+                    'forgotHash' => $arguments['forgotHash']
                 ]
             );
             $this->redirectToUri($link);
@@ -166,7 +165,7 @@ class ForgotController extends ActionController {
      * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
      * @throws \TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException
      */
-    public function redirectAction(){
+    public function redirectAction() {
         $link = t3h::Uri()->getByPid($this->settings['successLink']);
         $this->redirectToUri($link);
     }
@@ -177,16 +176,16 @@ class ForgotController extends ActionController {
      * @param $arguments
      * @return bool
      */
-    private function verifyPasswordChange(User $user,$arguments){
-        if(!$user){
+    private function verifyPasswordChange(User $user, $arguments) {
+        if (!$user) {
             return false;
         }
 
-        if($user->getUsersForgothash() != $arguments['forgotHash']){
+        if ($user->getUsersForgothash() != $arguments['forgotHash']) {
             return false;
         }
 
-        if($user->getUsersForgothashValid()->getTimestamp() < time()){
+        if ($user->getUsersForgothashValid()->getTimestamp() < time()) {
             return false;
         }
 

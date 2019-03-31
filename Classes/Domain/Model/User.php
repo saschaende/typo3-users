@@ -26,6 +26,16 @@ class User extends FrontendUser {
     protected $usersForgothashValid;
 
     /**
+     * @var string
+     */
+    protected $usersRegisterhash = '';
+
+    /**
+     * @var bool
+     */
+    protected $disable = false;
+
+    /**
      * @return \DateTime
      */
     public function getUsersLastlogin() {
@@ -79,6 +89,34 @@ class User extends FrontendUser {
      */
     public function setUsersForgothashValid($usersForgothashValid) {
         $this->usersForgothashValid = $usersForgothashValid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsersRegisterhash(): string {
+        return $this->usersRegisterhash;
+    }
+
+    /**
+     * @param string $usersRegisterhash
+     */
+    public function setUsersRegisterhash(string $usersRegisterhash) {
+        $this->usersRegisterhash = $usersRegisterhash;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDisable(): bool {
+        return $this->disable;
+    }
+
+    /**
+     * @param bool $disable
+     */
+    public function setDisable(bool $disable) {
+        $this->disable = $disable;
     }
 
 }
