@@ -11,6 +11,11 @@ class User extends FrontendUser {
     protected $usersLastlogin;
 
     /**
+     * @var int
+     */
+    protected $usersLogincount = 0;
+
+    /**
      * @var string
      */
     protected $usersForgothash = '';
@@ -32,6 +37,20 @@ class User extends FrontendUser {
      */
     public function setUsersLastlogin(\DateTime $usersLastlogin) {
         $this->usersLastlogin = $usersLastlogin;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUsersLogincount(): int {
+        return $this->usersLogincount;
+    }
+
+    /**
+     * @param int $usersLogincount
+     */
+    public function setUsersLogincount(int $usersLogincount) {
+        $this->usersLogincount = $usersLogincount;
     }
 
     /**

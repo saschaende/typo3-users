@@ -11,6 +11,15 @@ $temporaryColumns = [
             'default' => '0',
         ],
     ],
+    'users_logincount' => [
+        'exclude' => true,
+        'label' => 'Number of logins',
+        'config' => [
+            'type' => 'input',
+            'size' => 30,
+            'eval' => 'trim'
+        ],
+    ],
     'users_forgothash' => [
         'exclude' => true,
         'label' => 'Forgot hash',
@@ -39,5 +48,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_forgothash,users_forgothash_valid'
+    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid'
 );

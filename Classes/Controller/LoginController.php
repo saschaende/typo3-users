@@ -81,6 +81,7 @@ class LoginController extends ActionController {
         // Save last login
         $dt = new \DateTime();
         $user->setUsersLastlogin($dt);
+        $user->setUsersLogincount($user->getUsersLogincount()+1);
         $this->frontendUserRepository->update($user);
 
         // Login now
