@@ -112,7 +112,6 @@
             </trans-unit>
 
 
-
             <trans-unit id="forgot.changeformsubmit.title">
                 <source>Passwort wurde geändert</source>
             </trans-unit>
@@ -124,6 +123,31 @@
             </trans-unit>
 
 
+
+            <trans-unit id="validation.1">
+                <source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
+            </trans-unit>
+            <trans-unit id="validation.2">
+                <source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
+            </trans-unit>
+            <trans-unit id="validation.3">
+                <source>Der gewählte Benutzername existiert bereits.</source>
+            </trans-unit>
+            <trans-unit id="validation.4">
+                <source>Keine E-Mail Adresse angegeben.</source>
+            </trans-unit>
+            <trans-unit id="validation.5">
+                <source>Diese E-Mail Adresse hat kein gültiges Format.</source>
+            </trans-unit>
+            <trans-unit id="validation.6">
+                <source>Diese E-Mail Adresse wurde bereits verwendet.</source>
+            </trans-unit>
+            <trans-unit id="validation.7">
+                <source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
+            </trans-unit>
+            <trans-unit id="validation.8">
+                <source>Die Passworteingaben müssen übereinstimmen.</source>
+            </trans-unit>
 
 
         </body>

@@ -146,6 +146,41 @@
             </trans-unit>
 
 
+
+            <trans-unit id="validation.1">
+                <source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
+                <target>The username must be at least 3 and at most 20 characters long.</target>
+            </trans-unit>
+            <trans-unit id="validation.2">
+                <source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
+                <target>The user name must not contain any special characters.</target>
+            </trans-unit>
+            <trans-unit id="validation.3">
+                <source>Der gewählte Benutzername existiert bereits.</source>
+                <target>The selected user name already exists.</target>
+            </trans-unit>
+            <trans-unit id="validation.4">
+                <source>Keine E-Mail Adresse angegeben.</source>
+                <target>No e-mail address given.</target>
+            </trans-unit>
+            <trans-unit id="validation.5">
+                <source>Diese E-Mail Adresse hat kein gültiges Format.</source>
+                <target>This e-mail address has no valid format.</target>
+            </trans-unit>
+            <trans-unit id="validation.6">
+                <source>Diese E-Mail Adresse wurde bereits verwendet.</source>
+                <target>This e-mail address has already been used.</target>
+            </trans-unit>
+            <trans-unit id="validation.7">
+                <source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
+                <target>The password must be at least 6 characters long.</target>
+            </trans-unit>
+            <trans-unit id="validation.8">
+                <source>Die Passworteingaben müssen übereinstimmen.</source>
+                <target>The password entries must match.</target>
+            </trans-unit>
+
+
         </body>
     </file>
 </xliff>

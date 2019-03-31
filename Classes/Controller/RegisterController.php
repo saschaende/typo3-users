@@ -24,9 +24,11 @@ class RegisterController extends ActionController {
 
     public function initializeAction() {
 
+        // Load groups repo
         $this->frontendUserGroupRepository = $this->objectManager->get(FrontendUserGroupRepository::class);
         $this->frontendUserGroupRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
 
+        // Load user repo
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
 
         /** @var Typo3QuerySettings $querysettings */
@@ -34,6 +36,7 @@ class RegisterController extends ActionController {
         $querysettings->setStoragePageIds([
             $this->settings['usersFolder']
         ]);
+
         // Für die Überprüfung müssen wir auch inaktive Accounts prüfen
         $querysettings->setIgnoreEnableFields(true);
         $this->frontendUserRepository->setDefaultQuerySettings($querysettings);
@@ -60,6 +63,7 @@ class RegisterController extends ActionController {
      */
     public function submitAction(Registration $registration) {
 
+        // Lets make some checks
         $errors = [];
 
         // Username min 3 and max 20
@@ -102,8 +106,10 @@ class RegisterController extends ActionController {
             $errors['password'][] = '8';
         }
 
-        // Errors? So show the form again
+        // ---------------------------------------------------------------------
+
         if (count($errors) >= 1) {
+            // Errors? So show the form again
             $this->forward(
                 'form',
                 null,
