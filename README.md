@@ -29,7 +29,7 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 
 ## Important notes
 
-* Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses.
+* Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses. The register plugin of this users extension will not allow email adresses as usernames.
 
 ## Screenshots
 
