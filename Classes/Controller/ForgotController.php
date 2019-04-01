@@ -29,7 +29,6 @@ class ForgotController extends ActionController {
 
     /**
      * Redirect to change form, if uid found. Otherwise show form with username/email input.
-     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
      */
     public function formAction() {
 
@@ -40,8 +39,6 @@ class ForgotController extends ActionController {
 
     /**
      * Submit username or email. Email to user will be sent, if user found.
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
      */
     public function formsubmitAction() {
         $arguments = $this->request->getArguments();
@@ -103,7 +100,7 @@ class ForgotController extends ActionController {
 
         // Load userdata
         /** @var User $user */
-        $user = $this->frontendUserRepository->findByUid($arguments['uid']);
+        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
 
         // Überprüfe Hash
         if ($user) {
@@ -120,18 +117,13 @@ class ForgotController extends ActionController {
 
     /**
      * Change the password now
-     * @throws \ReflectionException
-     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
-     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
-     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
      */
     public function changeformsubmitAction() {
         $arguments = $this->request->getArguments();
 
         // Load userdata
         /** @var User $user */
-        $user = $this->frontendUserRepository->findByUid($arguments['uid']);
+        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
 
         if ($user && $this->verifyPasswordChange($user, $arguments) && mb_strlen($arguments['password']) >= 6 && $arguments['password'] == $arguments['passwordrepeat']) {
             // Change password
@@ -162,8 +154,6 @@ class ForgotController extends ActionController {
 
     /**
      * Seperate redirect ation, so given links will also work with user areas...
-     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\StopActionException
-     * @throws \TYPO3\CMS\Extbase\Mvc\Exception\UnsupportedRequestTypeException
      */
     public function redirectAction() {
         $link = t3h::Uri()->getByPid($this->settings['successLink']);

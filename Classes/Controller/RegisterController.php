@@ -9,6 +9,7 @@ use t3h\t3h;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class RegisterController extends ActionController {
 
@@ -36,7 +37,6 @@ class RegisterController extends ActionController {
         $querysettings->setStoragePageIds([
             $this->settings['usersFolder']
         ]);
-
         // Für die Überprüfung müssen wir auch inaktive Accounts prüfen
         $querysettings->setIgnoreEnableFields(true);
         $this->frontendUserRepository->setDefaultQuerySettings($querysettings);
@@ -136,7 +136,7 @@ class RegisterController extends ActionController {
 
             // User groups
             foreach (explode(',', $this->settings['userGroups']) as $groupId) {
-                $user->addUsergroup($this->frontendUserGroupRepository->findByUid($groupId));
+                $user->addUsergroup($this->frontendUserGroupRepository->findOneByUid($groupId));
             }
 
             // Hash
@@ -173,13 +173,51 @@ class RegisterController extends ActionController {
                 1,
                 $this->controllerContext
             );
+
+            $this->view->assignMultiple([
+                'user'  => $user
+            ]);
         }
 
 
     }
 
     public function confirmAction() {
+        $arguments = $this->request->getArguments();
 
+        // Load userdata
+        /** @var User $user */
+        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
+
+
+        if ($user && !empty($user->getUsersRegisterhash()) && $user->getUsersRegisterhash() == $arguments['registerHash']) {
+            $user->setUsersRegisterhash('');
+            $user->setDisable(false);
+            $this->frontendUserRepository->update($user);
+            t3h::Database()->persistAll();
+
+            // Automatically login?
+            if ($this->settings['login']) {
+                t3h::FrontendUser()->loginUser($user->getUsername());
+            }
+
+            $this->view->assignMultiple([
+                'user'  => $user,
+                'success'    => true
+            ]);
+        }else{
+            $this->view->assignMultiple([
+                'success'    => false
+            ]);
+        }
+    }
+
+    /**
+     * Seperate redirect ation, so given links will also work with user areas...
+     */
+    public function redirectAction() {
+        $link = t3h::Uri()->getByPid($this->settings['successLink']);
+        $this->redirectToUri($link);
     }
 
 }

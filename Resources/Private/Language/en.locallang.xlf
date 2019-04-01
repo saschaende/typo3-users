@@ -136,13 +136,16 @@
 
 
             <trans-unit id="forgot.changeformsubmit.title">
-                <source>Password was changed</source>
+                <source>Passwort wurde geändert</source>
+                <target>Password was changed</target>
             </trans-unit>
             <trans-unit id="forgot.changeformsubmit.message">
-                <source>Thank you, the password was changed.</source>
+                <source>Vielen Dank, das Passwort wurde erfolgreich geändert.</source>
+                <target>Thank you, the password was changed.</target>
             </trans-unit>
             <trans-unit id="forgot.changeformsubmit.button">
-                <source>Go to the website</source>
+                <source>Weiter zur Webseite</source>
+                <target>Go to the website</target>
             </trans-unit>
 
 

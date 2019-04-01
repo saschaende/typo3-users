@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+
+    <f:if condition="{success}">
+        <div class="card login-box">
+            <div class="card-body">
+                <h4 class="card-title">
+                    Vielen Dank für Deine Registrierung
+                </h4>
+                <div class="card-text">
+                    <p>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet
+                        bist.</p>
+
+                    <p>
+                        <b>Benutzername:</b> {user.username}<br>
+                        <b>E-Mail:</b> {user.email}
+                    </p>
+
+                    <!-- SHOW THE LINK, IF REDIRECT IS GIVEN -->
+                    <f:if condition="{settings.successLink}">
+                        <f:link.action action="redirect" class="btn btn-primary btn-lg">
+                            Weiter
+                        </f:link.action>
+                    </f:if>
+                    <!-- SHOW THE LINK, IF REDIRECT IS GIVEN -->
+                </div>
+            </div>
+        </div>
+    </f:if>
+
+    <f:if condition="!{success}">
+        <div class="card login-box">
+            <div class="card-body">
+                <h4 class="card-title">
+                    Fehler
+                </h4>
+                <div class="card-text">
+                    <p>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits freigeschaltet.</p>
+                </div>
+            </div>
+        </div>
+    </f:if>
+
+
+</f:section>
+</html>
