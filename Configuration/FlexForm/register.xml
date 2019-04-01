@@ -73,6 +73,111 @@
                 </el>
             </ROOT>
         </options>
+
+        <inputfields>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Optional input fields</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.optionalFields>
+                        <TCEforms>
+                            <label>Show fields</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Conditions (AGB)</numIndex>
+                                        <numIndex index="1">conditions</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Data protection (Datenschutz)</numIndex>
+                                        <numIndex index="1">dataprotection</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">Firstname</numIndex>
+                                        <numIndex index="1">firstname</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">Lastname</numIndex>
+                                        <numIndex index="1">lastname</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">Company</numIndex>
+                                        <numIndex index="1">company</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">Street</numIndex>
+                                        <numIndex index="1">street</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">ZIP</numIndex>
+                                        <numIndex index="1">zip</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">City</numIndex>
+                                        <numIndex index="1">city</numIndex>
+                                    </numIndex>
+                                </items>
+                                <size>10</size>
+                            </config>
+                        </TCEforms>
+                    </settings.optionalFields>
+
+                    <settings.requiredFields>
+                        <TCEforms>
+                            <label>Required fields</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectMultipleSideBySide</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Conditions (AGB)</numIndex>
+                                        <numIndex index="1">conditions</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Data protection (Datenschutz)</numIndex>
+                                        <numIndex index="1">dataprotection</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">Firstname</numIndex>
+                                        <numIndex index="1">firstname</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">Lastname</numIndex>
+                                        <numIndex index="1">lastname</numIndex>
+                                    </numIndex>
+                                    <numIndex index="5" type="array">
+                                        <numIndex index="0">Company</numIndex>
+                                        <numIndex index="1">company</numIndex>
+                                    </numIndex>
+                                    <numIndex index="6" type="array">
+                                        <numIndex index="0">Street</numIndex>
+                                        <numIndex index="1">street</numIndex>
+                                    </numIndex>
+                                    <numIndex index="7" type="array">
+                                        <numIndex index="0">ZIP</numIndex>
+                                        <numIndex index="1">zip</numIndex>
+                                    </numIndex>
+                                    <numIndex index="8" type="array">
+                                        <numIndex index="0">City</numIndex>
+                                        <numIndex index="1">city</numIndex>
+                                    </numIndex>
+                                </items>
+                                <size>10</size>
+                            </config>
+                        </TCEforms>
+                    </settings.requiredFields>
+
+
+
+                </el>
+            </ROOT>
+        </inputfields>
+
         <email>
             <ROOT>
                 <TCEforms>
