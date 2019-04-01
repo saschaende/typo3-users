@@ -48,6 +48,11 @@ class RegisterController extends ActionController {
      */
     public function formAction($registration = null, $errors = []) {
 
+        // Redirect to confirmation page
+        if (isset($_GET['uid']) && isset($_GET['registerHash'])) {
+            $this->forward('confirm', null, null, $_GET);
+        }
+
         if ($registration == null) {
             $registration = new Registration();
         }
@@ -87,12 +92,12 @@ class RegisterController extends ActionController {
         }
 
         // E-Mail Format
-        if (!filter_var($registration->getEmail(), FILTER_VALIDATE_EMAIL)) {
+        elseif (!filter_var($registration->getEmail(), FILTER_VALIDATE_EMAIL)) {
             $errors['email'][] = '5';
         }
 
         // Check if email exists
-        if ($this->frontendUserRepository->findOneByEmail($registration->getEmail())) {
+        elseif ($this->frontendUserRepository->findOneByEmail($registration->getEmail())) {
             $errors['email'][] = '6';
         }
 
@@ -102,7 +107,7 @@ class RegisterController extends ActionController {
         }
 
         // Same passwords
-        if ($registration->getPassword() != $registration->getPasswordrepeat()) {
+        elseif ($registration->getPassword() != $registration->getPasswordrepeat()) {
             $errors['password'][] = '8';
         }
 
@@ -139,6 +144,35 @@ class RegisterController extends ActionController {
             $user->setUsersRegisterhash($registerHash);
 
             $this->frontendUserRepository->add($user);
+
+            // Save directly
+            t3h::Database()->persistAll();
+
+            // Make link, as short as possible
+            $link = t3h::Uri()->getByPid(
+                t3h::Page()->getPid(),
+                false,
+                true,
+                [
+                    'uid' => $user->getUid(),
+                    'registerHash' => $registerHash
+                ]
+            );
+
+
+            // Send email
+            t3h::Mail()->sendDynamicTemplate(
+                $user->getEmail(),
+                $this->settings['senderEmail'],
+                $this->settings['senderName'],
+                $this->settings['subject'],
+                'tx_users',
+                'Email',
+                ['user' => $user, 'link' => $link],
+                [],
+                1,
+                $this->controllerContext
+            );
         }
 
 
