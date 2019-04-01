@@ -114,13 +114,27 @@
                                         <numIndex index="1">street</numIndex>
                                     </numIndex>
                                     <numIndex index="7" type="array">
-                                        <numIndex index="0">ZIP</numIndex>
+                                        <numIndex index="0">Zip</numIndex>
                                         <numIndex index="1">zip</numIndex>
                                     </numIndex>
                                     <numIndex index="8" type="array">
                                         <numIndex index="0">City</numIndex>
                                         <numIndex index="1">city</numIndex>
                                     </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">Phone</numIndex>
+                                        <numIndex index="1">phone</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">Salutation</numIndex>
+                                        <numIndex index="1">salutation</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">Newsletter</numIndex>
+                                        <numIndex index="1">newsletter</numIndex>
+                                    </numIndex>
+
+
                                 </items>
                                 <size>10</size>
                             </config>
@@ -159,12 +173,24 @@
                                         <numIndex index="1">street</numIndex>
                                     </numIndex>
                                     <numIndex index="7" type="array">
-                                        <numIndex index="0">ZIP</numIndex>
+                                        <numIndex index="0">Zip</numIndex>
                                         <numIndex index="1">zip</numIndex>
                                     </numIndex>
                                     <numIndex index="8" type="array">
                                         <numIndex index="0">City</numIndex>
                                         <numIndex index="1">city</numIndex>
+                                    </numIndex>
+                                    <numIndex index="9" type="array">
+                                        <numIndex index="0">Phone</numIndex>
+                                        <numIndex index="1">phone</numIndex>
+                                    </numIndex>
+                                    <numIndex index="10" type="array">
+                                        <numIndex index="0">Salutation</numIndex>
+                                        <numIndex index="1">salutation</numIndex>
+                                    </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">Newsletter</numIndex>
+                                        <numIndex index="1">newsletter</numIndex>
                                     </numIndex>
                                 </items>
                                 <size>10</size>
