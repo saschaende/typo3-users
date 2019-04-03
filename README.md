@@ -17,6 +17,7 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * Logout
 * Forgot password
 * Register
+* Banlist for domains/hosts (spamschlucker ...)
 
 ## In development
 
