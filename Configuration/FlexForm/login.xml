@@ -70,7 +70,7 @@
                     <settings.forgotpassPid>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Page with forgot pass plugin</label>
+                            <label>Link to page with "forgot pass" plugin at the bottom of the form (optional)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -86,7 +86,7 @@
                     <settings.registerPid>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Page with register plugin</label>
+                            <label>Link to page with "registration" plugin at the bottom of the form (optional)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
