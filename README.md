@@ -11,14 +11,14 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 
 I develop this extension in an 8 environment on https://filmmusic.io and will make it compatible to 9 after that.
 
-## READY TO USE
+## READY TO USE: Features of the "Users" Extension
 
-* 0.4.0 Login
-* 0.4.0 Logout
-* 0.4.0 Forgot password
-* 0.4.0 Register
-* 0.5.0 Banlist for not allowed domains/hosts (spamschlucker ...)
-* 0.5.0 Admin tool for import of newest spam host list
+* 0.4.0 Plugin: Login
+* 0.4.0 Plugin: Logout
+* 0.4.0 Plugin:Forgot password
+* 0.4.0 Plugin: Register
+* 0.5.0 Table: Protect your system from disposable email addresses: Banlist for not allowed domains/hosts (spamschlucker ...)
+* 0.5.0 Module: Admin tool for import of newest spam host list
 
 ## In development
 
