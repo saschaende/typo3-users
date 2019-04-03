@@ -29,6 +29,7 @@ CREATE TABLE tx_users_domain_model_bannedhosts (
 	endtime int(11) unsigned DEFAULT '0' NOT NULL,
 
 	PRIMARY KEY (uid),
-	KEY parent (pid)
+	KEY parent (pid),
+	UNIQUE host (host)
 
 );
