@@ -2094,3 +2094,4 @@ wipia.org
 tempemails.io
 cd.mintemail.com
 opentrash.com
+fake-box.com
