@@ -28,6 +28,29 @@ call_user_func(
             '[Users] Register'
         );
 
+        // ------------------------------------------------------------------------------
+        // Add Backend Module
+        // ------------------------------------------------------------------------------
+
+        if (TYPO3_MODE === 'BE') {
+
+            \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+                'SaschaEnde.Users',
+                'tools', // Make module a submodule of 'web'
+                'users', // Submodule key
+                '', // Position
+                [
+                    'Admin' => 'list,importbanlist',
+                ],
+                [
+                    'access' => 'user,group',
+                    'icon'   => 'EXT:users/Resources/Public/Icons/Extension.png',
+                    'labels' => 'LLL:EXT:users/Resources/Private/Language/locallang_users.xlf',
+                ]
+            );
+
+        }
+
         // --------------------------------------------
         // TYPOSCRIPT
         // --------------------------------------------

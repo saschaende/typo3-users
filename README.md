@@ -13,11 +13,11 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 
 ## READY TO USE
 
-* Login
-* Logout
-* Forgot password
-* Register
-* Banlist for domains/hosts (spamschlucker ...)
+* 0.4.0 Login
+* 0.4.0 Logout
+* 0.4.0 Forgot password
+* 0.4.0 Register
+* 0.5.0 Banlist for domains/hosts (spamschlucker ...)
 
 ## In development
 
