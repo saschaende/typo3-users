@@ -1,0 +1,11 @@
+<div class="form-group">
+    <label for="city">
+        Stadt<f:if condition="{field.required}">*</f:if>
+    </label>
+    <f:form.textfield class="form-control{f:if(condition: '{errors.city}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.city}',then: ' is-valid')}" id="city" property="city" additionalAttributes="{autocomplete:'new-password'}"/>
+    <div class="text-danger">
+        <f:for each="{errors.city}" as="errorcode">
+            <div><f:render partial="Validation" section="error{errorcode}"/></div>
+        </f:for>
+    </div>
+</div>

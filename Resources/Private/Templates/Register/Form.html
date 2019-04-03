@@ -7,29 +7,37 @@
             <h4 class="card-title">
                 Registrierung
             </h4>
+
             <div class="card-text">
-                <f:form action="submit" class="needs-validation form" method="POST" object="{registration}" objectName="registration">
+                <f:form action="submit" class="needs-validation form" method="POST" object="{registration}"
+                        objectName="registration">
 
 
                     <!-- USERNAME -->
                     <div class="form-group">
 
                         <label for="username">
-                            Gewünschter Benutzername
+                            Gewünschter Benutzername*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user fa-fw"></i></span>
                             </div>
-                            <f:form.textfield class="form-control{f:if(condition: '{errors.username}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.username}',then: ' is-valid')}" id="username" property="username" additionalAttributes="{autocomplete:'new-password'}"/>
+                            <f:form.textfield
+                                    class="form-control{f:if(condition: '{errors.username}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.username}',then: ' is-valid')}"
+                                    id="username" property="username"
+                                    additionalAttributes="{autocomplete:'new-password'}"/>
                         </div>
                         <div class="text-danger">
                             <f:for each="{errors.username}" as="errorcode">
-                                <div><f:render partial="Validation" section="error{errorcode}"/></div>
+                                <div>
+                                    <f:render partial="Validation" section="error{errorcode}"/>
+                                </div>
                             </f:for>
                         </div>
                         <small class="form-text text-muted">
-                            Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
+                            Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
+                            enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
                         </small>
                     </div>
                     <!-- USERNAME/EMAIL -->
@@ -39,17 +47,22 @@
                     <div class="form-group">
 
                         <label for="email">
-                            E-Mail Adresse
+                            E-Mail Adresse*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-envelope fa-fw"></i></span>
                             </div>
-                            <f:form.textfield class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}" type="text" id="email" property="email" additionalAttributes="{autocomplete:'new-password'}"/>
+                            <f:form.textfield
+                                    class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}"
+                                    type="text" id="email" property="email"
+                                    additionalAttributes="{autocomplete:'new-password'}"/>
                         </div>
                         <div class="text-danger">
                             <f:for each="{errors.email}" as="errorcode">
-                                <div><f:render partial="Validation" section="error{errorcode}"/></div>
+                                <div>
+                                    <f:render partial="Validation" section="error{errorcode}"/>
+                                </div>
                             </f:for>
                         </div>
                         <small class="form-text text-muted">
@@ -63,17 +76,22 @@
                     <!-- PASSWORD -->
                     <div class="form-group">
                         <label for="password">
-                            Passwort
+                            Passwort*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
                             </div>
-                            <f:form.password class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}" id="password" property="password" additionalAttributes="{autocomplete:'new-password'}"/>
+                            <f:form.password
+                                    class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
+                                    id="password" property="password"
+                                    additionalAttributes="{autocomplete:'new-password'}"/>
                         </div>
                         <div class="text-danger">
                             <f:for each="{errors.password}" as="errorcode">
-                                <div><f:render partial="Validation" section="error{errorcode}"/></div>
+                                <div>
+                                    <f:render partial="Validation" section="error{errorcode}"/>
+                                </div>
                             </f:for>
                         </div>
                         <small class="form-text text-muted">
@@ -85,21 +103,36 @@
                     <!-- REPEAT PASSWORD -->
                     <div class="form-group">
                         <label for="passwordrepeat">
-                            Passwort wiederholen
+                            Passwort wiederholen*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
                             </div>
-                            <f:form.password class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}" id="passwordrepeat" property="passwordrepeat" additionalAttributes="{autocomplete:'new-password'}"/>
+                            <f:form.password
+                                    class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
+                                    id="passwordrepeat" property="passwordrepeat"
+                                    additionalAttributes="{autocomplete:'new-password'}"/>
                         </div>
 
                     </div>
                     <!-- REPEAT PASSWORD -->
 
 
+                    <!-- OPTIONAL FIELDS -->
+                    <f:if condition="{optionalFields -> f:count()} >= 1">
+                        <hr>
+                        <f:for each="{optionalFields}" as="optionalField">
+                            <f:render partial="OptionalFields/{optionalField.id}" arguments="{errors:errors,field:optionalField}"/>
+                        </f:for>
+                    </f:if>
+                    <!-- OPTIONAL FIELDS -->
+
+
                     <!-- SUBMIT BUTTON -->
-                    <f:form.submit class="btn btn-primary btn-lg" value="Jetzt registrieren"/>
+                    <div class="mt-3">
+                        <f:form.submit class="btn btn-primary btn-lg" value="Jetzt registrieren"/>
+                    </div>
                     <!-- SUBMIT BUTTON -->
 
                 </f:form>

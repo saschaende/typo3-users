@@ -1,0 +1,12 @@
+<div class="form-group">
+
+    <label for="last_name">
+        Nachname<f:if condition="{field.required}">*</f:if>
+    </label>
+    <f:form.textfield class="form-control{f:if(condition: '{errors.last_name}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.last_name}',then: ' is-valid')}" id="last_name" property="lastName" additionalAttributes="{autocomplete:'new-password'}"/>
+    <div class="text-danger">
+        <f:for each="{errors.last_name}" as="errorcode">
+            <div><f:render partial="Validation" section="error{errorcode}"/></div>
+        </f:for>
+    </div>
+</div>

@@ -1,155 +1,142 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="de" datatype="plaintext" original="messages" date="2018-09-07T22:28:29Z"
-          product-name="users">
-        <header/>
-        <body>
-
-
-            <trans-unit id="login.error">
-                <source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-04-02T06:35:16Z" product-name="users">
+		<header/>
+		<body>
+			<trans-unit id="forgot.change.error">
+				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
+                    abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
+                </source>
+			</trans-unit>
+			<trans-unit id="forgot.change.error2">
+				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
+                </source>
+			</trans-unit>
+			<trans-unit id="forgot.change.password">
+				<source>Neues Passwort</source>
+			</trans-unit>
+			<trans-unit id="forgot.change.passwordrepeat">
+				<source>Neues Passwort wiederholen</source>
+			</trans-unit>
+			<trans-unit id="forgot.change.submit">
+				<source>Neues Passwort speichern</source>
+			</trans-unit>
+			<trans-unit id="forgot.change.text">
+				<source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss
+                    mindestens aus 6 Zeichen bestehen.
+                </source>
+			</trans-unit>
+			<trans-unit id="forgot.change.title">
+				<source>Passwort ändern</source>
+			</trans-unit>
+			<trans-unit id="forgot.changeformsubmit.button">
+				<source>Weiter zur Webseite</source>
+			</trans-unit>
+			<trans-unit id="forgot.changeformsubmit.message">
+				<source>Vielen Dank, das Passwort wurde erfolgreich geändert.</source>
+			</trans-unit>
+			<trans-unit id="forgot.changeformsubmit.title">
+				<source>Passwort wurde geändert</source>
+			</trans-unit>
+			<trans-unit id="forgot.confirm.back">
+				<source>Zurück</source>
+			</trans-unit>
+			<trans-unit id="forgot.confirm.text">
+				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
+                    gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die
+                    E-Mail-Adresse nicht gefunden.
+                </source>
+			</trans-unit>
+			<trans-unit id="forgot.email.button">
+				<source>Passwort zurücksetzen</source>
+			</trans-unit>
+			<trans-unit id="forgot.email.info">
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren
+                    Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.
+                </source>
+			</trans-unit>
+			<trans-unit id="forgot.email.message">
+				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage
+                    nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben,
+                    setzen Sie bitte Ihr Passwort zurück.:
+                </source>
+			</trans-unit>
+			<trans-unit id="forgot.email.salutation">
+				<source>Hallo,</source>
+			</trans-unit>
+			<trans-unit id="forgot.email.title">
+				<source>Hier sind die Instruktionen, um das Passwort zurückzusetzen.</source>
+			</trans-unit>
+			<trans-unit id="forgot.submit">
+				<source>Passwortänderung anfordern</source>
+			</trans-unit>
+			<trans-unit id="forgot.text">
+				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
+                    zum Zurücksetzen des Passworts zugesandt.
+                </source>
+			</trans-unit>
+			<trans-unit id="forgot.title">
+				<source>Passwort vergessen</source>
+			</trans-unit>
+			<trans-unit id="forgot.usernameemail">
+				<source>Benutzername oder E-Mail</source>
+			</trans-unit>
+			<trans-unit id="login.error">
+				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
                     Benutzernamen/E-Mail oder
                     das Passwort falsch eingegeben. Groß-/Kleinschreibung
                     wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser
                     deaktiviert hast.
                 </source>
-            </trans-unit>
-            <trans-unit id="login.title">
-                <source>Jetzt einloggen</source>
-            </trans-unit>
-            <trans-unit id="login.username">
-                <source>Benutzername</source>
-            </trans-unit>
-            <trans-unit id="login.usernameemail">
-                <source>Benutzername oder E-Mail</source>
-            </trans-unit>
-            <trans-unit id="login.password">
-                <source>Passwort</source>
-            </trans-unit>
-            <trans-unit id="login.submit">
-                <source>Login</source>
-            </trans-unit>
-            <trans-unit id="login.forgotpass">
-                <source>Passwort vergessen?</source>
-            </trans-unit>
-            <trans-unit id="login.register">
-                <source>Noch nicht registriert?</source>
-            </trans-unit>
-
-
-            <trans-unit id="forgot.title">
-                <source>Passwort vergessen</source>
-            </trans-unit>
-            <trans-unit id="forgot.text">
-                <source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
-                    zum Zurücksetzen des Passworts zugesandt.
-                </source>
-            </trans-unit>
-            <trans-unit id="forgot.usernameemail">
-                <source>Benutzername oder E-Mail</source>
-            </trans-unit>
-            <trans-unit id="forgot.submit">
-                <source>Passwortänderung anfordern</source>
-            </trans-unit>
-            <trans-unit id="forgot.confirm.text">
-                <source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
-                    gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die
-                    E-Mail-Adresse nicht gefunden.
-                </source>
-            </trans-unit>
-            <trans-unit id="forgot.confirm.back">
-                <source>Zurück</source>
-            </trans-unit>
-
-
-            <trans-unit id="forgot.email.salutation">
-                <source>Hallo,</source>
-            </trans-unit>
-            <trans-unit id="forgot.email.title">
-                <source>Hier sind die Instruktionen, um das Passwort zurückzusetzen.</source>
-            </trans-unit>
-            <trans-unit id="forgot.email.message">
-                <source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage
-                    nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben,
-                    setzen Sie bitte Ihr Passwort zurück.:
-                </source>
-            </trans-unit>
-            <trans-unit id="forgot.email.button">
-                <source>Passwort zurücksetzen</source>
-            </trans-unit>
-            <trans-unit id="forgot.email.info">
-                <source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren
-                    Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.
-                </source>
-            </trans-unit>
-
-
-            <trans-unit id="forgot.change.title">
-                <source>Passwort ändern</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.text">
-                <source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss
-                    mindestens aus 6 Zeichen bestehen.
-                </source>
-            </trans-unit>
-            <trans-unit id="forgot.change.password">
-                <source>Neues Passwort</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.passwordrepeat">
-                <source>Neues Passwort wiederholen</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.submit">
-                <source>Neues Passwort speichern</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.error">
-                <source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
-                    abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
-                </source>
-            </trans-unit>
-            <trans-unit id="forgot.change.error2">
-                <source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
-                </source>
-            </trans-unit>
-
-
-            <trans-unit id="forgot.changeformsubmit.title">
-                <source>Passwort wurde geändert</source>
-            </trans-unit>
-            <trans-unit id="forgot.changeformsubmit.message">
-                <source>Vielen Dank, das Passwort wurde erfolgreich geändert.</source>
-            </trans-unit>
-            <trans-unit id="forgot.changeformsubmit.button">
-                <source>Weiter zur Webseite</source>
-            </trans-unit>
-
-
-
-            <trans-unit id="validation.1">
-                <source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
-            </trans-unit>
-            <trans-unit id="validation.2">
-                <source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
-            </trans-unit>
-            <trans-unit id="validation.3">
-                <source>Der gewählte Benutzername existiert bereits.</source>
-            </trans-unit>
-            <trans-unit id="validation.4">
-                <source>Keine E-Mail Adresse angegeben.</source>
-            </trans-unit>
-            <trans-unit id="validation.5">
-                <source>Diese E-Mail Adresse hat kein gültiges Format.</source>
-            </trans-unit>
-            <trans-unit id="validation.6">
-                <source>Diese E-Mail Adresse wurde bereits verwendet.</source>
-            </trans-unit>
-            <trans-unit id="validation.7">
-                <source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
-            </trans-unit>
-            <trans-unit id="validation.8">
-                <source>Die Passworteingaben müssen übereinstimmen.</source>
-            </trans-unit>
-
-
-        </body>
-    </file>
+			</trans-unit>
+			<trans-unit id="login.forgotpass">
+				<source>Passwort vergessen?</source>
+			</trans-unit>
+			<trans-unit id="login.password">
+				<source>Passwort</source>
+			</trans-unit>
+			<trans-unit id="login.register">
+				<source>Noch nicht registriert? Jetzt registrieren</source>
+			</trans-unit>
+			<trans-unit id="login.submit">
+				<source>Login</source>
+			</trans-unit>
+			<trans-unit id="login.title">
+				<source>Jetzt einloggen</source>
+			</trans-unit>
+			<trans-unit id="login.username">
+				<source>Benutzername</source>
+			</trans-unit>
+			<trans-unit id="login.usernameemail">
+				<source>Benutzername oder E-Mail</source>
+			</trans-unit>
+			<trans-unit id="validation.1">
+				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
+			</trans-unit>
+			<trans-unit id="validation.2">
+				<source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
+			</trans-unit>
+			<trans-unit id="validation.3">
+				<source>Der gewählte Benutzername existiert bereits.</source>
+			</trans-unit>
+			<trans-unit id="validation.4">
+				<source>Keine E-Mail Adresse angegeben.</source>
+			</trans-unit>
+			<trans-unit id="validation.5">
+				<source>Diese E-Mail Adresse hat kein gültiges Format.</source>
+			</trans-unit>
+			<trans-unit id="validation.6">
+				<source>Diese E-Mail Adresse wurde bereits verwendet.</source>
+			</trans-unit>
+			<trans-unit id="validation.7">
+				<source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
+			</trans-unit>
+			<trans-unit id="validation.8">
+				<source>Die Passworteingaben müssen übereinstimmen.</source>
+			</trans-unit>
+			<trans-unit id="validation.9">
+				<source>Dies ist ein Pflichtfeld.</source>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

@@ -6,10 +6,10 @@ use SaschaEnde\Users\Domain\Model\Registration;
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class RegisterController extends ActionController {
 
@@ -57,9 +57,25 @@ class RegisterController extends ActionController {
             $registration = new Registration();
         }
 
+        // Setup optionalfields
+        $optionalFields = [];
+        $requiredFields = explode(',', $this->settings['requiredFields']);
+        foreach (explode(',', $this->settings['optionalFields']) as $field) {
+            if (in_array($field, $requiredFields)) {
+                $required = true;
+            } else {
+                $required = false;
+            }
+            $optionalFields[] = [
+                'id' => $field,
+                'required' => $required
+            ];
+        }
+
         $this->view->assignMultiple([
             'errors' => $errors,
-            'registration' => $registration
+            'registration' => $registration,
+            'optionalFields' => $optionalFields
         ]);
     }
 
@@ -89,14 +105,10 @@ class RegisterController extends ActionController {
         // No email
         if (empty($registration->getEmail())) {
             $errors['email'][] = '4';
-        }
-
-        // E-Mail Format
+        } // E-Mail Format
         elseif (!filter_var($registration->getEmail(), FILTER_VALIDATE_EMAIL)) {
             $errors['email'][] = '5';
-        }
-
-        // Check if email exists
+        } // Check if email exists
         elseif ($this->frontendUserRepository->findOneByEmail($registration->getEmail())) {
             $errors['email'][] = '6';
         }
@@ -104,11 +116,20 @@ class RegisterController extends ActionController {
         // Minumum length of password
         if (mb_strlen($registration->getPassword()) < 6) {
             $errors['password'][] = '7';
-        }
-
-        // Same passwords
+        } // Same passwords
         elseif ($registration->getPassword() != $registration->getPasswordrepeat()) {
             $errors['password'][] = '8';
+        }
+
+        // ---------------------------------------------------------------------
+        // Check required fields
+
+        $requiredFields = explode(',', $this->settings['requiredFields']);
+        foreach ($requiredFields as $fieldname) {
+            $func = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
+            if (empty($registration->$func())) {
+                $errors[$fieldname][] = '9';
+            }
         }
 
         // ---------------------------------------------------------------------
@@ -139,10 +160,19 @@ class RegisterController extends ActionController {
                 $user->addUsergroup($this->frontendUserGroupRepository->findOneByUid($groupId));
             }
 
+            // Add optional fields
+            $requiredFields = explode(',', $this->settings['optionalFields']);
+            foreach ($requiredFields as $fieldname) {
+                $getFunc = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
+                $setFunc = 'set' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
+                $user->$setFunc($registration->$getFunc());
+            }
+
             // Hash
             $registerHash = md5(uniqid() . time());
             $user->setUsersRegisterhash($registerHash);
 
+            // Add now
             $this->frontendUserRepository->add($user);
 
             // Save directly
@@ -175,7 +205,7 @@ class RegisterController extends ActionController {
             );
 
             $this->view->assignMultiple([
-                'user'  => $user
+                'user' => $user
             ]);
         }
 
@@ -202,12 +232,12 @@ class RegisterController extends ActionController {
             }
 
             $this->view->assignMultiple([
-                'user'  => $user,
-                'success'    => true
+                'user' => $user,
+                'success' => true
             ]);
-        }else{
+        } else {
             $this->view->assignMultiple([
-                'success'    => false
+                'success' => false
             ]);
         }
     }

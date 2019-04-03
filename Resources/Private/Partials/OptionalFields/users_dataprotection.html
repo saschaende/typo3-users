@@ -1,0 +1,11 @@
+<div class="form-check">
+    <f:form.checkbox class="form-check-input" id="users_dataprotection" property="usersDataprotection" additionalAttributes="{autocomplete:'new-password'}" value="1"/>
+    <label class="form-check-label" for="users_dataprotection">
+        Ich habe die Datenschutzinformationen gelesen (<f:link.page pageUid="{settings.linkDataprotection}" target="_blank">hier lesen</f:link.page>)<f:if condition="{field.required}">*</f:if>
+    </label>
+    <div class="text-danger">
+        <f:for each="{errors.users_dataprotection}" as="errorcode">
+            <div><f:render partial="Validation" section="error{errorcode}"/></div>
+        </f:for>
+    </div>
+</div>

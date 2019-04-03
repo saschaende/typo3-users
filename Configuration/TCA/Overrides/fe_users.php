@@ -60,6 +60,42 @@ $temporaryColumns = [
             ],
         ],
     ],
+    'users_conditions' => [
+        'exclude' => true,
+        'label' => 'Conditions (AGB)',
+        'config' => [
+            'type' => 'check',
+            'items' => [
+                '1' => [
+                    '0' => 'Yes'
+                ]
+            ],
+        ],
+    ],
+    'users_dataprotection' => [
+        'exclude' => true,
+        'label' => 'Data protection (Datenschutz)',
+        'config' => [
+            'type' => 'check',
+            'items' => [
+                '1' => [
+                    '0' => 'Yes'
+                ]
+            ],
+        ],
+    ],
+    'users_newsletter' => [
+        'exclude' => true,
+        'label' => 'Newsletter',
+        'config' => [
+            'type' => 'check',
+            'items' => [
+                '1' => [
+                    '0' => 'Yes'
+                ]
+            ],
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -69,5 +105,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash'
+    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_conditions,users_dataprotection,users_newsletter'
 );

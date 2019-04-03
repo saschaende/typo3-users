@@ -30,10 +30,26 @@ class User extends FrontendUser {
      */
     protected $usersRegisterhash = '';
 
+
     /**
      * @var bool
      */
     protected $disable = false;
+
+    /**
+     * @var string
+     */
+    protected $usersConditions = '';
+
+    /**
+     * @var string
+     */
+    protected $usersDataprotection = '';
+
+    /**
+     * @var string
+     */
+    protected $usersNewsletter = '';
 
     /**
      * @return \DateTime
@@ -117,6 +133,48 @@ class User extends FrontendUser {
      */
     public function setDisable(bool $disable) {
         $this->disable = $disable;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsersConditions(): string {
+        return $this->usersConditions;
+    }
+
+    /**
+     * @param string $usersConditions
+     */
+    public function setUsersConditions(string $usersConditions) {
+        $this->usersConditions = $usersConditions;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsersDataprotection(): string {
+        return $this->usersDataprotection;
+    }
+
+    /**
+     * @param string $usersDataprotection
+     */
+    public function setUsersDataprotection(string $usersDataprotection) {
+        $this->usersDataprotection = $usersDataprotection;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsersNewsletter(): string {
+        return $this->usersNewsletter;
+    }
+
+    /**
+     * @param string $usersNewsletter
+     */
+    public function setUsersNewsletter(string $usersNewsletter) {
+        $this->usersNewsletter = $usersNewsletter;
     }
 
 }
