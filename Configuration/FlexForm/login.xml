@@ -14,7 +14,7 @@
                     <settings.allowEmailLogin>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Also allow login with email adress</label>
+                            <label>Also allow login with email adress (recommended)</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -24,7 +24,7 @@
                     <settings.usersFolder>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Location of users data</label>
+                            <label>Location of users data (required)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -40,7 +40,7 @@
                     <settings.redirectSuccess>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Redirect after success login</label>
+                            <label>Redirect link after success login (required)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>

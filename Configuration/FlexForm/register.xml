@@ -14,7 +14,7 @@
                     <settings.usersFolder>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Location of users data</label>
+                            <label>Location of users data (required)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -30,7 +30,7 @@
                     <settings.userGroups>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Usergroup(s) for new users</label>
+                            <label>Usergroup(s) for new users (required)</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectMultipleSideBySide</renderType>
@@ -45,7 +45,7 @@
                     <settings.login>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Automatically login after successful confirmation of the account</label>
+                            <label>Automatically login after successful confirmation of the account (optional)</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -56,7 +56,7 @@
                     <settings.successLink>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Link after successfull confirmation</label>
+                            <label>Link after successfull confirmation via email (optional but recommended)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -72,7 +72,7 @@
                     <settings.loginPid>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Link to login Page</label>
+                            <label>Link to login Page at the bottom of the form (optional but recommended)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -100,7 +100,7 @@
 
                     <settings.optionalFields>
                         <TCEforms>
-                            <label>Show fields</label>
+                            <label>Show fields (optional)</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectMultipleSideBySide</renderType>
@@ -153,7 +153,7 @@
 
                     <settings.requiredFields>
                         <TCEforms>
-                            <label>Required fields</label>
+                            <label>Required fields (optional)</label>
                             <config>
                                 <type>select</type>
                                 <renderType>selectMultipleSideBySide</renderType>
@@ -209,7 +209,7 @@
                     <settings.linkConditions>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Link to conditions page</label>
+                            <label>Link to conditions page (required if field is set)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -226,7 +226,7 @@
                     <settings.linkDataprotection>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Link to data protection page</label>
+                            <label>Link to data protection page (required if field is set)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -256,7 +256,7 @@
                     <settings.senderEmail>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Sender email adress</label>
+                            <label>Sender email adress (required)</label>
                             <config>
                                 <type>input</type>
                                 <size>30</size>
@@ -268,7 +268,7 @@
                     <settings.senderName>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Sender name</label>
+                            <label>Sender name (required)</label>
                             <config>
                                 <type>input</type>
                                 <size>30</size>
@@ -280,7 +280,7 @@
                     <settings.subject>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Subject of the email</label>
+                            <label>Subject of the email (required)</label>
                             <config>
                                 <type>input</type>
                                 <size>60</size>

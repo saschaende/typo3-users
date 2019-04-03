@@ -14,7 +14,7 @@
                     <settings.usersFolder>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Location of users data</label>
+                            <label>Location of users data (required)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -30,7 +30,7 @@
                     <settings.login>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Automatically login after successful password change</label>
+                            <label>Automatically login after successful password change (optional)</label>
                             <config>
                                 <type>check</type>
                             </config>
@@ -41,7 +41,7 @@
                     <settings.successLink>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Link after successfull password change</label>
+                            <label>Link after successfull password change (optional)</label>
                             <config>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
@@ -69,7 +69,7 @@
                     <settings.senderEmail>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Sender email adress</label>
+                            <label>Sender email adress (required)</label>
                             <config>
                                 <type>input</type>
                                 <size>30</size>
@@ -81,7 +81,7 @@
                     <settings.senderName>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Sender name</label>
+                            <label>Sender name (required)</label>
                             <config>
                                 <type>input</type>
                                 <size>30</size>
@@ -93,7 +93,7 @@
                     <settings.subject>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Subject of the email</label>
+                            <label>Subject of the email (required)</label>
                             <config>
                                 <type>input</type>
                                 <size>60</size>
