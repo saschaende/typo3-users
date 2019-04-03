@@ -17,7 +17,8 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * 0.4.0 Logout
 * 0.4.0 Forgot password
 * 0.4.0 Register
-* 0.5.0 Banlist for domains/hosts (spamschlucker ...)
+* 0.5.0 Banlist for not allowed domains/hosts (spamschlucker ...)
+* 0.5.0 Admin tool for import of newest spam host list
 
 ## In development
 
