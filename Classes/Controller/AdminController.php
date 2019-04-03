@@ -5,6 +5,7 @@ namespace SaschaEnde\Users\Controller;
 use SaschaEnde\Users\Domain\Model\BannedHosts;
 use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
 use t3h\t3h;
+use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class AdminController extends ActionController {
@@ -14,10 +15,18 @@ class AdminController extends ActionController {
      */
     protected $bannedHostsRepository;
 
+    /**
+     * @var FrontendUserRepository
+     */
+    protected $frontendUserRepository;
+
     public function initializeAction() {
         // Banned Hosts Repo
         $this->bannedHostsRepository = $this->objectManager->get(BannedHostsRepository::class);
         $this->bannedHostsRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
+        // User Repo
+        $this->frontendUserRepository = $this->objectManager->get(FrontendUserRepository::class);
+        $this->frontendUserRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
     }
 
     public function listAction() {
