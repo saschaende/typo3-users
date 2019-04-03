@@ -53,7 +53,7 @@ class ForgotController extends ActionController {
         }
 
         // Send email, if user found
-        if ($user) {
+        if ($user && !empty($arguments['username'])) {
             /** @var User $user */
             // Make string and time
             $forgotHash = md5(uniqid() . time());
