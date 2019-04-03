@@ -58,10 +58,10 @@ The extension ships some TypoScript code which needs to be included.
 * Go to any page
 * Click on "add content element"
 * Switch to the tab "Users"
-* Chooke a plugin and insert it
-* Edit the plugin
-* Edit the settings in the "plugin" tab
-* Thats it and that how every users plugin works
+* Choose a plugin (login, register, ...) and insert it
+* Edit the plugin (pencil)
+* Edit the settings in the "plugin" tab (see the screenshots here in the documentation)
+* Thats it and that's how every "users" plugin works
 * No further typoscript
 
 ## Important notes
