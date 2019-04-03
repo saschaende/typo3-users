@@ -35,7 +35,7 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * DE https://filmmusic.io/de/login/
 * EN: https://filmmusic.io/login/
 
-## Forgot password
+### Forgot password
 * DE https://filmmusic.io/de/login/passwort-vergessen/
 * EN: https://filmmusic.io/login/forgot-password/
 
