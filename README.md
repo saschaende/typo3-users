@@ -27,6 +27,20 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * Change profile data
 * Change email (with verficiation of new email)
 
+## Demos
+
+### Login
+* DE https://filmmusic.io/de/login/
+* EN: https://filmmusic.io/login/
+
+## Forgot password
+* DE https://filmmusic.io/de/login/passwort-vergessen/
+* EN: https://filmmusic.io/login/forgot-password/
+
+### Register
+* DE: https://filmmusic.io/de/registrieren/
+* EN: https://filmmusic.io/register/
+
 ## Important notes
 
 * Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses. The register plugin of this users extension will not allow email adresses as usernames.
