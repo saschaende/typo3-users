@@ -371,6 +371,10 @@
 				<source>Dies ist ein Pflichtfeld.</source>
 				<target>This field is required.</target>
 			</trans-unit>
+			<trans-unit id="validation.10">
+				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
+				<target>Registration with this e-mail address is not possible.</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

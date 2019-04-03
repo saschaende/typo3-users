@@ -277,6 +277,9 @@
 			<trans-unit id="validation.9">
 				<source>Dies ist ein Pflichtfeld.</source>
 			</trans-unit>
+			<trans-unit id="validation.10">
+				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

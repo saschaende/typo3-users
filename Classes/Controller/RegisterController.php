@@ -2,6 +2,7 @@
 
 namespace SaschaEnde\Users\Controller;
 
+use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
 use SaschaEnde\Users\Domain\Model\Registration;
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
@@ -10,6 +11,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class RegisterController extends ActionController {
 
@@ -23,11 +25,20 @@ class RegisterController extends ActionController {
      */
     protected $frontendUserGroupRepository;
 
+    /**
+     * @var BannedHostsRepository
+     */
+    protected $bannedHostsRepository;
+
     public function initializeAction() {
 
         // Load groups repo
         $this->frontendUserGroupRepository = $this->objectManager->get(FrontendUserGroupRepository::class);
         $this->frontendUserGroupRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
+
+        // Banned Hosts Repo
+        $this->bannedHostsRepository = $this->objectManager->get(BannedHostsRepository::class);
+        $this->bannedHostsRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
 
         // Load user repo
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
@@ -111,6 +122,9 @@ class RegisterController extends ActionController {
         } // Check if email exists
         elseif ($this->frontendUserRepository->findOneByEmail($registration->getEmail())) {
             $errors['email'][] = '6';
+        }
+        elseif ($this->bannedHostsRepository->checkIfBanned($registration->getEmail())) {
+            $errors['email'][] = '10';
         }
 
         // Minumum length of password
