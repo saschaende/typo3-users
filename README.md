@@ -26,6 +26,8 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 
 * Change profile data
 * Change email (with verficiation of new email)
+* Scheduler to remove not activated users
+* Newsletter with scheduler
 
 ## Demos
 
