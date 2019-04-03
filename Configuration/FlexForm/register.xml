@@ -48,6 +48,7 @@
                             <label>Automatically login after successful confirmation of the account (optional)</label>
                             <config>
                                 <type>check</type>
+                                <default>1</default>
                             </config>
                         </TCEforms>
                     </settings.login>

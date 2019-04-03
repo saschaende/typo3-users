@@ -57,6 +57,11 @@ class User extends FrontendUser {
     protected $usersWebsite = 0;
 
     /**
+     * @var int
+     */
+    protected $usersLanguage = 0;
+
+    /**
      * @return \DateTime
      */
     public function getUsersLastlogin() {
@@ -194,6 +199,20 @@ class User extends FrontendUser {
      */
     public function setUsersWebsite(int $usersWebsite) {
         $this->usersWebsite = $usersWebsite;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUsersLanguage(): int {
+        return $this->usersLanguage;
+    }
+
+    /**
+     * @param int $usersLanguage
+     */
+    public function setUsersLanguage(int $usersLanguage) {
+        $this->usersLanguage = $usersLanguage;
     }
 
 

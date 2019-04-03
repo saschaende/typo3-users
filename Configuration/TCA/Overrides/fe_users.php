@@ -109,6 +109,20 @@ $temporaryColumns = [
             'show_thumbs' => '1',
         ],
     ],
+    'users_language' => [
+        'exclude' => 1,
+        'label' => 'Language',
+        'config' => [
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'sys_language',
+            'size' => '1',
+            'maxitems' => '1',
+            'minitems' => '0',
+            'show_thumbs' => '1',
+            'default'   => '0'
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -118,5 +132,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_conditions,users_dataprotection,users_newsletter,users_website'
+    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_conditions,users_dataprotection,users_newsletter,users_website,users_language'
 );

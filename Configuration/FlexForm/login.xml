@@ -17,9 +17,21 @@
                             <label>Also allow login with email adress (recommended)</label>
                             <config>
                                 <type>check</type>
+                                <default>1</default>
                             </config>
                         </TCEforms>
                     </settings.allowEmailLogin>
+
+                    <settings.updateLanguage>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Update user language with every login (recommended)</label>
+                            <config>
+                                <type>check</type>
+                                <default>1</default>
+                            </config>
+                        </TCEforms>
+                    </settings.updateLanguage>
 
                     <settings.usersFolder>
                         <TCEforms>

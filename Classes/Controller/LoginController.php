@@ -81,7 +81,17 @@ class LoginController extends ActionController {
         // Save last login
         $dt = new \DateTime();
         $user->setUsersLastlogin($dt);
+
+        // Increment login count
         $user->setUsersLogincount($user->getUsersLogincount()+1);
+
+        // set language
+        if($this->settings['updateLanguage']){
+            $user->setUsersLanguage($GLOBALS['TSFE']->sys_language_uid);
+        }
+
+
+        // update now
         $this->frontendUserRepository->update($user);
 
         // Login now
