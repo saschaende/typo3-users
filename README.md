@@ -43,6 +43,27 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * DE: https://filmmusic.io/de/registrieren/
 * EN: https://filmmusic.io/register/
 
+## Installation
+
+### Preparation: Include static TypoScript
+The extension ships some TypoScript code which needs to be included.
+
+* Switch to the root page of your site.
+* Switch to the Template module and select Info/Modify.
+* Press the link Edit the whole template record and switch to the tab Includes.
+* Select "Users (users)" at the field Include static (from extensions)
+
+### Use the plugins
+
+* Go to any page
+* Click on "add content element"
+* Switch to the tab "Users"
+* Chooke a plugin and insert it
+* Edit the plugin
+* Edit the settings in the "plugin" tab
+* Thats it and that how every users plugin works
+* No further typoscript
+
 ## Important notes
 
 * Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses. The register plugin of this users extension will not allow email adresses as usernames.
