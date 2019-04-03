@@ -16,15 +16,15 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 * Login
 * Logout
 * Forgot password
+* Register
 
 ## In development
 
-* Register
+* Change password
 
 ## Planned / ToDo
 
 * Change profile data
-* Change password
 * Change email (with verficiation of new email)
 
 ## Important notes
@@ -53,3 +53,16 @@ General settings
 
 Email settings
 ![plugin](Documentation/forgotpass2.jpg)
+
+### Plugin: Register
+
+General settings
+![plugin](Documentation/register1.JPG)
+![plugin](Documentation/register2.JPG)
+
+Field settings
+![plugin](Documentation/register3.JPG)
+![plugin](Documentation/register4.JPG)
+
+Email settings
+![plugin](Documentation/register5.JPG)
