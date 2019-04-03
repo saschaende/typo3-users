@@ -96,6 +96,19 @@ $temporaryColumns = [
             ],
         ],
     ],
+    'users_website' => [
+        'exclude' => 1,
+        'label' => 'Registered on this website',
+        'config' => [
+            'type' => 'group',
+            'internal_type' => 'db',
+            'allowed' => 'pages',
+            'size' => '1',
+            'maxitems' => '1',
+            'minitems' => '0',
+            'show_thumbs' => '1',
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -105,5 +118,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_conditions,users_dataprotection,users_newsletter'
+    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_conditions,users_dataprotection,users_newsletter,users_website'
 );

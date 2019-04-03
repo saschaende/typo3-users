@@ -1,7 +1,7 @@
 <div class="form-group">
 
     <label for="zip">
-        Postleitzahl<f:if condition="{field.required}">*</f:if>
+        <f:translate key="register.field.zip" /><f:if condition="{field.required}">*</f:if>
     </label>
     <f:form.textfield class="form-control{f:if(condition: '{errors.zip}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.zip}',then: ' is-valid')}" id="zip" property="zip" additionalAttributes="{autocomplete:'new-password'}"/>
     <div class="text-danger">

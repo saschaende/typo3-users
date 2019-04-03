@@ -1,6 +1,6 @@
 <div class="form-group">
     <label for="city">
-        Stadt<f:if condition="{field.required}">*</f:if>
+        <f:translate key="register.field.city" /><f:if condition="{field.required}">*</f:if>
     </label>
     <f:form.textfield class="form-control{f:if(condition: '{errors.city}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.city}',then: ' is-valid')}" id="city" property="city" additionalAttributes="{autocomplete:'new-password'}"/>
     <div class="text-danger">

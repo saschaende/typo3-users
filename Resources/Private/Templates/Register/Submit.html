@@ -6,24 +6,19 @@
     <div class="card login-box">
         <div class="card-body">
             <h4 class="card-title">
-                Vielen Dank für Deine Registrierung
+                <f:translate key="register.submit.title" />
             </h4>
             <div class="card-text">
-                <p>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung Deines
-                    Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin.
-                    Hier nochmal deine Angaben:</p>
+                <p><f:translate key="register.submit.message" /></p>
 
                 <p>
-                    <b>Benutzername:</b> {user.username}<br>
-                    <b>E-Mail:</b> {user.email}
+                    <b><f:translate key="register.submit.username" />:</b> {user.username}<br>
+                    <b><f:translate key="register.submit.email" />:</b> {user.email}
                 </p>
             </div>
         </div>
         <div class="card-footer">
-            <small>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten
-                automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
-                angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account
-                innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.
+            <small><f:translate key="register.submit.note" />
             </small>
         </div>
     </div>

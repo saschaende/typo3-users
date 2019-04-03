@@ -1,7 +1,7 @@
 <div class="form-group">
 
     <label for="company">
-        Firma<f:if condition="{field.required}">*</f:if>
+        <f:translate key="register.field.company" /><f:if condition="{field.required}">*</f:if>
     </label>
     <f:form.textfield class="form-control{f:if(condition: '{errors.company}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.company}',then: ' is-valid')}" id="company" property="company" additionalAttributes="{autocomplete:'new-password'}"/>
     <div class="text-danger">

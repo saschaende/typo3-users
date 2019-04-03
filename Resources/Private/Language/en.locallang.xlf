@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-04-02T06:35:16Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-04-03T19:14:19Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="forgot.change.error">
@@ -149,6 +149,191 @@
 			<trans-unit id="login.usernameemail">
 				<source>Benutzername oder E-Mail</source>
 				<target>Username or email</target>
+			</trans-unit>
+			<trans-unit id="register.confirm.email">
+				<source>E-Mail</source>
+				<target>Email</target>
+			</trans-unit>
+			<trans-unit id="register.confirm.error.message">
+				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits
+                    freigeschaltet.
+                </source>
+				<target>This link is no longer valid. Or it has already been used and the account is already activated.
+                </target>
+			</trans-unit>
+			<trans-unit id="register.confirm.error.title">
+				<source>Fehler</source>
+				<target>Error</target>
+			</trans-unit>
+			<trans-unit id="register.confirm.message">
+				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet
+                    bist.
+                </source>
+				<target>Your account is now activated. Here again the data with which you are registered with us.
+                </target>
+			</trans-unit>
+			<trans-unit id="register.confirm.next">
+				<source>Weiter</source>
+				<target>Next</target>
+			</trans-unit>
+			<trans-unit id="register.confirm.title">
+				<source>Vielen Dank für Deine Registrierung</source>
+				<target>Thank you very much for your registration</target>
+			</trans-unit>
+			<trans-unit id="register.confirm.username">
+				<source>Benutzername</source>
+				<target>Username</target>
+			</trans-unit>
+			<trans-unit id="register.email.button">
+				<source>Registrierung bestätigen</source>
+				<target>Confirm registration</target>
+			</trans-unit>
+			<trans-unit id="register.email.message">
+				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf
+                    unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:
+                </source>
+				<target>Thank you for your interest and your registration on our website. With the following link you can now activate your account:</target>
+			</trans-unit>
+			<trans-unit id="register.email.notes">
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
+                    Daten
+                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
+                    angegeben
+                    oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der
+                    nächsten Stunden ebenfalls automatisch wieder entfernt.
+                </source>
+				<target>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.
+                </target>
+			</trans-unit>
+			<trans-unit id="register.email.salutation">
+				<source>Hallo</source>
+				<target>Hello</target>
+			</trans-unit>
+			<trans-unit id="register.email.title">
+				<source>Deine Registrierung auf unserer Webseite</source>
+				<target>Your registration on our website</target>
+			</trans-unit>
+			<trans-unit id="register.field.address">
+				<source>Straße/Hausnr.</source>
+				<target>Street/House No.</target>
+			</trans-unit>
+			<trans-unit id="register.field.city">
+				<source>Stadt</source>
+				<target>City</target>
+			</trans-unit>
+			<trans-unit id="register.field.company">
+				<source>Firma</source>
+				<target>Company</target>
+			</trans-unit>
+			<trans-unit id="register.field.conditions">
+				<source>Ich stimme den AGB zu</source>
+				<target>I agree to the terms and conditions</target>
+			</trans-unit>
+			<trans-unit id="register.field.conditions.read">
+				<source>hier lesen</source>
+				<target>read here</target>
+			</trans-unit>
+			<trans-unit id="register.field.dataprotection">
+				<source>Ich habe die Datenschutzinformationen gelesen</source>
+				<target>I have read the data protection information</target>
+			</trans-unit>
+			<trans-unit id="register.field.dataprotection.read">
+				<source>hier lesen</source>
+				<target>read here</target>
+			</trans-unit>
+			<trans-unit id="register.field.firstname">
+				<source>Vorname</source>
+				<target>First name</target>
+			</trans-unit>
+			<trans-unit id="register.field.lastname">
+				<source>Nachname</source>
+				<target>Last name</target>
+			</trans-unit>
+			<trans-unit id="register.field.newsletter">
+				<source>Ich abonniere den Newsletter</source>
+				<target>I subscribe to the newsletter</target>
+			</trans-unit>
+			<trans-unit id="register.field.telephone">
+				<source>Telefon</source>
+				<target>Phone</target>
+			</trans-unit>
+			<trans-unit id="register.field.zip">
+				<source>Postleitzahl</source>
+				<target>Zip</target>
+			</trans-unit>
+			<trans-unit id="register.form.button">
+				<source>Jetzt registrieren</source>
+				<target>Register now</target>
+			</trans-unit>
+			<trans-unit id="register.form.email">
+				<source>E-Mail Adresse</source>
+				<target>Email address</target>
+			</trans-unit>
+			<trans-unit id="register.form.email.note">
+				<source>An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.</source>
+				<target>At this e-mail address you will receive a link to confirm your account.</target>
+			</trans-unit>
+			<trans-unit id="register.form.loginlink">
+				<source>Du bist bereits registriert? Hier einloggen</source>
+				<target>You are already registered? Login here</target>
+			</trans-unit>
+			<trans-unit id="register.form.password">
+				<source>Passwort</source>
+				<target>Password</target>
+			</trans-unit>
+			<trans-unit id="register.form.password.note">
+				<source>Das Passwort muss aus mindestens 6 Zeichen bestehen.</source>
+				<target>The password must consist of at least 6 characters.</target>
+			</trans-unit>
+			<trans-unit id="register.form.repeatpassword">
+				<source>Passwort wiederholen</source>
+				<target>Repeat password</target>
+			</trans-unit>
+			<trans-unit id="register.form.title">
+				<source>Registrierung</source>
+				<target>Registration</target>
+			</trans-unit>
+			<trans-unit id="register.form.username">
+				<source>Gewünschter Benutzername</source>
+				<target>Desired username</target>
+			</trans-unit>
+			<trans-unit id="register.form.username.note">
+				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
+                    enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
+                </source>
+				<target>Choose a username with at least 3 characters. This may contain letters and numbers. Special characters and spaces are not allowed.
+                </target>
+			</trans-unit>
+			<trans-unit id="register.submit.email">
+				<source>E-Mail</source>
+				<target>Email</target>
+			</trans-unit>
+			<trans-unit id="register.submit.message">
+				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung
+                    Deines
+                    Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin.
+                    Hier nochmal deine Angaben:
+                </source>
+				<target>We have now sent an e-mail to the address you provided with a link to confirm your account. Also check your spam folder, sometimes emails get lost there. Here are your details again:
+                </target>
+			</trans-unit>
+			<trans-unit id="register.submit.note">
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
+                    Daten
+                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
+                    angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account
+                    innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.
+                </source>
+				<target>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.
+                </target>
+			</trans-unit>
+			<trans-unit id="register.submit.title">
+				<source>Vielen Dank für Deine Registrierung</source>
+				<target>Thank you very much for your registration</target>
+			</trans-unit>
+			<trans-unit id="register.submit.username">
+				<source>Benutzername</source>
+				<target>Úsername</target>
 			</trans-unit>
 			<trans-unit id="validation.1">
 				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>

@@ -52,6 +52,11 @@ class User extends FrontendUser {
     protected $usersNewsletter = '';
 
     /**
+     * @var int
+     */
+    protected $usersWebsite = 0;
+
+    /**
      * @return \DateTime
      */
     public function getUsersLastlogin() {
@@ -176,5 +181,21 @@ class User extends FrontendUser {
     public function setUsersNewsletter(string $usersNewsletter) {
         $this->usersNewsletter = $usersNewsletter;
     }
+
+    /**
+     * @return int
+     */
+    public function getUsersWebsite(): int {
+        return $this->usersWebsite;
+    }
+
+    /**
+     * @param int $usersWebsite
+     */
+    public function setUsersWebsite(int $usersWebsite) {
+        $this->usersWebsite = $usersWebsite;
+    }
+
+
 
 }

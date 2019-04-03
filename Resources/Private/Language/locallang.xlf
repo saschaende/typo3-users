@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2019-04-02T06:35:16Z" product-name="users">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-04-03T19:14:19Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="forgot.change.error">
@@ -109,6 +109,146 @@
 			</trans-unit>
 			<trans-unit id="login.usernameemail">
 				<source>Benutzername oder E-Mail</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.error.message">
+				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits
+                    freigeschaltet.
+                </source>
+			</trans-unit>
+			<trans-unit id="register.confirm.error.title">
+				<source>Fehler</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.message">
+				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet
+                    bist.
+                </source>
+			</trans-unit>
+			<trans-unit id="register.confirm.next">
+				<source>Weiter</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.title">
+				<source>Vielen Dank für Deine Registrierung</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.username">
+				<source>Benutzername</source>
+			</trans-unit>
+			<trans-unit id="register.email.button">
+				<source>Registrierung bestätigen</source>
+			</trans-unit>
+			<trans-unit id="register.email.message">
+				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf
+                    unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:
+                </source>
+			</trans-unit>
+			<trans-unit id="register.email.notes">
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
+                    Daten
+                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
+                    angegeben
+                    oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der
+                    nächsten Stunden ebenfalls automatisch wieder entfernt.
+                </source>
+			</trans-unit>
+			<trans-unit id="register.email.salutation">
+				<source>Hallo</source>
+			</trans-unit>
+			<trans-unit id="register.email.title">
+				<source>Deine Registrierung auf unserer Webseite</source>
+			</trans-unit>
+			<trans-unit id="register.field.address">
+				<source>Straße/Hausnr.</source>
+			</trans-unit>
+			<trans-unit id="register.field.city">
+				<source>Stadt</source>
+			</trans-unit>
+			<trans-unit id="register.field.company">
+				<source>Firma</source>
+			</trans-unit>
+			<trans-unit id="register.field.conditions">
+				<source>Ich stimme den AGB zu</source>
+			</trans-unit>
+			<trans-unit id="register.field.conditions.read">
+				<source>hier lesen</source>
+			</trans-unit>
+			<trans-unit id="register.field.dataprotection">
+				<source>Ich habe die Datenschutzinformationen gelesen</source>
+			</trans-unit>
+			<trans-unit id="register.field.dataprotection.read">
+				<source>hier lesen</source>
+			</trans-unit>
+			<trans-unit id="register.field.firstname">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="register.field.lastname">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="register.field.newsletter">
+				<source>Ich abonniere den Newsletter</source>
+			</trans-unit>
+			<trans-unit id="register.field.telephone">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="register.field.zip">
+				<source>Postleitzahl</source>
+			</trans-unit>
+			<trans-unit id="register.form.button">
+				<source>Jetzt registrieren</source>
+			</trans-unit>
+			<trans-unit id="register.form.email">
+				<source>E-Mail Adresse</source>
+			</trans-unit>
+			<trans-unit id="register.form.email.note">
+				<source>An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.</source>
+			</trans-unit>
+			<trans-unit id="register.form.loginlink">
+				<source>Du bist bereits registriert? Hier einloggen</source>
+			</trans-unit>
+			<trans-unit id="register.form.password">
+				<source>Passwort</source>
+			</trans-unit>
+			<trans-unit id="register.form.password.note">
+				<source>Das Passwort muss aus mindestens 6 Zeichen bestehen.</source>
+			</trans-unit>
+			<trans-unit id="register.form.repeatpassword">
+				<source>Passwort wiederholen</source>
+			</trans-unit>
+			<trans-unit id="register.form.title">
+				<source>Registrierung</source>
+			</trans-unit>
+			<trans-unit id="register.form.username">
+				<source>Gewünschter Benutzername</source>
+			</trans-unit>
+			<trans-unit id="register.form.username.note">
+				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
+                    enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
+                </source>
+			</trans-unit>
+			<trans-unit id="register.submit.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="register.submit.message">
+				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung
+                    Deines
+                    Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin.
+                    Hier nochmal deine Angaben:
+                </source>
+			</trans-unit>
+			<trans-unit id="register.submit.note">
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
+                    Daten
+                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
+                    angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account
+                    innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.
+                </source>
+			</trans-unit>
+			<trans-unit id="register.submit.title">
+				<source>Vielen Dank für Deine Registrierung</source>
+			</trans-unit>
+			<trans-unit id="register.submit.username">
+				<source>Benutzername</source>
 			</trans-unit>
 			<trans-unit id="validation.1">
 				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>

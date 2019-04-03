@@ -1,7 +1,7 @@
 <div class="form-group">
 
     <label for="telephone">
-        Telefon<f:if condition="{field.required}">*</f:if>
+        <f:translate key="register.field.telephone" /><f:if condition="{field.required}">*</f:if>
     </label>
     <f:form.textfield class="form-control{f:if(condition: '{errors.telephone}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.telephone}',then: ' is-valid')}" id="telephone" property="telephone" additionalAttributes="{autocomplete:'new-password'}"/>
     <div class="text-danger">

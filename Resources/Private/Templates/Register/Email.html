@@ -7,29 +7,25 @@
         <tbody>
         <tr>
             <td style="border-bottom:1px solid #f6f6f6;"><h1
-                    style="font-size:14px; font-family:arial; margin:0px; font-weight:bold;">Hallo {user.username},</h1>
-                <p style="margin-top:0px; color:#bbbbbb;">Deine Registrierung auf unserer Webseite</p></td>
+                    style="font-size:14px; font-family:arial; margin:0px; font-weight:bold;"><f:translate key="register.email.salutation" /> {user.username},</h1>
+                <p style="margin-top:0px; color:#bbbbbb;"><f:translate key="register.email.title" /></p></td>
         </tr>
         <tr>
             <td style="padding:10px 0 30px 0;">
                 <p>
-                    Vielen Dank für Dein Interesse und Deine Registrierung auf
-                    unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:
+                    <f:translate key="register.email.message" />
                 </p>
                 <center>
                     <a href="{link}"
                        style="display: inline-block; padding: 11px 30px; margin: 20px 0px 30px; font-size: 15px; color: #fff; background: #00c0c8; border-radius: 60px; text-decoration:none;">
-                        &nbsp;&nbsp;Registrierung bestätigen&nbsp;&nbsp;
+                        &nbsp;&nbsp;<f:translate key="register.email.button" />&nbsp;&nbsp;
                     </a>
                 </center>
             </td>
         </tr>
         <tr>
             <td style="border-top:1px solid #f6f6f6; padding-top:20px; color:#777">
-                Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten
-                automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben
-                oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der
-                nächsten Stunden ebenfalls automatisch wieder entfernt.
+                <f:translate key="register.email.notes" />
             </td>
         </tr>
         </tbody>

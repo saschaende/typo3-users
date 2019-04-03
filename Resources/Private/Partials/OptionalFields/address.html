@@ -1,7 +1,7 @@
 <div class="form-group">
 
     <label for="address">
-        Straße/Hausnr.<f:if condition="{field.required}">*</f:if>
+        <f:translate key="register.field.address" /><f:if condition="{field.required}">*</f:if>
     </label>
     <f:form.textfield class="form-control{f:if(condition: '{errors.address}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.address}',then: ' is-valid')}" id="address" property="address" additionalAttributes="{autocomplete:'new-password'}"/>
     <div class="text-danger">

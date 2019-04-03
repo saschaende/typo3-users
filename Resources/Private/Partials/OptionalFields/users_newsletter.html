@@ -1,7 +1,7 @@
 <div class="form-check">
     <f:form.checkbox class="form-check-input" id="users_newsletter" property="usersNewsletter" additionalAttributes="{autocomplete:'new-password'}" value="1"/>
     <label class="form-check-label" for="users_newsletter">
-        Ich abonniere den Newsletter<f:if condition="{field.required}">*</f:if>
+        <f:translate key="register.field.newsletter" /><f:if condition="{field.required}">*</f:if>
     </label>
     <div class="text-danger">
         <f:for each="{errors.users_newsletter}" as="errorcode">

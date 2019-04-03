@@ -172,6 +172,10 @@ class RegisterController extends ActionController {
             $registerHash = md5(uniqid() . time());
             $user->setUsersRegisterhash($registerHash);
 
+            // ID of website
+            $root_id = $GLOBALS['TSFE']->rootLine[0]['uid'];
+            $user->setUsersWebsite($root_id);
+
             // Add now
             $this->frontendUserRepository->add($user);
 

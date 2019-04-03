@@ -5,7 +5,7 @@
     <div class="card login-box">
         <div class="card-body">
             <h4 class="card-title">
-                Registrierung
+                <f:translate key="register.form.title" />
             </h4>
 
             <div class="card-text">
@@ -17,7 +17,7 @@
                     <div class="form-group">
 
                         <label for="username">
-                            Gewünschter Benutzername*
+                            <f:translate key="register.form.username" />*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -36,8 +36,7 @@
                             </f:for>
                         </div>
                         <small class="form-text text-muted">
-                            Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
-                            enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
+                            <f:translate key="register.form.username.note" />
                         </small>
                     </div>
                     <!-- USERNAME/EMAIL -->
@@ -47,7 +46,7 @@
                     <div class="form-group">
 
                         <label for="email">
-                            E-Mail Adresse*
+                            <f:translate key="register.form.email" />*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -66,7 +65,7 @@
                             </f:for>
                         </div>
                         <small class="form-text text-muted">
-                            An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.
+                            <f:translate key="register.form.email.note" />
                         </small>
                     </div>
                     <!-- EMAIL -->
@@ -76,7 +75,7 @@
                     <!-- PASSWORD -->
                     <div class="form-group">
                         <label for="password">
-                            Passwort*
+                            <f:translate key="register.form.password" />*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -95,7 +94,7 @@
                             </f:for>
                         </div>
                         <small class="form-text text-muted">
-                            Das Passwort muss aus mindestens 6 Zeichen bestehen.
+                            <f:translate key="register.form.password.note" />
                         </small>
                     </div>
                     <!-- PASSWORD -->
@@ -103,7 +102,7 @@
                     <!-- REPEAT PASSWORD -->
                     <div class="form-group">
                         <label for="passwordrepeat">
-                            Passwort wiederholen*
+                            <f:translate key="register.form.repeatpassword" />*
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -123,7 +122,8 @@
                     <f:if condition="{optionalFields -> f:count()} >= 1">
                         <hr>
                         <f:for each="{optionalFields}" as="optionalField">
-                            <f:render partial="OptionalFields/{optionalField.id}" arguments="{errors:errors,field:optionalField}"/>
+                            <f:render partial="OptionalFields/{optionalField.id}"
+                                      arguments="{errors:errors,field:optionalField}"/>
                         </f:for>
                     </f:if>
                     <!-- OPTIONAL FIELDS -->
@@ -131,13 +131,23 @@
 
                     <!-- SUBMIT BUTTON -->
                     <div class="mt-3">
-                        <f:form.submit class="btn btn-primary btn-lg" value="Jetzt registrieren"/>
+                        <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'register.form.button')}"/>
                     </div>
                     <!-- SUBMIT BUTTON -->
 
                 </f:form>
             </div>
         </div>
+
+        <!-- SPECIAL LINKS (Forgot pass or registration) -->
+        <f:if condition="{settings.loginPid}">
+            <div class="card-footer">
+                <f:link.page pageUid="{settings.loginPid}"><i class="fas fa-user fa-fw"></i>
+                    <f:translate key="register.form.loginlink" />
+                </f:link.page>
+            </div>
+        </f:if>
+        <!-- SPECIAL LINKS (Forgot pass or registration) -->
 
     </div>
 

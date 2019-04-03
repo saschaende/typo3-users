@@ -7,5 +7,6 @@ CREATE TABLE fe_users (
 	users_registerhash varchar(255) DEFAULT '' NOT NULL,
 	users_conditions char(1) DEFAULT '' NOT NULL,
 	users_dataprotection char(1) DEFAULT '' NOT NULL,
-
+    users_newsletter char(1) DEFAULT '' NOT NULL,
+    users_website int(11) unsigned DEFAULT '0' NOT NULL,
 );
