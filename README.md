@@ -25,7 +25,7 @@ Users brings you all essential plugins (login, logout, register, forgot password
 
 ## Actually in development (coming soon)
 
-* Security fix "register" plugin according to https://typo3.org/security/advisory/typo3-psa-2019-002/:
+* Security fix "register" plugin according to https://typo3.org/security/advisory/typo3-psa-2019-002/, thanks to vasyl (typo3.net.ua):
     * The user gets no feedback, if the email exists. If email exists, the user gets an email with password reset link. The rest of the input will be ignored. 
 
 ## Planned / ToDo
