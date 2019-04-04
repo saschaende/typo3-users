@@ -87,7 +87,7 @@ class LoginController extends ActionController {
 
         // set language
         if($this->settings['updateLanguage']){
-            $user->setUsersLanguage($GLOBALS['TSFE']->sys_language_uid);
+            $user->setUsersLanguage(t3h::FrontendUser()->getLanguage());
         }
 
 

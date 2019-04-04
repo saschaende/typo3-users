@@ -191,7 +191,7 @@ class RegisterController extends ActionController {
             $user->setUsersWebsite($root_id);
 
             // Set language
-            $user->setUsersLanguage($GLOBALS['TSFE']->sys_language_uid);
+            $user->setUsersLanguage(t3h::FrontendUser()->getLanguage());
 
             // Add now
             $this->frontendUserRepository->add($user);
