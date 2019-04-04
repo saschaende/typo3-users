@@ -100,13 +100,13 @@ call_user_func(
             }
        }'
         );
-        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
 
-        $iconRegistry->registerIcon(
-            'users',
-            \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-            ['source' => 'EXT:users/Resources/Public/Icons/Extension.png']
-        );
+        // --------------------------------------------
+        // ADD ICON
+        // --------------------------------------------
+
+        \t3h\t3h::Icons()->setExtension('users')->add('Extension.png','users');
+
 
     }
 );
