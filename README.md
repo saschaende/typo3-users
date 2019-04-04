@@ -25,10 +25,12 @@ Users brings you all essential plugins (login, logout, register, forgot password
 
 ## Actually in development (coming soon)
 
-* Plugin: Change password
+* Security fix "register" plugin according to https://typo3.org/security/advisory/typo3-psa-2019-002/:
+    * The user gets no feedback, if the email exists. If email exists, the user gets an email with password reset link. The rest of the input will be ignored. 
 
 ## Planned / ToDo
 
+* Plugin: Change password
 * Plugin: Change profile data
 * Plugin: Change email (with verficiation of new email)
 * Command: Scheduler to remove not activated users
