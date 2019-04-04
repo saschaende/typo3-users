@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-04-03T19:14:19Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-04-04T15:48:16Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="forgot.change.error">
@@ -213,6 +213,42 @@
 				<source>Deine Registrierung auf unserer Webseite</source>
 				<target>Your registration on our website</target>
 			</trans-unit>
+			<trans-unit id="register.emailexists.button">
+				<source>Neues
+                    Passwort anfordern
+                </source>
+				<target>Request new password
+                </target>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info">
+				<source>Hier nochmal zur Erinnerung Deine Daten:</source>
+				<target>Here again as a reminder your data:</target>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info.email">
+				<source>Deine E-Mail:</source>
+				<target>Your e-mail:</target>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info.username">
+				<source>Dein Benutzername:</source>
+				<target>Your username:</target>
+			</trans-unit>
+			<trans-unit id="register.emailexists.message">
+				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung
+                    eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren.
+                    Solltest
+                    Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:
+                </source>
+				<target>Someone has just tried to use your email address to create a new account, so we want to inform you with this email. If you did this yourself, you can request a new password here:
+                </target>
+			</trans-unit>
+			<trans-unit id="register.emailexists.salutation">
+				<source>Hallo</source>
+				<target>Hi</target>
+			</trans-unit>
+			<trans-unit id="register.emailexists.title">
+				<source>Deine E-Mail Adresse wurde soeben erneut für eine Registrierung genutzt</source>
+				<target>Your e-mail address has just been used again for registration.</target>
+			</trans-unit>
 			<trans-unit id="register.field.address">
 				<source>Straße/Hausnr.</source>
 				<target>Street/House No.</target>
@@ -339,6 +375,10 @@
 				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
 				<target>The username must be at least 3 and at most 20 characters long.</target>
 			</trans-unit>
+			<trans-unit id="validation.10">
+				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
+				<target>Registration with this e-mail address is not possible.</target>
+			</trans-unit>
 			<trans-unit id="validation.2">
 				<source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
 				<target>The user name must not contain any special characters.</target>
@@ -355,10 +395,6 @@
 				<source>Diese E-Mail Adresse hat kein gültiges Format.</source>
 				<target>This e-mail address has no valid format.</target>
 			</trans-unit>
-			<trans-unit id="validation.6">
-				<source>Diese E-Mail Adresse wurde bereits verwendet.</source>
-				<target>This e-mail address has already been used.</target>
-			</trans-unit>
 			<trans-unit id="validation.7">
 				<source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
 				<target>The password must be at least 6 characters long.</target>
@@ -370,10 +406,6 @@
 			<trans-unit id="validation.9">
 				<source>Dies ist ein Pflichtfeld.</source>
 				<target>This field is required.</target>
-			</trans-unit>
-			<trans-unit id="validation.10">
-				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
-				<target>Registration with this e-mail address is not possible.</target>
 			</trans-unit>
 		</body>
 	</file>

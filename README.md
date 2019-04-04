@@ -8,6 +8,7 @@ Users brings you all essential plugins (login, logout, register, forgot password
 
 * User friendly, no complicated typoscript: You can configure all settings via the plugins
 * Templates based on bootstrap 4
+* Security: According to https://typo3.org/security/advisory/typo3-psa-2019-002/, Username and Email Address Enumeration is not possible in all plugins. If a user registers with an email, that exists, the email adress automatically gets a remember mail with an password reset link. (Thanks to vasyl from http://typo3.net.ua/)
 * FLUID templates, easy to customize. Even for emails.
 * A list of 2160 disposable email address providers is included and can be imported with one click.
 * Plugin: Login
@@ -27,12 +28,10 @@ Users brings you all essential plugins (login, logout, register, forgot password
 
 ## Actually in development (coming soon)
 
-* Security fix "register" plugin according to https://typo3.org/security/advisory/typo3-psa-2019-002/, thanks to vasyl (typo3.net.ua):
-    * The user gets no feedback, if the email exists. If email exists, the user gets an email with password reset link. The rest of the input will be ignored. 
+* Plugin: Change password
 
 ## Planned / ToDo
 
-* Plugin: Change password
 * Plugin: Change profile data
 * Plugin: Change email (with verficiation of new email)
 * Command: Scheduler to remove not activated users

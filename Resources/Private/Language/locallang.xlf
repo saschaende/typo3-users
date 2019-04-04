@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2019-04-03T19:14:19Z" product-name="users">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-04-04T15:48:16Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="forgot.change.error">
@@ -158,6 +158,33 @@
 			<trans-unit id="register.email.title">
 				<source>Deine Registrierung auf unserer Webseite</source>
 			</trans-unit>
+			<trans-unit id="register.emailexists.button">
+				<source>Neues
+                    Passwort anfordern
+                </source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info">
+				<source>Hier nochmal zur Erinnerung Deine Daten:</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info.email">
+				<source>Deine E-Mail:</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info.username">
+				<source>Dein Benutzername:</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.message">
+				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung
+                    eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren.
+                    Solltest
+                    Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:
+                </source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.salutation">
+				<source>Hallo</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.title">
+				<source>Deine E-Mail Adresse wurde soeben erneut für eine Registrierung genutzt</source>
+			</trans-unit>
 			<trans-unit id="register.field.address">
 				<source>Straße/Hausnr.</source>
 			</trans-unit>
@@ -253,6 +280,9 @@
 			<trans-unit id="validation.1">
 				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
 			</trans-unit>
+			<trans-unit id="validation.10">
+				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
+			</trans-unit>
 			<trans-unit id="validation.2">
 				<source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
 			</trans-unit>
@@ -265,9 +295,6 @@
 			<trans-unit id="validation.5">
 				<source>Diese E-Mail Adresse hat kein gültiges Format.</source>
 			</trans-unit>
-			<trans-unit id="validation.6">
-				<source>Diese E-Mail Adresse wurde bereits verwendet.</source>
-			</trans-unit>
 			<trans-unit id="validation.7">
 				<source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
 			</trans-unit>
@@ -276,9 +303,6 @@
 			</trans-unit>
 			<trans-unit id="validation.9">
 				<source>Dies ist ein Pflichtfeld.</source>
-			</trans-unit>
-			<trans-unit id="validation.10">
-				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
 			</trans-unit>
 		</body>
 	</file>

@@ -119,10 +119,8 @@ class RegisterController extends ActionController {
         } // E-Mail Format
         elseif (!filter_var($registration->getEmail(), FILTER_VALIDATE_EMAIL)) {
             $errors['email'][] = '5';
-        } // Check if email exists
-        elseif ($this->frontendUserRepository->findOneByEmail($registration->getEmail())) {
-            $errors['email'][] = '6';
         }
+        // Check if banned
         elseif ($this->bannedHostsRepository->checkIfBanned($registration->getEmail())) {
             $errors['email'][] = '10';
         }
@@ -149,7 +147,11 @@ class RegisterController extends ActionController {
         // ---------------------------------------------------------------------
 
         if (count($errors) >= 1) {
-            // Errors? So show the form again
+
+
+            // ---------------------------------------------------------------------
+            // ERRORS ... So show the form again
+            // ---------------------------------------------------------------------
             $this->forward(
                 'form',
                 null,
@@ -161,72 +163,103 @@ class RegisterController extends ActionController {
             );
         } else {
 
-            // No errors, so add user now
-            $user = new User();
-            $user->setUsername($registration->getUsername());
-            $user->setEmail($registration->getEmail());
-            $user->setPassword(t3h::Password()->getHashedPassword($registration->getPassword()));
-            $user->setDisable(true);
-            $user->setPid($this->settings['usersFolder']);
+            // ---------------------------------------------------------------------
+            // SUCCESS
+            // ---------------------------------------------------------------------
 
-            // User groups
-            foreach (explode(',', $this->settings['userGroups']) as $groupId) {
-                $user->addUsergroup($this->frontendUserGroupRepository->findOneByUid($groupId));
+            if ($user = $this->frontendUserRepository->findOneByEmail($registration->getEmail())) {
+                // This user exists, send an email with some information
+                // Send email
+                /** @var User $user */
+                $link = t3h::Uri()->getByPid($this->settings['forgotpassPid']);
+
+                t3h::Mail()->sendDynamicTemplate(
+                    $user->getEmail(),
+                    $this->settings['senderEmail'],
+                    $this->settings['senderName'],
+                    $this->settings['subject'],
+                    'tx_users',
+                    'EmailExists',
+                    ['user' => $user, 'link' => $link],
+                    [],
+                    1,
+                    $this->controllerContext
+                );
+
+                // Only show the data the user entered
+                $this->view->assignMultiple([
+                    'user' => $registration
+                ]);
+            }
+            else{
+                // User does not exist, so add user now
+                $user = new User();
+                $user->setUsername($registration->getUsername());
+                $user->setEmail($registration->getEmail());
+                $user->setPassword(t3h::Password()->getHashedPassword($registration->getPassword()));
+                $user->setDisable(true);
+                $user->setPid($this->settings['usersFolder']);
+
+                // User groups
+                foreach (explode(',', $this->settings['userGroups']) as $groupId) {
+                    $user->addUsergroup($this->frontendUserGroupRepository->findOneByUid($groupId));
+                }
+
+                // Add optional fields
+                $requiredFields = explode(',', $this->settings['optionalFields']);
+                foreach ($requiredFields as $fieldname) {
+                    $getFunc = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
+                    $setFunc = 'set' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
+                    $user->$setFunc($registration->$getFunc());
+                }
+
+                // Hash
+                $registerHash = md5(uniqid() . time());
+                $user->setUsersRegisterhash($registerHash);
+
+                // ID of website
+                $user->setUsersWebsite(t3h::Website()->getWebsiteRootPid());
+
+                // Set language
+                $user->setUsersLanguage(t3h::FrontendUser()->getLanguage());
+
+                // Add now
+                $this->frontendUserRepository->add($user);
+
+                // Save directly
+                t3h::Database()->persistAll();
+
+                // Make link, as short as possible
+                $link = t3h::Uri()->getByPid(
+                    t3h::Page()->getPid(),
+                    false,
+                    true,
+                    [
+                        'uid' => $user->getUid(),
+                        'registerHash' => $registerHash
+                    ]
+                );
+
+
+                // Send email
+                t3h::Mail()->sendDynamicTemplate(
+                    $user->getEmail(),
+                    $this->settings['senderEmail'],
+                    $this->settings['senderName'],
+                    $this->settings['subject'],
+                    'tx_users',
+                    'Email',
+                    ['user' => $user, 'link' => $link],
+                    [],
+                    1,
+                    $this->controllerContext
+                );
+
+                $this->view->assignMultiple([
+                    'user' => $user
+                ]);
             }
 
-            // Add optional fields
-            $requiredFields = explode(',', $this->settings['optionalFields']);
-            foreach ($requiredFields as $fieldname) {
-                $getFunc = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
-                $setFunc = 'set' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
-                $user->$setFunc($registration->$getFunc());
-            }
-
-            // Hash
-            $registerHash = md5(uniqid() . time());
-            $user->setUsersRegisterhash($registerHash);
-
-            // ID of website
-            $user->setUsersWebsite(t3h::Website()->getWebsiteRootPid());
-
-            // Set language
-            $user->setUsersLanguage(t3h::FrontendUser()->getLanguage());
-
-            // Add now
-            $this->frontendUserRepository->add($user);
-
-            // Save directly
-            t3h::Database()->persistAll();
-
-            // Make link, as short as possible
-            $link = t3h::Uri()->getByPid(
-                t3h::Page()->getPid(),
-                false,
-                true,
-                [
-                    'uid' => $user->getUid(),
-                    'registerHash' => $registerHash
-                ]
-            );
-
-
-            // Send email
-            t3h::Mail()->sendDynamicTemplate(
-                $user->getEmail(),
-                $this->settings['senderEmail'],
-                $this->settings['senderName'],
-                $this->settings['subject'],
-                'tx_users',
-                'Email',
-                ['user' => $user, 'link' => $link],
-                [],
-                1,
-                $this->controllerContext
-            );
-
-            $this->view->assignMultiple([
-                'user' => $user
-            ]);
         }
 
 

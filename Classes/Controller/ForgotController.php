@@ -24,6 +24,8 @@ class ForgotController extends ActionController {
         $querysettings->setStoragePageIds([
             $this->settings['usersFolder']
         ]);
+        // Also check for disabled accounts - this is also a verification, if the user reacts to this link via email
+        $querysettings->setIgnoreEnableFields(true);
         $this->frontendUserRepository->setDefaultQuerySettings($querysettings);
     }
 
@@ -131,6 +133,10 @@ class ForgotController extends ActionController {
             $user->setPassword(t3h::Password()->getHashedPassword($arguments['password']));
             $user->setUsersForgothash('');
             $user->setUsersForgothashValid(0);
+
+            // If the user forgot his password after registration, this will help
+            $user->setDisable(false);
+            $user->setUsersRegisterhash('');
             $this->frontendUserRepository->update($user);
 
             // Automatically login?
