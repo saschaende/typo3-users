@@ -187,8 +187,7 @@ class RegisterController extends ActionController {
             $user->setUsersRegisterhash($registerHash);
 
             // ID of website
-            $root_id = $GLOBALS['TSFE']->rootLine[0]['uid'];
-            $user->setUsersWebsite($root_id);
+            $user->setUsersWebsite(t3h::Website()->getWebsiteRootPid());
 
             // Set language
             $user->setUsersLanguage(t3h::FrontendUser()->getLanguage());
