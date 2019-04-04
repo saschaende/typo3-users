@@ -13,12 +13,12 @@ I actually develop this extension in an 8 environment and will make it compatibl
 
 ## READY TO USE: Features of the "Users" Extension
 
-* 0.4.0 Plugin: Login
-* 0.4.0 Plugin: Logout
-* 0.4.0 Plugin:Forgot password
-* 0.4.0 Plugin: Register
-* 0.5.0 Table: Protect your system from disposable email addresses: Banlist for not allowed domains/hosts (spamschlucker ...)
-* 0.5.0 Module: Admin tool for import of newest spam host list
+* Plugin: Login
+* Plugin: Logout
+* Plugin:Forgot password
+* Plugin: Register
+* Table: Protect your system from disposable email addresses: Banlist for not allowed domains/hosts (spamschlucker ...)
+* Module: Admin tool for importing newest spam host list
 
 ## In development
 
@@ -29,7 +29,7 @@ I actually develop this extension in an 8 environment and will make it compatibl
 * Change profile data
 * Change email (with verficiation of new email)
 * Scheduler to remove not activated users
-* Newsletter with scheduler
+* Newsletter / bulk sending with scheduler
 
 ## Demos
 
@@ -79,7 +79,7 @@ The extension ships some TypoScript code which needs to be included.
 
 * Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses. The register plugin of this users extension will not allow email adresses as usernames.
 
-## Screenshots
+## Screenshots Backend PLugins
 
 ### Plugin: Login
 
