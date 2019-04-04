@@ -32,6 +32,7 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 * Plugin: Change email (with verficiation of new email)
 * Command: Scheduler to remove not activated users
 * Module/Command: Newsletter / bulk sending with scheduler
+* Signals
 
 ## Why only for TYPO3 8?
 
