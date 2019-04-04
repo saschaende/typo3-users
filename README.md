@@ -34,6 +34,7 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 * Command: Scheduler to remove not activated users
 * Module/Command: Newsletter / bulk sending with scheduler
 * Signals
+* Auto-generated usernames
 
 ## Why only for TYPO3 8?
 
