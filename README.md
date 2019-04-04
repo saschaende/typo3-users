@@ -78,6 +78,7 @@ The extension ships some TypoScript code which needs to be included.
 * Switch to the Template module and select Info/Modify.
 * Press the link Edit the whole template record and switch to the tab Includes.
 * Select "Users (users)" at the field Include static (from extensions)
+* If you have multiple websites configured, repeat the steps above for every website
 
 ### Use the plugins
 
