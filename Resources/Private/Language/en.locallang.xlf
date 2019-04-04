@@ -182,7 +182,7 @@
 			</trans-unit>
 			<trans-unit id="register.confirm.username">
 				<source>Benutzername</source>
-				<target>Username</target>
+				<target>Your username</target>
 			</trans-unit>
 			<trans-unit id="register.email.button">
 				<source>Registrierung bestätigen</source>
@@ -333,7 +333,7 @@
 			</trans-unit>
 			<trans-unit id="register.submit.username">
 				<source>Benutzername</source>
-				<target>Úsername</target>
+				<target>Username</target>
 			</trans-unit>
 			<trans-unit id="validation.1">
 				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
