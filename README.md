@@ -7,6 +7,7 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 * User friendly, no complicated typoscript: You can configure all settings via the plugins
 * Templates based on bootstrap 4
 * FLUID templates, easy to customize. Even for emails.
+* A list of 2160 disposable email address providers is included and can be imported with one click.
 * Plugin: Login
     * Login with username AND/OR email
     * Configurable input fields
