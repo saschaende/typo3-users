@@ -34,7 +34,10 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 * Command: Scheduler to remove not activated users
 * Module/Command: Newsletter / bulk sending with scheduler
 * Signals
-* Auto-generated usernames
+* Additional options for user names:
+    * Setting A: Show input field and automatically generate a user name if the user does not enter one.
+    * Setting B: Hide input field and always automatically generate a user name.
+    * Setting C: User name is not generated automatically, input is mandatory.
 
 ## Why only for TYPO3 8?
 
