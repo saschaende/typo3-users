@@ -9,7 +9,7 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 
 ## Why only for TYPO3 8?
 
-I develop this extension in an 8 environment on https://filmmusic.io and will make it compatible to 9 after that.
+I actually develop this extension in an 8 environment and will make it compatible to 9 after that.
 
 ## READY TO USE: Features of the "Users" Extension
 
@@ -34,16 +34,25 @@ I develop this extension in an 8 environment on https://filmmusic.io and will ma
 ## Demos
 
 ### Login
-* DE https://filmmusic.io/de/login/
-* EN: https://filmmusic.io/login/
+
+![plugin](Documentation/demo_login.JPG)
 
 ### Forgot password
-* DE https://filmmusic.io/de/login/passwort-vergessen/
-* EN: https://filmmusic.io/login/forgot-password/
+
+![plugin](Documentation/demo_forgot.JPG)
 
 ### Register
-* DE: https://filmmusic.io/de/registrieren/
-* EN: https://filmmusic.io/register/
+
+![plugin](Documentation/demo_register.JPG)
+
+### Admin
+
+Admin Module
+![plugin](Documentation/demo_admin.JPG)
+
+Banned Hosts
+![plugin](Documentation/demo_hosts.JPG)
+
 
 ## Installation
 
