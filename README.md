@@ -24,14 +24,14 @@ Users will bring you all essential plugins to build a community with your TYPO3 
 
 ## Actually in development (coming soon)
 
-* Change password
+* Plugin: Change password
 
 ## Planned / ToDo
 
-* Change profile data
-* Change email (with verficiation of new email)
-* Scheduler to remove not activated users
-* Newsletter / bulk sending with scheduler
+* Plugin: Change profile data
+* Plugin: Change email (with verficiation of new email)
+* Command: Scheduler to remove not activated users
+* Module/Command: Newsletter / bulk sending with scheduler
 
 ## Why only for TYPO3 8?
 
