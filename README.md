@@ -7,10 +7,10 @@ Users brings you all essential plugins (login, logout, register, forgot password
 ## Features of the "Users" Extension
 
 * User friendly, no complicated typoscript: You can configure all settings via the plugins
-* Templates based on bootstrap 4
-* Security: According to https://typo3.org/security/advisory/typo3-psa-2019-002/, Username and Email Address Enumeration is not possible in all plugins. If a user registers with an email, that exists, the email adress automatically gets a remember mail with an password reset link. (Thanks to vasyl from http://typo3.net.ua/)
-* FLUID templates, easy to customize. Even for emails.
-* A list of 2160 disposable email address providers is included and can be imported with one click.
+* FLUID templates, based on bootstrap 4, easy to customize. Even for emails.
+* Security:
+    * According to https://typo3.org/security/advisory/typo3-psa-2019-002/, Username and Email Address Enumeration is not possible in all plugins. If a user registers with an email, that exists, the email adress automatically gets a remember mail with an password reset link. (Thanks to vasyl from http://typo3.net.ua/)
+    * A list of 2160 disposable email address providers is included and can be imported with one click.
 * Plugin: Login
     * Login with username AND/OR email
     * Configurable input fields
@@ -23,7 +23,7 @@ Users brings you all essential plugins (login, logout, register, forgot password
 * Module: Admin tool for importing newest spam host list (will be regularily updated)
 * Multi Site:
     * Saves root page uid for every registered user
-* Saves language setting of every user
+    * Saves language setting of every user
 * Language files delivered: German / English
 
 ## Actually in development (coming soon)
