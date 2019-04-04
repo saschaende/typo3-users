@@ -2,25 +2,27 @@
 
 Users will bring you all essential plugins to build a community with your TYPO3 system. Based on easy to customize fluid templates. The extension will be available for TYPO3 9 as soon as the development is finished.
 
-* Based on bootstrap 4
-* Easy to customize (Fluid)
-* Easy to install (just put the plugins on the pages and configure directly in the plugin)
-* No typoscript configuation needed
+## Features of the "Users" Extension
 
-## Why only for TYPO3 8?
-
-I actually develop this extension in an 8 environment and will make it compatible to 9 after that.
-
-## READY TO USE: Features of the "Users" Extension
-
+* User friendly, no complicated typoscript: You can configure all settings via the plugins
+* Templates based on bootstrap 4
+* FLUID templates, easy to customize. Even for emails.
 * Plugin: Login
+    * Login with username AND/OR email
+    * Configurable input fields
+    * Save login count for every user
 * Plugin: Logout
-* Plugin:Forgot password
+* Plugin: Forgot password
 * Plugin: Register
-* Table: Protect your system from disposable email addresses: Banlist for not allowed domains/hosts (spamschlucker ...)
-* Module: Admin tool for importing newest spam host list
+    * Set user groups that will be automatically assigned
+    * Protect your system from disposable email addresses: Banlist for not allowed domains/hosts (spamschlucker ...)
+* Module: Admin tool for importing newest spam host list (will be regularily updated)
+* Multi Site:
+    * Saves root page uid for every registered user
+* Saves language setting of every user
+* Language files delivered: German / English
 
-## In development
+## Actually in development (coming soon)
 
 * Change password
 
@@ -30,6 +32,10 @@ I actually develop this extension in an 8 environment and will make it compatibl
 * Change email (with verficiation of new email)
 * Scheduler to remove not activated users
 * Newsletter / bulk sending with scheduler
+
+## Why only for TYPO3 8?
+
+I actually develop this extension in an 8 environment and will make it compatible to 9 after that.
 
 ## Demos
 
