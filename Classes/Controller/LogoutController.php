@@ -7,12 +7,12 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class LogoutController extends ActionController {
 
-    public function logoutAction(){
+    public function logoutAction() {
         $uri = t3h::Uri()->getByPid(
             intval($this->settings['redirectSuccess']),
             false,
             true,
-            ['logintype'=>'logout']
+            ['logintype' => 'logout']
         );
         $this->redirectToUri($uri);
     }

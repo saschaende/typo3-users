@@ -83,10 +83,10 @@ class LoginController extends ActionController {
         $user->setUsersLastlogin($dt);
 
         // Increment login count
-        $user->setUsersLogincount($user->getUsersLogincount()+1);
+        $user->setUsersLogincount($user->getUsersLogincount() + 1);
 
         // set language
-        if($this->settings['updateLanguage']){
+        if ($this->settings['updateLanguage']) {
             $user->setUsersLanguage(t3h::FrontendUser()->getLanguage());
         }
 

@@ -2,16 +2,15 @@
 
 namespace SaschaEnde\Users\Controller;
 
-use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
 use SaschaEnde\Users\Domain\Model\Registration;
 use SaschaEnde\Users\Domain\Model\User;
+use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class RegisterController extends ActionController {
 
@@ -119,8 +118,7 @@ class RegisterController extends ActionController {
         } // E-Mail Format
         elseif (!filter_var($registration->getEmail(), FILTER_VALIDATE_EMAIL)) {
             $errors['email'][] = '5';
-        }
-        // Check if banned
+        } // Check if banned
         elseif ($this->bannedHostsRepository->checkIfBanned($registration->getEmail())) {
             $errors['email'][] = '10';
         }
@@ -190,8 +188,7 @@ class RegisterController extends ActionController {
                 $this->view->assignMultiple([
                     'user' => $registration
                 ]);
-            }
-            else{
+            } else {
                 // User does not exist, so add user now
                 $user = new User();
                 $user->setUsername($registration->getUsername());

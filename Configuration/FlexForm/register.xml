@@ -14,8 +14,9 @@
                     <settings.usersFolder>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Location of users data (required)</label>
+                            <label>Location of users data</label>
                             <config>
+                                <required>1</required>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
                                 <allowed>pages</allowed>
@@ -30,8 +31,9 @@
                     <settings.userGroups>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Usergroup(s) for new users (required)</label>
+                            <label>Usergroup(s) for new users</label>
                             <config>
+                                <required>1</required>
                                 <type>select</type>
                                 <renderType>selectMultipleSideBySide</renderType>
                                 <foreign_table>fe_groups</foreign_table>
@@ -56,8 +58,9 @@
                     <settings.forgotpassPid>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Link to page with "forgot pass" plugin (required, used in one email)</label>
+                            <label>Link to page with "forgot pass" plugin (used in one email, when email exists)</label>
                             <config>
+                                <required>1</required>
                                 <type>group</type>
                                 <internal_type>db</internal_type>
                                 <allowed>pages</allowed>
@@ -273,8 +276,9 @@
                     <settings.senderEmail>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Sender email adress (required)</label>
+                            <label>Sender email adress</label>
                             <config>
+                                <required>1</required>
                                 <type>input</type>
                                 <size>30</size>
                                 <eval>trim</eval>
@@ -285,8 +289,9 @@
                     <settings.senderName>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Sender name (required)</label>
+                            <label>Sender name</label>
                             <config>
+                                <required>1</required>
                                 <type>input</type>
                                 <size>30</size>
                                 <eval>trim</eval>
@@ -297,8 +302,9 @@
                     <settings.subject>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Subject of the email (required)</label>
+                            <label>Subject of the email</label>
                             <config>
+                                <required>1</required>
                                 <type>input</type>
                                 <size>60</size>
                                 <eval>trim</eval>
