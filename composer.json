@@ -1,0 +1,23 @@
+{
+  "name": "saschaende/users",
+  "description": "Users brings you all essential plugins (login, logout, register, forgot password, banlist for spam hosts...) to build a community with your TYPO3 system. Based on easy to customize fluid templates. The extension will be available for TYPO3 9 as soon as the development of all plugins is finished.",
+  "keywords": ["typo3", "users","login","register","community"],
+  "homepage": "https://extensions.typo3.org/extension/users/",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": ">=8.7.0 <10.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SaschaEnde\\Users\\": "Classes/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Filmmusic.io",
+      "email": "info@filmmusic.io",
+      "homepage": "https://filmmusic.io"
+    }
+  ]
+}
