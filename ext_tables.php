@@ -40,7 +40,7 @@ call_user_func(
                 'users', // Submodule key
                 '', // Position
                 [
-                    'Admin' => 'list,importbanlist',
+                    'Admin' => 'list,importbanlist,check',
                 ],
                 [
                     'access' => 'user,group',

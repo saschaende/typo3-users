@@ -4,9 +4,10 @@ namespace SaschaEnde\Users\Controller;
 
 use SaschaEnde\Users\Domain\Model\BannedHosts;
 use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
+use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
-use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class AdminController extends ActionController {
 
@@ -16,7 +17,7 @@ class AdminController extends ActionController {
     protected $bannedHostsRepository;
 
     /**
-     * @var FrontendUserRepository
+     * @var UserRepository
      */
     protected $frontendUserRepository;
 
@@ -25,7 +26,7 @@ class AdminController extends ActionController {
         $this->bannedHostsRepository = $this->objectManager->get(BannedHostsRepository::class);
         $this->bannedHostsRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
         // User Repo
-        $this->frontendUserRepository = $this->objectManager->get(FrontendUserRepository::class);
+        $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
         $this->frontendUserRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
     }
 
@@ -55,6 +56,17 @@ class AdminController extends ActionController {
         $this->view->assignMultiple([
             'stats' => $stats
         ]);
+    }
+
+    public function checkAction(){
+        $hosts = $this->bannedHostsRepository->findAll();
+        $users = $this->frontendUserRepository->checkHosts($hosts);
+
+        $this->view->assignMultiple([
+            'users' => $users
+        ]);
+
+
     }
 
 

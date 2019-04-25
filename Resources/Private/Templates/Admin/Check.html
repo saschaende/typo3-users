@@ -1,0 +1,22 @@
+<f:layout name="Admin"/>
+<f:section name="content">
+
+    <h1>Users with trash mail addresses</h1>
+
+
+    <table class="table">
+        <thead>
+        <th>username</th>
+        <th>email</th>
+        </thead>
+        <tbody>
+        <f:for each="{users}" as="user">
+            <tr>
+                <td>{user.username}</td>
+                <td>{user.email}</td>
+            </tr>
+        </f:for>
+        </tbody>
+    </table>
+
+</f:section>
