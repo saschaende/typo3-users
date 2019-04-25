@@ -2204,3 +2204,4 @@ mail52.cf
 mail52.ml
 mail52.ga
 mail52.gq
+spamtrap.co
