@@ -34,8 +34,8 @@ class AdminController extends ActionController {
     }
 
     public function importbanlistAction() {
-        $filePath = PATH_typo3conf . 'ext/users/Resources/Private/Data/spamhosts.txt';
-        $fileData = file($filePath);
+        // $filePath = PATH_typo3conf . 'ext/users/Resources/Private/Data/spamhosts.txt'; // use local file
+        $fileData = file('https://raw.githubusercontent.com/saschaende/typo3-users/master/Resources/Private/Data/spamhosts.txt');
         $stats = [
             'added' => 0,
             'exist' => 0
