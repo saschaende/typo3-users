@@ -2251,3 +2251,17 @@ tempmails.cf
 fake-mail.gq
 ppc-e.com
 cpmail.life
+spambox.xyz
+tempmail.win
+disbox.net
+tmpmail.org
+tmpmail.net
+tmails.net
+disbox.org
+moakt.co
+moakt.ws
+tmail.ws
+bareed.ws
+lala-mailbox.club
+flashmail.co
+getamailbox.org
