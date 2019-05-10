@@ -28,6 +28,12 @@ call_user_func(
             '[Users] Register'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'changeemail',
+            '[Users] Change Email'
+        );
+
         // ------------------------------------------------------------------------------
         // Add Backend Module
         // ------------------------------------------------------------------------------
@@ -72,6 +78,6 @@ call_user_func(
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('logout');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('forgot');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('register');
-
+        \t3h\t3h::Inject()->setExtension('users')->addFlexform('changeemail');
     }
 );

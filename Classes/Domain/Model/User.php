@@ -62,6 +62,16 @@ class User extends FrontendUser {
     protected $usersLanguage = 0;
 
     /**
+     * @var string
+     */
+    protected $usersNewemail = '';
+
+    /**
+     * @var string
+     */
+    protected $userNewemailhash = '';
+
+    /**
      * @return \DateTime
      */
     public function getUsersLastlogin() {
@@ -215,6 +225,32 @@ class User extends FrontendUser {
         $this->usersLanguage = $usersLanguage;
     }
 
+    /**
+     * @return string
+     */
+    public function getUsersNewemail(): string {
+        return $this->usersNewemail;
+    }
 
+    /**
+     * @param string $usersNewemail
+     */
+    public function setUsersNewemail(string $usersNewemail) {
+        $this->usersNewemail = $usersNewemail;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUserNewemailhash(): string {
+        return $this->userNewemailhash;
+    }
+
+    /**
+     * @param string $userNewemailhash
+     */
+    public function setUserNewemailhash(string $userNewemailhash) {
+        $this->userNewemailhash = $userNewemailhash;
+    }
 
 }

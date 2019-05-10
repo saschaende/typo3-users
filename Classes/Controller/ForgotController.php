@@ -173,14 +173,17 @@ class ForgotController extends ActionController {
      * @return bool
      */
     private function verifyPasswordChange(User $user, $arguments) {
+        // stop if there is no user
         if (!$user) {
             return false;
         }
 
+        // stop if it is not the hash found in the database
         if ($user->getUsersForgothash() != $arguments['forgotHash']) {
             return false;
         }
 
+        // stop, if timestamp is older then now
         if ($user->getUsersForgothashValid()->getTimestamp() < time()) {
             return false;
         }

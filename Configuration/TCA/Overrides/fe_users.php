@@ -123,6 +123,26 @@ $temporaryColumns = [
             'default'   => '0'
         ],
     ],
+    'users_newemail' => [
+        'exclude' => true,
+        'label' => 'New email (if user wants to change his email)',
+        'config' => [
+            'type' => 'input',
+            'size' => 30,
+            'eval' => 'trim'
+        ],
+    ],
+    'users_newemailhash' => [
+        'exclude' => true,
+        'label' => 'Email hash (if users wants to change email)',
+        'config' => [
+            'type' => 'input',
+            'size' => 30,
+            'eval' => 'trim'
+        ],
+    ],
+
+
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -132,5 +152,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_conditions,users_dataprotection,users_newsletter,users_website,users_language'
+    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_newemail,users_newemailhash,users_conditions,users_dataprotection,users_newsletter,users_website,users_language'
 );

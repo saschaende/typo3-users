@@ -53,6 +53,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'changeemail',
+            [
+                'Changemail' => 'form,submit'
+            ],
+            // non-cacheable actions
+            [
+                'Changemail' => 'form,submit'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -93,6 +105,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_register
+                        }
+                    }
+                    users_changeemail {
+                        iconIdentifier = users
+                        title = [Users] Change Email
+                        description = Users can change their email adress. The change will be verified via email confirmation.
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_changeemail
                         }
                     }
                 }
