@@ -21,7 +21,7 @@
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user fa-fw"></i></span>
+                                <span class="input-group-text"><i class="{settings.iconClassUser}"></i></span>
                             </div>
                             <f:form.textfield
                                     class="form-control{f:if(condition: '{errors.username}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.username}',then: ' is-valid')}"
@@ -50,7 +50,7 @@
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-envelope fa-fw"></i></span>
+                                <span class="input-group-text"><i class="{settings.iconClassEmail}"></i></span>
                             </div>
                             <f:form.textfield
                                     class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}"
@@ -79,7 +79,7 @@
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
+                                <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
                             </div>
                             <f:form.password
                                     class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
@@ -106,7 +106,7 @@
                         </label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-lock fa-fw"></i></span>
+                                <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
                             </div>
                             <f:form.password
                                     class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
@@ -142,7 +142,7 @@
         <!-- SPECIAL LINKS (Forgot pass or registration) -->
         <f:if condition="{settings.loginPid}">
             <div class="card-footer">
-                <f:link.page pageUid="{settings.loginPid}"><i class="fas fa-user fa-fw"></i>
+                <f:link.page pageUid="{settings.loginPid}"><i class="{settings.iconClassUser}"></i>
                     <f:translate key="register.form.loginlink" />
                 </f:link.page>
             </div>

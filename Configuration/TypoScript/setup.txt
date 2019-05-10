@@ -4,4 +4,11 @@ plugin.tx_users {
         partialRootPaths.0 = EXT:users/Resources/Private/Partials/
         layoutRootPaths.0 = EXT:users/Resources/Private/Layouts/
     }
+    settings {
+        // Configure icon span css classes for different templates (actually fontawesome)
+        iconClassUser = fas fa-user fa-fw
+        iconClassPassword = fas fa-lock fa-fw
+        iconClassEmail = fas fa-envelope fa-fw
+        iconClassRegister = fas fa-user-plus fa-fw
+    }
 }
