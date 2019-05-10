@@ -98,7 +98,7 @@ The extension ships some TypoScript code which needs to be included.
 ## Important notes
 
 * Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses. The register plugin of this users extension will not allow email adresses as usernames.
-
+* To display the icons in the forms, you need "fontawesome" - get it here: https://fontawesome.com/start
 ## Screenshots Backend PLugins
 
 ### Plugin: Login
