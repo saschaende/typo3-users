@@ -6,7 +6,7 @@ Find on
 * Packagist: https://packagist.org/packages/saschaende/users
     * ```composer require saschaende/users```
 
-Users brings you all essential plugins (login, logout, register, forgot password, banlist for spam hosts...) to build a community with your TYPO3 system. Based on easy to customize fluid templates. The extension will be available for TYPO3 9 as soon as the development of all plugins is finished.
+Users brings you all essential plugins (login, logout, register, forgot password, banlist for spam hosts...) to build a community with your TYPO3 system. Based on easy to customize fluid templates.
 
 ## Features of the "Users" Extension
 
