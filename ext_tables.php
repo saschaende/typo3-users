@@ -31,7 +31,13 @@ call_user_func(
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
             'SaschaEnde.Users',
             'changeemail',
-            '[Users] Change Email'
+            '[Users] Change email'
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'changepass',
+            '[Users] Change password'
         );
 
         // ------------------------------------------------------------------------------

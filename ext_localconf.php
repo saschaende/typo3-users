@@ -65,6 +65,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'changepass',
+            [
+                'Changepass' => 'form,submit'
+            ],
+            // non-cacheable actions
+            [
+                'Changepass' => 'form,submit'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -109,11 +121,20 @@ call_user_func(
                     }
                     users_changeemail {
                         iconIdentifier = users
-                        title = [Users] Change Email
+                        title = [Users] Change email
                         description = Users can change their email adress. The change will be verified via email confirmation.
                         tt_content_defValues {
                             CType = list
                             list_type = users_changeemail
+                        }
+                    }
+                    users_changepass {
+                        iconIdentifier = users
+                        title = [Users] Change password
+                        description = Users can change their password
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_changepass
                         }
                     }
                 }

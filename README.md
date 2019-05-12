@@ -33,6 +33,7 @@ Users brings you all essential plugins (login, logout, register, forgot password
 ## Actually in development (coming soon)
 
 * Plugin: Change password
+* PLugin: Change email
 
 ## Planned / ToDo
 
