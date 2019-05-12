@@ -5,21 +5,21 @@
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">
-                E-Mail Adresse ändern
+                <f:translate key="changemail.form.title" />
             </h4>
             <div class="card-text">
                 <f:form action="submit" class="form" method="POST" object="{mailchange}" objectName="mailchange">
 
                     <div class="form-group">
 
-                        <label for="oldemail">Aktuelle E-Mail Adresse</label>
+                        <label for="oldemail"><f:translate key="changemail.form.emailnow" /></label>
                         <input type="text" readonly class="form-control-plaintext" id="oldemail" value="{user.email}">
                     </div>
 
                     <!-- EMAIL -->
                     <div class="form-group">
 
-                        <label for="email">Neue E-Mail Adresse</label>
+                        <label for="email"><f:translate key="changemail.form.newemail" /></label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="{settings.iconClassEmail}"></i></span>
@@ -29,11 +29,7 @@
                                               id="email" property="email" additionalAttributes="{required:'required'}"/>
                         </div>
 
-                        <small class="form-text text-muted">
-                            Wenn Du Deine E-Mail Addresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink. Die Änderung
-                            der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse
-                            hier angezeigt.
-                        </small>
+                        <small class="form-text text-muted"><f:translate key="changemail.form.note" /></small>
 
                         <div class="text-danger">
                             <f:for each="{errors.email}" as="errorcode">
@@ -48,7 +44,7 @@
 
 
                     <!-- SUBMIT BUTTON -->
-                    <f:form.submit class="btn btn-primary btn-lg" value="E-Mail Adresse ändern"/>
+                    <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'changemail.form.button')}"/>
                     <!-- SUBMIT BUTTON -->
 
                 </f:form>
