@@ -1,6 +1,6 @@
 {
   "name": "saschaende/users",
-  "description": "Users brings you all essential plugins (login, logout, register, forgot password, banlist for spam hosts...) to build a community with your TYPO3 system. Based on easy to customize fluid templates. The extension will be available for TYPO3 9 as soon as the development of all plugins is finished.",
+  "description": "Users brings you all essential plugins (login, logout, register, forgot password, banlist for spam hosts...) to build a community with your TYPO3 system. Based on easy to customize fluid templates.",
   "keywords": ["typo3", "users","login","register","community"],
   "homepage": "https://extensions.typo3.org/extension/users/",
   "type": "typo3-cms-extension",
