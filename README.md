@@ -47,10 +47,6 @@ Users brings you all essential plugins (login, logout, register, forgot password
     * Setting B: Hide input field and always automatically generate a user name.
     * Setting C: User name is not generated automatically, input is mandatory.
 
-## Why only for TYPO3 8?
-
-I actually develop this extension in an 8 environment and will make it compatible to 9 after that.
-
 ## Installation
 
 ### Preparation: Include static TypoScript
