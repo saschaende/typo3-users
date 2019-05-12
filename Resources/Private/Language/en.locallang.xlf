@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-04-04T15:48:16Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-12T18:37:05Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="email.footer">
+				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
+				<target>Copyright 2019 - All rights reserved</target>
+			</trans-unit>
 			<trans-unit id="forgot.change.error">
 				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
                     abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
