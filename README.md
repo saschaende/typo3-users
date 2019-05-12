@@ -20,9 +20,6 @@ Users brings you all essential plugins (login, logout, register, forgot password
     * Configurable input fields
     * Save login count for every user
 * Plugin: Logout (so the user can logout just with a click on this page)
-    * Add a page "Logout"
-    * Put the plugin "logout" on the "Logout" page
-    * Configure the logout plugin (where will the user be redirected after logout?)
 * Plugin: Forgot password
 * Plugin: Register
     * Set user groups that will be automatically assigned
@@ -52,29 +49,6 @@ Users brings you all essential plugins (login, logout, register, forgot password
 ## Why only for TYPO3 8?
 
 I actually develop this extension in an 8 environment and will make it compatible to 9 after that.
-
-## Demos
-
-### Login
-
-![plugin](Documentation/demo_login.JPG)
-
-### Forgot password
-
-![plugin](Documentation/demo_forgot.JPG)
-
-### Register
-
-![plugin](Documentation/demo_register.JPG)
-
-### Admin
-
-Admin Module
-![plugin](Documentation/demo_admin.JPG)
-
-Banned Hosts
-![plugin](Documentation/demo_hosts.JPG)
-
 
 ## Installation
 
@@ -119,6 +93,12 @@ Links
 
 ### Plugin: Logout
 
+* Add a page "Logout"
+* Put the plugin "logout" on the "Logout" page
+* Configure the logout plugin (where will the user be redirected after logout?)
+
+Tipp: If you want to add a logout button on your page, just redirect directly to your "Logout" page. You can also make your "Logout" page invisible.
+
 General settings
 ![plugin](Documentation/logout.jpg)
 
@@ -142,3 +122,25 @@ Field settings
 
 Email settings
 ![plugin](Documentation/register5.JPG)
+
+## Demos
+
+### Login
+
+![plugin](Documentation/demo_login.JPG)
+
+### Forgot password
+
+![plugin](Documentation/demo_forgot.JPG)
+
+### Register
+
+![plugin](Documentation/demo_register.JPG)
+
+### Admin
+
+Admin Module
+![plugin](Documentation/demo_admin.JPG)
+
+Banned Hosts
+![plugin](Documentation/demo_hosts.JPG)
