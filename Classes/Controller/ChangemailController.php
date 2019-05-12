@@ -32,8 +32,15 @@ class ChangemailController extends ActionController {
     public function initializeAction() {
 
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
-        // Ignore store page
-        $this->frontendUserRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
+
+        /** @var Typo3QuerySettings $querysettings */
+        $querysettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings::class);
+        $querysettings->setStoragePageIds([
+            $this->settings['usersFolder']
+        ]);
+        // We also have to check not yet enabled accounts
+        $querysettings->setIgnoreEnableFields(true);
+        $this->frontendUserRepository->setDefaultQuerySettings($querysettings);
 
         // Load user object
         $this->user = $this->frontendUserRepository->findByUid(t3h::FrontendUser()->getCurrentUser()->user['uid']);

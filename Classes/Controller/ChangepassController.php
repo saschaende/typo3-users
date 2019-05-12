@@ -25,7 +25,7 @@ class ChangepassController extends ActionController {
 
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
 
-        // Ignore store page
+        // Ignore store page, because thats not relevant here
         $this->frontendUserRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
 
         // load user object

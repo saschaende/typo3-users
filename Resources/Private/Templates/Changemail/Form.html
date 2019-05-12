@@ -7,9 +7,6 @@
             <h4 class="card-title">
                 E-Mail Adresse ändern
             </h4>
-            <p>Wenn Du Deine E-Mail Addresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink. Die Änderung
-                der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse
-                hier angezeigt.</p>
             <div class="card-text">
                 <f:form action="submit" class="form" method="POST" object="{mailchange}" objectName="mailchange">
 
@@ -31,6 +28,12 @@
                                               class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}"
                                               id="email" property="email" additionalAttributes="{required:'required'}"/>
                         </div>
+
+                        <small class="form-text text-muted">
+                            Wenn Du Deine E-Mail Addresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink. Die Änderung
+                            der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse
+                            hier angezeigt.
+                        </small>
 
                         <div class="text-danger">
                             <f:for each="{errors.email}" as="errorcode">
