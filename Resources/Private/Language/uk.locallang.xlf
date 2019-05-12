@@ -8,8 +8,7 @@
                 <target>Помилка: Посилання недійсне з причин, що обліковий запис відсутній або у даного посилання закінчився термін дії та час його використання. Посилання на зміну секретного слова дійсне лише протягом однієї години.</target>
             </trans-unit>
             <trans-unit id="forgot.change.error2">
-                <source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
-                </source>
+                <source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.</source>
                 <target>Помилка: Записи у полях форми з секретним словом повинні збігатися, а секретне слово повинно містити щонайменше 6-ть символів.</target>
             </trans-unit>
             <trans-unit id="forgot.change.password">
@@ -362,6 +361,10 @@
                 <source>Dies ist ein Pflichtfeld.</source>
                 <target>Це поле є обов'язковим.</target>
             </trans-unit>
+            <trans-unit id="email.footer">
+				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
+				<target>Авторське право 2019 - Всі права застережені</target>
+			</trans-unit>
         </body>
     </file>
 </xliff>
