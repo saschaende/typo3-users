@@ -19,7 +19,10 @@ Users brings you all essential plugins (login, logout, register, forgot password
     * Login with username AND/OR email
     * Configurable input fields
     * Save login count for every user
-* Plugin: Logout
+* Plugin: Logout (so the user can logout just with a click on this page)
+    * Add a page "Logout"
+    * Put the plugin "logout" on the "Logout" page
+    * Configure the logout plugin (where will the user be redirected after logout?)
 * Plugin: Forgot password
 * Plugin: Register
     * Set user groups that will be automatically assigned
