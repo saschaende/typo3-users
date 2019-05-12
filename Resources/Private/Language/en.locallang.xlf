@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-12T18:37:05Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-12T22:06:27Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="changemail.form.button">
+				<source>E-Mail Adresse jetzt ändern</source>
+				<target>Change e-mail address now</target>
+			</trans-unit>
+			<trans-unit id="changemail.form.emailnow">
+				<source>Aktuelle E-Mail Adresse</source>
+				<target>Current e-mail address</target>
+			</trans-unit>
+			<trans-unit id="changemail.form.newemail">
+				<source>Neue E-Mail Adresse</source>
+				<target>New e-mail address</target>
+			</trans-unit>
+			<trans-unit id="changemail.form.note">
+				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern  noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse  hier angezeigt.</source>
+				<target>If you change your email address, you will receive an email with a confirmation link if no other account exists with this email address. The change of the e-mail address is only active after a confirmation and only then the new e-mail address is displayed here.</target>
+			</trans-unit>
+			<trans-unit id="changemail.form.title">
+				<source>E-Mail Adresse ändern</source>
+				<target>Change email address</target>
+			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
 				<target>Copyright 2019 - All rights reserved</target>

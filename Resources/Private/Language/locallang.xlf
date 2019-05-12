@@ -1,334 +1,327 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="de" datatype="plaintext" original="messages" date="2019-05-12T18:37:05Z"
-          product-name="users">
-        <header/>
-        <body>
-            <trans-unit id="email.footer">
-                <source>Copyright 2019 - Alle Rechte vorbehalten</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.error">
-                <source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-12T22:06:27Z" product-name="users">
+		<header/>
+		<body>
+			<trans-unit id="changemail.form.button">
+				<source>E-Mail Adresse jetzt ändern</source>
+			</trans-unit>
+			<trans-unit id="changemail.form.emailnow">
+				<source>Aktuelle E-Mail Adresse</source>
+			</trans-unit>
+			<trans-unit id="changemail.form.newemail">
+				<source>Neue E-Mail Adresse</source>
+			</trans-unit>
+			<trans-unit id="changemail.form.note">
+				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern  noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse  hier angezeigt.</source>
+			</trans-unit>
+			<trans-unit id="changemail.form.title">
+				<source>E-Mail Adresse ändern</source>
+			</trans-unit>
+			<trans-unit id="email.footer">
+				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
+			</trans-unit>
+			<trans-unit id="forgot.change.error">
+				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
                     abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
                 </source>
-            </trans-unit>
-            <trans-unit id="forgot.change.error2">
-                <source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
+			</trans-unit>
+			<trans-unit id="forgot.change.error2">
+				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
                 </source>
-            </trans-unit>
-            <trans-unit id="forgot.change.password">
-                <source>Neues Passwort</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.passwordrepeat">
-                <source>Neues Passwort wiederholen</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.submit">
-                <source>Neues Passwort speichern</source>
-            </trans-unit>
-            <trans-unit id="forgot.change.text">
-                <source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss
+			</trans-unit>
+			<trans-unit id="forgot.change.password">
+				<source>Neues Passwort</source>
+			</trans-unit>
+			<trans-unit id="forgot.change.passwordrepeat">
+				<source>Neues Passwort wiederholen</source>
+			</trans-unit>
+			<trans-unit id="forgot.change.submit">
+				<source>Neues Passwort speichern</source>
+			</trans-unit>
+			<trans-unit id="forgot.change.text">
+				<source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss
                     mindestens aus 6 Zeichen bestehen.
                 </source>
-            </trans-unit>
-            <trans-unit id="forgot.change.title">
-                <source>Passwort ändern</source>
-            </trans-unit>
-            <trans-unit id="forgot.changeformsubmit.button">
-                <source>Weiter zur Webseite</source>
-            </trans-unit>
-            <trans-unit id="forgot.changeformsubmit.message">
-                <source>Vielen Dank, das Passwort wurde erfolgreich geändert.</source>
-            </trans-unit>
-            <trans-unit id="forgot.changeformsubmit.title">
-                <source>Passwort wurde geändert</source>
-            </trans-unit>
-            <trans-unit id="forgot.confirm.back">
-                <source>Zurück</source>
-            </trans-unit>
-            <trans-unit id="forgot.confirm.text">
-                <source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
+			</trans-unit>
+			<trans-unit id="forgot.change.title">
+				<source>Passwort ändern</source>
+			</trans-unit>
+			<trans-unit id="forgot.changeformsubmit.button">
+				<source>Weiter zur Webseite</source>
+			</trans-unit>
+			<trans-unit id="forgot.changeformsubmit.message">
+				<source>Vielen Dank, das Passwort wurde erfolgreich geändert.</source>
+			</trans-unit>
+			<trans-unit id="forgot.changeformsubmit.title">
+				<source>Passwort wurde geändert</source>
+			</trans-unit>
+			<trans-unit id="forgot.confirm.back">
+				<source>Zurück</source>
+			</trans-unit>
+			<trans-unit id="forgot.confirm.text">
+				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
                     gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die
                     E-Mail-Adresse nicht gefunden.
                 </source>
-            </trans-unit>
-            <trans-unit id="forgot.email.button">
-                <source>Passwort zurücksetzen</source>
-            </trans-unit>
-            <trans-unit id="forgot.email.info">
-                <source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren
+			</trans-unit>
+			<trans-unit id="forgot.email.button">
+				<source>Passwort zurücksetzen</source>
+			</trans-unit>
+			<trans-unit id="forgot.email.info">
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren
                     Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.
                 </source>
-            </trans-unit>
-            <trans-unit id="forgot.email.message">
-                <source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage
+			</trans-unit>
+			<trans-unit id="forgot.email.message">
+				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage
                     nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben,
                     setzen Sie bitte Ihr Passwort zurück.:
                 </source>
-            </trans-unit>
-            <trans-unit id="forgot.email.salutation">
-                <source>Hallo,</source>
-            </trans-unit>
-            <trans-unit id="forgot.email.title">
-                <source>Hier sind die Instruktionen, um das Passwort zurückzusetzen.</source>
-            </trans-unit>
-            <trans-unit id="forgot.submit">
-                <source>Passwortänderung anfordern</source>
-            </trans-unit>
-            <trans-unit id="forgot.text">
-                <source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
+			</trans-unit>
+			<trans-unit id="forgot.email.salutation">
+				<source>Hallo,</source>
+			</trans-unit>
+			<trans-unit id="forgot.email.title">
+				<source>Hier sind die Instruktionen, um das Passwort zurückzusetzen.</source>
+			</trans-unit>
+			<trans-unit id="forgot.submit">
+				<source>Passwortänderung anfordern</source>
+			</trans-unit>
+			<trans-unit id="forgot.text">
+				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
                     zum Zurücksetzen des Passworts zugesandt.
                 </source>
-            </trans-unit>
-            <trans-unit id="forgot.title">
-                <source>Passwort vergessen</source>
-            </trans-unit>
-            <trans-unit id="forgot.usernameemail">
-                <source>Benutzername oder E-Mail</source>
-            </trans-unit>
-            <trans-unit id="login.error">
-                <source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
+			</trans-unit>
+			<trans-unit id="forgot.title">
+				<source>Passwort vergessen</source>
+			</trans-unit>
+			<trans-unit id="forgot.usernameemail">
+				<source>Benutzername oder E-Mail</source>
+			</trans-unit>
+			<trans-unit id="login.error">
+				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
                     Benutzernamen/E-Mail oder
                     das Passwort falsch eingegeben. Groß-/Kleinschreibung
                     wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser
                     deaktiviert hast.
                 </source>
-            </trans-unit>
-            <trans-unit id="login.forgotpass">
-                <source>Passwort vergessen?</source>
-            </trans-unit>
-            <trans-unit id="login.password">
-                <source>Passwort</source>
-            </trans-unit>
-            <trans-unit id="login.register">
-                <source>Noch nicht registriert? Jetzt registrieren</source>
-            </trans-unit>
-            <trans-unit id="login.submit">
-                <source>Login</source>
-            </trans-unit>
-            <trans-unit id="login.title">
-                <source>Jetzt einloggen</source>
-            </trans-unit>
-            <trans-unit id="login.username">
-                <source>Benutzername</source>
-            </trans-unit>
-            <trans-unit id="login.usernameemail">
-                <source>Benutzername oder E-Mail</source>
-            </trans-unit>
-            <trans-unit id="register.confirm.email">
-                <source>E-Mail</source>
-            </trans-unit>
-            <trans-unit id="register.confirm.error.message">
-                <source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits
+			</trans-unit>
+			<trans-unit id="login.forgotpass">
+				<source>Passwort vergessen?</source>
+			</trans-unit>
+			<trans-unit id="login.password">
+				<source>Passwort</source>
+			</trans-unit>
+			<trans-unit id="login.register">
+				<source>Noch nicht registriert? Jetzt registrieren</source>
+			</trans-unit>
+			<trans-unit id="login.submit">
+				<source>Login</source>
+			</trans-unit>
+			<trans-unit id="login.title">
+				<source>Jetzt einloggen</source>
+			</trans-unit>
+			<trans-unit id="login.username">
+				<source>Benutzername</source>
+			</trans-unit>
+			<trans-unit id="login.usernameemail">
+				<source>Benutzername oder E-Mail</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.error.message">
+				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits
                     freigeschaltet.
                 </source>
-            </trans-unit>
-            <trans-unit id="register.confirm.error.title">
-                <source>Fehler</source>
-            </trans-unit>
-            <trans-unit id="register.confirm.message">
-                <source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet
+			</trans-unit>
+			<trans-unit id="register.confirm.error.title">
+				<source>Fehler</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.message">
+				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet
                     bist.
                 </source>
-            </trans-unit>
-            <trans-unit id="register.confirm.next">
-                <source>Weiter</source>
-            </trans-unit>
-            <trans-unit id="register.confirm.title">
-                <source>Vielen Dank für Deine Registrierung</source>
-            </trans-unit>
-            <trans-unit id="register.confirm.username">
-                <source>Benutzername</source>
-            </trans-unit>
-            <trans-unit id="register.email.button">
-                <source>Registrierung bestätigen</source>
-            </trans-unit>
-            <trans-unit id="register.email.message">
-                <source>Vielen Dank für Dein Interesse und Deine Registrierung auf
+			</trans-unit>
+			<trans-unit id="register.confirm.next">
+				<source>Weiter</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.title">
+				<source>Vielen Dank für Deine Registrierung</source>
+			</trans-unit>
+			<trans-unit id="register.confirm.username">
+				<source>Benutzername</source>
+			</trans-unit>
+			<trans-unit id="register.email.button">
+				<source>Registrierung bestätigen</source>
+			</trans-unit>
+			<trans-unit id="register.email.message">
+				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf
                     unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:
                 </source>
-            </trans-unit>
-            <trans-unit id="register.email.notes">
-                <source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
+			</trans-unit>
+			<trans-unit id="register.email.notes">
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
                     Daten
                     automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
                     angegeben
                     oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der
                     nächsten Stunden ebenfalls automatisch wieder entfernt.
                 </source>
-            </trans-unit>
-            <trans-unit id="register.email.salutation">
-                <source>Hallo</source>
-            </trans-unit>
-            <trans-unit id="register.email.title">
-                <source>Deine Registrierung auf unserer Webseite</source>
-            </trans-unit>
-            <trans-unit id="register.emailexists.button">
-                <source>Neues
+			</trans-unit>
+			<trans-unit id="register.email.salutation">
+				<source>Hallo</source>
+			</trans-unit>
+			<trans-unit id="register.email.title">
+				<source>Deine Registrierung auf unserer Webseite</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.button">
+				<source>Neues
                     Passwort anfordern
                 </source>
-            </trans-unit>
-            <trans-unit id="register.emailexists.info">
-                <source>Hier nochmal zur Erinnerung Deine Daten:</source>
-            </trans-unit>
-            <trans-unit id="register.emailexists.info.email">
-                <source>Deine E-Mail:</source>
-            </trans-unit>
-            <trans-unit id="register.emailexists.info.username">
-                <source>Dein Benutzername:</source>
-            </trans-unit>
-            <trans-unit id="register.emailexists.message">
-                <source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung
+			</trans-unit>
+			<trans-unit id="register.emailexists.info">
+				<source>Hier nochmal zur Erinnerung Deine Daten:</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info.email">
+				<source>Deine E-Mail:</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.info.username">
+				<source>Dein Benutzername:</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.message">
+				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung
                     eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren.
                     Solltest
                     Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:
                 </source>
-            </trans-unit>
-            <trans-unit id="register.emailexists.salutation">
-                <source>Hallo</source>
-            </trans-unit>
-            <trans-unit id="register.emailexists.title">
-                <source>Deine E-Mail Adresse wurde soeben erneut für eine Registrierung genutzt</source>
-            </trans-unit>
-            <trans-unit id="register.field.address">
-                <source>Straße/Hausnr.</source>
-            </trans-unit>
-            <trans-unit id="register.field.city">
-                <source>Stadt</source>
-            </trans-unit>
-            <trans-unit id="register.field.company">
-                <source>Firma</source>
-            </trans-unit>
-            <trans-unit id="register.field.conditions">
-                <source>Ich stimme den AGB zu</source>
-            </trans-unit>
-            <trans-unit id="register.field.conditions.read">
-                <source>hier lesen</source>
-            </trans-unit>
-            <trans-unit id="register.field.dataprotection">
-                <source>Ich habe die Datenschutzinformationen gelesen</source>
-            </trans-unit>
-            <trans-unit id="register.field.dataprotection.read">
-                <source>hier lesen</source>
-            </trans-unit>
-            <trans-unit id="register.field.firstname">
-                <source>Vorname</source>
-            </trans-unit>
-            <trans-unit id="register.field.lastname">
-                <source>Nachname</source>
-            </trans-unit>
-            <trans-unit id="register.field.newsletter">
-                <source>Ich abonniere den Newsletter</source>
-            </trans-unit>
-            <trans-unit id="register.field.telephone">
-                <source>Telefon</source>
-            </trans-unit>
-            <trans-unit id="register.field.zip">
-                <source>Postleitzahl</source>
-            </trans-unit>
-            <trans-unit id="register.form.button">
-                <source>Jetzt registrieren</source>
-            </trans-unit>
-            <trans-unit id="register.form.email">
-                <source>E-Mail Adresse</source>
-            </trans-unit>
-            <trans-unit id="register.form.email.note">
-                <source>An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.</source>
-            </trans-unit>
-            <trans-unit id="register.form.loginlink">
-                <source>Du bist bereits registriert? Hier einloggen</source>
-            </trans-unit>
-            <trans-unit id="register.form.password">
-                <source>Passwort</source>
-            </trans-unit>
-            <trans-unit id="register.form.password.note">
-                <source>Das Passwort muss aus mindestens 6 Zeichen bestehen.</source>
-            </trans-unit>
-            <trans-unit id="register.form.repeatpassword">
-                <source>Passwort wiederholen</source>
-            </trans-unit>
-            <trans-unit id="register.form.title">
-                <source>Registrierung</source>
-            </trans-unit>
-            <trans-unit id="register.form.username">
-                <source>Gewünschter Benutzername</source>
-            </trans-unit>
-            <trans-unit id="register.form.username.note">
-                <source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
+			</trans-unit>
+			<trans-unit id="register.emailexists.salutation">
+				<source>Hallo</source>
+			</trans-unit>
+			<trans-unit id="register.emailexists.title">
+				<source>Deine E-Mail Adresse wurde soeben erneut für eine Registrierung genutzt</source>
+			</trans-unit>
+			<trans-unit id="register.field.address">
+				<source>Straße/Hausnr.</source>
+			</trans-unit>
+			<trans-unit id="register.field.city">
+				<source>Stadt</source>
+			</trans-unit>
+			<trans-unit id="register.field.company">
+				<source>Firma</source>
+			</trans-unit>
+			<trans-unit id="register.field.conditions">
+				<source>Ich stimme den AGB zu</source>
+			</trans-unit>
+			<trans-unit id="register.field.conditions.read">
+				<source>hier lesen</source>
+			</trans-unit>
+			<trans-unit id="register.field.dataprotection">
+				<source>Ich habe die Datenschutzinformationen gelesen</source>
+			</trans-unit>
+			<trans-unit id="register.field.dataprotection.read">
+				<source>hier lesen</source>
+			</trans-unit>
+			<trans-unit id="register.field.firstname">
+				<source>Vorname</source>
+			</trans-unit>
+			<trans-unit id="register.field.lastname">
+				<source>Nachname</source>
+			</trans-unit>
+			<trans-unit id="register.field.newsletter">
+				<source>Ich abonniere den Newsletter</source>
+			</trans-unit>
+			<trans-unit id="register.field.telephone">
+				<source>Telefon</source>
+			</trans-unit>
+			<trans-unit id="register.field.zip">
+				<source>Postleitzahl</source>
+			</trans-unit>
+			<trans-unit id="register.form.button">
+				<source>Jetzt registrieren</source>
+			</trans-unit>
+			<trans-unit id="register.form.email">
+				<source>E-Mail Adresse</source>
+			</trans-unit>
+			<trans-unit id="register.form.email.note">
+				<source>An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.</source>
+			</trans-unit>
+			<trans-unit id="register.form.loginlink">
+				<source>Du bist bereits registriert? Hier einloggen</source>
+			</trans-unit>
+			<trans-unit id="register.form.password">
+				<source>Passwort</source>
+			</trans-unit>
+			<trans-unit id="register.form.password.note">
+				<source>Das Passwort muss aus mindestens 6 Zeichen bestehen.</source>
+			</trans-unit>
+			<trans-unit id="register.form.repeatpassword">
+				<source>Passwort wiederholen</source>
+			</trans-unit>
+			<trans-unit id="register.form.title">
+				<source>Registrierung</source>
+			</trans-unit>
+			<trans-unit id="register.form.username">
+				<source>Gewünschter Benutzername</source>
+			</trans-unit>
+			<trans-unit id="register.form.username.note">
+				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
                     enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
                 </source>
-            </trans-unit>
-            <trans-unit id="register.submit.email">
-                <source>E-Mail</source>
-            </trans-unit>
-            <trans-unit id="register.submit.message">
-                <source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung
+			</trans-unit>
+			<trans-unit id="register.submit.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="register.submit.message">
+				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung
                     Deines
                     Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin.
                     Hier nochmal deine Angaben:
                 </source>
-            </trans-unit>
-            <trans-unit id="register.submit.note">
-                <source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
+			</trans-unit>
+			<trans-unit id="register.submit.note">
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
                     Daten
                     automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
                     angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account
                     innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.
                 </source>
-            </trans-unit>
-            <trans-unit id="register.submit.title">
-                <source>Vielen Dank für Deine Registrierung</source>
-            </trans-unit>
-            <trans-unit id="register.submit.username">
-                <source>Benutzername</source>
-            </trans-unit>
-            <trans-unit id="validation.1">
-                <source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
-            </trans-unit>
-            <trans-unit id="validation.10">
-                <source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
-            </trans-unit>
-            <trans-unit id="validation.2">
-                <source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
-            </trans-unit>
-            <trans-unit id="validation.3">
-                <source>Der gewählte Benutzername existiert bereits.</source>
-            </trans-unit>
-            <trans-unit id="validation.4">
-                <source>Keine E-Mail Adresse angegeben.</source>
-            </trans-unit>
-            <trans-unit id="validation.5">
-                <source>Diese E-Mail Adresse hat kein gültiges Format.</source>
-            </trans-unit>
-            <trans-unit id="validation.7">
-                <source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
-            </trans-unit>
-            <trans-unit id="validation.8">
-                <source>Die Passworteingaben müssen übereinstimmen.</source>
-            </trans-unit>
-            <trans-unit id="validation.9">
-                <source>Dies ist ein Pflichtfeld.</source>
-            </trans-unit>
-            <trans-unit id="changemail.form.title">
-                <source>E-Mail Adresse ändern</source>
-            </trans-unit>
-            <trans-unit id="changemail.form.emailnow">
-                <source>Aktuelle E-Mail Adresse</source>
-            </trans-unit>
-            <trans-unit id="changemail.form.newemail">
-                <source>Neue E-Mail Adresse</source>
-            </trans-unit>
-            <trans-unit id="changemail.form.note">
-                <source>
-                    Wenn Du Deine E-Mail Addresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern
-                    noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung
-                    der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail
-                    Adresse
-                    hier angezeigt.
-                </source>
-            </trans-unit>
-            <trans-unit id="changemail.form.button">
-                <source>E-Mail Adresse ändern</source>
-            </trans-unit>
-        </body>
-    </file>
+			</trans-unit>
+			<trans-unit id="register.submit.title">
+				<source>Vielen Dank für Deine Registrierung</source>
+			</trans-unit>
+			<trans-unit id="register.submit.username">
+				<source>Benutzername</source>
+			</trans-unit>
+			<trans-unit id="validation.1">
+				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
+			</trans-unit>
+			<trans-unit id="validation.10">
+				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
+			</trans-unit>
+			<trans-unit id="validation.2">
+				<source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
+			</trans-unit>
+			<trans-unit id="validation.3">
+				<source>Der gewählte Benutzername existiert bereits.</source>
+			</trans-unit>
+			<trans-unit id="validation.4">
+				<source>Keine E-Mail Adresse angegeben.</source>
+			</trans-unit>
+			<trans-unit id="validation.5">
+				<source>Diese E-Mail Adresse hat kein gültiges Format.</source>
+			</trans-unit>
+			<trans-unit id="validation.7">
+				<source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
+			</trans-unit>
+			<trans-unit id="validation.8">
+				<source>Die Passworteingaben müssen übereinstimmen.</source>
+			</trans-unit>
+			<trans-unit id="validation.9">
+				<source>Dies ist ein Pflichtfeld.</source>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>
