@@ -102,6 +102,10 @@ The extension ships some TypoScript code which needs to be included.
 * If you dont want fontawesome, you can configure the icon classes in TYPOSCRIPT
 ## Screenshots Backend PLugins
 
+## Other credits
+
+* UK Translation by TYPO3.net.ua
+
 ### Plugin: Login
 
 General settings
