@@ -69,7 +69,7 @@ class User extends FrontendUser {
     /**
      * @var string
      */
-    protected $userNewemailhash = '';
+    protected $usersNewemailhash = '';
 
     /**
      * @return \DateTime
@@ -242,15 +242,17 @@ class User extends FrontendUser {
     /**
      * @return string
      */
-    public function getUserNewemailhash(): string {
-        return $this->userNewemailhash;
+    public function getUsersNewemailhash(): string {
+        return $this->usersNewemailhash;
     }
 
     /**
-     * @param string $userNewemailhash
+     * @param string $usersNewemailhash
      */
-    public function setUserNewemailhash(string $userNewemailhash) {
-        $this->userNewemailhash = $userNewemailhash;
+    public function setUsersNewemailhash(string $usersNewemailhash) {
+        $this->usersNewemailhash = $usersNewemailhash;
     }
+
+
 
 }

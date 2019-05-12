@@ -1,1 +1,58 @@
-form
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                E-Mail Adresse ändern
+            </h4>
+            <p>Wenn Du Deine E-Mail Addresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink. Die Änderung
+                der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse
+                hier angezeigt.</p>
+            <div class="card-text">
+                <f:form action="submit" class="form" method="POST" object="{mailchange}" objectName="mailchange">
+
+                    <div class="form-group">
+
+                        <label for="oldemail">Aktuelle E-Mail Adresse</label>
+                        <input type="text" readonly class="form-control-plaintext" id="oldemail" value="{user.email}">
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+
+                        <label for="email">Neue E-Mail Adresse</label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="{settings.iconClassEmail}"></i></span>
+                            </div>
+                            <f:form.textfield type="email"
+                                              class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}"
+                                              id="email" property="email" additionalAttributes="{required:'required'}"/>
+                        </div>
+
+                        <div class="text-danger">
+                            <f:for each="{errors.email}" as="errorcode">
+                                <div>
+                                    <f:render partial="Validation" section="error{errorcode}"/>
+                                </div>
+                            </f:for>
+                        </div>
+
+                    </div>
+                    <!-- EMAIL -->
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <f:form.submit class="btn btn-primary btn-lg" value="E-Mail Adresse ändern"/>
+                    <!-- SUBMIT BUTTON -->
+
+                </f:form>
+            </div>
+        </div>
+
+    </div>
+
+</f:section>
+</html>
