@@ -60,7 +60,12 @@ class AdminController extends ActionController {
 
     public function checkAction(){
         $hosts = $this->bannedHostsRepository->findAll();
-        $users = $this->frontendUserRepository->checkHosts($hosts);
+        if($hosts->count() >= 1){
+            $users = $this->frontendUserRepository->checkHosts($hosts);
+        }else{
+            $users = [];
+        }
+
 
         $this->view->assignMultiple([
             'users' => $users
