@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-13T21:49:07Z" product-name="users">
+	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-13T22:08:44Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.form.button">
@@ -24,6 +24,14 @@
 				<target></target>
 			</trans-unit>
 			<trans-unit id="changemail.form.title">
+				<source>E-Mail Adresse ändern</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changemail.submit.message">
+				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die von  Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe Deinen  Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert und hier sichtbar.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changemail.submit.title">
 				<source>E-Mail Adresse ändern</source>
 				<target></target>
 			</trans-unit>
