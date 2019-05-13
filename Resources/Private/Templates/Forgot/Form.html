@@ -16,9 +16,18 @@
                     <!-- USERNAME/EMAIL -->
                     <div class="form-group">
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="{settings.iconClassUser}"></i></span>
-                            </div>
+                            <f:if condition="{settings.iconsInTheForms} == 0">
+                                <f:else if="{settings.iconsInTheForms} == 1">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="user"><img src="{f:uri.image(src: '{settings.iconFile.user}')}" width="16" height="16"></i></span>
+                                    </div>
+                                </f:else>
+                                <f:else if="{settings.iconsInTheForms} == 2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="{settings.iconClassUser}"></i></span>
+                                    </div>
+                                </f:else>
+                            </f:if>
                             <f:form.textfield class="form-control" id="username" name="username" placeholder="{f:translate(key: 'forgot.usernameemail')}"/>
                         </div>
                     </div>
