@@ -66,11 +66,16 @@
         <f:if condition="{settings.forgotpassPid} || {settings.registerPid}">
             <div class="card-footer">
                 <f:if condition="{settings.forgotpassPid}">
-                    <f:link.page pageUid="{settings.forgotpassPid}"><f:if condition="{settings.iconsInTheForms} == 0"><f:else if="{settings.iconsInTheForms} == 1"><i class="password"><img src="{f:uri.image(src: '{settings.iconFile.password}')}" width="16" height="16"></i></f:else><f:else if="{settings.iconsInTheForms} == 2"><i class="{settings.iconClassPassword}"></i></f:else></f:if> <f:translate key="login.forgotpass"/></f:link.page><br/>
+                    <f:link.page pageUid="{settings.forgotpassPid}">
+                        <f:render partial="Icons/PasswordStandalone"/>
+                        <f:translate key="login.forgotpass"/>
+                    </f:link.page><br/>
                 </f:if>
 
                 <f:if condition="{settings.registerPid}">
-                    <f:link.page pageUid="{settings.registerPid}"><f:if condition="{settings.iconsInTheForms} == 0"><f:else if="{settings.iconsInTheForms} == 1"><i class="register"><img src="{f:uri.image(src: '{settings.iconFile.register}')}" width="16" height="16"></i></f:else><f:else if="{settings.iconsInTheForms} == 2"><i class="{settings.iconClassRegister}"></i></f:else></f:if> <f:translate key="login.register"/></f:link.page>
+                    <f:link.page pageUid="{settings.registerPid}">
+                        <f:render partial="Icons/RegisterStandalone"/>
+                        <f:translate key="login.register"/></f:link.page>
                 </f:if>
             </div>
         </f:if>

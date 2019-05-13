@@ -134,7 +134,8 @@
         <!-- SPECIAL LINKS (Forgot pass or registration) -->
         <f:if condition="{settings.loginPid}">
             <div class="card-footer">
-                <f:link.page pageUid="{settings.loginPid}"><f:if condition="{settings.iconsInTheForms} == 0"><f:else if="{settings.iconsInTheForms} == 1"><i class="user"><img src="{f:uri.image(src: '{settings.iconFile.user}')}" width="16" height="16"></i></f:else><f:else if="{settings.iconsInTheForms} == 2"><i class="{settings.iconClassUser}"></i></f:else></f:if>
+                <f:link.page pageUid="{settings.loginPid}">
+                    <f:render partial="Icons/UserStandalone"/>
                     <f:translate key="register.form.loginlink" />
                 </f:link.page>
             </div>

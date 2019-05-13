@@ -1,0 +1,8 @@
+<f:if condition="{settings.iconsInTheForms} == 0">
+    <f:else if="{settings.iconsInTheForms} == 1">
+        <i class="register"><img src="{f:uri.image(src: '{settings.iconFile.register}')}" width="16" height="16"></i>
+    </f:else>
+    <f:else if="{settings.iconsInTheForms} == 2">
+        <i class="{settings.iconClassRegister}"></i>
+    </f:else>
+</f:if>
