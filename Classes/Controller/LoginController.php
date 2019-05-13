@@ -8,6 +8,11 @@ use t3h\t3h;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 
+/**
+ * Class LoginController
+ * @package SaschaEnde\Users\Controller
+ * @todo Show page, if the user is already logged in (or configure redirect page?)
+ */
 class LoginController extends ActionController {
 
     /**
