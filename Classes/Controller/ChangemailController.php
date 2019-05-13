@@ -114,8 +114,28 @@ class ChangemailController extends ActionController {
                 // Save to database
                 $this->frontendUserRepository->update($this->user);
 
+                // We must generate a link for confirmation here
+                $link = '';
+                $link = t3h::Uri()->getByPid(t3h::Page()->getPid()); // @todo delete later, just for testing email
+
+                // Now lets send the email
+                t3h::Mail()->sendDynamicTemplate(
+                    $mailchange->getEmail(),
+                    $this->settings['senderEmail'],
+                    $this->settings['senderName'],
+                    $this->settings['subject'],
+                    'tx_users',
+                    'Email',
+                    ['user' => $this->user, 'link' => $link],
+                    [],
+                    1,
+                    $this->controllerContext
+                );
+
             }else{
-                DebuggerUtility::var_dump('EXISTS');
+
+                // Do nothing here, just show the message that we sent an email (for security and enumeration reasons)
+
             }
 
         }
