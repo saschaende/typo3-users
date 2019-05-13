@@ -5,6 +5,19 @@ plugin.tx_users {
         layoutRootPaths.0 = EXT:users/Resources/Private/Layouts/
     }
     settings {
+        iconsInTheForms = {$plugin.tx_users.settings.iconsInTheForms}
+        iconFile {
+            user = {$plugin.tx_users.settings.iconFile.user}
+            password = {$plugin.tx_users.settings.iconFile.password}
+            email = {$plugin.tx_users.settings.iconFile.email}
+            register = {$plugin.tx_users.settings.iconFile.register}
+        }
+        iconClass {
+            user = {$plugin.tx_users.settings.iconClass.user}
+            password = {$plugin.tx_users.settings.iconClass.password}
+            email = {$plugin.tx_users.settings.iconClass.email}
+            register = {$plugin.tx_users.settings.iconClass.register}
+        }
         // Configure icon span css classes for different templates (actually fontawesome)
         iconClassUser = fas fa-user fa-fw
         iconClassPassword = fas fa-lock fa-fw
