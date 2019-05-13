@@ -33,18 +33,7 @@
                             </f:if>
                         </label>
                         <div class="input-group mb-3">
-                            <f:if condition="{settings.iconsInTheForms} == 0">
-                                <f:else if="{settings.iconsInTheForms} == 1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="user"><img src="{f:uri.image(src: '{settings.iconFile.user}')}" width="16" height="16"></i></span>
-                                    </div>
-                                </f:else>
-                                <f:else if="{settings.iconsInTheForms} == 2">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="{settings.iconClassUser}"></i></span>
-                                    </div>
-                                </f:else>
-                            </f:if>
+                            <f:render partial="Icons/User"/>
                             <f:form.textfield class="form-control" id="username" name="username" additionalAttributes="{required:'required'}"/>
                         </div>
                     </div>
@@ -57,18 +46,7 @@
                             <f:translate key="login.password"/>
                         </label>
                         <div class="input-group mb-3">
-                            <f:if condition="{settings.iconsInTheForms} == 0">
-                                <f:else if="{settings.iconsInTheForms} == 1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="password"><img src="{f:uri.image(src: '{settings.iconFile.password}')}" width="16" height="16"></i></span>
-                                    </div>
-                                </f:else>
-                                <f:else if="{settings.iconsInTheForms} == 2">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="{settings.iconClass.password}"></i></span>
-                                    </div>
-                                </f:else>
-                            </f:if>
+                            <f:render partial="Icons/Password"/>
                             <f:form.password class="form-control" id="password" name="password" additionalAttributes="{required:'required'}"/>
                         </div>
 
