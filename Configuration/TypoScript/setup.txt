@@ -18,10 +18,5 @@ plugin.tx_users {
             email = {$plugin.tx_users.settings.iconClass.email}
             register = {$plugin.tx_users.settings.iconClass.register}
         }
-        // Configure icon span css classes for different templates (actually fontawesome)
-        iconClassUser = fas fa-user fa-fw
-        iconClassPassword = fas fa-lock fa-fw
-        iconClassEmail = fas fa-envelope fa-fw
-        iconClassRegister = fas fa-user-plus fa-fw
     }
 }
