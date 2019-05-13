@@ -21,6 +21,8 @@ Users brings you all essential plugins (login, logout, register, forgot password
     * Save login count for every user
 * Plugin: Logout (so the user can logout just with a click on this page)
 * Plugin: Forgot password
+* Plugin: Change email (for registered users, with confirmation of the new adress via email)
+* Plugin: Change password (for registered users)
 * Plugin: Register
     * Set user groups that will be automatically assigned
     * Protect your system from disposable email addresses: Banlist for not allowed domains/hosts (spamschlucker ...)
@@ -29,11 +31,6 @@ Users brings you all essential plugins (login, logout, register, forgot password
     * Saves root page uid for every registered user
     * Saves language setting of every user
 * Language files delivered: German / English
-
-## Actually in development (coming soon)
-
-* Plugin: Change password
-* PLugin: Change email
 
 ## Planned / ToDo
 
