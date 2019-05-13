@@ -20,18 +20,7 @@
                             <f:translate key="register.form.username" />*
                         </label>
                         <div class="input-group mb-3">
-                            <f:if condition="{settings.iconsInTheForms} == 0">
-                                <f:else if="{settings.iconsInTheForms} == 1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="user"><img src="{f:uri.image(src: '{settings.iconFile.user}')}" width="16" height="16"></i></span>
-                                    </div>
-                                </f:else>
-                                <f:else if="{settings.iconsInTheForms} == 2">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="{settings.iconClassUser}"></i></span>
-                                    </div>
-                                </f:else>
-                            </f:if>
+                            <f:render partial="Icons/User"/>
                             <f:form.textfield
                                     class="form-control{f:if(condition: '{errors.username}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.username}',then: ' is-valid')}"
                                     id="username" property="username"
@@ -58,18 +47,7 @@
                             <f:translate key="register.form.email" />*
                         </label>
                         <div class="input-group mb-3">
-                            <f:if condition="{settings.iconsInTheForms} == 0">
-                                <f:else if="{settings.iconsInTheForms} == 1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="email"><img src="{f:uri.image(src: '{settings.iconFile.email}')}" width="16" height="16"></i></span>
-                                    </div>
-                                </f:else>
-                                <f:else if="{settings.iconsInTheForms} == 2">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="{settings.iconClassEmail}"></i></span>
-                                    </div>
-                                </f:else>
-                            </f:if>
+                            <f:render partial="Icons/Email"/>
                             <f:form.textfield
                                     class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}"
                                     type="text" id="email" property="email"
@@ -96,18 +74,7 @@
                             <f:translate key="register.form.password" />*
                         </label>
                         <div class="input-group mb-3">
-                            <f:if condition="{settings.iconsInTheForms} == 0">
-                                <f:else if="{settings.iconsInTheForms} == 1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="password"><img src="{f:uri.image(src: '{settings.iconFile.password}')}" width="16" height="16"></i></span>
-                                    </div>
-                                </f:else>
-                                <f:else if="{settings.iconsInTheForms} == 2">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="{settings.iconClass.password}"></i></span>
-                                    </div>
-                                </f:else>
-                            </f:if>
+                            <f:render partial="Icons/Password"/>
                             <f:form.password
                                     class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
                                     id="password" property="password"
@@ -132,18 +99,7 @@
                             <f:translate key="register.form.repeatpassword" />*
                         </label>
                         <div class="input-group mb-3">
-                            <f:if condition="{settings.iconsInTheForms} == 0">
-                                <f:else if="{settings.iconsInTheForms} == 1">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="password"><img src="{f:uri.image(src: '{settings.iconFile.password}')}" width="16" height="16"></i></span>
-                                    </div>
-                                </f:else>
-                                <f:else if="{settings.iconsInTheForms} == 2">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="{settings.iconClass.password}"></i></span>
-                                    </div>
-                                </f:else>
-                            </f:if>
+                            <f:render partial="Icons/Password"/>
                             <f:form.password
                                     class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
                                     id="passwordrepeat" property="passwordrepeat"
