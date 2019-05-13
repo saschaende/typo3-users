@@ -46,9 +46,7 @@
                                 <f:translate key="forgot.change.password"/>
                             </label>
                             <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
-                                </div>
+                                <f:render partial="Icons/Password"/>
                                 <f:form.password class="form-control" id="password" name="password"
                                                  additionalAttributes="{required:'required'}"/>
                             </div>
@@ -63,9 +61,7 @@
                                 <f:translate key="forgot.change.passwordrepeat"/>
                             </label>
                             <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
-                                </div>
+                                <f:render partial="Icons/Password"/>
                                 <f:form.password class="form-control" id="passwordrepeat" name="passwordrepeat"
                                                  additionalAttributes="{required:'required'}"/>
                             </div>
