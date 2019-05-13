@@ -178,6 +178,11 @@ class ForgotController extends ActionController {
             return false;
         }
 
+        // empty forgothash
+        if (empty($arguments['forgotHash'])) {
+            return false;
+        }
+
         // stop if it is not the hash found in the database
         if ($user->getUsersForgothash() != $arguments['forgotHash']) {
             return false;
