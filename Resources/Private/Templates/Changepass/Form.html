@@ -17,9 +17,7 @@
                             <f:translate key="changepass.form.newpassword" />
                         </label>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
-                            </div>
+                            <f:render partial="Icons/Password"/>
                             <f:form.password
                                     class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
                                     id="password" property="password"
@@ -42,9 +40,7 @@
                             <f:translate key="changepass.form.repeat" />
                         </label>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
-                            </div>
+                            <f:render partial="Icons/Password"/>
                             <f:form.password
                                     class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
                                     id="passwordrepeat" property="repeat"

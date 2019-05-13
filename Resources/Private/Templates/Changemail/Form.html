@@ -21,9 +21,7 @@
 
                         <label for="email"><f:translate key="changemail.form.newemail" /></label>
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="{settings.iconClassEmail}"></i></span>
-                            </div>
+                            <f:render partial="Icons/Email"/>
                             <f:form.textfield type="email"
                                               class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}"
                                               id="email" property="email" additionalAttributes="{required:'required'}"/>
