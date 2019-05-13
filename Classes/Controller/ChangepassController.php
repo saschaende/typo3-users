@@ -2,7 +2,7 @@
 
 namespace SaschaEnde\Users\Controller;
 
-use SaschaEnde\Users\Domain\Model\Mailchange;
+use SaschaEnde\Users\Domain\Model\Passwordchange;
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
@@ -54,6 +54,42 @@ class ChangepassController extends ActionController {
      * @param \SaschaEnde\Users\Domain\Model\Passwordchange $passwordchange
      */
     public function submitAction(Passwordchange $passwordchange = null) {
+
+        $errors = [];
+
+        // Minumum length of password
+        if (mb_strlen($passwordchange->getPassword()) < 6) {
+            $errors['password'][] = '7';
+        } // Same passwords
+        elseif ($passwordchange->getPassword() != $passwordchange->getRepeat()) {
+            $errors['password'][] = '8';
+        }
+
+        if (count($errors) >= 1) {
+
+            // ---------------------------------------------------------------------
+            // ERRORS ... So show the form again
+            // ---------------------------------------------------------------------
+            $this->forward(
+                'form',
+                null,
+                null,
+                [
+                    'errors' => $errors,
+                    'passwordchange' => $passwordchange
+                ]
+            );
+        } else {
+
+            // ---------------------------------------------------------------------
+            // SUCCESS, set new password
+            // ---------------------------------------------------------------------
+
+            $this->user->setPassword(t3h::Password()->getHashedPassword($passwordchange->getPassword()));
+            $this->frontendUserRepository->update($this->user);
+
+
+        }
 
     }
 

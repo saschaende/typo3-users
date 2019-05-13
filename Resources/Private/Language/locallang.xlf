@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-12T22:06:27Z" product-name="users">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-13T21:49:07Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.form.button">
@@ -13,10 +13,35 @@
 				<source>Neue E-Mail Adresse</source>
 			</trans-unit>
 			<trans-unit id="changemail.form.note">
-				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern  noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse  hier angezeigt.</source>
+				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink
+                    insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail
+                    Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier
+                    angezeigt.
+                </source>
 			</trans-unit>
 			<trans-unit id="changemail.form.title">
 				<source>E-Mail Adresse ändern</source>
+			</trans-unit>
+			<trans-unit id="changepass.form.button">
+				<source>Passwort ändern</source>
+			</trans-unit>
+			<trans-unit id="changepass.form.newpassword">
+				<source>Neues Passwort</source>
+			</trans-unit>
+			<trans-unit id="changepass.form.note">
+				<source>Das Passwort muss aus mindestens 6 Zeichen bestehen.</source>
+			</trans-unit>
+			<trans-unit id="changepass.form.repeat">
+				<source>Passwort wiederholen</source>
+			</trans-unit>
+			<trans-unit id="changepass.form.title">
+				<source>Passwort ändern</source>
+			</trans-unit>
+			<trans-unit id="changepass.submit.message">
+				<source>Vielen Dank, Dein Passwort wurde geändert und ist ab jetzt gültig.</source>
+			</trans-unit>
+			<trans-unit id="changepass.submit.title">
+				<source>Passwort ändern</source>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>

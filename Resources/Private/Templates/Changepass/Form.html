@@ -1,0 +1,70 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"><f:translate key="changepass.form.title" /></h4>
+
+            <div class="card-text">
+                <f:form action="submit" class="needs-validation form" method="POST" object="{passwordchange}"
+                        objectName="passwordchange">
+
+
+                    <!-- PASSWORD -->
+                    <div class="form-group">
+                        <label for="password">
+                            <f:translate key="changepass.form.newpassword" />
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
+                            </div>
+                            <f:form.password
+                                    class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
+                                    id="password" property="password"
+                                    additionalAttributes="{autocomplete:'new-password'}"/>
+                        </div>
+                        <div class="text-danger">
+                            <f:for each="{errors.password}" as="errorcode">
+                                <div>
+                                    <f:render partial="Validation" section="error{errorcode}"/>
+                                </div>
+                            </f:for>
+                        </div>
+                        <small class="form-text text-muted"><f:translate key="changepass.form.note" /></small>
+                    </div>
+                    <!-- PASSWORD -->
+
+                    <!-- REPEAT PASSWORD -->
+                    <div class="form-group">
+                        <label for="passwordrepeat">
+                            <f:translate key="changepass.form.repeat" />
+                        </label>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="{settings.iconClassPassword}"></i></span>
+                            </div>
+                            <f:form.password
+                                    class="form-control{f:if(condition: '{errors.password}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.password}',then: ' is-valid')}"
+                                    id="passwordrepeat" property="repeat"
+                                    additionalAttributes="{autocomplete:'new-password'}"/>
+                        </div>
+
+                    </div>
+                    <!-- REPEAT PASSWORD -->
+
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'changepass.form.button')}"/>
+                    <!-- SUBMIT BUTTON -->
+
+                </f:form>
+            </div>
+        </div>
+
+    </div>
+
+</f:section>
+</html>
