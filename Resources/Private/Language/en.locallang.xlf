@@ -3,6 +3,26 @@
 	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-13T22:08:44Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="changemail.email.salutation">
+				<source>Hallo</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changemail.email.title">
+				<source>Du möchtest Deine E-Mail Adresse ändern</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changemail.email.message">
+				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changemail.email.button">
+				<source>Neue E-Mail Addresse bestätigen</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changemail.email.notes">
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="changemail.form.button">
 				<source>E-Mail Adresse jetzt ändern</source>
 				<target>Change e-mail address now</target>
