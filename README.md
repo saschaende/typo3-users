@@ -30,7 +30,7 @@ Users brings you all essential plugins (login, logout, register, forgot password
 * Multi Site:
     * Saves root page uid for every registered user
     * Saves language setting of every user
-* Language files delivered: German / English
+* Language files delivered: German / English / Ukrainian
 
 ## Planned / ToDo
 
