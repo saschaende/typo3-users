@@ -17,7 +17,7 @@
 			</trans-unit>
 			<trans-unit id="changemail.email.button">
 				<source>Neue E-Mail Addresse bestätigen</source>
-				<target>Підтверд нову адресу електронної пошти</target>
+				<target>Підтвердити нову адресу електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
 				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</source>
