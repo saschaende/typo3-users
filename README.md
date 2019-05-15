@@ -44,13 +44,8 @@ Users brings you all essential plugins (login, logout, register, forgot password
 
 # Planned / ToDo
 
-* Command: Scheduler to remove not activated users
-* Module/Command: Newsletter / bulk sending with scheduler
-* Signals
-* Additional options for user names:
-    * Setting A: Show input field and automatically generate a user name if the user does not enter one.
-    * Setting B: Hide input field and always automatically generate a user name.
-    * Setting C: User name is not generated automatically, input is mandatory.
+Here you can see what we are currently working on and what is still planned:
+https://github.com/saschaende/typo3-users/projects
     
 # Important notes
 
@@ -61,7 +56,7 @@ Users brings you all essential plugins (login, logout, register, forgot password
 
 # Installation
 
-### Preparation: Include static TypoScript
+## Preparation: Include static TypoScript
 The extension ships some TypoScript code which needs to be included.
 
 * Switch to the root page of your site.
@@ -70,7 +65,7 @@ The extension ships some TypoScript code which needs to be included.
 * Select "Users (users)" at the field Include static (from extensions)
 * If you have multiple websites configured, repeat the steps above for every website
 
-#### General
+## General
 
 * Go to any page
 * Click on "add content element"
@@ -84,29 +79,65 @@ The extension ships some TypoScript code which needs to be included.
 * Thats it and that's how every "users" plugin works
 * No further typoscript
 
-#### Plugin: Login
+# Add plugins and configure your community
+
+## Publicly accessible plugins
+
+### Plugin: Login
 
 Here users log in with their access data. Normally the username or the e-mail address and the password are used. The plugin supports login with username AND e-mail. For this reason, no e-mail addresses are allowed as user names.
 
-* Add a new page
+* Add a new page "Login"
 * Insert plugin "[Users] Login"
 * Click on the pencil icon
 * Edit plugin settings
 
-#### Plugin: Logout
+### Plugin: Forgot password
+
+If a user has forgotten his password, he can request an e-mail with a link here using his user name or e-mail address. Afterwards, the user can assign a new password by clicking on the e-mail. If the account has not yet been activated, this action will automatically activate it.
+* Add a new page "Forgot password"
+* Insert plugin "[Users] Login"
+* Click on the pencil icon
+* Edit plugin settings
+
+### Plugin: Register
+
+Here a user can register and create an account. The email address is automatically matched against a database of spam hosts. If the user enters an e-mail address that already exists, he will receive a link to assign a new password, as we can assume that the user has forgotten this.
+
+* Add a new page "Register now"
+* Insert plugin "[Users] Register"
+* Click on the pencil icon
+* Edit plugin settings
+
+## Protected userarea plugins
+
+### Plugin: Logout
 
 The Logout Plugin is used to integrate a simple logout via the main navigation. In the plugin a forwarding to a page after the logout can be defined. No other content should be created on the page with the Logout Plugin.
 
-* Add a new page
+* Add a new page "Logout"
 * **The page may only be accessed by logged in users.**
 * Insert plugin "[Users] Logout"
 * Click on the pencil icon
 * Edit plugin settings
 
-#### Plugin: Forgot password
+### Plugin: Change email
 
-If a user has forgotten his password, he can request an e-mail with a link here using his user name or e-mail address. Afterwards, the user can assign a new password by clicking on the e-mail. If the account has not yet been activated, this action will automatically activate it.
-* Add a new page
-* Insert plugin "[Users] Login"
+With this plugin the user can view his current e-mail address and request a change: The user receives an e-mail with a confirmation link. If the user clicks on the link in the e-mail, the new e-mail address is activated.
+
+* **The plugin "[Users] Register" must be installed and active beforehand.**
+* Add a new page "My email adress"
+* **The page may only be accessed by logged in users.**
+* Insert plugin "[Users] Change email"
+* Click on the pencil icon
+* Edit plugin settings
+
+### Plugin: Change password
+
+Here the user can change his password. The change is immediately active.
+
+* Add a new page "My password"
+* **The page may only be accessed by logged in users.**
+* Insert plugin "[Users] Change password"
 * Click on the pencil icon
 * Edit plugin settings
