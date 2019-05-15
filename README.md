@@ -32,6 +32,11 @@ Users brings you all essential plugins (login, logout, register, forgot password
     * Saves language setting of every user
 * Language files delivered: German / English / Ukrainian
 
+## Credits / Other contributors
+
+* Thanks to Vasyl from http://typo3.net.ua/
+    * Commits by Vasyl: https://github.com/saschaende/typo3-users/commits?author=typo3ua
+
 ## Planned / ToDo
 
 * Plugin: Change profile data

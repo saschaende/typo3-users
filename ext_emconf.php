@@ -2,9 +2,9 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Users',
-    'description' => 'Users brings you all essential plugins (login, logout, register, forgot password, banlist for spam hosts...) to build a community with your TYPO3 system. Based on easy to customize fluid templates.',
+    'description' => 'Users brings you all essential plugins (login, logout, register, forgot password, banlist for spam hosts...) to build a community with your TYPO3 system. Based on easy to customize fluid templates. CREDITS: typo3.net.ua',
     'category' => 'plugin',
-    'author' => 'Filmmusic.io / typo3.net.ua',
+    'author' => 'Filmmusic.io',
     'author_email' => 'info@filmmusic.io',
     'state' => 'beta',
     'uploadfolder' => 0,
