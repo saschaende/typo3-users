@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-15T09:44:35Z" product-name="users">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-15T09:54:35Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="changemail.email.button">
+				<source>Neue E-Mail Addresse bestätigen</source>
+			</trans-unit>
+			<trans-unit id="changemail.email.message">
+				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</source>
+			</trans-unit>
+			<trans-unit id="changemail.email.notes">
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</source>
+			</trans-unit>
+			<trans-unit id="changemail.email.salutation">
+				<source>Hallo</source>
+			</trans-unit>
+			<trans-unit id="changemail.email.title">
+				<source>Du möchtest Deine E-Mail Adresse ändern</source>
+			</trans-unit>
 			<trans-unit id="changemail.form.button">
 				<source>E-Mail Adresse jetzt ändern</source>
 			</trans-unit>
