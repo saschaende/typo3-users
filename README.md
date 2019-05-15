@@ -20,7 +20,10 @@ With the extension "users" you get all necessary plugins to build up a community
 * Helpful multi Site support:
      * Saves root page uid for every registered user
      * Saves language setting of every user (on registration and every login, configurable)
-* Language files delivered: German / English / Ukrainian
+* Language files delivered: 
+    * German
+    * English
+    * Ukrainian
         
 ## Plugins & Modules
     
