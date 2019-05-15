@@ -5,16 +5,22 @@
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">
+                <f:translate key="changemail.form.emailnow" />
+            </h4>
+            <div class="card-text">
+                {user.email}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
                 <f:translate key="changemail.form.title" />
             </h4>
             <div class="card-text">
                 <f:form action="submit" class="form" method="POST" object="{mailchange}" objectName="mailchange">
-
-                    <div class="form-group">
-
-                        <label for="oldemail"><f:translate key="changemail.form.emailnow" /></label>
-                        <input type="text" readonly class="form-control-plaintext" id="oldemail" value="{user.email}">
-                    </div>
 
                     <!-- EMAIL -->
                     <div class="form-group">

@@ -120,9 +120,18 @@ class ChangemailController extends ActionController {
                 // Save to database
                 $this->frontendUserRepository->update($this->user);
 
-                // We must generate a link for confirmation here
-                $link = '';
-                $link = t3h::Uri()->getByPid(t3h::Page()->getPid()); // @todo delete later, just for testing email
+
+                // Make link, as short as possible
+                $link = t3h::Uri()->getByPid(
+                    $this->settings['confirmmailchangePage'],
+                    false,
+                    true,
+                    [
+                        'uid'   => $this->user->getUid(),
+                        'changeemailHash'  => $emailHash
+                    ]
+                );
+
 
                 // Now lets send the email
                 t3h::Mail()->sendDynamicTemplate(

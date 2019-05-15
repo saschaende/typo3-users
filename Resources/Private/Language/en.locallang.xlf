@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-15T09:54:35Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-15T19:11:13Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -8,11 +8,15 @@
 				<target>Confirm new e-mail address</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.message">
-				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</source>
+				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf
+                    den folgenden Link, um diese Änderung nun zu bestätigen.
+                </source>
 				<target>You have requested a change of email address associated with your account. Click on the following link to confirm this change.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
-				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</source>
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen
+                    Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.
+                </source>
 				<target>If the above button doesn't work, try copying and pasting the URL into your browser. If you still have problems, feel free to contact us.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.salutation">
@@ -48,7 +52,11 @@
 				<target>Change email address</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.message">
-				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die von  Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe Deinen  Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert und hier sichtbar.</source>
+				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die
+                    von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe
+                    Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert
+                    und hier sichtbar.
+                </source>
 				<target>If no other account is linked to the address you entered, you have received an e-mail with a confirmation link to the new e-mail address you entered. Please check your inbox and click on the link. Your new e-mail address will be activated immediately and will be visible here.</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.title">
@@ -82,6 +90,18 @@
 			<trans-unit id="changepass.submit.title">
 				<source>Passwort ändern</source>
 				<target>Change password</target>
+			</trans-unit>
+			<trans-unit id="confirmmailchange.error">
+				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann  verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
+				<target>Error: Unfortunately we could not change your e-mail address. There may be several reasons for this: Either the link is invalid, the e-mail address has already been changed or the e-mail address is now being used by another account.</target>
+			</trans-unit>
+			<trans-unit id="confirmmailchange.success">
+				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
+				<target>Thank you, you have confirmed the change of your e-mail address. Your account is now linked to the following e-mail address:</target>
+			</trans-unit>
+			<trans-unit id="confirmmailchange.title">
+				<source>Änderung der E-Mail Adresse</source>
+				<target>Change of e-mail address</target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
@@ -196,8 +216,8 @@
 			</trans-unit>
 			<trans-unit id="layouts.error.notlogged">
 				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden.
-					Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
-				</source>
+                    Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
+                </source>
 				<target>Error: This plugin can only be inserted on a page in a protected area. Make sure that only logged in users have access to this area.</target>
 			</trans-unit>
 			<trans-unit id="login.error">

@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+
+    <div class="card login-box">
+        <div class="card-body">
+            <h4 class="card-title">
+                <f:translate key="confirmmailchange.title" />
+            </h4>
+            <div class="card-text">
+                <f:if condition="{verified}">
+
+                    <f:then>
+                        <p><f:translate key="confirmmailchange.success" /> <b>{user.email}</b></p>
+                    </f:then>
+
+                    <f:else>
+                        <p><f:translate key="confirmmailchange.error" /></p>
+                    </f:else>
+
+                </f:if>
+
+            </div>
+        </div>
+    </div>
+
+
+</f:section>
+</html>
