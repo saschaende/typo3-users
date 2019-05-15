@@ -1,0 +1,10 @@
+<div class="tx-users">
+    <f:security.ifAuthenticated>
+        <f:then>
+            <f:render section="main"/>
+        </f:then>
+        <f:else>
+            <div class="alert alert-danger"><f:translate key="layouts.error.notlogged" /></div>
+        </f:else>
+    </f:security.ifAuthenticated>
+</div>

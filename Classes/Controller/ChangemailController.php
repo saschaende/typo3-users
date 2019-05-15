@@ -56,6 +56,9 @@ class ChangemailController extends ActionController {
      */
     public function formAction($mailchange = null, $errors = []){
 
+        // Abort if not logged
+        if(!$this->user){return;}
+
         if($mailchange == null){
             $mailchange = new Mailchange();
         }
@@ -71,6 +74,9 @@ class ChangemailController extends ActionController {
      * @param \SaschaEnde\Users\Domain\Model\Mailchange $mailchange
      */
     public function submitAction(Mailchange $mailchange){
+
+        // Abort if not logged
+        if(!$this->user){return;}
 
         $errors = [];
 

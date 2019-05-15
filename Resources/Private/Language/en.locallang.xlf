@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-13T22:08:44Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-15T09:44:35Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.form.button">
@@ -173,6 +173,12 @@
 			<trans-unit id="forgot.usernameemail">
 				<source>Benutzername oder E-Mail</source>
 				<target>Username or email</target>
+			</trans-unit>
+			<trans-unit id="layouts.error.notlogged">
+				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden.
+					Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
+				</source>
+				<target>Error: This plugin can only be inserted on a page in a protected area. Make sure that only logged in users have access to this area.</target>
 			</trans-unit>
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen

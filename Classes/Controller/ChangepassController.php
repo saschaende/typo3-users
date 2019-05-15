@@ -39,6 +39,9 @@ class ChangepassController extends ActionController {
      */
     public function formAction($passwordchange = null, $errors = []) {
 
+        // Abort if not logged
+        if(!$this->user){return;}
+
         if ($passwordchange == null) {
             $passwordchange = new Passwordchange();
         }
@@ -54,6 +57,9 @@ class ChangepassController extends ActionController {
      * @param \SaschaEnde\Users\Domain\Model\Passwordchange $passwordchange
      */
     public function submitAction(Passwordchange $passwordchange = null) {
+
+        // Abort if not logged
+        if(!$this->user){return;}
 
         $errors = [];
 
