@@ -19,7 +19,7 @@ Users brings you all essential plugins (login, logout, register, forgot password
     * A list of 2160 disposable email address providers is included and can be imported with one click.
 * Helpful multi Site support:
      * Saves root page uid for every registered user
-     * Saves language setting of every user
+     * Saves language setting of every user (on registration and every login, configurable)
 * Language files delivered: German / English / Ukrainian
         
 ## Plugins & Modules
@@ -49,7 +49,7 @@ https://github.com/saschaende/typo3-users/projects
     
 # Important notes
 
-* Very important: Do NOT activate "allow login with email adress" if your system allows usernames with email adresses. The register plugin of this users extension will not allow email adresses as usernames.
+* Very important: Do NOT activate "Also allow login with email adress" in the "[Users] Login" plugin, if your system allows usernames with email adresses. The register plugin of this users extension will not allow email adresses as usernames.
 * This extension does not allow multiple accounts with the same email address. It is also not planned to allow this.
 * To display the icons in the forms, you need "fontawesome" - get it here: https://fontawesome.com/start
     * If you dont want fontawesome, you can configure the icon classes in TYPOSCRIPT and set "iconsInTheForms" to 0 or 1    
