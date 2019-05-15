@@ -305,4 +305,11 @@ class RegisterController extends ActionController {
         $this->redirectToUri($link);
     }
 
+    /**
+     * Confirmation for mailchange
+     */
+    public function confirmmailchangeAction(){
+
+    }
+
 }
