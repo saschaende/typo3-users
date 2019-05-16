@@ -210,7 +210,7 @@
 				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden.
                     Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
                 </source>
-				<target>Помилка: Ці дані розміщено на сторінці в захищеній області і призначені лише для зареєстрованих та авторизованих користвачів. Переконайтеся, що тільки зареєстровані та авторизовані користувачі мають доступ до даних у цій області.</target>
+				<target>Помилка: Ці дані розміщено на захищеній сторінці і призначені лише для зареєстрованих та авторизованих користвачів. Переконайтеся, що ви зареєстровані та авторизовані і як користувач цього веб-сайту маєте доступ до даних, які розміщені на цій сторінці.</target>
 			</trans-unit>у
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
