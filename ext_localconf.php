@@ -77,6 +77,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'changeprofile',
+            [
+                'Changeprofile' => 'form,submit'
+            ],
+            // non-cacheable actions
+            [
+                'Changeprofile' => 'form,submit'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -135,6 +147,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_changepass
+                        }
+                    }
+                    users_changeprofile {
+                        iconIdentifier = users
+                        title = [Users] Change profile
+                        description = Users can change their profile data
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_changeprofile
                         }
                     }
                 }

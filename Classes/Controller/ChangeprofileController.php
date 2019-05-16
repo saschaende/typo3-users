@@ -33,8 +33,31 @@ class ChangeprofileController extends ActionController {
     }
 
 
-    public function formAction() {
+    /**
+     * @param null $user
+     * @param array $errors
+     */
+    public function formAction($user = null, $errors = []) {
 
+        // Setup optionalfields
+        $optionalFields = [];
+        $requiredFields = explode(',', $this->settings['requiredFields']);
+        foreach (explode(',', $this->settings['optionalFields']) as $field) {
+            if (in_array($field, $requiredFields)) {
+                $required = true;
+            } else {
+                $required = false;
+            }
+            $optionalFields[] = [
+                'id' => $field,
+                'required' => $required
+            ];
+        }
+
+        $this->view->assignMultiple([
+            'errors' => $errors,
+            'optionalFields' => $optionalFields
+        ]);
     }
 
 
