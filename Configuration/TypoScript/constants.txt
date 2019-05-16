@@ -1,4 +1,12 @@
 plugin.tx_users {
+	view {
+		# cat=users: file/90/101; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:users/Resources/Private/Templates/
+		# cat=users: file/90/102; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:users/Resources/Private/Partials/
+		# cat=users: file/90/103; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:users/Resources/Private/Layouts/
+	}
     settings {
         # cat=users: icons/100/101; type=int[0-2]; label=Icons in the forms: Displaying icons in the forms: 0 - Forms without Icons, 1 - Forms with Icons based on files (.svg or .png format), 2 - Forms with Icons based on CSS ("fontawesome" or other).
         iconsInTheForms = 2

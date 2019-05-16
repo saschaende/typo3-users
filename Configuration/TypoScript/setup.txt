@@ -1,8 +1,17 @@
 plugin.tx_users {
     view {
-        templateRootPaths.0 = EXT:users/Resources/Private/Templates/
-        partialRootPaths.0 = EXT:users/Resources/Private/Partials/
-        layoutRootPaths.0 = EXT:users/Resources/Private/Layouts/
+        templateRootPaths {
+            0 = EXT:users/Resources/Private/Templates/
+            1 = {$plugin.tx_users.view.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:users/Resources/Private/Partials/
+            1 = {$plugin.tx_users.view.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:users/Resources/Private/Layouts/
+            1 = {$plugin.tx_users.view.layoutRootPath}
+        }
     }
     settings {
         iconsInTheForms = {$plugin.tx_users.settings.iconsInTheForms}
