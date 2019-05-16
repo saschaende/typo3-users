@@ -77,29 +77,29 @@ call_user_func(
             ]
         );
 
-//        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-//            'SaschaEnde.Users',
-//            'changeprofile',
-//            [
-//                'Changeprofile' => 'form,submit'
-//            ],
-//            // non-cacheable actions
-//            [
-//                'Changeprofile' => 'form,submit'
-//            ]
-//        );
-//
-//        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-//            'SaschaEnde.Users',
-//            'deleteaccount',
-//            [
-//                'Deleteaccount' => 'form,submit'
-//            ],
-//            // non-cacheable actions
-//            [
-//                'Deleteaccount' => 'form,submit'
-//            ]
-//        );
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'changeprofile',
+            [
+                'Changeprofile' => 'form,submit'
+            ],
+            // non-cacheable actions
+            [
+                'Changeprofile' => 'form,submit'
+            ]
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'deleteaccount',
+            [
+                'Deleteaccount' => 'form,submit'
+            ],
+            // non-cacheable actions
+            [
+                'Deleteaccount' => 'form,submit'
+            ]
+        );
 
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
@@ -161,7 +161,24 @@ call_user_func(
                             list_type = users_changepass
                         }
                     }
-
+                    users_changeprofile {
+                        iconIdentifier = users
+                        title = [Users] Change profile
+                        description = Users can change their profile data
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_changeprofile
+                        }
+                    }
+                    users_deleteaccount {
+                        iconIdentifier = users
+                        title = [Users] Delete account
+                        description = Users can delete account
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_deleteaccount
+                        }
+                    }
                 }
                 show = *
             }

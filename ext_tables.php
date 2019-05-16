@@ -40,17 +40,17 @@ call_user_func(
             '[Users] Change password'
         );
 
-//        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-//            'SaschaEnde.Users',
-//            'changeprofile',
-//            '[Users] Change profile'
-//        );
-//
-//        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-//            'SaschaEnde.Users',
-//            'deleteaccount',
-//            '[Users] Delete account'
-//        );
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'changeprofile',
+            '[Users] Change profile'
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'deleteaccount',
+            '[Users] Delete account'
+        );
 
         // ------------------------------------------------------------------------------
         // Add Backend Module
