@@ -32,9 +32,7 @@
                                               class="form-control{f:if(condition: '{errors.email}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.email}',then: ' is-valid')}"
                                               id="email" property="email" additionalAttributes="{required:'required'}"/>
                         </div>
-
-                        <small class="form-text text-muted"><f:translate key="changemail.form.note" /></small>
-
+                        
                         <div class="text-danger">
                             <f:for each="{errors.email}" as="errorcode">
                                 <div>
@@ -43,9 +41,10 @@
                             </f:for>
                         </div>
 
+                        <small class="form-text text-muted"><f:translate key="changemail.form.note" /></small>
+
                     </div>
                     <!-- EMAIL -->
-
 
                     <!-- SUBMIT BUTTON -->
                     <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'changemail.form.button')}"/>
