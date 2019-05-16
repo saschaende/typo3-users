@@ -34,10 +34,9 @@ class ChangeprofileController extends ActionController {
 
 
     /**
-     * @param null $user
      * @param array $errors
      */
-    public function formAction($user = null, $errors = []) {
+    public function formAction($errors = []) {
 
         // Setup optionalfields
         $optionalFields = [];
@@ -55,6 +54,7 @@ class ChangeprofileController extends ActionController {
         }
 
         $this->view->assignMultiple([
+            'user'  => $this->user,
             'errors' => $errors,
             'optionalFields' => $optionalFields
         ]);
