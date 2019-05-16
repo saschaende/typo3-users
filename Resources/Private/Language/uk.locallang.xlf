@@ -17,7 +17,7 @@
 				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen
                     Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.
                 </source>
-				<target>Якщо вищенаведена кнопка не працює, спробуйте скопіювати URL-адресу та вставити її у адресний рядок вашого веб-переглядач. Якщо у вас виникають будь-які проблеми, не соромтеся звертатися до нас.</target>
+				<target>Якщо вищенаведена кнопка не працює, спробуйте скопіювати цю URL-адресу та вставити її у адресний рядок вашого веб-переглядача. Якщо у вас виникають будь-які проблеми, не соромтеся звертатися до нас.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.salutation">
 				<source>Hallo</source>
@@ -93,15 +93,15 @@
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
 				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann  verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
-				<target></target>
+				<target>Помилка: На жаль, ми не змогли змінити вашу адресу електронної пошти. Причини цього можуть бути різні: у посилання для зміни адреси електронної пошти закінчився термін використання, адресу електронної пошти вже змінено, або дана адреса електронної пошти тепер використовується іншим обліковим записом.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
 				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
-				<target></target>
+				<target>Дякуємо, ви підтвердили зміну адреси електронної пошти. Тепер ваш обліковий запис пов'язано з такою адресою електронної пошти:</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
 				<source>Änderung der E-Mail Adresse</source>
-				<target></target>
+				<target>Зміна адреси електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
@@ -210,8 +210,8 @@
 				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden.
                     Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
                 </source>
-				<target></target>
-			</trans-unit>
+				<target>Помилка: Ці дані розміщено на сторінці в захищеній області і призначені лише для зареєстрованих та авторизованих користвачів. Переконайтеся, що тільки зареєстровані та авторизовані користувачі мають доступ до даних у цій області.</target>
+			</trans-unit>у
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
                     Benutzernamen/E-Mail oder
