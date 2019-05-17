@@ -36,7 +36,7 @@ class LoginController extends ActionController {
     public function formAction() {
 
         // Lets check if the user is logged in?
-        if(t3h::FrontendUser()->getCurrentUser()){
+        if(t3h::FrontendUser()->getCurrentUser() && intval($this->settings['redirectIfLogged']) != 0){
             // Redirect
             $uri = t3h::Uri()->getByPid(intval($this->settings['redirectIfLogged']));
             $this->redirectToUri($uri);
