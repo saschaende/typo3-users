@@ -88,6 +88,10 @@
                                         <numIndex index="0">Newsletter</numIndex>
                                         <numIndex index="1">users_newsletter</numIndex>
                                     </numIndex>
+                                    <numIndex index="11" type="array">
+                                        <numIndex index="0">Username</numIndex>
+                                        <numIndex index="1">username</numIndex>
+                                    </numIndex>
                                 </items>
                                 <size>10</size>
                             </config>

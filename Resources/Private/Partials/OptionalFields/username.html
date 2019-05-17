@@ -1,0 +1,25 @@
+<!-- USERNAME -->
+<div class="form-group">
+
+    <label for="username">
+        <f:translate key="register.form.username" />*
+    </label>
+    <div class="input-group mb-3">
+        <f:render partial="Icons/User"/>
+        <f:form.textfield
+                class="form-control{f:if(condition: '{errors.username}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.username}',then: ' is-valid')}"
+                id="username" property="username"
+                additionalAttributes="{autocomplete:'new-password'}"/>
+    </div>
+    <div class="text-danger">
+        <f:for each="{errors.username}" as="errorcode">
+            <div>
+                <f:render partial="Validation" section="error{errorcode}"/>
+            </div>
+        </f:for>
+    </div>
+    <small class="form-text text-muted">
+        <f:translate key="register.form.username.note" />
+    </small>
+</div>
+<!-- USERNAME -->

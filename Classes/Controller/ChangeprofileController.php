@@ -72,6 +72,23 @@ class ChangeprofileController extends ActionController {
 
         $errors = [];
 
+        // Username min 3 and max 20
+        if (mb_strlen($user->getUsername()) < 3 || mb_strlen($user->getUsername()) > 20) {
+            $errors['username'][] = '1';
+        }
+
+        // Sonderzeichen im Username
+        if (preg_match('/[^a-zA-Z0-9]/', $user->getUsername()) == 1) {
+            $errors['username'][] = '2';
+        }
+
+        // Check if username exists and if its not our username
+        if ($userfound = $this->frontendUserRepository->findOneByUsername($user->getUsername())) {
+            if($userfound->getUid() != $user->getUid()){
+                $errors['username'][] = '3';
+            }
+        }
+
         // ---------------------------------------------------------------------
         // Check required fields
 
