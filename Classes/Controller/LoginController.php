@@ -11,7 +11,6 @@ use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 /**
  * Class LoginController
  * @package SaschaEnde\Users\Controller
- * @todo Show page, if the user is already logged in (or configure redirect page?)
  */
 class LoginController extends ActionController {
 
@@ -35,6 +34,15 @@ class LoginController extends ActionController {
      * Show the login form
      */
     public function formAction() {
+
+        // Lets check if the user is logged in?
+        if(t3h::FrontendUser()->getCurrentUser()){
+            // Redirect
+            $uri = t3h::Uri()->getByPid(intval($this->settings['redirectIfLogged']));
+            $this->redirectToUri($uri);
+        }
+
+
         $arguments = $this->request->getArguments();
         $this->view->assignMultiple([
             'error' => intval($arguments['error'])
