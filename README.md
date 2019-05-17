@@ -144,3 +144,13 @@ Here the user can change his password. The change is immediately active.
 * Insert plugin "[Users] Change password"
 * Click on the pencil icon
 * Edit plugin settings
+
+### Plugin: Change profile
+
+Here the user can change the username or other profile data. The change is immediately active.
+
+* Add a new page "My profile"
+* **The page may only be accessed by logged in users.**
+* Insert plugin "[Users] Change profile"
+* Click on the pencil icon
+* Edit plugin settings
