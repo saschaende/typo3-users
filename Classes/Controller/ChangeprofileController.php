@@ -2,9 +2,11 @@
 
 namespace SaschaEnde\Users\Controller;
 
+use SaschaEnde\Users\Domain\Model\Registration;
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class ChangeprofileController extends ActionController {
@@ -34,9 +36,14 @@ class ChangeprofileController extends ActionController {
 
 
     /**
+     * @param \SaschaEnde\Users\Domain\Model\User $user
      * @param array $errors
      */
-    public function formAction($errors = []) {
+    public function formAction($user = null, $errors = []) {
+
+        if ($user == null) {
+            $user = new User();
+        }
 
         // Setup optionalfields
         $optionalFields = [];
@@ -61,8 +68,43 @@ class ChangeprofileController extends ActionController {
     }
 
 
-    public function submitAction() {
+    public function submitAction(User $user) {
 
+        $errors = [];
+
+        // ---------------------------------------------------------------------
+        // Check required fields
+
+        $requiredFields = explode(',', $this->settings['requiredFields']);
+        foreach ($requiredFields as $fieldname) {
+            $func = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
+            if (empty($user->$func())) {
+                $errors[$fieldname][] = '9';
+            }
+        }
+
+        // ---------------------------------------------------------------------
+
+        if (count($errors) >= 1) {
+
+
+            // ---------------------------------------------------------------------
+            // ERRORS ... So show the form again
+            // ---------------------------------------------------------------------
+            $this->forward(
+                'form',
+                null,
+                null,
+                [
+                    'registration' => $user,
+                    'errors' => $errors
+                ]
+            );
+        } else {
+
+            $this->frontendUserRepository->update($user);
+
+        }
     }
 
 }

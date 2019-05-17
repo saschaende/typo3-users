@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-15T19:11:13Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-17T20:10:21Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -63,6 +63,10 @@
 				<source>E-Mail Adresse ändern</source>
 				<target>Change email address</target>
 			</trans-unit>
+			<trans-unit id="changepass.back">
+				<source>Zurück zum Formular</source>
+				<target>Back to the form</target>
+			</trans-unit>
 			<trans-unit id="changepass.form.button">
 				<source>Passwort ändern</source>
 				<target>Change password</target>
@@ -91,12 +95,33 @@
 				<source>Passwort ändern</source>
 				<target>Change password</target>
 			</trans-unit>
+			<trans-unit id="changeprofile.back">
+				<source>Zurück zum Formular</source>
+				<target>Back to the form</target>
+			</trans-unit>
+			<trans-unit id="changeprofile.button">
+				<source>Profildaten speichern</source>
+				<target>Save profile data</target>
+			</trans-unit>
+			<trans-unit id="changeprofile.header">
+				<source>Profil ändern</source>
+				<target>Change profile</target>
+			</trans-unit>
+			<trans-unit id="changeprofile.success">
+				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
+				<target>Thank you, the profile data has been saved.</target>
+			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
-				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann  verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
+				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
+                    verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits
+                    geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.
+                </source>
 				<target>Error: Unfortunately we could not change your e-mail address. There may be several reasons for this: Either the link is invalid, the e-mail address has already been changed or the e-mail address is now being used by another account.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
-				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
+				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit
+                    folgender E-Mail Adresse verknüpft:
+                </source>
 				<target>Thank you, you have confirmed the change of your e-mail address. Your account is now linked to the following e-mail address:</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">

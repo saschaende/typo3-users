@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-15T19:11:13Z" product-name="users">
+	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-17T20:10:21Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -63,6 +63,10 @@
 				<source>E-Mail Adresse ändern</source>
 				<target>Змінити адресу електронної пошти</target>
 			</trans-unit>
+			<trans-unit id="changepass.back">
+				<source>Zurück zum Formular</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="changepass.form.button">
 				<source>Passwort ändern</source>
 				<target>Змінити секретне слово</target>
@@ -91,12 +95,33 @@
 				<source>Passwort ändern</source>
 				<target>Змінити секретне слово</target>
 			</trans-unit>
+			<trans-unit id="changeprofile.back">
+				<source>Zurück zum Formular</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changeprofile.button">
+				<source>Profildaten speichern</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changeprofile.header">
+				<source>Profil ändern</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changeprofile.success">
+				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
-				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann  verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
+				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
+                    verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits
+                    geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.
+                </source>
 				<target>Помилка: На жаль, ми не змогли змінити вашу адресу електронної пошти. Причини цього можуть бути різні: у посилання для зміни адреси електронної пошти закінчився термін використання, адресу електронної пошти вже змінено, або дана адреса електронної пошти тепер використовується іншим обліковим записом.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
-				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
+				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit
+                    folgender E-Mail Adresse verknüpft:
+                </source>
 				<target>Дякуємо, ви підтвердили зміну адреси електронної пошти. Тепер ваш обліковий запис пов'язано з такою адресою електронної пошти:</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
@@ -211,7 +236,7 @@
                     Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
                 </source>
 				<target>Помилка: Ці дані розміщено на захищеній сторінці і призначені лише для зареєстрованих та авторизованих користвачів. Переконайтеся, що ви зареєстровані та авторизовані і як користувач цього веб-сайту маєте доступ до даних, які розміщені на цій сторінці.</target>
-			</trans-unit>у
+			</trans-unit>
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
                     Benutzernamen/E-Mail oder

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-15T19:11:13Z" product-name="users">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-17T20:10:20Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -51,6 +51,9 @@
 			<trans-unit id="changemail.submit.title">
 				<source>E-Mail Adresse ändern</source>
 			</trans-unit>
+			<trans-unit id="changepass.back">
+				<source>Zurück zum Formular</source>
+			</trans-unit>
 			<trans-unit id="changepass.form.button">
 				<source>Passwort ändern</source>
 			</trans-unit>
@@ -72,11 +75,28 @@
 			<trans-unit id="changepass.submit.title">
 				<source>Passwort ändern</source>
 			</trans-unit>
+			<trans-unit id="changeprofile.back">
+				<source>Zurück zum Formular</source>
+			</trans-unit>
+			<trans-unit id="changeprofile.button">
+				<source>Profildaten speichern</source>
+			</trans-unit>
+			<trans-unit id="changeprofile.header">
+				<source>Profil ändern</source>
+			</trans-unit>
+			<trans-unit id="changeprofile.success">
+				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
+			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
-				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann  verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
+				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
+                    verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits
+                    geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.
+                </source>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
-				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
+				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit
+                    folgender E-Mail Adresse verknüpft:
+                </source>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
 				<source>Änderung der E-Mail Adresse</source>
