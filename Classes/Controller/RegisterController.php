@@ -10,10 +10,8 @@ use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Persistence\Generic\Query;
 use TYPO3\CMS\Extbase\Persistence\Generic\QueryResult;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
  * Class RegisterController
@@ -74,6 +72,11 @@ class RegisterController extends ActionController {
         if (isset($_GET['uid']) && isset($_GET['changeemailHash'])) {
             $this->forward('confirmmailchange', null, null, $_GET);
         }
+
+        if (isset($_GET['uid']) && isset($_GET['deleteHash'])) {
+            $this->forward('confirmdeleteaccount', null, null, $_GET);
+        }
+
 
         if ($registration == null) {
             $registration = new Registration();
@@ -315,7 +318,7 @@ class RegisterController extends ActionController {
     /**
      * Confirmation for mailchange
      */
-    public function confirmmailchangeAction(){
+    public function confirmdeleteaccountAction() {
 
         $arguments = $this->request->getArguments();
 
@@ -323,9 +326,36 @@ class RegisterController extends ActionController {
         /** @var User $user */
         $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
 
-        $verified = $this->verifyMailChange($user,$arguments);
+        $verified = $this->verifyDeleteAccount($user, $arguments);
 
-        if($verified){
+        $deleted = false;
+
+        if ($verified) {
+            $this->frontendUserRepository->remove($user);
+            $deleted = true;
+        }
+
+        $this->view->assignMultiple([
+            'user' => $user,
+            'deleted' => $deleted
+        ]);
+
+    }
+
+    /**
+     * Confirmation for mailchange
+     */
+    public function confirmmailchangeAction() {
+
+        $arguments = $this->request->getArguments();
+
+        // Load userdata
+        /** @var User $user */
+        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
+
+        $verified = $this->verifyMailChange($user, $arguments);
+
+        if ($verified) {
             $user->setEmail($user->getUsersNewemail());
             $user->setUsersNewemail('');
             $user->setUsersNewemailhash('');
@@ -333,8 +363,8 @@ class RegisterController extends ActionController {
         }
 
         $this->view->assignMultiple([
-            'user'  => $user,
-            'verified'  => $verified
+            'user' => $user,
+            'verified' => $verified
         ]);
 
     }
@@ -365,6 +395,38 @@ class RegisterController extends ActionController {
         /** @var QueryResult $users */
         $users = $this->frontendUserRepository->findByEmail($user->getUsersNewemail());
         if ($users->count() >= 1) {
+            return false;
+        }
+
+        return true;
+    }
+
+
+    /**
+     * Check the data
+     * @param User $user
+     * @param $arguments
+     * @return bool
+     * @todo Change function names (add tca, model, sql....)
+     */
+    private function verifyDeleteAccount(User $user, $arguments) {
+        // stop if there is no user
+        if (!$user) {
+            return false;
+        }
+
+        // empty forgothash
+        if (empty($arguments['deleteHash'])) {
+            return false;
+        }
+
+        // stop if it is not the hash found in the database
+        if ($user->getUsersNewemailhash() != $arguments['deleteHash']) {
+            return false;
+        }
+
+        // stop, if timestamp is older then now
+        if ($user->getUsersForgothashValid()->getTimestamp() < time()) {
             return false;
         }
 

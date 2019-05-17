@@ -45,11 +45,11 @@ call_user_func(
             'SaschaEnde.Users',
             'register',
             [
-                'Register' => 'form,submit,confirm,redirect,confirmmailchange'
+                'Register' => 'form,submit,confirm,redirect,confirmmailchange,confirmdeleteaccount'
             ],
             // non-cacheable actions
             [
-                'Register' => 'form,submit,confirm,redirect,confirmmailchange'
+                'Register' => 'form,submit,confirm,redirect,confirmmailchange,confirmdeleteaccount'
             ]
         );
 

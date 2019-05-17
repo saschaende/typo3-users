@@ -42,7 +42,8 @@ class DeleteaccountController extends ActionController {
 
 
     public function submitAction() {
-
+        // Send email with delete link
+        // @todo complete this
     }
 
 }

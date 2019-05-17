@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Userarea"/>
+<f:section name="main">
+
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Account löschen</h4>
+
+            <div class="card-text">
+                <p>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</p>
+                <p>Achtung: Durch einen Klick auf den Button wird umgehend die Löschung des Accounts umgesetzt und Du wirst
+                    ausgeloggt.</p>
+            </div>
+
+        </div>
+
+        <div class="card-footer">
+            <f:link.action action="submit" class="btn btn-danger">
+                Jetzt Account löschen
+            </f:link.action>
+        </div>
+
+    </div>
+
+</f:section>
+</html>
