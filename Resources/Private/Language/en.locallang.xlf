@@ -127,6 +127,18 @@
 				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
 				<target>Thank you, the profile data has been saved.</target>
 			</trans-unit>
+			<trans-unit id="changeprofile.deleteaccount.title">
+				<source>Account löschen</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changeprofile.deleteaccount.text">
+				<source>Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="changeprofile.deleteaccount.button">
+				<source>Ich möchte meinen Account löschen</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
 				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
                     verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits
