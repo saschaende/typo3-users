@@ -8,6 +8,7 @@ use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class ChangeprofileController extends ActionController {
 
@@ -48,6 +49,7 @@ class ChangeprofileController extends ActionController {
         // Setup optionalfields
         $optionalFields = [];
         $requiredFields = explode(',', $this->settings['requiredFields']);
+        $requiredFields = array_filter($requiredFields); // Remove empty fields
         foreach (explode(',', $this->settings['optionalFields']) as $field) {
             if (in_array($field, $requiredFields)) {
                 $required = true;
@@ -93,6 +95,7 @@ class ChangeprofileController extends ActionController {
         // Check required fields
 
         $requiredFields = explode(',', $this->settings['requiredFields']);
+        $requiredFields = array_filter($requiredFields); // Remove empty fields
         foreach ($requiredFields as $fieldname) {
             $func = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
             if (empty($user->$func())) {

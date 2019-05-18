@@ -85,6 +85,7 @@ class RegisterController extends ActionController {
         // Setup optionalfields
         $optionalFields = [];
         $requiredFields = explode(',', $this->settings['requiredFields']);
+        $requiredFields = array_filter($requiredFields); // Remove empty fields
         foreach (explode(',', $this->settings['optionalFields']) as $field) {
             if (in_array($field, $requiredFields)) {
                 $required = true;
@@ -150,6 +151,7 @@ class RegisterController extends ActionController {
         // Check required fields
 
         $requiredFields = explode(',', $this->settings['requiredFields']);
+        $requiredFields = array_filter($requiredFields); // Remove empty fields
         foreach ($requiredFields as $fieldname) {
             $func = 'get' . GeneralUtility::underscoredToUpperCamelCase($fieldname);
             if (empty($registration->$func())) {
