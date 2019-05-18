@@ -129,15 +129,15 @@
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.title">
 				<source>Account löschen</source>
-				<target></target>
+				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.text">
 				<source>Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.</source>
-				<target></target>
+				<target>Якщо ви хочете видалити свій обліковий запис, ви можете зробити це легко, швидко і лише за кілька легких кліків.</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.button">
 				<source>Ich möchte meinen Account löschen</source>
-				<target></target>
+				<target>Я хочу видалити свій обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
 				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
