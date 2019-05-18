@@ -3,6 +3,26 @@
 	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-17T20:10:21Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="logged.title">
+				<source>Your current status</source>
+				<target>Your current status</target>
+			</trans-unit>
+			<trans-unit id="logged.text">
+				<source>You are logged in as</source>
+				<target>You are logged in as</target>
+			</trans-unit>
+			<trans-unit id="logged.username">
+				<source>Username</source>
+				<target>Username</target>
+			</trans-unit>
+			<trans-unit id="logged.firstname">
+				<source>First name</source>
+				<target>First name</target>
+			</trans-unit>
+			<trans-unit id="logged.lastname">
+				<source> and Last name</source>
+				<target> and Last nam</target>
+			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Account löschen</source>
 				<target></target>
