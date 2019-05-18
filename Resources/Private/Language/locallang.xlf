@@ -3,6 +3,24 @@
 	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-17T20:10:20Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="logged.title">
+				<source>Your current status</source>
+			</trans-unit>
+			<trans-unit id="logged.text">
+				<source>You are logged in as</source>
+			</trans-unit>
+			<trans-unit id="logged.username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="logged.firstname">
+				<source>First name</source>
+			</trans-unit>
+			<trans-unit id="logged.lastname">
+				<source>Last name</source>
+			</trans-unit>
+			<trans-unit id="logged.end.lastname">
+				<source> and Last name</source>
+			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Account löschen</source>
 			</trans-unit>
@@ -19,9 +37,7 @@
 				<source>Neue E-Mail Addresse bestätigen</source>
 			</trans-unit>
 			<trans-unit id="changemail.email.message">
-				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf
-                    den folgenden Link, um diese Änderung nun zu bestätigen.
-                </source>
+				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</source>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
 				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen
