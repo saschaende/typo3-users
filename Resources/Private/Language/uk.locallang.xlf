@@ -1,56 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-17T20:10:21Z" product-name="users">
+	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-18T19:32:45Z" product-name="users">
 		<header/>
 		<body>
-			<trans-unit id="logged.title">
-				<source>Your current status</source>
-				<target>Ваш поточний статус</target>
-			</trans-unit>
-			<trans-unit id="logged.text">
-				<source>You are logged in as</source>
-				<target>Ви ввійшли в систему як</target>
-			</trans-unit>
-			<trans-unit id="logged.username">
-				<source>Username</source>
-				<target>Ім'я користувача</target>
-			</trans-unit>
-			<trans-unit id="logged.firstname">
-				<source>First name</source>
-				<target>Ім'я</target>
-			</trans-unit>
-			<trans-unit id="logged.lastname">
-				<source>Last name</source>
-				<target>Прізвище</target>
-			</trans-unit>
-			<trans-unit id="logged.and.lastname">
-				<source> and Last name</source>
-				<target> та прізвище</target>
-			</trans-unit>
-			<trans-unit id="deleteaccount.form.title">
-				<source>Account löschen</source>
-				<target>Видалення облікового запису</target>
-			</trans-unit>
-			<trans-unit id="deleteaccount.form.text">
-				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</source>
-				<target>Ви дійсно бажаєте безповоротно видалити обліковий запис? Якщо ви хочете видалити свій обліковий запис і натиснете кнопку "Видалити обліковий запис" ваш обліковий запис буде видалено.</target>
-			</trans-unit>
-			<trans-unit id="deleteaccount.form.warning">
-				<source>Achtung: Durch einen Klick auf den Button wird umgehend die Löschung des Accounts umgesetzt und Du wirst ausgeloggt.</source>
-				<target>Застереження: Натиснувши на кнопку "Видалити обліковий запис", видалення облікового запису буде виконано негайно, і ви примусово вийдете з системи.</target>
-			</trans-unit>
-			<trans-unit id="deleteaccount.form.button">
-				<source>Jetzt Account löschen</source>
-				<target>Видалити обліковий запис</target>
-			</trans-unit>
 			<trans-unit id="changemail.email.button">
 				<source>Neue E-Mail Addresse bestätigen</source>
 				<target>Підтвердити нову адресу електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.message">
-				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf
-                    den folgenden Link, um diese Änderung nun zu bestätigen.
-                </source>
+				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</source>
 				<target>Ви подали запит на зміну адреси електронної пошти, пов'язаної з вашим обліковим записом. Натисніть на наступне посилання, щоб підтвердити цю зміну.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
@@ -143,6 +101,18 @@
 				<source>Profildaten speichern</source>
 				<target>Зберегти дані профілю</target>
 			</trans-unit>
+			<trans-unit id="changeprofile.deleteaccount.button">
+				<source>Ich möchte meinen Account löschen</source>
+				<target>Я хочу видалити свій обліковий запис</target>
+			</trans-unit>
+			<trans-unit id="changeprofile.deleteaccount.text">
+				<source>Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.</source>
+				<target>Якщо ви хочете видалити свій обліковий запис, ви можете зробити це легко, швидко і лише за кілька легких кліків.</target>
+			</trans-unit>
+			<trans-unit id="changeprofile.deleteaccount.title">
+				<source>Account löschen</source>
+				<target>Видалити обліковий запис</target>
+			</trans-unit>
 			<trans-unit id="changeprofile.header">
 				<source>Profil ändern</source>
 				<target>Змінити профіль</target>
@@ -150,18 +120,6 @@
 			<trans-unit id="changeprofile.success">
 				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
 				<target>Дякуємо, дані профілю збережено.</target>
-			</trans-unit>
-			<trans-unit id="changeprofile.deleteaccount.title">
-				<source>Account löschen</source>
-				<target>Видалити обліковий запис</target>
-			</trans-unit>
-			<trans-unit id="changeprofile.deleteaccount.text">
-				<source>Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.</source>
-				<target>Якщо ви хочете видалити свій обліковий запис, ви можете зробити це легко, швидко і лише за кілька легких кліків.</target>
-			</trans-unit>
-			<trans-unit id="changeprofile.deleteaccount.button">
-				<source>Ich möchte meinen Account löschen</source>
-				<target>Я хочу видалити свій обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
 				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
@@ -179,6 +137,22 @@
 			<trans-unit id="confirmmailchange.title">
 				<source>Änderung der E-Mail Adresse</source>
 				<target>Зміна адреси електронної пошти</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.form.button">
+				<source>Jetzt Account löschen</source>
+				<target>Видалити обліковий запис</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.form.text">
+				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</source>
+				<target>Ви дійсно бажаєте безповоротно видалити обліковий запис? Якщо ви хочете видалити свій обліковий запис і натиснете кнопку &quot;Видалити обліковий запис&quot; ваш обліковий запис буде видалено.</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.form.title">
+				<source>Account löschen</source>
+				<target>Видалення облікового запису</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.form.warning">
+				<source>Achtung: Wir schicken Dir aus Sicherheitsgründen eine E-Mail mit einem Bestätigungslink. Sobald Du in der E-Mail auf den Link klickst, wird der Account gelöscht.</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
@@ -288,6 +262,30 @@
                     Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
                 </source>
 				<target>Помилка: Ці дані розміщено на захищеній сторінці і призначені лише для зареєстрованих та авторизованих користвачів. Переконайтеся, що ви зареєстровані та авторизовані і як користувач цього веб-сайту маєте доступ до даних, які розміщені на цій сторінці.</target>
+			</trans-unit>
+			<trans-unit id="logged.and.lastname">
+				<source> and Last name</source>
+				<target> та прізвище</target>
+			</trans-unit>
+			<trans-unit id="logged.firstname">
+				<source>First name</source>
+				<target>Ім'я</target>
+			</trans-unit>
+			<trans-unit id="logged.lastname">
+				<source>Last name</source>
+				<target>Прізвище</target>
+			</trans-unit>
+			<trans-unit id="logged.text">
+				<source>You are logged in as</source>
+				<target>Ви ввійшли в систему як</target>
+			</trans-unit>
+			<trans-unit id="logged.title">
+				<source>Your current status</source>
+				<target>Ваш поточний статус</target>
+			</trans-unit>
+			<trans-unit id="logged.username">
+				<source>Username</source>
+				<target>Ім'я користувача</target>
 			</trans-unit>
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
