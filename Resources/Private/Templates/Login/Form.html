@@ -13,9 +13,21 @@
                         <dl>
                             <dt><f:translate key="logged.username"/></dt>
                             <dd>{user.username}</dd>
-                            <f:if condition="{user.firstName} || {user.lastName}">
-                                <dt><f:if condition="{user.firstName}"><f:translate key="logged.firstname"/></f:if><f:if condition="{user.lastName}"><f:translate key="logged.lastname"/></f:if></dt>
-                                <dd><f:if condition="{user.firstName}">{user.firstName}</f:if><f:if condition="{user.lastName}"> {user.lastName}</f:if></dd>
+                            <f:if condition="{user.firstName} && {user.lastName}">
+                                <f:then>
+                                    <dt><f:translate key="logged.firstname"/><f:translate key="logged.and.lastname"/></dt>
+                                    <dd>{user.firstName} {user.lastName}</dd>
+                                </f:then>
+                                <f:else>
+                                    <f:if condition="{user.firstName}">
+                                        <dt><f:translate key="logged.firstname"/></dt>
+                                        <dd>{user.firstName}</dd>
+                                    </f:if>
+                                    <f:if condition="{user.lastName}">
+                                        <dt><f:translate key="logged.lastname"/></dt>
+                                        <dd>{user.lastName}</dd>
+                                    </f:if>
+                                </f:else>
                             </f:if>
                         </dl>
                     </div>
