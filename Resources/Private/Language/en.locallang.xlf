@@ -23,7 +23,7 @@
 				<source>Last name</source>
 				<target>Last name</target>
 			</trans-unit>
-			<trans-unit id="logged.end.lastname">
+			<trans-unit id="logged.and.lastname">
 				<source> and Last name</source>
 				<target> and Last name</target>
 			</trans-unit>
