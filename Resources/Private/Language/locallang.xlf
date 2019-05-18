@@ -3,6 +3,18 @@
 	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-17T20:10:20Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="deleteaccount.form.title">
+				<source>Account löschen</source>
+			</trans-unit>
+			<trans-unit id="deleteaccount.form.text">
+				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</source>
+			</trans-unit>
+			<trans-unit id="deleteaccount.form.warning">
+				<source>Achtung: Durch einen Klick auf den Button wird umgehend die Löschung des Accounts umgesetzt und Du wirst ausgeloggt.</source>
+			</trans-unit>
+			<trans-unit id="deleteaccount.form.button">
+				<source>Jetzt Account löschen</source>
+			</trans-unit>
 			<trans-unit id="changemail.email.button">
 				<source>Neue E-Mail Addresse bestätigen</source>
 			</trans-unit>
