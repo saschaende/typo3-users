@@ -3,6 +3,26 @@
 	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-17T20:10:21Z" product-name="users">
 		<header/>
 		<body>
+			<trans-unit id="logged.title">
+				<source>Your current status</source>
+				<target>Ваш поточний статус</target>
+			</trans-unit>
+			<trans-unit id="logged.text">
+				<source>You are logged in as</source>
+				<target>Ви ввійшли в систему як</target>
+			</trans-unit>
+			<trans-unit id="logged.username">
+				<source>Username</source>
+				<target>Ім'я користувача</target>
+			</trans-unit>
+			<trans-unit id="logged.firstname">
+				<source>First name</source>
+				<target>Ім'я</target>
+			</trans-unit>
+			<trans-unit id="logged.lastname">
+				<source> and Last name</source>
+				<target> та прізвище</target>
+			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Account löschen</source>
 				<target>Видалення облікового запису</target>
