@@ -65,7 +65,7 @@
 			</trans-unit>
 			<trans-unit id="changepass.back">
 				<source>Zurück zum Formular</source>
-				<target></target>
+				<target>Повернутися до форми</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.button">
 				<source>Passwort ändern</source>
@@ -97,19 +97,19 @@
 			</trans-unit>
 			<trans-unit id="changeprofile.back">
 				<source>Zurück zum Formular</source>
-				<target></target>
+				<target>Повернутися до форми</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.button">
 				<source>Profildaten speichern</source>
-				<target></target>
+				<target>Зберегти дані профілю</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.header">
 				<source>Profil ändern</source>
-				<target></target>
+				<target>Змінити профіль</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.success">
 				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
-				<target></target>
+				<target>Дякуємо, дані профілю збережено.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
 				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
