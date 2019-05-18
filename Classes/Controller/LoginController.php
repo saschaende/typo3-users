@@ -15,6 +15,8 @@ use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
  */
 class LoginController extends ActionController {
 
+    protected $user = null;
+
     /**
      * @var UserRepository
      */
@@ -28,11 +30,12 @@ class LoginController extends ActionController {
         $querysettings->setStoragePageIds([
             $this->settings['usersFolder']
         ]);
-        
-        // Load user object
-        $this->user = $this->frontendUserRepository->findByUid(t3h::FrontendUser()->getCurrentUser()->user['uid']);
-        
         $this->frontendUserRepository->setDefaultQuerySettings($querysettings);
+
+        // Load user object
+        if(t3h::FrontendUser()->getCurrentUser()->user){
+            $this->user = $this->frontendUserRepository->findByUid(t3h::FrontendUser()->getCurrentUser()->user['uid']);
+        }
     }
 
     /**
