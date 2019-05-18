@@ -18,7 +18,7 @@
 			<trans-unit id="logged.lastname">
 				<source>Last name</source>
 			</trans-unit>
-			<trans-unit id="logged.end.lastname">
+			<trans-unit id="logged.and.lastname">
 				<source> and Last name</source>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
