@@ -4,22 +4,15 @@
 
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Account löschen</h4>
-
+            <h4 class="card-title"><f:translate key="deleteaccount.form.title"/></h4>
             <div class="card-text">
-                <p>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</p>
-                <p>Achtung: Durch einen Klick auf den Button wird umgehend die Löschung des Accounts umgesetzt und Du wirst
-                    ausgeloggt.</p>
+                <p><f:translate key="deleteaccount.form.text"/></p>
+                <p><span class="text-warning"><f:translate key="deleteaccount.form.warning"/></</p>
             </div>
-
         </div>
-
         <div class="card-footer">
-            <f:link.action action="submit" class="btn btn-danger">
-                Jetzt Account löschen
-            </f:link.action>
+            <f:link.action action="submit" class="btn btn-danger"><f:translate key="deleteaccount.form.button"/></f:link.action>
         </div>
-
     </div>
 
 </f:section>
