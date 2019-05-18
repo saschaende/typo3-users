@@ -1,7 +1,7 @@
 <f:if condition="{settings.iconsInTheForms} == 0">
     <f:else if="{settings.iconsInTheForms} == 1">
         <div class="input-group-prepend">
-            <span class="input-group-text"><i class="user"><img src="{f:uri.image(src: '{settings.iconFile.user}')}" width="16" height="16"></i></span>
+            <span class="input-group-text"><i class="user"><img src="{f:uri.image(src: '{settings.iconFile.user}', width: '{settings.iconSize.width}', height: '{settings.iconSize.height}')}" width="{settings.iconSize.width}" height="{settings.iconSize.height}"></i></span>
         </div>
     </f:else>
     <f:else if="{settings.iconsInTheForms} == 2">
