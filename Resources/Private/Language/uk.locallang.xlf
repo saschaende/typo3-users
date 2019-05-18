@@ -20,8 +20,12 @@
 				<target>Ім'я</target>
 			</trans-unit>
 			<trans-unit id="logged.lastname">
+				<source>Last name</source>
+				<target>Прізвище</target>
+			</trans-unit>
+			<trans-unit id="logged.end.lastname">
 				<source> and Last name</source>
-				<target> та прізвище</target>
+				<target> та прізвищ</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Account löschen</source>
