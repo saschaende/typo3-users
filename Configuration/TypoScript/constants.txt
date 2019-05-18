@@ -8,8 +8,14 @@ plugin.tx_users {
 		layoutRootPath = EXT:users/Resources/Private/Layouts/
 	}
     settings {
-        # cat=users: icons/100/101; type=int[0-2]; label=Icons in the forms: Displaying icons in the forms: 0 - Forms without Icons, 1 - Forms with Icons based on files (.svg or .png format), 2 - Forms with Icons based on CSS ("fontawesome" or other).
+        # cat=users: icons/100/100; type=int[0-2]; label=Icons in the forms: Displaying icons in the forms: 0 - Forms without Icons, 1 - Forms with Icons based on files (.svg or .png format), 2 - Forms with Icons based on CSS ("fontawesome" or other).
         iconsInTheForms = 2
+	iconSize {
+            # cat=users: icons/101/101; type=int+; label=Width: If in the forms with Icons based on files (.svg or .png format) you can set the width of the icon
+            width = 16
+            # cat=users: icons/101/101; type=int+; label=Height: If in the forms with Icons based on files (.svg or .png format) you can set the height of the icon
+            height = 16
+        }
         iconFile {
             # cat=users: icons/110/101; type=string; label=Icon file - User: Path to the file of the icon for the field of the form `User`
             user = EXT:users/Resources/Public/Icons/Forms/user.svg

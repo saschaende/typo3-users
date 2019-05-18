@@ -3,84 +3,112 @@
 <f:section name="main">
 
     <div class="card login-box">
-        <div class="card-body">
-            <h4 class="card-title">
-                <f:translate key="login.title"/>
-            </h4>
-            <div class="card-text">
-                <f:form action="login" class="form" method="POST">
 
-                    <!-- ERROR -->
-                    <f:if condition="{error} == 1">
-                        <div class="alert alert-danger">
-                            <f:translate key="login.error"/>
-                        </div>
-                    </f:if>
-                    <!-- ERROR -->
-
-
-                    <!-- USERNAME/EMAIL -->
-                    <div class="form-group">
-
-                        <label for="username">
-                            <f:if condition="{settings.allowEmailLogin}">
+        <f:security.ifAuthenticated>
+            <f:then>
+                <div class="card-body">
+                    <h4 class="card-title"><f:translate key="logged.title"/></h4>
+                    <p><f:translate key="logged.text"/></p>
+                    <div class="card-text">
+                        <dl>
+                            <dt><f:translate key="logged.username"/></dt>
+                            <dd>{user.username}</dd>
+                            <f:if condition="{user.firstName} && {user.lastName}">
                                 <f:then>
-                                    <f:translate key="login.usernameemail"/>
+                                    <dt><f:translate key="logged.firstname"/><f:translate key="logged.and.lastname"/></dt>
+                                    <dd>{user.firstName} {user.lastName}</dd>
                                 </f:then>
                                 <f:else>
-                                    <f:translate key="login.username"/>
+                                    <f:if condition="{user.firstName}">
+                                        <dt><f:translate key="logged.firstname"/></dt>
+                                        <dd>{user.firstName}</dd>
+                                    </f:if>
+                                    <f:if condition="{user.lastName}">
+                                        <dt><f:translate key="logged.lastname"/></dt>
+                                        <dd>{user.lastName}</dd>
+                                    </f:if>
                                 </f:else>
                             </f:if>
-                        </label>
-                        <div class="input-group mb-3">
-                            <f:render partial="Icons/User"/>
-                            <f:form.textfield class="form-control" id="username" name="username" additionalAttributes="{required:'required'}"/>
-                        </div>
+                        </dl>
                     </div>
-                    <!-- USERNAME/EMAIL -->
+                </div>
+            </f:then>
+            <f:else>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <f:translate key="login.title"/>
+                    </h4>
+                    <div class="card-text">
+                        <f:form action="login" class="form" method="POST">
 
+                            <!-- ERROR -->
+                            <f:if condition="{error} == 1">
+                                <div class="alert alert-danger">
+                                    <f:translate key="login.error"/>
+                                </div>
+                            </f:if>
+                            <!-- ERROR -->
 
-                    <!-- PASSWORD -->
-                    <div class="form-group">
-                        <label for="password">
-                            <f:translate key="login.password"/>
-                        </label>
-                        <div class="input-group mb-3">
-                            <f:render partial="Icons/Password"/>
-                            <f:form.password class="form-control" id="password" name="password" additionalAttributes="{required:'required'}"/>
-                        </div>
+                            <!-- USERNAME/EMAIL -->
+                            <div class="form-group">
+                                <label for="username">
+                                    <f:if condition="{settings.allowEmailLogin}">
+                                        <f:then>
+                                            <f:translate key="login.usernameemail"/>
+                                        </f:then>
+                                        <f:else>
+                                            <f:translate key="login.username"/>
+                                        </f:else>
+                                    </f:if>
+                                </label>
+                                <div class="input-group mb-3">
+                                    <f:render partial="Icons/User"/>
+                                    <f:form.textfield class="form-control" id="username" name="username" additionalAttributes="{required:'required'}"/>
+                                </div>
+                            </div>
+                            <!-- USERNAME/EMAIL -->
 
+                            <!-- PASSWORD -->
+                            <div class="form-group">
+                                <label for="password">
+                                    <f:translate key="login.password"/>
+                                </label>
+                                <div class="input-group mb-3">
+                                    <f:render partial="Icons/Password"/>
+                                    <f:form.password class="form-control" id="password" name="password" additionalAttributes="{required:'required'}"/>
+                                </div>
+
+                            </div>
+                            <!-- PASSWORD -->
+
+                            <!-- SUBMIT BUTTON -->
+                            <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'login.submit')}"/>
+                            <!-- SUBMIT BUTTON -->
+
+                        </f:form>
                     </div>
-                    <!-- PASSWORD -->
+                </div>
 
-
-                    <!-- SUBMIT BUTTON -->
-                    <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'login.submit')}"/>
-                    <!-- SUBMIT BUTTON -->
-
-                </f:form>
-            </div>
-        </div>
-
-        <!-- SPECIAL LINKS (Forgot pass or registration) -->
-        <f:if condition="{settings.forgotpassPid} || {settings.registerPid}">
-            <div class="card-footer">
-                <f:if condition="{settings.forgotpassPid}">
-                    <f:link.page pageUid="{settings.forgotpassPid}">
-                        <f:render partial="Icons/PasswordStandalone"/>
-                        <f:translate key="login.forgotpass"/>
-                    </f:link.page><br/>
+                <!-- SPECIAL LINKS (Forgot pass or registration) -->
+                <f:if condition="{settings.forgotpassPid} || {settings.registerPid}">
+                    <div class="card-footer">
+                        <f:if condition="{settings.forgotpassPid}">
+                            <f:link.page pageUid="{settings.forgotpassPid}">
+                                <f:render partial="Icons/PasswordStandalone"/>
+                                <f:translate key="login.forgotpass"/>
+                            </f:link.page><br/>
+                        </f:if>
+                        <f:if condition="{settings.registerPid}">
+                            <f:link.page pageUid="{settings.registerPid}">
+                                <f:render partial="Icons/RegisterStandalone"/>
+                                <f:translate key="login.register"/>
+                            </f:link.page>
+                        </f:if>
+                    </div>
                 </f:if>
-
-                <f:if condition="{settings.registerPid}">
-                    <f:link.page pageUid="{settings.registerPid}">
-                        <f:render partial="Icons/RegisterStandalone"/>
-                        <f:translate key="login.register"/></f:link.page>
-                </f:if>
-            </div>
-        </f:if>
-        <!-- SPECIAL LINKS (Forgot pass or registration) -->
-
+                <!-- SPECIAL LINKS (Forgot pass or registration) -->
+            </f:else>
+        </f:security.ifAuthenticated>
 
     </div>
 

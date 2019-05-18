@@ -15,6 +15,10 @@ plugin.tx_users {
     }
     settings {
         iconsInTheForms = {$plugin.tx_users.settings.iconsInTheForms}
+        iconSize {
+            width = {$plugin.tx_users.settings.iconSize.width}
+            height = {$plugin.tx_users.settings.iconSize.height}
+        }
         iconFile {
             user = {$plugin.tx_users.settings.iconFile.user}
             password = {$plugin.tx_users.settings.iconFile.password}

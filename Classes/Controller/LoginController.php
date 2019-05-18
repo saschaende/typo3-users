@@ -28,6 +28,10 @@ class LoginController extends ActionController {
         $querysettings->setStoragePageIds([
             $this->settings['usersFolder']
         ]);
+        
+        // Load user object
+        $this->user = $this->frontendUserRepository->findByUid(t3h::FrontendUser()->getCurrentUser()->user['uid']);
+        
         $this->frontendUserRepository->setDefaultQuerySettings($querysettings);
     }
 
@@ -46,7 +50,8 @@ class LoginController extends ActionController {
 
         $arguments = $this->request->getArguments();
         $this->view->assignMultiple([
-            'error' => intval($arguments['error'])
+            'error' => intval($arguments['error']),
+            'user' => $this->user
         ]);
     }
 

@@ -39,13 +39,11 @@
     <f:if condition="{settings.deleteAccountPage}">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Account löschen</h4>
-                <div class="card-text">
-                Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.
-                </div>
+                <h4 class="card-title">{f:translate(key:'changeprofile.deleteaccount.title')}</h4>
+                <div class="card-text">{f:translate(key:'changeprofile.deleteaccount.text')}</div>
             </div>
             <div class="card-footer">
-                <f:link.page pageUid="{settings.deleteAccountPage}" class="btn btn-primary">Ich möchte meinen Account löschen</f:link.page>
+                <f:link.page pageUid="{settings.deleteAccountPage}" class="btn btn-primary">{f:translate(key:'changeprofile.deleteaccount.button')}</f:link.page>
             </div>
         </div>
     </f:if>
