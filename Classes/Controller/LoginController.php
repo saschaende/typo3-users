@@ -7,6 +7,7 @@ use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
  * Class LoginController
@@ -36,7 +37,7 @@ class LoginController extends ActionController {
     public function formAction() {
 
         // Lets check if the user is logged in?
-        if(t3h::FrontendUser()->getCurrentUser() && intval($this->settings['redirectIfLogged']) != 0){
+        if(t3h::FrontendUser()->getCurrentUser()->user && intval($this->settings['redirectIfLogged']) != 0){
             // Redirect
             $uri = t3h::Uri()->getByPid(intval($this->settings['redirectIfLogged']));
             $this->redirectToUri($uri);
