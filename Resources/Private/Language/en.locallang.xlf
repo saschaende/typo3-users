@@ -20,8 +20,12 @@
 				<target>First name</target>
 			</trans-unit>
 			<trans-unit id="logged.lastname">
+				<source>Last name</source>
+				<target>Last name</target>
+			</trans-unit>
+			<trans-unit id="logged.end.lastname">
 				<source> and Last name</source>
-				<target> and Last nam</target>
+				<target> and Last name</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Account löschen</source>
