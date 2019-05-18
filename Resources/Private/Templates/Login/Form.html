@@ -7,41 +7,18 @@
         <f:security.ifAuthenticated>
             <f:then>
                 <div class="card-body">
-                    <h4 class="card-title">Your current status<f:comment><f:translate key="logged.title"/></f:comment></h4>
-                    <p>You are logged in<f:comment><f:translate key="logged.text"/></f:comment></p>
+                    <h4 class="card-title"><f:translate key="logged.title"/></h4>
+                    <p><f:translate key="logged.text"/></p>
                     <div class="card-text">
                         <dl>
-                            <dt>Username <f:comment><f:translate key="logged.username"/></f:comment></dt>
+                            <dt><f:translate key="logged.username"/></dt>
                             <dd>{user.username}</dd>
-                            <f:if condition="{user.firstname} || {user.lastname}">
-                                <dt>
-                                    <f:if condition="{user.firstname} || {user.lastname}">
-                                        <f:else if="{user.firstname}">First namee<f:comment><f:translate key="logged.firstname"/></f:comment></f:else>
-                                        <f:else if="{user.lastname}">, Last nam<f:comment><f:translate key="logged.lastname"/></f:comment></f:else>
-                                    </f:if>
-                                </dt>
-                                <dd>
-                                    <f:if condition="{user.firstname} || {user.lastname}">
-                                        <f:else if="{user.firstname}">{user.firstname}</f:else>
-                                        <f:else if="{user.lastname}"> {user.lastname}</f:else>
-                                    </f:if>
-                                </dd>
+                            <f:if condition="{user.firstName} || {user.lastName}">
+                                <dt><f:if condition="{user.firstName}"><f:translate key="logged.firstname"/></f:if><f:if condition="{user.lastName}"><f:translate key="logged.lastname"/></f:if></dt>
+                                <dd><f:if condition="{user.firstName}">{user.firstName}</f:if><f:if condition="{user.lastName}"> {user.lastName}</f:if></dd>
                             </f:if>
                         </dl>
                     </div>
-                </div>
-                <div class="card-footer">
-                    <f:if condition="{settings.registerPid}">
-                        <f:link.page class="btn btn-primary btn-lg" pageUid="123">
-                            Logout
-                            <f:comment><f:translate key="logged.logout.botton"/></f:comment>
-                        </f:link.page>
-
-                        <f:link.page class="btn btn-primary btn-lg" pageUid="{settings.redirectSuccess}">
-                            My profil
-                            <f:comment><f:translate key="logged.account.botton"/></f:comment>
-                        </f:link.page>
-                    </f:if>
                 </div>
             </f:then>
             <f:else>
