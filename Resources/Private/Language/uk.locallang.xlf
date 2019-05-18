@@ -5,20 +5,19 @@
 		<body>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Account löschen</source>
-				<target></target>
+				<target>Видалення облікового запису</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.text">
 				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</source>
-				<target></target>
+				<target>Ви дійсно бажаєте безповоротно видалити обліковий запис? Якщо ви хочете видалити свій обліковий запис і натиснете кнопку "Видалити обліковий запис" ваш обліковий запис буде видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.warning">
-				<source>Achtung: Durch einen Klick auf den Button wird umgehend die Löschung des Accounts umgesetzt und Du wirst
-                    ausgeloggt.</source>
-				<target></target>
+				<source>Achtung: Durch einen Klick auf den Button wird umgehend die Löschung des Accounts umgesetzt und Du wirst ausgeloggt.</source>
+				<target>Застереження: Натиснувши на кнопку "Видалити обліковий запис", видалення облікового запису буде виконано негайно, і ви примусово вийдете з системи.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.button">
 				<source>Jetzt Account löschen</source>
-				<target></target>
+				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.button">
 				<source>Neue E-Mail Addresse bestätigen</source>
