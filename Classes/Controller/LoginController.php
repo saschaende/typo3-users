@@ -5,6 +5,7 @@ namespace SaschaEnde\Users\Controller;
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
+use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
@@ -22,8 +23,15 @@ class LoginController extends ActionController {
      */
     protected $frontendUserRepository;
 
+    /**
+     * @var FrontendUserGroupRepository
+     */
+    protected $frontendUserGroupRepository;
+
     public function initializeAction() {
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
+        $this->frontendUserGroupRepository = $this->objectManager->get(FrontendUserGroupRepository::class);
+        $this->frontendUserGroupRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
 
         /** @var Typo3QuerySettings $querysettings */
         $querysettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings::class);
@@ -33,7 +41,7 @@ class LoginController extends ActionController {
         $this->frontendUserRepository->setDefaultQuerySettings($querysettings);
 
         // Load user object
-        if(t3h::FrontendUser()->getCurrentUser()->user){
+        if (t3h::FrontendUser()->getCurrentUser()->user) {
             $this->user = $this->frontendUserRepository->findByUid(t3h::FrontendUser()->getCurrentUser()->user['uid']);
         }
     }
@@ -44,12 +52,11 @@ class LoginController extends ActionController {
     public function formAction() {
 
         // Lets check if the user is logged in?
-        if(t3h::FrontendUser()->getCurrentUser()->user && intval($this->settings['redirectIfLogged']) != 0){
+        if (t3h::FrontendUser()->getCurrentUser()->user && intval($this->settings['redirectIfLogged']) != 0) {
             // Redirect
             $uri = t3h::Uri()->getByPid(intval($this->settings['redirectIfLogged']));
             $this->redirectToUri($uri);
         }
-
 
         $arguments = $this->request->getArguments();
         $this->view->assignMultiple([
@@ -95,6 +102,29 @@ class LoginController extends ActionController {
             $this->redirect('form', null, null, ['error' => 1]);
             return;
         }
+
+
+        // Check if user has one of the allowed usergroups (is setting is set)
+        $usergroups = explode(',', $this->settings['allowedUsergroups']);
+        $usergroups = array_filter($usergroups); // Remove empty fields
+        if (count($usergroups) >= 1) {
+            $groupAllowed = false;
+            foreach ($usergroups as $groupId) {
+                // Load the usergroup
+                $groupObj = $this->frontendUserGroupRepository->findOneByUid($groupId);
+                // Check, if the user contains this usergroup
+                if ($user->getUsergroup()->contains($groupObj)) {
+                    // If we found one, we can abort here and set to true
+                    $groupAllowed = true;
+                    break;
+                }
+            }
+            if ($groupAllowed === false) {
+                $this->redirect('form', null, null, ['error' => 1]);
+                return;
+            }
+        }
+
 
         // ---------------------------------------------------------------
         // Login success
