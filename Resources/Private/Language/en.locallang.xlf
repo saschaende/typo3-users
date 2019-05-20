@@ -12,9 +12,7 @@
 				<target>You have requested a change of email address associated with your account. Click on the following link to confirm this change.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
-				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen
-                    Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.
-                </source>
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</source>
 				<target>If the above button doesn't work, try copying and pasting the URL into your browser. If you still have problems, feel free to contact us.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.salutation">
@@ -38,11 +36,7 @@
 				<target>New e-mail address</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.note">
-				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink
-                    insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail
-                    Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier
-                    angezeigt.
-                </source>
+				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier angezeigt.</source>
 				<target>If you change your email address, you will receive an email with a confirmation link if no other account exists with this email address. The change of the e-mail address is only active after a confirmation and only then the new e-mail address is displayed here.</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.title">
@@ -50,11 +44,7 @@
 				<target>Change email address</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.message">
-				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die
-                    von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe
-                    Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert
-                    und hier sichtbar.
-                </source>
+				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert und hier sichtbar.</source>
 				<target>If no other account is linked to the address you entered, you have received an e-mail with a confirmation link to the new e-mail address you entered. Please check your inbox and click on the link. Your new e-mail address will be activated immediately and will be visible here.</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.title">
@@ -122,16 +112,11 @@
 				<target>Thank you, the profile data has been saved.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
-				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
-                    verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits
-                    geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.
-                </source>
+				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
 				<target>Error: Unfortunately we could not change your e-mail address. There may be several reasons for this: Either the link is invalid, the e-mail address has already been changed or the e-mail address is now being used by another account.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
-				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit
-                    folgender E-Mail Adresse verknüpft:
-                </source>
+				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
 				<target>Thank you, you have confirmed the change of your e-mail address. Your account is now linked to the following e-mail address:</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
@@ -159,14 +144,11 @@
 				<target>Copyright 2019 - All rights reserved</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.error">
-				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
-                    abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
-                </source>
+				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.</source>
 				<target>Error: Either the link is not valid, the account no longer exists or the link has expired. Links to password change are only valid for one hour.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.error2">
-				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
-                </source>
+				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.</source>
 				<target>Error: The entries must match and the password must be at least 6 characters long.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.password">
@@ -182,9 +164,7 @@
 				<target>Save new password</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.text">
-				<source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss
-                    mindestens aus 6 Zeichen bestehen.
-                </source>
+				<source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss mindestens aus 6 Zeichen bestehen.</source>
 				<target>Enter your new password and repeat it once. The password must be at least 6 characters long.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.title">
@@ -208,34 +188,20 @@
 				<target>Back</target>
 			</trans-unit>
 			<trans-unit id="forgot.confirm.text">
-				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
-                    gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die
-                    E-Mail-Adresse nicht gefunden.
-                </source>
-				<target>An email has been sent to the address stored in your account and contains a link to reset your
-                    password. If you do not receive an email, your account or email address was not found.
-                </target>
+				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die E-Mail-Adresse nicht gefunden.</source>
+				<target>An email has been sent to the address stored in your account and contains a link to reset your password. If you do not receive an email, your account or email address was not found.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.button">
 				<source>Passwort zurücksetzen</source>
 				<target>Reset Password</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.info">
-				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren
-                    Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.
-                </source>
-				<target>If the button above does not work,
-                    try copying and pasting the URL into your browser. If you continue to have problems, please feel free to
-                    contact us.</target>
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.</source>
+				<target>If the button above does not work, try copying and pasting the URL into your browser. If you continue to have problems, please feel free to contact us.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.message">
-				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage
-                    nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben,
-                    setzen Sie bitte Ihr Passwort zurück.:
-                </source>
-				<target>A request to reset your Admin password has been made. If you did not
-                    make this request, simply ignore this email. If you did make this request, please reset your
-                    password:</target>
+				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben, setzen Sie bitte Ihr Passwort zurück.:</source>
+				<target>A request to reset your Admin password has been made. If you did not make this request, simply ignore this email. If you did make this request, please reset your password:</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.salutation">
 				<source>Hallo,</source>
@@ -250,12 +216,8 @@
 				<target>Request password change</target>
 			</trans-unit>
 			<trans-unit id="forgot.text">
-				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
-                    zum Zurücksetzen des Passworts zugesandt.
-                </source>
-				<target>Please enter your username or email address. Instructions for resetting the password will be
-                    immediately emailed to you.
-                </target>
+				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen zum Zurücksetzen des Passworts zugesandt.</source>
+				<target>Please enter your username or email address. Instructions for resetting the password will be immediately emailed to you.</target>
 			</trans-unit>
 			<trans-unit id="forgot.title">
 				<source>Passwort vergessen</source>
@@ -266,9 +228,7 @@
 				<target>Username or email</target>
 			</trans-unit>
 			<trans-unit id="layouts.error.notlogged">
-				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden.
-                    Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
-                </source>
+				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden. Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.</source>
 				<target>Error: This plugin can only be inserted on a page in a protected area. Make sure that only logged in users have access to this area.</target>
 			</trans-unit>
 			<trans-unit id="logged.and.lastname">
@@ -296,16 +256,8 @@
 				<target>Username</target>
 			</trans-unit>
 			<trans-unit id="login.error">
-				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
-                    Benutzernamen/E-Mail oder
-                    das Passwort falsch eingegeben. Groß-/Kleinschreibung
-                    wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser
-                    deaktiviert hast.
-                </source>
-				<target>An error occurred during logon. You probably entered your username/email or password
-                    incorrectly. There is a difference between upper and lower case. Another possibility is that you may
-                    have disabled cookies in your web browser.
-                </target>
+				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</source>
+				<target>An error occurred during logon. You probably entered your username/email or password incorrectly. There is a difference between upper and lower case. Another possibility is that you may have disabled cookies in your web browser.</target>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Passwort vergessen?</source>
@@ -340,22 +292,16 @@
 				<target>Email</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.message">
-				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits
-                    freigeschaltet.
-                </source>
-				<target>This link is no longer valid. Or it has already been used and the account is already activated.
-                </target>
+				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits freigeschaltet.</source>
+				<target>This link is no longer valid. Or it has already been used and the account is already activated.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.title">
 				<source>Fehler</source>
 				<target>Error</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.message">
-				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet
-                    bist.
-                </source>
-				<target>Your account is now activated. Here again the data with which you are registered with us.
-                </target>
+				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
+				<target>Your account is now activated. Here again the data with which you are registered with us.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Weiter</source>
@@ -374,21 +320,12 @@
 				<target>Confirm registration</target>
 			</trans-unit>
 			<trans-unit id="register.email.message">
-				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf
-                    unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:
-                </source>
+				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:</source>
 				<target>Thank you for your interest and your registration on our website. With the following link you can now activate your account:</target>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
-				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
-                    Daten
-                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
-                    angegeben
-                    oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der
-                    nächsten Stunden ebenfalls automatisch wieder entfernt.
-                </source>
-				<target>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.
-                </target>
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
+				<target>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</target>
 			</trans-unit>
 			<trans-unit id="register.email.salutation">
 				<source>Hallo</source>
@@ -399,11 +336,8 @@
 				<target>Your registration on our website</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.button">
-				<source>Neues
-                    Passwort anfordern
-                </source>
-				<target>Request new password
-                </target>
+				<source>Neues Passwort anfordern</source>
+				<target>Request new password</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info">
 				<source>Hier nochmal zur Erinnerung Deine Daten:</source>
@@ -418,13 +352,8 @@
 				<target>Your username:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.message">
-				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung
-                    eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren.
-                    Solltest
-                    Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:
-                </source>
-				<target>Someone has just tried to use your email address to create a new account, so we want to inform you with this email. If you did this yourself, you can request a new password here:
-                </target>
+				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren. Solltest Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:</source>
+				<target>Someone has just tried to use your email address to create a new account, so we want to inform you with this email. If you did this yourself, you can request a new password here:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.salutation">
 				<source>Hallo</source>
@@ -519,34 +448,20 @@
 				<target>Desired username</target>
 			</trans-unit>
 			<trans-unit id="register.form.username.note">
-				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
-                    enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
-                </source>
-				<target>Choose a username with at least 3 characters. This may contain letters and numbers. Special characters and spaces are not allowed.
-                </target>
+				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.</source>
+				<target>Choose a username with at least 3 characters. This may contain letters and numbers. Special characters and spaces are not allowed.</target>
 			</trans-unit>
 			<trans-unit id="register.submit.email">
 				<source>E-Mail</source>
 				<target>Email</target>
 			</trans-unit>
 			<trans-unit id="register.submit.message">
-				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung
-                    Deines
-                    Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin.
-                    Hier nochmal deine Angaben:
-                </source>
-				<target>We have now sent an e-mail to the address you provided with a link to confirm your account. Also check your spam folder, sometimes emails get lost there. Here are your details again:
-                </target>
+				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung Deines Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin. Hier nochmal deine Angaben:</source>
+				<target>We have now sent an e-mail to the address you provided with a link to confirm your account. Also check your spam folder, sometimes emails get lost there. Here are your details again:</target>
 			</trans-unit>
 			<trans-unit id="register.submit.note">
-				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
-                    Daten
-                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
-                    angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account
-                    innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.
-                </source>
-				<target>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.
-                </target>
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
+				<target>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</target>
 			</trans-unit>
 			<trans-unit id="register.submit.title">
 				<source>Vielen Dank für Deine Registrierung</source>
