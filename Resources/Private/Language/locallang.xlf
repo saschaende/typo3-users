@@ -10,9 +10,7 @@
 				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</source>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
-				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen
-                    Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.
-                </source>
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</source>
 			</trans-unit>
 			<trans-unit id="changemail.email.salutation">
 				<source>Hallo</source>
@@ -30,21 +28,13 @@
 				<source>Neue E-Mail Adresse</source>
 			</trans-unit>
 			<trans-unit id="changemail.form.note">
-				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink
-                    insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail
-                    Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier
-                    angezeigt.
-                </source>
+				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier angezeigt.</source>
 			</trans-unit>
 			<trans-unit id="changemail.form.title">
 				<source>E-Mail Adresse ändern</source>
 			</trans-unit>
 			<trans-unit id="changemail.submit.message">
-				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die
-                    von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe
-                    Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert
-                    und hier sichtbar.
-                </source>
+				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert und hier sichtbar.</source>
 			</trans-unit>
 			<trans-unit id="changemail.submit.title">
 				<source>E-Mail Adresse ändern</source>
@@ -95,15 +85,10 @@
 				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
-				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann
-                    verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits
-                    geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.
-                </source>
+				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
-				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit
-                    folgender E-Mail Adresse verknüpft:
-                </source>
+				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
 				<source>Änderung der E-Mail Adresse</source>
@@ -124,13 +109,10 @@
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
 			</trans-unit>
 			<trans-unit id="forgot.change.error">
-				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist
-                    abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.
-                </source>
+				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.</source>
 			</trans-unit>
 			<trans-unit id="forgot.change.error2">
-				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.
-                </source>
+				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.</source>
 			</trans-unit>
 			<trans-unit id="forgot.change.password">
 				<source>Neues Passwort</source>
@@ -142,9 +124,7 @@
 				<source>Neues Passwort speichern</source>
 			</trans-unit>
 			<trans-unit id="forgot.change.text">
-				<source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss
-                    mindestens aus 6 Zeichen bestehen.
-                </source>
+				<source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss mindestens aus 6 Zeichen bestehen.</source>
 			</trans-unit>
 			<trans-unit id="forgot.change.title">
 				<source>Passwort ändern</source>
@@ -162,24 +142,16 @@
 				<source>Zurück</source>
 			</trans-unit>
 			<trans-unit id="forgot.confirm.text">
-				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto
-                    gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die
-                    E-Mail-Adresse nicht gefunden.
-                </source>
+				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die E-Mail-Adresse nicht gefunden.</source>
 			</trans-unit>
 			<trans-unit id="forgot.email.button">
 				<source>Passwort zurücksetzen</source>
 			</trans-unit>
 			<trans-unit id="forgot.email.info">
-				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren
-                    Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.
-                </source>
+				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.</source>
 			</trans-unit>
 			<trans-unit id="forgot.email.message">
-				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage
-                    nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben,
-                    setzen Sie bitte Ihr Passwort zurück.:
-                </source>
+				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben, setzen Sie bitte Ihr Passwort zurück.:</source>
 			</trans-unit>
 			<trans-unit id="forgot.email.salutation">
 				<source>Hallo,</source>
@@ -191,9 +163,7 @@
 				<source>Passwortänderung anfordern</source>
 			</trans-unit>
 			<trans-unit id="forgot.text">
-				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen
-                    zum Zurücksetzen des Passworts zugesandt.
-                </source>
+				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen zum Zurücksetzen des Passworts zugesandt.</source>
 			</trans-unit>
 			<trans-unit id="forgot.title">
 				<source>Passwort vergessen</source>
@@ -202,9 +172,7 @@
 				<source>Benutzername oder E-Mail</source>
 			</trans-unit>
 			<trans-unit id="layouts.error.notlogged">
-				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden.
-                    Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.
-                </source>
+				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden. Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.</source>
 			</trans-unit>
 			<trans-unit id="logged.and.lastname">
 				<source> and Last name</source>
@@ -225,12 +193,7 @@
 				<source>Username</source>
 			</trans-unit>
 			<trans-unit id="login.error">
-				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen
-                    Benutzernamen/E-Mail oder
-                    das Passwort falsch eingegeben. Groß-/Kleinschreibung
-                    wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser
-                    deaktiviert hast.
-                </source>
+				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</source>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Passwort vergessen?</source>
@@ -257,17 +220,13 @@
 				<source>E-Mail</source>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.message">
-				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits
-                    freigeschaltet.
-                </source>
+				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits freigeschaltet.</source>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.title">
 				<source>Fehler</source>
 			</trans-unit>
 			<trans-unit id="register.confirm.message">
-				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet
-                    bist.
-                </source>
+				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
 			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Weiter</source>
@@ -282,18 +241,10 @@
 				<source>Registrierung bestätigen</source>
 			</trans-unit>
 			<trans-unit id="register.email.message">
-				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf
-                    unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:
-                </source>
+				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:</source>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
-				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
-                    Daten
-                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
-                    angegeben
-                    oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der
-                    nächsten Stunden ebenfalls automatisch wieder entfernt.
-                </source>
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
 			</trans-unit>
 			<trans-unit id="register.email.salutation">
 				<source>Hallo</source>
@@ -302,9 +253,7 @@
 				<source>Deine Registrierung auf unserer Webseite</source>
 			</trans-unit>
 			<trans-unit id="register.emailexists.button">
-				<source>Neues
-                    Passwort anfordern
-                </source>
+				<source>Neues Passwort anfordern</source>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info">
 				<source>Hier nochmal zur Erinnerung Deine Daten:</source>
@@ -316,11 +265,7 @@
 				<source>Dein Benutzername:</source>
 			</trans-unit>
 			<trans-unit id="register.emailexists.message">
-				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung
-                    eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren.
-                    Solltest
-                    Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:
-                </source>
+				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren. Solltest Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:</source>
 			</trans-unit>
 			<trans-unit id="register.emailexists.salutation">
 				<source>Hallo</source>
@@ -392,27 +337,16 @@
 				<source>Gewünschter Benutzername</source>
 			</trans-unit>
 			<trans-unit id="register.form.username.note">
-				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen
-                    enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.
-                </source>
+				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.</source>
 			</trans-unit>
 			<trans-unit id="register.submit.email">
 				<source>E-Mail</source>
 			</trans-unit>
 			<trans-unit id="register.submit.message">
-				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung
-                    Deines
-                    Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin.
-                    Hier nochmal deine Angaben:
-                </source>
+				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung Deines Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin. Hier nochmal deine Angaben:</source>
 			</trans-unit>
 			<trans-unit id="register.submit.note">
-				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle
-                    Daten
-                    automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail
-                    angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account
-                    innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.
-                </source>
+				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
 			</trans-unit>
 			<trans-unit id="register.submit.title">
 				<source>Vielen Dank für Deine Registrierung</source>
