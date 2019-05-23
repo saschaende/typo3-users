@@ -93,7 +93,7 @@ The extension ships some TypoScript code which needs to be included.
 Here users log in with their access data. Normally the username or the e-mail address and the password are used. The plugin supports login with username AND e-mail. For this reason, no e-mail addresses are allowed as user names.
 
 * Add a new page "Login"
-* **The site must be publicly accessible.**
+* **The page must be publicly accessible.**
 * Insert plugin "[Users] Login"
 * Click on the pencil icon
 * Edit plugin settings
@@ -103,7 +103,7 @@ Here users log in with their access data. Normally the username or the e-mail ad
 If a user has forgotten his password, he can request an e-mail with a link here using his user name or e-mail address. Afterwards, the user can assign a new password by clicking on the e-mail. If the account has not yet been activated, this action will automatically activate it.
 
 * Add a new page "Forgot password"
-* **The site must be publicly accessible.**
+* **The page must be publicly accessible.**
 * Insert plugin "[Users] Login"
 * Click on the pencil icon
 * Edit plugin settings
@@ -113,7 +113,7 @@ If a user has forgotten his password, he can request an e-mail with a link here 
 Here a user can register and create an account. The email address is automatically matched against a database of spam hosts. If the user enters an e-mail address that already exists, he will receive a link to assign a new password, as we can assume that the user has forgotten this.
 
 * Add a new page "Register now"
-* **The site must be publicly accessible.**
+* **The page must be publicly accessible.**
 * Insert plugin "[Users] Register"
 * Click on the pencil icon
 * Edit plugin settings
@@ -146,7 +146,7 @@ With this plugin the user can view his current e-mail address and request a chan
 
 * Add a new page "Confirm email"
 * Make the page invisible
-* **The site must be publicly accessible.**
+* **The page must be publicly accessible.**
 * Insert plugin "[Users] Change email (CONFIRM)"
 * Thats it, there are no further settings
 
@@ -186,6 +186,6 @@ With this plugin the user can delete his account: The user receives an e-mail wi
 
 * Add a new page "Delete account"
 * Make the page invisible
-* **The site must be publicly accessible.**
+* **The page must be publicly accessible.**
 * Insert plugin "[Users] Delete account (CONFIRM)"
 * Thats it, there are no further settings
