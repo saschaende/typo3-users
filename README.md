@@ -130,12 +130,22 @@ The Logout Plugin is used to integrate a simple logout via the main navigation. 
 
 With this plugin the user can view his current e-mail address and request a change: The user receives an e-mail with a confirmation link. If the user clicks on the link in the e-mail, the new e-mail address is activated.
 
+#### The form (user area)
+
 * **The plugin "[Users] Register" must be installed and active beforehand.**
 * Add a new page "My email adress"
 * **The page may only be accessed by logged in users.**
 * Insert plugin "[Users] Change email"
 * Click on the pencil icon
 * Edit plugin settings
+
+#### The confirmation page, when a user clicks on the link in the email (public area)
+
+* Add a new page "Confirm email"
+* Make the page invisible
+* **The site must be publicly accessible.**
+* Insert plugin "[Users] Change email (CONFIRM)"
+* Thats it, there are no further settings
 
 ### Plugin: Change password
 
