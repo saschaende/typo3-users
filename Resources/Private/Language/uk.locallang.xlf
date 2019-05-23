@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-18T19:32:45Z" product-name="users">
+	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-23T20:32:05Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -105,7 +105,7 @@
 			</trans-unit>
 			<trans-unit id="changeprofile.header">
 				<source>Profil ändern</source>
-				<target>Зміна профілю</target>
+				<target>Змінити профіль</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.success">
 				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
@@ -137,7 +137,7 @@
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.warning">
 				<source>Achtung: Wir schicken Dir aus Sicherheitsgründen eine E-Mail mit einem Bestätigungslink. Sobald Du in der E-Mail auf den Link klickst, wird der Account gelöscht.</source>
-				<target>Увага!: З міркувань безпеки ми надішлемо вам електронний лист електронною поштою із посиланням на підтвердження ваших намірів. Як тільки ви натиснєте посилання в електронному листі, обліковий запис буде видалено.</target>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
@@ -148,7 +148,7 @@
 				<target>Помилка: Посилання недійсне з причин, що обліковий запис відсутній або у даного посилання закінчився термін дії та час його використання. Посилання на зміну секретного слова дійсне лише протягом однієї години.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.error2">
-				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein. </source>
+				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.</source>
 				<target>Помилка: Записи у полях форми з секретним словом повинні збігатися, а секретне слово повинно містити щонайменше 6-ть символів.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.password">
@@ -232,32 +232,36 @@
 				<target>Помилка: Ці дані розміщено на захищеній сторінці і призначені лише для зареєстрованих та авторизованих користвачів. Переконайтеся, що ви зареєстровані та авторизовані і як користувач цього веб-сайту маєте доступ до даних, які розміщені на цій сторінці.</target>
 			</trans-unit>
 			<trans-unit id="logged.and.lastname">
-				<source> and Last name</source>
+				<source> und Nachname</source>
 				<target> та прізвище</target>
 			</trans-unit>
 			<trans-unit id="logged.firstname">
-				<source>First name</source>
+				<source>Vorname</source>
 				<target>Ім'я</target>
 			</trans-unit>
 			<trans-unit id="logged.lastname">
-				<source>Last name</source>
+				<source>Nachname</source>
 				<target>Прізвище</target>
 			</trans-unit>
 			<trans-unit id="logged.text">
-				<source>You are logged in as</source>
+				<source>Du bist eingeloggt als</source>
 				<target>Ви ввійшли в систему як</target>
 			</trans-unit>
 			<trans-unit id="logged.title">
-				<source>Your current status</source>
+				<source>Dein aktueller Status</source>
 				<target>Ваш поточний статус</target>
 			</trans-unit>
 			<trans-unit id="logged.username">
-				<source>Username</source>
+				<source>Benutzername</source>
 				<target>Ім'я користувача</target>
 			</trans-unit>
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</source>
 				<target>Під час входу в систему сталася помилка. Можливо, ви неправильно ввели своє ім'я користувача чи адресу електронної пошти або секретне слово. Існує різниця між верхніми (великими) і нижніми (маленькими) регістрами символів. Інша причина яка може мати місце полягає в тому, що у вашому веб-переглядачі можуть бути вимкнуті файли 'cookie' (Більше про фали 'cookie' дізнатись можна за цим посиланням https://uk.wikipedia.org/wiki/Куки).</target>
+			</trans-unit>
+			<trans-unit id="login.error2">
+				<source>Leider fehlt Dir die Berechtigung, um Dich in diesen Bereich einloggen zu können.</source>
+				<target></target>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Passwort vergessen?</source>
@@ -272,12 +276,12 @@
 				<target>Не зареєстровані? Зареєструватися зараз.</target>
 			</trans-unit>
 			<trans-unit id="login.submit">
-				<source>Login</source>
+				<source>Einloggen</source>
 				<target>Увійти</target>
 			</trans-unit>
 			<trans-unit id="login.title">
 				<source>Jetzt einloggen</source>
-				<target>Вхід</target>
+				<target>Увійти зараз</target>
 			</trans-unit>
 			<trans-unit id="login.username">
 				<source>Benutzername</source>

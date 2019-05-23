@@ -120,7 +120,7 @@ class LoginController extends ActionController {
                 }
             }
             if ($groupAllowed === false) {
-                $this->redirect('form', null, null, ['error' => 1]);
+                $this->redirect('form', null, null, ['error' => 2]);
                 return;
             }
         }

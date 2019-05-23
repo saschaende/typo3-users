@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-18T19:32:45Z" product-name="users">
+	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-23T20:32:05Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -175,25 +175,28 @@
 				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden. Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.</source>
 			</trans-unit>
 			<trans-unit id="logged.and.lastname">
-				<source> and Last name</source>
+				<source> und Nachname</source>
 			</trans-unit>
 			<trans-unit id="logged.firstname">
-				<source>First name</source>
+				<source>Vorname</source>
 			</trans-unit>
 			<trans-unit id="logged.lastname">
-				<source>Last name</source>
+				<source>Nachname</source>
 			</trans-unit>
 			<trans-unit id="logged.text">
-				<source>You are logged in as</source>
+				<source>Du bist eingeloggt als</source>
 			</trans-unit>
 			<trans-unit id="logged.title">
-				<source>Your current status</source>
+				<source>Dein aktueller Status</source>
 			</trans-unit>
 			<trans-unit id="logged.username">
-				<source>Username</source>
+				<source>Benutzername</source>
 			</trans-unit>
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</source>
+			</trans-unit>
+			<trans-unit id="login.error2">
+				<source>Leider fehlt Dir die Berechtigung, um Dich in diesen Bereich einloggen zu können.</source>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Passwort vergessen?</source>
@@ -205,7 +208,7 @@
 				<source>Noch nicht registriert? Jetzt registrieren</source>
 			</trans-unit>
 			<trans-unit id="login.submit">
-				<source>Login</source>
+				<source>Einloggen</source>
 			</trans-unit>
 			<trans-unit id="login.title">
 				<source>Jetzt einloggen</source>

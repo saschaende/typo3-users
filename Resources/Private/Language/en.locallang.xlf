@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-18T19:32:45Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-23T20:32:05Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -232,32 +232,36 @@
 				<target>Error: This plugin can only be inserted on a page in a protected area. Make sure that only logged in users have access to this area.</target>
 			</trans-unit>
 			<trans-unit id="logged.and.lastname">
-				<source> and Last name</source>
+				<source> und Nachname</source>
 				<target> and Last name</target>
 			</trans-unit>
 			<trans-unit id="logged.firstname">
-				<source>First name</source>
+				<source>Vorname</source>
 				<target>First name</target>
 			</trans-unit>
 			<trans-unit id="logged.lastname">
-				<source>Last name</source>
+				<source>Nachname</source>
 				<target>Last name</target>
 			</trans-unit>
 			<trans-unit id="logged.text">
-				<source>You are logged in as</source>
+				<source>Du bist eingeloggt als</source>
 				<target>You are logged in as</target>
 			</trans-unit>
 			<trans-unit id="logged.title">
-				<source>Your current status</source>
+				<source>Dein aktueller Status</source>
 				<target>Your current status</target>
 			</trans-unit>
 			<trans-unit id="logged.username">
-				<source>Username</source>
+				<source>Benutzername</source>
 				<target>Username</target>
 			</trans-unit>
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</source>
 				<target>An error occurred during logon. You probably entered your username/email or password incorrectly. There is a difference between upper and lower case. Another possibility is that you may have disabled cookies in your web browser.</target>
+			</trans-unit>
+			<trans-unit id="login.error2">
+				<source>Leider fehlt Dir die Berechtigung, um Dich in diesen Bereich einloggen zu können.</source>
+				<target>Unfortunately, you do not have the authorization to log in to this area.</target>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Passwort vergessen?</source>
@@ -272,7 +276,7 @@
 				<target>Not registered? Signup now</target>
 			</trans-unit>
 			<trans-unit id="login.submit">
-				<source>Login</source>
+				<source>Einloggen</source>
 				<target>Login</target>
 			</trans-unit>
 			<trans-unit id="login.title">
