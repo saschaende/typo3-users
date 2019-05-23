@@ -24,6 +24,8 @@ With the extension "users" you get all necessary plugins to build up a community
     * German
     * English
     * Ukrainian
+    
+Offical support (fee-based) via https://filmmusic.io/imprint/   
         
 ## Plugins & Modules
     
