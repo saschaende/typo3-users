@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-23T20:32:05Z" product-name="users">
+	<file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2019-05-23T21:21:35Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -123,6 +123,38 @@
 				<source>Änderung der E-Mail Adresse</source>
 				<target>Change of e-mail address</target>
 			</trans-unit>
+			<trans-unit id="deleteaccount.confirm.error">
+				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Löschung des Accounts sind nur einen Tag lang gültig.</source>
+				<target>Error: Either the link is not valid, the account no longer exists or the link has expired. Links to delete the account are only valid for one day.</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.confirm.success">
+				<source>Vielen Dank, Du hast die Löschung Deines Accounts bestätigt. Der Account wurde soeben gelöscht.</source>
+				<target>Thank you, you have confirmed the deletion of your account. The account has just been deleted.</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.confirm.title">
+				<source>Account löschen</source>
+				<target>Delete account</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.email.button">
+				<source>Jetzt Account unwiderruflich löschen</source>
+				<target>Now irrevocably delete account</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.email.message">
+				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Link in dieser E-Mail.</source>
+				<target>Should the account really now be deleted immediately and irrevocably? Then click on the link in this email.</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.email.notes">
+				<source>Du möchtest Deinen Account löschen</source>
+				<target>You want to delete your account</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.email.salutation">
+				<source>Hallo</source>
+				<target>Hello</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.email.title">
+				<source>Hier sind die Instruktionen, um Deinen Account zu löschen.</source>
+				<target>Here are the instructions to delete your account.</target>
+			</trans-unit>
 			<trans-unit id="deleteaccount.form.button">
 				<source>Jetzt Account löschen</source>
 				<target>Delete your account now</target>
@@ -138,6 +170,14 @@
 			<trans-unit id="deleteaccount.form.warning">
 				<source>Achtung: Wir schicken Dir aus Sicherheitsgründen eine E-Mail mit einem Bestätigungslink. Sobald Du in der E-Mail auf den Link klickst, wird der Account gelöscht.</source>
 				<target>Attention: For security reasons we will send you an e-mail with a confirmation link. As soon as you click on the link in the e-mail, the account will be deleted.</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.submit.message">
+				<source>Wir haben Dir an die bei uns gespeicherte E-Mail Adresse soeben eine E-Mail geschickt. Sobald Du in dieser E-Mail auf den Bestätigungslink klickst, wird der Account umgehend gelöscht.</source>
+				<target>We have just sent you an e-mail to the e-mail address stored with us. As soon as you click on the confirmation link in this e-mail, the account will be deleted immediately.</target>
+			</trans-unit>
+			<trans-unit id="deleteaccount.submit.title">
+				<source>Account löschen</source>
+				<target>Delete account</target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>

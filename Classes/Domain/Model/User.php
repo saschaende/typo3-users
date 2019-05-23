@@ -72,6 +72,16 @@ class User extends FrontendUser {
     protected $usersNewemailhash = '';
 
     /**
+     * @var string
+     */
+    protected $usersDeletehash = '';
+
+    /**
+     * @var \DateTime
+     */
+    protected $usersDeletehashValid;
+
+    /**
      * @return \DateTime
      */
     public function getUsersLastlogin() {
@@ -253,6 +263,32 @@ class User extends FrontendUser {
         $this->usersNewemailhash = $usersNewemailhash;
     }
 
+    /**
+     * @return string
+     */
+    public function getUsersDeletehash(): string {
+        return $this->usersDeletehash;
+    }
 
+    /**
+     * @param string $usersDeletehash
+     */
+    public function setUsersDeletehash(string $usersDeletehash) {
+        $this->usersDeletehash = $usersDeletehash;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getUsersDeletehashValid(): \DateTime {
+        return $this->usersDeletehashValid;
+    }
+
+    /**
+     * @param \DateTime $usersDeletehashValid
+     */
+    public function setUsersDeletehashValid($usersDeletehashValid) {
+        $this->usersDeletehashValid = $usersDeletehashValid;
+    }
 
 }

@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+
+    <div class="card login-box">
+        <div class="card-body">
+            <h4 class="card-title">
+                <f:translate key="deleteaccount.confirm.title" />
+            </h4>
+            <div class="card-text">
+                <f:if condition="{deleted}">
+
+                    <f:then>
+                        <p><f:translate key="deleteaccount.confirm.success" /></p>
+                    </f:then>
+
+                    <f:else>
+                        <p><f:translate key="deleteaccount.confirm.error" /></p>
+                    </f:else>
+
+                </f:if>
+
+            </div>
+        </div>
+    </div>
+
+
+</f:section>
+</html>

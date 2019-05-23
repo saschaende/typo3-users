@@ -6,6 +6,7 @@ use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class DeleteaccountController extends ActionController {
 
@@ -37,23 +38,65 @@ class DeleteaccountController extends ActionController {
      * @param array $errors
      */
     public function formAction() {
-
+        // Nothing here, just template
     }
 
 
     public function submitAction() {
-        // Send email with delete link
-        // @todo complete this
+
+        // Make string and time
+        $dt = new \DateTime();
+        $dt->modify('+1 day');
+        $this->user->setUsersDeletehashValid($dt);
+
+        // Hash
+        $emailHash = md5(uniqid() . time());
+        $this->user->setUsersDeletehash($emailHash);
+
+        // Save to database
+        $this->frontendUserRepository->update($this->user);
+
+        // Make link, as short as possible
+        $link = t3h::Uri()->getByPid(
+            $this->settings['deleteaccountconfirmPage'],
+            false,
+            true,
+            [
+                'uid'   => $this->user->getUid(),
+                'deleteHash'  => $emailHash
+            ]
+        );
+
+
+        // Now lets send the email
+        t3h::Mail()->sendDynamicTemplate(
+            $this->user->getEmail(),
+            $this->settings['senderEmail'],
+            $this->settings['senderName'],
+            $this->settings['subject'],
+            'tx_users',
+            'Email',
+            ['user' => $this->user, 'link' => $link],
+            [],
+            1,
+            $this->controllerContext
+        );
     }
 
     public function confirmAction(){
-        $arguments = $this->request->getArguments();
+
+        $arguments = $_GET;
+
+        $verified = false;
 
         // Load userdata
         /** @var User $user */
         $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
 
-        $verified = $this->verifyDeleteAccount($user, $arguments);
+        if($user){
+            $verified = $this->verifyDeleteAccount($user, $arguments);
+        }
+
 
         $deleted = false;
 
@@ -87,12 +130,12 @@ class DeleteaccountController extends ActionController {
         }
 
         // stop if it is not the hash found in the database
-        if ($user->getUsersNewemailhash() != $arguments['deleteHash']) {
+        if ($user->getUsersDeletehash() != $arguments['deleteHash']) {
             return false;
         }
 
         // stop, if timestamp is older then now
-        if ($user->getUsersForgothashValid()->getTimestamp() < time()) {
+        if ($user->getUsersDeletehashValid()->getTimestamp() < time()) {
             return false;
         }
 

@@ -12,6 +12,8 @@ CREATE TABLE fe_users (
     users_newsletter char(1) DEFAULT '' NOT NULL,
     users_website int(11) unsigned DEFAULT '0' NOT NULL,
     users_language int(11) unsigned DEFAULT '0' NOT NULL,
+    users_deletehash varchar(255) DEFAULT '' NOT NULL,
+    users_deletehash_valid int(11) unsigned DEFAULT '0' NOT NULL,
 );
 
 
