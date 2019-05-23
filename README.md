@@ -37,10 +37,12 @@ Offical support (fee-based) via https://filmmusic.io/imprint/
 * Forgot password
 * Change email (for registered users, with confirmation of the new adress via email)
 * Change password (for registered users)
+* Change profile (firstname, lastname, company...)
 * Register
     * Set user groups that will be automatically assigned
     * Protect your system from disposable email addresses: Banlist for not allowed domains/hosts (spamschlucker ...)
-* Module: Admin tool for importing newest spam host list (will be regularily updated)
+* Delete account (with email confirmation)
+* Module: Admin tool for importing newest spam host list (regularily updated) or checking old users for trash mail providers
 
 # Credits / Other contributors
 
