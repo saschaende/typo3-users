@@ -69,14 +69,6 @@ class RegisterController extends ActionController {
             $this->forward('confirm', null, null, $_GET);
         }
 
-        if (isset($_GET['uid']) && isset($_GET['changeemailHash'])) {
-            $this->forward('confirmmailchange', null, null, $_GET);
-        }
-
-        if (isset($_GET['uid']) && isset($_GET['deleteHash'])) {
-            $this->forward('confirmdeleteaccount', null, null, $_GET);
-        }
-
 
         if ($registration == null) {
             $registration = new Registration();
@@ -315,65 +307,6 @@ class RegisterController extends ActionController {
     public function redirectAction() {
         $link = t3h::Uri()->getByPid($this->settings['successLink']);
         $this->redirectToUri($link);
-    }
-
-    /**
-     * Confirmation for mailchange
-     */
-    public function confirmmailchangeAction() {
-
-        $arguments = $this->request->getArguments();
-
-        // Load userdata
-        /** @var User $user */
-        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
-
-        $verified = $this->verifyMailChange($user, $arguments);
-
-        if ($verified) {
-            $user->setEmail($user->getUsersNewemail());
-            $user->setUsersNewemail('');
-            $user->setUsersNewemailhash('');
-            $this->frontendUserRepository->update($user);
-        }
-
-        $this->view->assignMultiple([
-            'user' => $user,
-            'verified' => $verified
-        ]);
-
-    }
-
-    /**
-     * Check the data
-     * @param User $user
-     * @param $arguments
-     * @return bool
-     */
-    private function verifyMailChange(User $user, $arguments) {
-        // stop if there is no user
-        if (!$user) {
-            return false;
-        }
-
-        // empty forgothash
-        if (empty($arguments['changeemailHash'])) {
-            return false;
-        }
-
-        // stop if it is not the hash found in the database
-        if ($user->getUsersNewemailhash() != $arguments['changeemailHash']) {
-            return false;
-        }
-
-        // check, if meanwhile there is another user account with that email address
-        /** @var QueryResult $users */
-        $users = $this->frontendUserRepository->findByEmail($user->getUsersNewemail());
-        if ($users->count() >= 1) {
-            return false;
-        }
-
-        return true;
     }
 
 }
