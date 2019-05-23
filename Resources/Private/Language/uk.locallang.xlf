@@ -277,7 +277,7 @@
 			</trans-unit>
 			<trans-unit id="login.title">
 				<source>Jetzt einloggen</source>
-				<target>Увійти зараз</target>
+				<target>Вхід</target>
 			</trans-unit>
 			<trans-unit id="login.username">
 				<source>Benutzername</source>
