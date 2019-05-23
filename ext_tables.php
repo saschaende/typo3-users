@@ -36,6 +36,12 @@ call_user_func(
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
             'SaschaEnde.Users',
+            'changeemailconfirm',
+            '[Users] Change email (CONFIRM)'
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
             'changepass',
             '[Users] Change password'
         );
@@ -50,6 +56,12 @@ call_user_func(
             'SaschaEnde.Users',
             'deleteaccount',
             '[Users] Delete account'
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'deleteaccountconfirm',
+            '[Users] Delete account (CONFIRM)'
         );
 
         // ------------------------------------------------------------------------------
@@ -98,5 +110,6 @@ call_user_func(
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('register');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('changeemail');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('changeprofile');
+        \t3h\t3h::Inject()->setExtension('users')->addFlexform('deleteaccount');
     }
 );

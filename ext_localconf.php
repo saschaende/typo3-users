@@ -67,6 +67,18 @@ call_user_func(
 
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
             'SaschaEnde.Users',
+            'changeemailconfirm',
+            [
+                'Changemail' => 'confirm'
+            ],
+            // non-cacheable actions
+            [
+                'Changemail' => 'confirm'
+            ]
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
             'changepass',
             [
                 'Changepass' => 'form,submit'
@@ -98,6 +110,18 @@ call_user_func(
             // non-cacheable actions
             [
                 'Deleteaccount' => 'form,submit'
+            ]
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'deleteaccountconfirm',
+            [
+                'Deleteaccount' => 'confirm'
+            ],
+            // non-cacheable actions
+            [
+                'Deleteaccount' => 'confirm'
             ]
         );
 
@@ -152,6 +176,15 @@ call_user_func(
                             list_type = users_changeemail
                         }
                     }
+                    users_changeemailconfirm {
+                        iconIdentifier = users
+                        title = [Users] Change email (CONFIRM)
+                        description = Put this on a public page, so users can confirm their email change via email
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_changeemailconfirm
+                        }
+                    }
                     users_changepass {
                         iconIdentifier = users
                         title = [Users] Change password
@@ -177,6 +210,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_deleteaccount
+                        }
+                    }
+                    users_deleteaccountconfirm {
+                        iconIdentifier = users
+                        title = [Users] Delete account (CONFIRM)
+                        description = Put this on a public page, so users can confirm their account delete via email
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_deleteaccountconfirm
                         }
                     }
                 }

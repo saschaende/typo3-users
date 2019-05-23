@@ -46,4 +46,57 @@ class DeleteaccountController extends ActionController {
         // @todo complete this
     }
 
+    public function confirmAction(){
+        $arguments = $this->request->getArguments();
+
+        // Load userdata
+        /** @var User $user */
+        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
+
+        $verified = $this->verifyDeleteAccount($user, $arguments);
+
+        $deleted = false;
+
+        if ($verified) {
+            $this->frontendUserRepository->remove($user);
+            $deleted = true;
+        }
+
+        $this->view->assignMultiple([
+            'user' => $user,
+            'deleted' => $deleted
+        ]);
+    }
+
+    /**
+     * Check the data
+     * @param User $user
+     * @param $arguments
+     * @return bool
+     * @todo Change function names (add tca, model, sql....)
+     */
+    private function verifyDeleteAccount(User $user, $arguments) {
+        // stop if there is no user
+        if (!$user) {
+            return false;
+        }
+
+        // empty forgothash
+        if (empty($arguments['deleteHash'])) {
+            return false;
+        }
+
+        // stop if it is not the hash found in the database
+        if ($user->getUsersNewemailhash() != $arguments['deleteHash']) {
+            return false;
+        }
+
+        // stop, if timestamp is older then now
+        if ($user->getUsersForgothashValid()->getTimestamp() < time()) {
+            return false;
+        }
+
+        return true;
+    }
+
 }
