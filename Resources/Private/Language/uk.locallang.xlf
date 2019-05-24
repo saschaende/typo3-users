@@ -37,7 +37,7 @@
 			</trans-unit>
 			<trans-unit id="changemail.form.note">
 				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier angezeigt.</source>
-				<target>Якщо ви зміните свою адресу електронної пошти, ви отримаєте повідомлення електронною поштою з посиланням на підтвердження у випадку, якщо з цією адресою електронної пошти не існує іншого облікового запису. Зміна адреси електронної пошти активна тільки після підтвердження, і лише після цього з'явиться нова адреса електронної пошти.</target>
+				<target>Якщо ви зміните адресу електронної пошти, ви отримаєте повідомлення електронною поштою з посиланням на підтвердження у випадку, якщо з цією адресою електронної пошти не існує іншого облікового запису. Зміна адреси електронної пошти активна тільки після підтвердження, і лише після цього з'явиться нова адреса електронної пошти.</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.title">
 				<source>E-Mail Adresse ändern</source>
@@ -45,7 +45,7 @@
 			</trans-unit>
 			<trans-unit id="changemail.submit.message">
 				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert und hier sichtbar.</source>
-				<target>Якщо жоден інший обліковий запис не пов'язаний з введеною адресою електронної поти, ви отримали електронного листа із посиланням на підтвердження на нову адресу електронної пошти. Перевірте папку &quot;Вхідні&quot; та натисніть посилання. Ваша нова адреса електронної пошти буде активована негайно і буде відображатися тут.</target>
+				<target>Якщо жоден інший обліковий запис не пов'язаний з введеною адресою електронної пошти, Ви отримаєте електронного листа із посиланням для підтвердження намірів на вказану нову адресу електронної пошти. Перевірте папку &quot;Вхідні&quot; та натисніть посилання. Нова адреса електронної пошти буде активована негайно і буде відображатися тут.</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.title">
 				<source>E-Mail Adresse ändern</source>
@@ -77,7 +77,7 @@
 			</trans-unit>
 			<trans-unit id="changepass.submit.message">
 				<source>Vielen Dank, Dein Passwort wurde geändert und ist ab jetzt gültig.</source>
-				<target>Дякуємо, ваше секретне слово змінено і тепер діє.</target>
+				<target>Дякуємо, секретне слово змінено і тепер діє.</target>
 			</trans-unit>
 			<trans-unit id="changepass.submit.title">
 				<source>Passwort ändern</source>
@@ -97,7 +97,7 @@
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.text">
 				<source>Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.</source>
-				<target>Якщо ви хочете видалити свій обліковий запис, ви можете зробити це легко, швидко і лише за кілька легких кліків.</target>
+				<target>Якщо ви хочете видалити свій обліковий запис, ви можете зробити це легко, швидко і лише за кілька простих кліків.</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.title">
 				<source>Account löschen</source>
@@ -117,7 +117,7 @@
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
 				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
-				<target>Дякуємо, ви підтвердили зміну адреси електронної пошти. Тепер ваш обліковий запис пов'язано з такою адресою електронної пошти:</target>
+				<target>Дякуємо, зміну адреси електронної пошти підтверджено. Тепер обліковий запис пов'язано з такою адресою електронної пошти:</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
 				<source>Änderung der E-Mail Adresse</source>
@@ -125,35 +125,35 @@
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.error">
 				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Löschung des Accounts sind nur einen Tag lang gültig.</source>
-				<target></target>
+				<target>Помилка: Ось ймовірні причини появи цієї помилки: Облікового запису більше не існує; Посилання для видалення облікового запису вже використано; Посилання для видалення облікового запису більше не діє оскільки закінчився термін його використання. Посилання для видалення облікового запису дійсне лише один день.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.success">
 				<source>Vielen Dank, Du hast die Löschung Deines Accounts bestätigt. Der Account wurde soeben gelöscht.</source>
-				<target></target>
+				<target>Дякуємо, видалення облікового запису підтверджено. Обліковий запис видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.title">
 				<source>Account löschen</source>
-				<target></target>
+				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.button">
 				<source>Jetzt Account unwiderruflich löschen</source>
-				<target></target>
+				<target>Видалити обліковий запис назавжди</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.message">
 				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Link in dieser E-Mail.</source>
-				<target></target>
+				<target>Чи потрібно відразу і безповоротно видалити обліковий запис? Якщо дійсно бажаєте видалити обліковий запис натисніть посилання в цьому електронному листі.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.notes">
 				<source>Du möchtest Deinen Account löschen</source>
-				<target></target>
+				<target>Хочете видалити свій обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.salutation">
 				<source>Hallo</source>
-				<target></target>
+				<target>Привіт</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.title">
 				<source>Hier sind die Instruktionen, um Deinen Account zu löschen.</source>
-				<target></target>
+				<target>Нижче наведено інструкцію щодо видалення облікового запису</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.button">
 				<source>Jetzt Account löschen</source>
@@ -161,7 +161,7 @@
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.text">
 				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</source>
-				<target>Ви дійсно бажаєте безповоротно видалити обліковий запис? Якщо ви хочете видалити свій обліковий запис і натиснете кнопку &quot;Видалити обліковий запис&quot; ваш обліковий запис буде видалено.</target>
+				<target>Дійсно бажаєте безповоротно видалити обліковий запис? Якщо хочете видалити обліковий запис натисніть кнопку &quot;Видалити обліковий запис&quot; і обліковий запис буде видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Account löschen</source>
@@ -169,15 +169,15 @@
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.warning">
 				<source>Achtung: Wir schicken Dir aus Sicherheitsgründen eine E-Mail mit einem Bestätigungslink. Sobald Du in der E-Mail auf den Link klickst, wird der Account gelöscht.</source>
-				<target></target>
+				<target>Застереження: З міркувань безпеки надішлемо електронного листа із посиланням на підтвердження намірів видалити обліковий запис. Як тільки натиснете посилання в електронному листі, обліковий запис буде видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.message">
 				<source>Wir haben Dir an die bei uns gespeicherte E-Mail Adresse soeben eine E-Mail geschickt. Sobald Du in dieser E-Mail auf den Bestätigungslink klickst, wird der Account umgehend gelöscht.</source>
-				<target></target>
+				<target>Щойно надіслано електронного листа на адресу електронної пошти, збережену в цьому обліковому записі. Як тільки натиснете посилання на підтвердження ваших дій в цьому електронному листі, обліковий запис буде негайно видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.title">
 				<source>Account löschen</source>
-				<target></target>
+				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
@@ -229,7 +229,7 @@
 			</trans-unit>
 			<trans-unit id="forgot.confirm.text">
 				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die E-Mail-Adresse nicht gefunden.</source>
-				<target>На адресу електронної пошти, збережену в обліковому записі, надіслано електронний лист, який містить посилання для скидання, зміни та відновлення секретного слова. Якщо ви не отримали електронного листа ваш обліковий запис або адресу електронної пошти не знайдено. Спробуйте також переглянути теку 'спам' повідомлення іноді помилково потрапляють туди.</target>
+				<target>На адресу електронної пошти, збережену в обліковому записі, надіслано електронний лист, який містить посилання для скидання, зміни та відновлення секретного слова. Якщо електронного листа не отримано обліковий запис або адресу електронної пошти не знайдено. Спробуйте також переглянути теку 'спам' повідомлення іноді помилково потрапляють туди.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.button">
 				<source>Passwort zurücksetzen</source>
@@ -237,7 +237,7 @@
 			</trans-unit>
 			<trans-unit id="forgot.email.info">
 				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.</source>
-				<target>Якщо кнопка з посиланням вище не працює, спробуйте скопіювати та вставити посилання (URL-адресу) в адресний рядок вашого веб-переглядача. Якщо проблеми вказані вище продовжують виникати і далі, будь ласка, не соромтеся зв'яжіться з нами.</target>
+				<target>Якщо кнопка з посиланням вище не працює, спробуйте скопіювати та вставити посилання (URL-адресу) в адресний рядок веб-переглядача. Якщо проблеми вказані вище продовжують виникати і далі, будь ласка, не соромтеся зв'яжіться з нами.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.message">
 				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben, setzen Sie bitte Ihr Passwort zurück.:</source>
@@ -257,7 +257,7 @@
 			</trans-unit>
 			<trans-unit id="forgot.text">
 				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen zum Zurücksetzen des Passworts zugesandt.</source>
-				<target>Введіть своє ім'я користувача або адресу електронної пошти. Інструкції щодо скидання та зміни секретного слова будуть відразу надіслані вам.</target>
+				<target>Введіть своє ім'я користувача або адресу електронної пошти. Інструкції щодо скидання та зміни секретного слова будуть відразу надіслані.</target>
 			</trans-unit>
 			<trans-unit id="forgot.title">
 				<source>Passwort vergessen</source>
@@ -297,11 +297,11 @@
 			</trans-unit>
 			<trans-unit id="login.error">
 				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</source>
-				<target>Під час входу в систему сталася помилка. Можливо, ви неправильно ввели своє ім'я користувача чи адресу електронної пошти або секретне слово. Існує різниця між верхніми (великими) і нижніми (маленькими) регістрами символів. Інша причина яка може мати місце полягає в тому, що у вашому веб-переглядачі можуть бути вимкнуті файли 'cookie' (Більше про фали 'cookie' дізнатись можна за цим посиланням https://uk.wikipedia.org/wiki/Куки).</target>
+				<target>Під час входу в систему сталася помилка. Можливо неправильно ввели ім'я користувача чи адресу електронної пошти або секретне слово. Існує різниця між верхніми (великими) і нижніми (маленькими) регістрами символів. Інша причина яка може мати місце полягає в тому, що у веб-переглядачі можуть бути вимкнуті файли 'cookie' (Більше про фали 'cookie' дізнатись можна за цим посиланням https://uk.wikipedia.org/wiki/Куки).</target>
 			</trans-unit>
 			<trans-unit id="login.error2">
 				<source>Leider fehlt Dir die Berechtigung, um Dich in diesen Bereich einloggen zu können.</source>
-				<target></target>
+				<target>На жаль, у вас немає дозволу на вхід у цю область ймовірною причиною є те, що дію вашого облікового запису тимчасово призупинено. За більше детальною інформацією, будь ласка зверніться до аміністратора.</target>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Passwort vergessen?</source>
@@ -345,7 +345,7 @@
 			</trans-unit>
 			<trans-unit id="register.confirm.message">
 				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
-				<target>Ваш обліковий запис активовано. Тут дані, з якими ви зареєстровані у нас.</target>
+				<target>Ваш обліковий запис активовано. Дані з якими обліковий запис зареєстровано тут.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Weiter</source>
@@ -357,7 +357,7 @@
 			</trans-unit>
 			<trans-unit id="register.confirm.username">
 				<source>Benutzername</source>
-				<target>Ваше ім'я користувача</target>
+				<target>Ім'я користувача</target>
 			</trans-unit>
 			<trans-unit id="register.email.button">
 				<source>Registrierung bestätigen</source>
@@ -369,7 +369,7 @@
 			</trans-unit>
 			<trans-unit id="register.email.notes">
 				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
-				<target>Підказки: Якщо ви не підтвердите свій обліковий запис протягом 3-х днів, ми автоматично видалимо всі надані вами дані. Якщо ваша поштова скринька недоступна чи ви ввели недійсну електронну адресу або реєстрацію відхилено з інших причин, цей обліковий запис буде видалено автоматично протягом наступних кількох годин.</target>
+				<target>Підказки: Якщо обліковий запис не буде підтверджено протягом 3-х днів, всі надані дані буде автоматично видалено. Якщо надана поштова скринька недоступна чи введено недійсну електронну адресу або реєстрацію відхилено з інших причин, цей обліковий запис буде видалено автоматично протягом наступних кількох годин.</target>
 			</trans-unit>
 			<trans-unit id="register.email.salutation">
 				<source>Hallo</source>
@@ -385,7 +385,7 @@
 			</trans-unit>
 			<trans-unit id="register.emailexists.info">
 				<source>Hier nochmal zur Erinnerung Deine Daten:</source>
-				<target>Тут, як нагадування представлені ваші дані:</target>
+				<target>Тут, як нагадування представлені дані облікового запису:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info.email">
 				<source>Deine E-Mail:</source>
@@ -465,11 +465,11 @@
 			</trans-unit>
 			<trans-unit id="register.form.email.note">
 				<source>An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.</source>
-				<target>На цю адресу електронної пошту ви отримаєте посилання для підтвердження вашого облікового запису.</target>
+				<target>На цю адресу електронної пошту отримаєте посилання для підтвердження створення облікового запису.</target>
 			</trans-unit>
 			<trans-unit id="register.form.loginlink">
 				<source>Du bist bereits registriert? Hier einloggen</source>
-				<target>Ви вже зареєстровані? Увійти можна тут.</target>
+				<target>Вже зареєстровані? Вхід тут.</target>
 			</trans-unit>
 			<trans-unit id="register.form.password">
 				<source>Passwort</source>
@@ -501,7 +501,7 @@
 			</trans-unit>
 			<trans-unit id="register.submit.message">
 				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung Deines Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin. Hier nochmal deine Angaben:</source>
-				<target>Щойно ми надіслали електронного листа на надану вами адресу електронної пошти, з посиланням для підтвердження вашого облікового запису. Якщо ви не бачите цього листа, спробуйте перевірте папку зі спамом, іноді листи помилково потрапляють туди. Ось деталі вказаних вами даних:</target>
+				<target>Щойно ми надіслали електронного листа на надану вами адресу електронної пошти, з посиланням для підтвердження створення облікового запису. Якщо ви не бачите цього листа, спробуйте перевірте папку зі спамом, іноді листи помилково потрапляють туди. Ось деталі вказаних вами даних:</target>
 			</trans-unit>
 			<trans-unit id="register.submit.note">
 				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
