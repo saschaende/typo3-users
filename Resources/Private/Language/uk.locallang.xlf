@@ -125,35 +125,35 @@
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.error">
 				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Löschung des Accounts sind nur einen Tag lang gültig.</source>
-				<target></target>
+				<target>Помилка: Ось ймовірні причини появи цієї помилки, облікового запису більше не існує або посилання для видалення облікового запису яке надіслане на електронну пошту більше не діє оскільки закінчився термін його дії. Посилання для видалення облікового запису дійсне лише один день.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.success">
 				<source>Vielen Dank, Du hast die Löschung Deines Accounts bestätigt. Der Account wurde soeben gelöscht.</source>
-				<target></target>
+				<target>Дякуємо, Ви підтвердили видалення облікового запису. Обліковий запис видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.title">
 				<source>Account löschen</source>
-				<target></target>
+				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.button">
 				<source>Jetzt Account unwiderruflich löschen</source>
-				<target></target>
+				<target>Тепер видаліть обліковий запис безповоротно</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.message">
 				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Link in dieser E-Mail.</source>
-				<target></target>
+				<target>Чи потрібно відразу ж і безповоротно видалити обліковий запис? Потім натисніть посилання в цьому листі.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.notes">
 				<source>Du möchtest Deinen Account löschen</source>
-				<target></target>
+				<target>Ви хочете видалити свій обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.salutation">
 				<source>Hallo</source>
-				<target></target>
+				<target>Привіт</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.title">
 				<source>Hier sind die Instruktionen, um Deinen Account zu löschen.</source>
-				<target></target>
+				<target>Нижче наведено інструкції щодо видалення облікового запису</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.button">
 				<source>Jetzt Account löschen</source>
@@ -169,15 +169,15 @@
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.warning">
 				<source>Achtung: Wir schicken Dir aus Sicherheitsgründen eine E-Mail mit einem Bestätigungslink. Sobald Du in der E-Mail auf den Link klickst, wird der Account gelöscht.</source>
-				<target></target>
+				<target>Застереження: З міркувань безпеки ми надішлемо вам електронного листа із посиланням на підтвердження ваших намірів. Як тільки ви натискаєте посилання в електронному листі, обліковий запис буде видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.message">
 				<source>Wir haben Dir an die bei uns gespeicherte E-Mail Adresse soeben eine E-Mail geschickt. Sobald Du in dieser E-Mail auf den Bestätigungslink klickst, wird der Account umgehend gelöscht.</source>
-				<target></target>
+				<target>Ми щойно надіслали вам електронного листа на адресу електронної пошти, збережену нами в обліковому записів. Як тільки Ви натиснете посилання на підтвердження ваших дій в цьому електронному листі, обліковий запис буде негайно видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.title">
 				<source>Account löschen</source>
-				<target></target>
+				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
@@ -301,7 +301,7 @@
 			</trans-unit>
 			<trans-unit id="login.error2">
 				<source>Leider fehlt Dir die Berechtigung, um Dich in diesen Bereich einloggen zu können.</source>
-				<target></target>
+				<target>На жаль, у вас немає дозволу на вхід у цю область ймовіною причиною є те, що дію вашого облікового запису тимчасово призупинено. За більше детальною інформацією, будь ласка зверніться до аміністратора</target>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Passwort vergessen?</source>
