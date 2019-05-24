@@ -280,7 +280,7 @@ class User extends FrontendUser {
     /**
      * @return \DateTime
      */
-    public function getUsersDeletehashValid(): \DateTime {
+    public function getUsersDeletehashValid() {
         return $this->usersDeletehashValid;
     }
 
