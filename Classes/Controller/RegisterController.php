@@ -5,12 +5,12 @@ namespace SaschaEnde\Users\Controller;
 use SaschaEnde\Users\Domain\Model\Registration;
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
+use SaschaEnde\Users\Domain\Repository\BannedMailsRepository;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Persistence\Generic\QueryResult;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 
 /**
@@ -35,6 +35,11 @@ class RegisterController extends ActionController {
      */
     protected $bannedHostsRepository;
 
+    /**
+     * @var BannedMailsRepository
+     */
+    protected $bannedmailsRepository;
+
     public function initializeAction() {
 
         // Load groups repo
@@ -44,6 +49,10 @@ class RegisterController extends ActionController {
         // Banned Hosts Repo
         $this->bannedHostsRepository = $this->objectManager->get(BannedHostsRepository::class);
         $this->bannedHostsRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
+
+        // Banned Mails Repo
+        $this->bannedmailsRepository = $this->objectManager->get(BannedMailsRepository::class);
+        $this->bannedmailsRepository->setDefaultQuerySettings(t3h::Database()->getQuerySettings());
 
         // Load user repo
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
@@ -128,6 +137,9 @@ class RegisterController extends ActionController {
             $errors['email'][] = '5';
         } // Check if banned
         elseif ($this->bannedHostsRepository->checkIfBanned($registration->getEmail())) {
+            $errors['email'][] = '10';
+        }
+        elseif ($this->bannedmailsRepository->findOneByEmail($registration->getEmail())) {
             $errors['email'][] = '10';
         }
 
