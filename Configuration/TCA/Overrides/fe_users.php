@@ -14,6 +14,7 @@ $temporaryColumns = [
     'users_logincount' => [
         'exclude' => true,
         'label' => 'Number of logins',
+        'description' => 'How many times did the user login',
         'config' => [
             'type' => 'input',
             'size' => 30,
