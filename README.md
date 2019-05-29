@@ -16,7 +16,9 @@ With the extension "users" you get all necessary plugins to build up a community
 * FLUID templates, based on bootstrap 4, easy to customize. Even for emails.
 * Security:
     * According to https://typo3.org/security/advisory/typo3-psa-2019-002/, Username and Email Address Enumeration is not possible in all plugins. If a user registers with an email, that exists, the email adress automatically gets a remember mail with an password reset link. (Thanks to Vasyl from http://typo3.net.ua/)
+    * Ban hostnames for registration
     * A list of 2160 disposable email address providers is included and can be imported with one click.
+    * Ban email adresses for registration
 * Helpful multi Site support:
      * Saves root page uid for every registered user
      * Saves language setting of every user (on registration and every login, configurable)
