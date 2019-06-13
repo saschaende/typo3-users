@@ -7,6 +7,7 @@ use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class ForgotController extends ActionController {
 
@@ -137,11 +138,13 @@ class ForgotController extends ActionController {
             $user->setDisable(false);
             $user->setUsersRegisterhash('');
             $this->frontendUserRepository->update($user);
+            t3h::Database()->persistAll();
 
             // Automatically login?
             if ($this->settings['login']) {
                 t3h::FrontendUser()->loginUser($user->getUsername());
             }
+
         } else {
             $link = t3h::Uri()->getByPid(
                 t3h::Page()->getPid(),
