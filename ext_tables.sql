@@ -55,3 +55,12 @@ CREATE TABLE tx_users_domain_model_bannedmails (
 	PRIMARY KEY (uid),
 	KEY parent (pid)
 );
+
+#
+# Table structure for table 'tx_realurl_uniqalias'
+#
+CREATE TABLE pages (
+    users_dashboard_image int(11) unsigned NOT NULL default '0',
+    users_dashboard_title varchar(255) DEFAULT '' NOT NULL,
+	users_dashboard_description TEXT DEFAULT '' NOT NULL,
+) ENGINE=InnoDB;
