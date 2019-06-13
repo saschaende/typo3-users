@@ -64,6 +64,12 @@ call_user_func(
             '[Users] Delete account (CONFIRM)'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'dashboard',
+            '[Users] Dashboard'
+        );
+
         // ------------------------------------------------------------------------------
         // Add Backend Module
         // ------------------------------------------------------------------------------
@@ -111,5 +117,6 @@ call_user_func(
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('changeemail');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('changeprofile');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('deleteaccount');
+        \t3h\t3h::Inject()->setExtension('users')->addFlexform('dashboard');
     }
 );

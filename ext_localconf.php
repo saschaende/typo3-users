@@ -125,6 +125,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'dashboard',
+            [
+                'Dashboard' => 'list'
+            ],
+            // non-cacheable actions
+            [
+                'Dashboard' => 'list'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -219,6 +231,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_deleteaccountconfirm
+                        }
+                    }
+                    users_dashboard {
+                        iconIdentifier = users
+                        title = [Users] Dashboard
+                        description = Display pages of the user area or other important pages
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_dashboard
                         }
                     }
                 }

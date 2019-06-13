@@ -8,6 +8,11 @@ config.tx_extbase {
 					recordType = 0
 				}
 			}
+			SaschaEnde\Users\Domain\Model\Pages {
+				mapping {
+					tableName = pages
+				}
+			}
 		}
 	}
 }

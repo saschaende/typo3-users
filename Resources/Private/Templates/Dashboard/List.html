@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+    <div class="row">
+        <f:for each="{pages}" as="page">
+            <!-- column -->
+            <div class="col-lg-3 col-md-6 img-responsive">
+                <!-- Card -->
+                <div class="card">
+                    <f:link.page pageUid="{page.uid}">
+                        <f:image image="{page.usersDashboardImage}" class="card-img-top img-responsive" width="500c" height="300c"/>
+                    </f:link.page>
+                    <div class="card-body">
+                        <h4 class="card-title">{page.usersDashboardTitle}</h4>
+                        <p class="card-text">
+                            <f:format.html>{page.usersDashboardDescription}</f:format.html>
+                        </p>
+                        <f:link.page pageUid="{page.uid}" class="btn btn-primary">{page.usersDashboardTitle}</f:link.page>
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+            <!-- column -->
+        </f:for>
+    </div>
+
+</f:section>
+</html>

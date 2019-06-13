@@ -49,12 +49,12 @@ $temporaryColumns = [
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-    'pages_language_overlay',
+    'pages',
     $temporaryColumns
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'pages_language_overlay',
+    'pages',
     '--div--;Dashboard (users), users_dashboard_image,users_dashboard_title,users_dashboard_description',
     '',
     'after:categories'
