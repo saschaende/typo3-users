@@ -2,12 +2,12 @@
 <f:layout name="Default"/>
 <f:section name="main">
 
-    <div class="row">
+    <div class="row mb-5">
         <f:for each="{pages}" as="page">
             <!-- column -->
-            <div class="col-lg-3 col-md-6 img-responsive">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-3">
                 <!-- Card -->
-                <div class="card">
+                <div class="card h-100">
                     <f:link.page pageUid="{page.uid}">
                         <f:image image="{page.usersDashboardImage}" class="card-img-top img-responsive" width="500c" height="300c"/>
                     </f:link.page>
