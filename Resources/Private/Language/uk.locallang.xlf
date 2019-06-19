@@ -481,7 +481,7 @@
 			</trans-unit>
 			<trans-unit id="register.form.repeatpassword">
 				<source>Passwort wiederholen</source>
-				<target>Поторіть секретне слово</target>
+				<target>Повторіть секретне слово</target>
 			</trans-unit>
 			<trans-unit id="register.form.title">
 				<source>Registrierung</source>
