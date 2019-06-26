@@ -58,6 +58,11 @@ class Pages extends AbstractEntity {
     protected $usersDashboardDescription = '';
 
     /**
+     * @var string
+     */
+    protected $usersDashboardButton = '';
+
+    /**
      * @return int
      */
     public function getUid(): int {
@@ -125,6 +130,20 @@ class Pages extends AbstractEntity {
      */
     public function setUsersDashboardDescription($usersDashboardDescription) {
         $this->usersDashboardDescription = $usersDashboardDescription;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsersDashboardButton(): string {
+        return $this->usersDashboardButton;
+    }
+
+    /**
+     * @param string $usersDashboardButton
+     */
+    public function setUsersDashboardButton(string $usersDashboardButton) {
+        $this->usersDashboardButton = $usersDashboardButton;
     }
 
 }

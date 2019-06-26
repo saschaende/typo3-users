@@ -16,7 +16,16 @@
                         <p class="card-text">
                             <f:format.html>{page.usersDashboardDescription}</f:format.html>
                         </p>
-                        <f:link.page pageUid="{page.uid}" class="btn btn-primary">{page.usersDashboardTitle}</f:link.page>
+                        <f:link.page pageUid="{page.uid}" class="btn btn-primary">
+                            <f:if condition="{page.usersDashboardButton}">
+                                <f:then>
+                                    {page.usersDashboardButton}
+                                </f:then>
+                                <f:else>
+                                    {page.usersDashboardTitle}
+                                </f:else>
+                            </f:if>
+                        </f:link.page>
                     </div>
                 </div>
                 <!-- Card -->

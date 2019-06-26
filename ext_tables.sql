@@ -61,10 +61,12 @@ CREATE TABLE pages (
     users_dashboard_image int(11) unsigned NOT NULL default '0',
     users_dashboard_title varchar(255) DEFAULT '' NOT NULL,
 	users_dashboard_description TEXT DEFAULT '' NOT NULL,
+	users_dashboard_button varchar(255) DEFAULT '' NOT NULL,
 ) ENGINE=InnoDB;
 
 CREATE TABLE pages_language_overlay (
     users_dashboard_image int(11) unsigned NOT NULL default '0',
     users_dashboard_title varchar(255) DEFAULT '' NOT NULL,
 	users_dashboard_description TEXT DEFAULT '' NOT NULL,
+	users_dashboard_button varchar(255) DEFAULT '' NOT NULL,
 ) ENGINE=InnoDB;

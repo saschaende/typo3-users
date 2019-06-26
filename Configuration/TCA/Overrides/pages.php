@@ -46,6 +46,14 @@ $temporaryColumns = [
         ],
         'defaultExtras' => 'richtext:rte_transform[mode=ts_css]'
     ],
+    'users_dashboard_button' => [
+        'exclude' => 1,
+        'label' => 'Button link text',
+        'config' => [
+            'type' => 'input',
+            'size' => '60',
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -55,7 +63,7 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'pages_language_overlay',
-    '--div--;Dashboard (users), users_dashboard_image,users_dashboard_title,users_dashboard_description',
+    '--div--;Dashboard (users), users_dashboard_image,users_dashboard_title,users_dashboard_description,users_dashboard_button',
     '',
     'after:categories'
 );
