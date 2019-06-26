@@ -5,11 +5,11 @@
     <div class="row mb-5">
         <f:for each="{pages}" as="page">
             <!-- column -->
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-3">
+            <div class="{settings.itemsize}">
                 <!-- Card -->
                 <div class="card h-100">
                     <f:link.page pageUid="{page.uid}">
-                        <f:image image="{page.usersDashboardImage}" class="card-img-top img-responsive" width="500c" height="300c"/>
+                        <f:image image="{page.usersDashboardImage}" class="card-img-top img-responsive" width="{settings.imgwidth}" height="{settings.imgheight}"/>
                     </f:link.page>
                     <div class="card-body">
                         <h4 class="card-title">{page.usersDashboardTitle}</h4>

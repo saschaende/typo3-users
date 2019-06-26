@@ -28,6 +28,48 @@
                         </TCEforms>
                     </settings.pages>
 
+                    <settings.itemsize>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Dashboard Item size</label>
+                            <config>
+                                <required>1</required>
+                                <type>input</type>
+                                <size>100</size>
+                                <eval>trim</eval>
+                                <default>col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 mt-3</default>
+                            </config>
+                        </TCEforms>
+                    </settings.itemsize>
+
+                    <settings.imgwidth>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Dashboard image width</label>
+                            <config>
+                                <required>1</required>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim</eval>
+                                <default>500c</default>
+                            </config>
+                        </TCEforms>
+                    </settings.imgwidth>
+
+                    <settings.imgheight>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Dashboard image height</label>
+                            <config>
+                                <required>1</required>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim</eval>
+                                <default>300c</default>
+                            </config>
+                        </TCEforms>
+                    </settings.imgheight>
+
 
                 </el>
             </ROOT>
