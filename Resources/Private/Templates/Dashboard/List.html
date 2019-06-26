@@ -8,15 +8,19 @@
             <div class="{settings.itemsize}">
                 <!-- Card -->
                 <div class="card h-100">
-                    <f:link.page pageUid="{page.uid}">
-                        <f:image image="{page.usersDashboardImage}" class="card-img-top img-responsive" width="{settings.imgwidth}" height="{settings.imgheight}"/>
-                    </f:link.page>
+                    <f:if condition="{page.usersDashboardImage}">
+                        <f:link.page pageUid="{page.uid}">
+                            <f:image image="{page.usersDashboardImage}" class="card-img-top img-responsive"
+                                     width="{settings.imgwidth}" height="{settings.imgheight}"/>
+                        </f:link.page>
+                    </f:if>
                     <div class="card-body">
                         <h4 class="card-title">{page.usersDashboardTitle}</h4>
                         <p class="card-text">
                             <f:format.html>{page.usersDashboardDescription}</f:format.html>
                         </p>
                         <f:link.page pageUid="{page.uid}" class="btn btn-primary">
+                            <i class="fas fa-arrow-circle-right"></i>
                             <f:if condition="{page.usersDashboardButton}">
                                 <f:then>
                                     {page.usersDashboardButton}
