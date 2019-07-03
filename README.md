@@ -174,6 +174,17 @@ Here the user can change the username or other profile data. The change is immed
 * Click on the pencil icon
 * Edit plugin settings
 
+### Plugin: Dashboard
+
+The Dashboard plugin displays pages in the form of a dashboard. It can be inserted multiple times and also works with normal pages.
+
+* Add a new page "Dashboard"
+* **The page may only be accessed by logged in users.**
+* Insert plugin "[Users] Dashboard"
+* Click on the pencil icon
+* Edit plugin settings
+* Change settings on every page you add to the dashboard. Go to the desired page and edit settings in "Users" tab. Every page now has a users tab.
+
 ### Plugin: Delete account
 
 With this plugin the user can delete his account: The user receives an e-mail with a confirmation link. If the user clicks on the link in the e-mail, the account will be deleted immediately.
