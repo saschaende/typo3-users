@@ -178,6 +178,8 @@ Here the user can change the username or other profile data. The change is immed
 
 The Dashboard plugin displays pages in the form of a dashboard. It can be inserted multiple times and also works with normal pages.
 
+![3](Documentation/dashboard_example.JPG)
+
 * Add a new page "Dashboard"
 * **The page may only be accessed by logged in users.**
 * Insert plugin "[Users] Dashboard"
