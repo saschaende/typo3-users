@@ -185,6 +185,8 @@ The Dashboard plugin displays pages in the form of a dashboard. It can be insert
 * Edit plugin settings
 * Change settings on every page you add to the dashboard. Go to the desired page and edit settings in "Users" tab. Every page now has a users tab.
 
+![2](Documentation/dashboard.JPG)
+
 ### Plugin: Delete account
 
 With this plugin the user can delete his account: The user receives an e-mail with a confirmation link. If the user clicks on the link in the e-mail, the account will be deleted immediately.
