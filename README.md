@@ -180,6 +180,8 @@ The Dashboard plugin displays pages in the form of a dashboard. It can be insert
 
 ![3](Documentation/dashboard_example.JPG)
 
+![4](Documentation/dashboard_settings.JPG)
+
 * Add a new page "Dashboard"
 * **The page may only be accessed by logged in users.**
 * Insert plugin "[Users] Dashboard"
