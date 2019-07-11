@@ -43,6 +43,7 @@ $temporaryColumns = [
             'cols' => 40,
             'rows' => 15,
             'eval' => 'trim',
+            'default'   => ''
         ],
         'defaultExtras' => 'richtext:rte_transform[mode=ts_css]'
     ],
