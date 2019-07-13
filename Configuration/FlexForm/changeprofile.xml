@@ -63,53 +63,8 @@
                             <label>Show fields (optional)</label>
                             <config>
                                 <type>select</type>
+                                <itemsProcFunc>SaschaEnde\Users\Flexform\Fields->changeprofile</itemsProcFunc>
                                 <renderType>selectMultipleSideBySide</renderType>
-                                <items type="array">
-                                    <numIndex index="0" type="array">
-                                        <numIndex index="0">Conditions (AGB)</numIndex>
-                                        <numIndex index="1">users_conditions</numIndex>
-                                    </numIndex>
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">Data protection (Datenschutz)</numIndex>
-                                        <numIndex index="1">users_dataprotection</numIndex>
-                                    </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">Firstname</numIndex>
-                                        <numIndex index="1">first_name</numIndex>
-                                    </numIndex>
-                                    <numIndex index="4" type="array">
-                                        <numIndex index="0">Lastname</numIndex>
-                                        <numIndex index="1">last_name</numIndex>
-                                    </numIndex>
-                                    <numIndex index="5" type="array">
-                                        <numIndex index="0">Company</numIndex>
-                                        <numIndex index="1">company</numIndex>
-                                    </numIndex>
-                                    <numIndex index="6" type="array">
-                                        <numIndex index="0">Street</numIndex>
-                                        <numIndex index="1">address</numIndex>
-                                    </numIndex>
-                                    <numIndex index="7" type="array">
-                                        <numIndex index="0">Zip</numIndex>
-                                        <numIndex index="1">zip</numIndex>
-                                    </numIndex>
-                                    <numIndex index="8" type="array">
-                                        <numIndex index="0">City</numIndex>
-                                        <numIndex index="1">city</numIndex>
-                                    </numIndex>
-                                    <numIndex index="9" type="array">
-                                        <numIndex index="0">Phone</numIndex>
-                                        <numIndex index="1">telephone</numIndex>
-                                    </numIndex>
-                                    <numIndex index="10" type="array">
-                                        <numIndex index="0">Newsletter</numIndex>
-                                        <numIndex index="1">users_newsletter</numIndex>
-                                    </numIndex>
-                                    <numIndex index="11" type="array">
-                                        <numIndex index="0">Username</numIndex>
-                                        <numIndex index="1">username</numIndex>
-                                    </numIndex>
-                                </items>
                                 <size>10</size>
                             </config>
                         </TCEforms>
@@ -120,50 +75,8 @@
                             <label>Required fields (optional)</label>
                             <config>
                                 <type>select</type>
+                                <itemsProcFunc>SaschaEnde\Users\Flexform\Fields->changeprofile</itemsProcFunc>
                                 <renderType>selectMultipleSideBySide</renderType>
-                                <items type="array">
-                                    <numIndex index="0" type="array">
-                                        <numIndex index="0">Conditions (AGB)</numIndex>
-                                        <numIndex index="1">users_conditions</numIndex>
-                                    </numIndex>
-                                    <numIndex index="1" type="array">
-                                        <numIndex index="0">Data protection (Datenschutz)</numIndex>
-                                        <numIndex index="1">users_dataprotection</numIndex>
-                                    </numIndex>
-                                    <numIndex index="3" type="array">
-                                        <numIndex index="0">Firstname</numIndex>
-                                        <numIndex index="1">first_name</numIndex>
-                                    </numIndex>
-                                    <numIndex index="4" type="array">
-                                        <numIndex index="0">Lastname</numIndex>
-                                        <numIndex index="1">last_name</numIndex>
-                                    </numIndex>
-                                    <numIndex index="5" type="array">
-                                        <numIndex index="0">Company</numIndex>
-                                        <numIndex index="1">company</numIndex>
-                                    </numIndex>
-                                    <numIndex index="6" type="array">
-                                        <numIndex index="0">Street</numIndex>
-                                        <numIndex index="1">address</numIndex>
-                                    </numIndex>
-                                    <numIndex index="7" type="array">
-                                        <numIndex index="0">Zip</numIndex>
-                                        <numIndex index="1">zip</numIndex>
-                                    </numIndex>
-                                    <numIndex index="8" type="array">
-                                        <numIndex index="0">City</numIndex>
-                                        <numIndex index="1">city</numIndex>
-                                    </numIndex>
-                                    <numIndex index="9" type="array">
-                                        <numIndex index="0">Phone</numIndex>
-                                        <numIndex index="1">telephone</numIndex>
-                                    </numIndex>
-
-                                    <numIndex index="10" type="array">
-                                        <numIndex index="0">Newsletter</numIndex>
-                                        <numIndex index="1">users_newsletter</numIndex>
-                                    </numIndex>
-                                </items>
                                 <size>10</size>
                             </config>
                         </TCEforms>

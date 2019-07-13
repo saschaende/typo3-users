@@ -23,7 +23,8 @@
                             <f:render partial="Icons/User"/>
                             <f:form.textfield
                                     class="form-control{f:if(condition: '{errors.username}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.username}',then: ' is-valid')}"
-                                    id="username" property="username"
+                                    id="username"
+                                    property="username"
                                     additionalAttributes="{autocomplete:'new-password'}"/>
                         </div>
                         <div class="text-danger">

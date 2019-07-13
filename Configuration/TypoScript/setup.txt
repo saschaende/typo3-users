@@ -14,6 +14,63 @@ plugin.tx_users {
         }
     }
     settings {
+        fields {
+            0 {
+                key = first_name
+                name = First name
+                type = textfield
+            }
+            1 {
+                key = last_name
+                name = Last name
+                type = textfield
+            }
+            2 {
+                key = address
+                name = Address
+                type = textfield
+            }
+            3 {
+                key = zip
+                name = Zip
+                type = textfield
+            }
+            4 {
+                key = city
+                name = City
+                type = textfield
+            }
+            5 {
+                key = country
+                name = Country
+                type = country
+            }
+            6 {
+                key = company
+                name = Company
+                type = textfield
+            }
+            7 {
+                key = telephone
+                name = Phone
+                type = textfield
+            }
+            8 {
+                key = users_conditions
+                name = Conditions (Terms)
+                type = checkbox
+            }
+            9 {
+                key = users_dataprotection
+                name = Date protection (Privacy)
+                type = checkbox
+            }
+            10 {
+                key = users_newsletter
+                name = Newsletter
+                type = checkbox
+            }
+        }
         iconsInTheForms = {$plugin.tx_users.settings.iconsInTheForms}
         iconSize {
             width = {$plugin.tx_users.settings.iconSize.width}
