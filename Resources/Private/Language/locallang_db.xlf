@@ -9,6 +9,78 @@
 			<trans-unit id="tx_users_domain_model_bannedhosts.host">
 				<source>Host</source>
 			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news">
+				<source>News</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.shortcontent">
+				<source>Shortcontent</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.highlight">
+				<source>Highlight</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_news.groups">
+				<source>Groups</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_newscategory">
+				<source>News Category</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_newscategory.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_company.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_company.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_company.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_company.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_company.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_company.holding">
+				<source>Holding</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_holding">
+				<source>Holding</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_holding.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_newsbookmark">
+				<source>News Bookmark</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_newsbookmark.user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_newsbookmark.news">
+				<source>News</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -9,6 +9,7 @@ use SaschaEnde\Users\Domain\Repository\BannedMailsRepository;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
@@ -39,6 +40,11 @@ class RegisterController extends ActionController {
      * @var BannedMailsRepository
      */
     protected $bannedmailsRepository;
+
+    /**
+     * @var FrontendUserGroup
+     */
+    protected $test;
 
     public function initializeAction() {
 
