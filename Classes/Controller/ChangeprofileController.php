@@ -2,13 +2,11 @@
 
 namespace SaschaEnde\Users\Controller;
 
-use SaschaEnde\Users\Domain\Model\Registration;
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class ChangeprofileController extends ActionController {
 
@@ -63,7 +61,7 @@ class ChangeprofileController extends ActionController {
         }
 
         $this->view->assignMultiple([
-            'user'  => $this->user,
+            'user' => $this->user,
             'errors' => $errors,
             'optionalFields' => $optionalFields
         ]);
@@ -86,7 +84,7 @@ class ChangeprofileController extends ActionController {
 
         // Check if username exists and if its not our username
         if ($userfound = $this->frontendUserRepository->findOneByUsername($user->getUsername())) {
-            if($userfound->getUid() != $user->getUid()){
+            if ($userfound->getUid() != $user->getUid()) {
                 $errors['username'][] = '3';
             }
         }

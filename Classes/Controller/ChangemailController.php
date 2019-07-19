@@ -10,7 +10,6 @@ use t3h\t3h;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\QueryResult;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class ChangemailController extends ActionController {
 
@@ -55,12 +54,14 @@ class ChangemailController extends ActionController {
      * @param \SaschaEnde\Users\Domain\Model\Mailchange $mailchange
      * @param array $errors
      */
-    public function formAction($mailchange = null, $errors = []){
+    public function formAction($mailchange = null, $errors = []) {
 
         // Abort if not logged
-        if(!$this->user){return;}
+        if (!$this->user) {
+            return;
+        }
 
-        if($mailchange == null){
+        if ($mailchange == null) {
             $mailchange = new Mailchange();
         }
 
@@ -74,10 +75,12 @@ class ChangemailController extends ActionController {
     /**
      * @param \SaschaEnde\Users\Domain\Model\Mailchange $mailchange
      */
-    public function submitAction(Mailchange $mailchange){
+    public function submitAction(Mailchange $mailchange) {
 
         // Abort if not logged
-        if(!$this->user){return;}
+        if (!$this->user) {
+            return;
+        }
 
         $errors = [];
 
@@ -103,7 +106,7 @@ class ChangemailController extends ActionController {
                 null,
                 [
                     'errors' => $errors,
-                    'mailchange'    => $mailchange
+                    'mailchange' => $mailchange
                 ]
             );
         } else {
@@ -128,8 +131,8 @@ class ChangemailController extends ActionController {
                     false,
                     true,
                     [
-                        'uid'   => $this->user->getUid(),
-                        'changeemailHash'  => $emailHash
+                        'uid' => $this->user->getUid(),
+                        'changeemailHash' => $emailHash
                     ]
                 );
 
@@ -148,7 +151,7 @@ class ChangemailController extends ActionController {
                     $this->controllerContext
                 );
 
-            }else{
+            } else {
 
                 // Do nothing here, just show the message that we sent an email (for security and enumeration reasons)
 

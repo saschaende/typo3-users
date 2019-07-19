@@ -70,6 +70,24 @@ call_user_func(
             '[Users] Dashboard'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'newswriter',
+            '[Users] Write news'
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'newsreader',
+            '[Users] Show news'
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'usermanagement',
+            '[Users] User management'
+        );
+
         // ------------------------------------------------------------------------------
         // Add Backend Module
         // ------------------------------------------------------------------------------

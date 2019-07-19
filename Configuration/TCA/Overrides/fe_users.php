@@ -1,6 +1,17 @@
 <?php
 
 $temporaryColumns = [
+    'users_company' => [
+        'exclude' => 1,
+        'label' => 'Company',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tx_users_domain_model_company',
+            'minitems' => 0,
+            'maxitems' => 1
+        ],
+    ],
     'users_lastlogin' => [
         'exclude' => 1,
         'label' => 'Last login',
@@ -173,5 +184,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_newemail,users_newemailhash,users_conditions,users_dataprotection,users_newsletter,users_website,users_language,users_deletehash,users_deletehash_valid'
+    '--div--;Users,users_company, users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_newemail,users_newemailhash,users_conditions,users_dataprotection,users_newsletter,users_website,users_language,users_deletehash,users_deletehash_valid'
 );

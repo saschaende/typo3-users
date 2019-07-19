@@ -137,6 +137,42 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'newswriter',
+            [
+                'Newswriter' => 'form,preview,post'
+            ],
+            // non-cacheable actions
+            [
+                'Dashboard' => 'form,preview,post'
+            ]
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'usermanagement',
+            [
+                'Usermanagement' => 'list,new,add,edit,save'
+            ],
+            // non-cacheable actions
+            [
+                'Usermanagement' => 'list,new,add,edit,save'
+            ]
+        );
+
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'newsreader',
+            [
+                'Newsreader' => 'list,show'
+            ],
+            // non-cacheable actions
+            [
+                'Newsreader' => 'list,show'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -240,6 +276,33 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_dashboard
+                        }
+                    }
+                    users_newswriter {
+                        iconIdentifier = users
+                        title = [Users] Write news
+                        description = Users can write, preview and publish news
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_newswriter
+                        }
+                    }
+                    users_newsreader {
+                        iconIdentifier = users
+                        title = [Users] Show news
+                        description = Read the news
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_newsreader
+                        }
+                    }
+                    users_usermanagement {
+                        iconIdentifier = users
+                        title = [Users] User management
+                        description = Management for subusers of a company
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_usermanagement
                         }
                     }
                 }

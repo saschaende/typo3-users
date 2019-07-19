@@ -6,6 +6,11 @@ use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
 class User extends FrontendUser {
 
     /**
+     * @var string
+     */
+    protected $usersCompany = '';
+
+    /**
      * @var \DateTime
      */
     protected $usersLastlogin;
@@ -80,6 +85,20 @@ class User extends FrontendUser {
      * @var \DateTime
      */
     protected $usersDeletehashValid;
+
+    /**
+     * @return string
+     */
+    public function getUsersCompany() {
+        return $this->usersCompany;
+    }
+
+    /**
+     * @param string $usersCompany
+     */
+    public function setUsersCompany($usersCompany) {
+        $this->usersCompany = $usersCompany;
+    }
 
     /**
      * @return \DateTime

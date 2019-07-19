@@ -17,6 +17,12 @@ namespace SaschaEnde\Users\Domain\Model;
  */
 class News extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
+
+    /**
+     * @var \DateTime
+     */
+    protected $crdate = null;
+
     /**
      * title
      *
@@ -80,6 +86,25 @@ class News extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup>
      */
     protected $groups = null;
+
+    /**
+     * @var string
+     */
+    protected $rssHash = '';
+
+    /**
+     * @return \DateTime
+     */
+    public function getCrdate() {
+        return $this->crdate;
+    }
+
+    /**
+     * @param \DateTime $crdate
+     */
+    public function setCrdate($crdate) {
+        $this->crdate = $crdate;
+    }
 
     /**
      * __construct
@@ -345,5 +370,19 @@ class News extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function isHighlight()
     {
         return $this->highlight;
+    }
+
+    /**
+     * @return string
+     */
+    public function getRssHash() {
+        return $this->rssHash;
+    }
+
+    /**
+     * @param string $rssHash
+     */
+    public function setRssHash($rssHash) {
+        $this->rssHash = $rssHash;
     }
 }

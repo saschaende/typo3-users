@@ -7,7 +7,6 @@ use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use t3h\t3h;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class AdminController extends ActionController {
 
@@ -58,11 +57,11 @@ class AdminController extends ActionController {
         ]);
     }
 
-    public function checkAction(){
+    public function checkAction() {
         $hosts = $this->bannedHostsRepository->findAll();
-        if($hosts->count() >= 1){
+        if ($hosts->count() >= 1) {
             $users = $this->frontendUserRepository->checkHosts($hosts);
-        }else{
+        } else {
             $users = [];
         }
 

@@ -16,14 +16,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,content,shortcontent,image,highlight,categories,company,user,groups',
+        'searchFields' => 'crdate, title,content,shortcontent,image,highlight,categories,company,user,groups,rss_hash',
         'iconfile' => 'EXT:users/Resources/Public/Icons/Extension.png'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, content, shortcontent, image, highlight, categories, company, user, groups',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, crdate, title, content, shortcontent, image, highlight, categories, company, user, groups, rss_hash',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, content, shortcontent, image, highlight, categories, company, user, groups, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, crdate, title, content, shortcontent, image, highlight, categories, company, user, groups, rss_hash, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -112,6 +112,21 @@ return [
                 'range' => [
                     'upper' => mktime(0, 0, 0, 1, 1, 2038)
                 ],
+            ],
+        ],
+
+        'crdate' => [
+            'exclude' => true,
+            'behaviour' => [
+                'allowLanguageSynchronization' => true
+            ],
+            'label' => 'Creation date',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputDateTime',
+                'size' => 13,
+                'eval' => 'datetime',
+                'default' => 0,
             ],
         ],
 
@@ -264,11 +279,23 @@ return [
             'label' => 'LLL:EXT:users/Resources/Private/Language/locallang_db.xlf:tx_users_domain_model_news.groups',
             'config' => [
                 'type' => 'select',
-                'renderType' => '',
+                'renderType' => 'selectMultipleSideBySide',
+                'size' => 10,
+                'autoSizeMax' => 30,
+                'maxitems' => 9999,
                 'foreign_table' => 'fe_groups',
                 'MM' => 'tx_users_frontendusergroup_mm',
             ],
             
+        ],
+        'rss_hash' => [
+            'exclude' => true,
+            'label' => 'RSS Hash',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
         ],
     
     ],
