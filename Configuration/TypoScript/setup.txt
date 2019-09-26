@@ -14,24 +14,6 @@ plugin.tx_users {
         }
     }
     settings {
-        rssfeeds {
-            0 {
-                url = https://www.spiegel.de/schlagzeilen/tops/index.rss
-                categories = 4,5
-                groups = 1,2
-                highlight = 0
-                company = 1
-                user = 1
-            }
-            1 {
-                url = https://www.stern.de/feed/standard/alle-nachrichten/
-                categories = 4,5
-                groups = 2
-                highlight = 1
-                company =
-                user = 2
-            }
-        }
         fields {
             0 {
                 key = first_name

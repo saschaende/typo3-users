@@ -124,21 +124,6 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_users_domain_model_bannedhosts', 'EXT:users/Resources/Private/Language/locallang_csh_tx_users_domain_model_bannedhosts.xlf');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_users_domain_model_bannedhosts');
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_users_domain_model_news', 'EXT:users/Resources/Private/Language/locallang_csh_tx_users_domain_model_news.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_users_domain_model_news');
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_users_domain_model_newscategory', 'EXT:users/Resources/Private/Language/locallang_csh_tx_users_domain_model_newscategory.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_users_domain_model_newscategory');
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_users_domain_model_company', 'EXT:users/Resources/Private/Language/locallang_csh_tx_users_domain_model_company.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_users_domain_model_company');
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_users_domain_model_holding', 'EXT:users/Resources/Private/Language/locallang_csh_tx_users_domain_model_holding.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_users_domain_model_holding');
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_users_domain_model_newsbookmark', 'EXT:users/Resources/Private/Language/locallang_csh_tx_users_domain_model_newsbookmark.xlf');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_users_domain_model_newsbookmark');
-
         // --------------------------------------------
         // FLEXFORM
         // --------------------------------------------
