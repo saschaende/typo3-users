@@ -1,4 +1,5 @@
 <?php
+
 namespace SaschaEnde\Users\Domain\Model;
 
 use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
@@ -289,6 +290,17 @@ class User extends FrontendUser {
      */
     public function setUsersDeletehashValid($usersDeletehashValid) {
         $this->usersDeletehashValid = $usersDeletehashValid;
+    }
+
+    // ----------------------------------------------------------------------------------
+
+    /**
+     * Do not show the full email adress if the username is an email
+     * @return mixed
+     */
+    public function getObfuscatedUsername() {
+        $username = explode("@", $this->getUsername());
+        return $username[0];
     }
 
 }
