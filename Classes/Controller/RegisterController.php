@@ -7,12 +7,15 @@ use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\BannedHostsRepository;
 use SaschaEnde\Users\Domain\Repository\BannedMailsRepository;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
+use SJBR\StaticInfoTables\Domain\Repository\CountryRepository;
 use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
  * Class RegisterController
@@ -20,6 +23,11 @@ use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
  * @todo Show page, if the user is already logged in (or configure redirect page?)
  */
 class RegisterController extends ActionController {
+
+    /**
+     * @var CountryRepository
+     */
+    protected $countryRepository;
 
     /**
      * @var UserRepository
@@ -62,6 +70,9 @@ class RegisterController extends ActionController {
 
         // Load user repo
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
+
+        $this->countryRepository = $this->objectManager->get(CountryRepository::class);
+        $this->countryRepository->setDefaultOrderings(['shortNameEn'=>QueryInterface::ORDER_ASCENDING]);
 
         /** @var Typo3QuerySettings $querysettings */
         $querysettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings::class);
@@ -108,7 +119,8 @@ class RegisterController extends ActionController {
         $this->view->assignMultiple([
             'errors' => $errors,
             'registration' => $registration,
-            'optionalFields' => $optionalFields
+            'optionalFields' => $optionalFields,
+            'countries' => $this->countryRepository->findAll()
         ]);
     }
 

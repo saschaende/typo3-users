@@ -415,6 +415,14 @@
 				<source>Stadt</source>
 				<target>City</target>
 			</trans-unit>
+			<trans-unit id="register.field.country">
+				<source>Land</source>
+				<target>Country</target>
+			</trans-unit>
+			<trans-unit id="register.field.country.chose">
+				<source>- - Bitte wählen - -</source>
+				<target>- - Please chose - -</target>
+			</trans-unit>
 			<trans-unit id="register.field.company">
 				<source>Firma</source>
 				<target>Company</target>

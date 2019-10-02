@@ -4,11 +4,18 @@ namespace SaschaEnde\Users\Controller;
 
 use SaschaEnde\Users\Domain\Model\User;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
+use SJBR\StaticInfoTables\Domain\Repository\CountryRepository;
 use t3h\t3h;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 class ChangeprofileController extends ActionController {
+
+    /**
+     * @var CountryRepository
+     */
+    protected $countryRepository;
 
     /**
      * @var User
@@ -30,6 +37,9 @@ class ChangeprofileController extends ActionController {
 
         // load user object
         $this->user = $this->frontendUserRepository->findByUid(t3h::FrontendUser()->getCurrentUser()->user['uid']);
+
+        $this->countryRepository = $this->objectManager->get(CountryRepository::class);
+        $this->countryRepository->setDefaultOrderings(['shortNameEn'=>QueryInterface::ORDER_ASCENDING]);
 
     }
 
@@ -63,7 +73,8 @@ class ChangeprofileController extends ActionController {
         $this->view->assignMultiple([
             'user' => $this->user,
             'errors' => $errors,
-            'optionalFields' => $optionalFields
+            'optionalFields' => $optionalFields,
+            'countries' => $this->countryRepository->findAll()
         ]);
     }
 

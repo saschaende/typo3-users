@@ -388,6 +388,12 @@
 			<trans-unit id="register.field.city">
 				<source>Stadt</source>
 			</trans-unit>
+			<trans-unit id="register.field.country">
+				<source>Land</source>
+			</trans-unit>
+			<trans-unit id="register.field.country.chose">
+				<source>- - Bitte wählen - -</source>
+			</trans-unit>
 			<trans-unit id="register.field.company">
 				<source>Firma</source>
 			</trans-unit>

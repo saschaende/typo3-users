@@ -75,6 +75,11 @@ class Registration {
      */
     protected $company = '';
 
+    /**
+     * @var string
+     */
+    protected $country = '';
+
 
     /**
      * @return string
@@ -272,5 +277,21 @@ class Registration {
     public function setUsersNewsletter(string $usersNewsletter) {
         $this->usersNewsletter = $usersNewsletter;
     }
+
+    /**
+     * @return string
+     */
+    public function getCountry(): string {
+        return $this->country;
+    }
+
+    /**
+     * @param string $country
+     */
+    public function setCountry(string $country) {
+        $this->country = $country;
+    }
+
+
 
 }

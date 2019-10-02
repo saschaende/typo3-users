@@ -1,0 +1,13 @@
+<div class="form-group">
+
+    <label for="country">
+        <f:translate key="register.field.country" /><f:if condition="{field.required}">*</f:if>
+    </label>
+    <f:form.select id="country" property="country" class="form-control{f:if(condition: '{errors.country}',then: ' is-invalid')}{f:if(condition: '{errors} && !{errors.country}',then: ' is-valid')}" options="{countries}"
+                   optionLabelField="shortNameEn" optionValueField="isoCodeA2" prependOptionLabel="{f:translate(key: 'register.field.country.chose')}" prependOptionValue=""/>
+    <div class="text-danger">
+        <f:for each="{errors.country}" as="errorcode">
+            <div><f:render partial="Validation" section="error{errorcode}"/></div>
+        </f:for>
+    </div>
+</div>

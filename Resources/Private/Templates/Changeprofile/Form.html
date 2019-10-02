@@ -17,7 +17,7 @@
                     <f:if condition="{optionalFields -> f:count()} >= 1">
                         <f:for each="{optionalFields}" as="optionalField">
                             <f:render partial="OptionalFields/{optionalField.id}"
-                                      arguments="{errors:errors,field:optionalField}"/>
+                                      arguments="{errors:errors,field:optionalField,countries:countries}"/>
                         </f:for>
                     </f:if>
                     <!-- FIELDS -->

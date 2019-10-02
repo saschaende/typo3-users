@@ -116,7 +116,7 @@
                         <hr>
                         <f:for each="{optionalFields}" as="optionalField">
                             <f:render partial="OptionalFields/{optionalField.id}"
-                                      arguments="{errors:errors,field:optionalField}"/>
+                                      arguments="{errors:errors,field:optionalField,countries:countries}"/>
                         </f:for>
                     </f:if>
                     <!-- OPTIONAL FIELDS -->
