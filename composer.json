@@ -7,7 +7,8 @@
   "license": "GPL-2.0-or-later",
   "require": {
     "typo3/cms-core": ">=8.7.0 <10.0.0",
-    "saschaende/t3helpers": ">=0.9.28"
+    "saschaende/t3helpers": ">=0.9.28",
+    "sjbr/static-info-tables": "~6.7"
   },
   "autoload": {
     "psr-4": {
