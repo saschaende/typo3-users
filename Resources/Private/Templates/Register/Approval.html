@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="main">
+
+
+    <div class="card login-box">
+        <div class="card-body">
+            <h4 class="card-title">
+                <f:translate key="approval.title" />
+            </h4>
+            <div class="card-text">
+
+                <f:if condition="{success}">
+                    <f:if condition="{approved}">
+                        <f:then><p><f:translate key="approval.accepted.message" /></p></f:then>
+                        <f:else><p><f:translate key="approval.rejected.message" /></p></f:else>
+                    </f:if>
+                </f:if>
+
+                <f:if condition="!{success}">
+                    <p><f:translate key="approval.error.message" /></p>
+                </f:if>
+
+                <p>
+                    <b><f:translate key="register.submit.username" />:</b> {user.username}<br>
+                    <b><f:translate key="register.submit.email" />:</b> {user.email}
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</f:section>
+</html>

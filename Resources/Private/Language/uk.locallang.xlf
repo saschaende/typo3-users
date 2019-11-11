@@ -364,7 +364,7 @@
 				<target>Підтвердити реєстрацію</target>
 			</trans-unit>
 			<trans-unit id="register.email.message">
-				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:</source>
+				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt aktivieren:</source>
 				<target>Дякуємо за ваш інтерес до нас і реєстрацію на нашому веб-сайті. За допомогою наведеного нижче посилання ви можете активувати свій обліковий запис:</target>
 			</trans-unit>
 			<trans-unit id="register.email.notes">

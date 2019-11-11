@@ -218,7 +218,7 @@
                     <settings.subject>
                         <TCEforms>
                             <exclude>1</exclude>
-                            <label>Subject of the email</label>
+                            <label>Subject of the confirm email (send to user)</label>
                             <config>
                                 <default>Please confirm the creation of your new user account</default>
                                 <required>1</required>
@@ -234,5 +234,93 @@
             </ROOT>
         </email>
 
+        <approval>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Registration approval</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.registrationApproval>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Extra registration approval from admin is needed</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.registrationApproval>
+
+                    <settings.senderEmailApproval>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Admin email adress</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.senderEmailApproval>
+
+                    <settings.senderNameApproval>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Sender name</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.senderNameApproval>
+
+                    <settings.subjectApproval>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Subject of the approval email (send to admin)</label>
+                            <config>
+                                <default>New user account approval</default>
+                                <required>1</required>
+                                <type>input</type>
+                                <size>60</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.subjectApproval>
+
+                    <settings.subjectRejected>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Subject of the reject email (send to user)</label>
+                            <config>
+                                <default>Your registration was rejected</default>
+                                <required>1</required>
+                                <type>input</type>
+                                <size>60</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.subjectRejected>
+
+                    <settings.subjectAccepted>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Subject of the accepted email (send to user)</label>
+                            <config>
+                                <default>Your registration was accepted</default>
+                                <required>1</required>
+                                <type>input</type>
+                                <size>60</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.subjectAccepted>
+
+
+                </el>
+            </ROOT>
+        </approval>
     </sheets>
 </T3DataStructure>

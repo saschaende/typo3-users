@@ -347,6 +347,10 @@
 				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
 				<target>Your account is now activated. Here again the data with which you are registered with us.</target>
 			</trans-unit>
+			<trans-unit id="register.confirm.message.approval">
+				<source>Dein Account ist nun aktiviert und wird von uns so bald wie möglich überprüft und freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
+				<target>Your account is now activated. We will check your registration and enable it as soon as possible. Here again the data with which you are registered with us.</target>
+			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Weiter</source>
 				<target>Next</target>
@@ -364,8 +368,13 @@
 				<target>Confirm registration</target>
 			</trans-unit>
 			<trans-unit id="register.email.message">
-				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:</source>
+				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt aktivieren:</source>
 				<target>Thank you for your interest and your registration on our website. With the following link you can now activate your account:</target>
+			</trans-unit>
+
+			<trans-unit id="register.email.message.approval">
+				<source>Deine Registrierung wird von uns überprüft und baldmöglichst freigeschaltet.</source>
+				<target>Your registration will be reviewed and your account will be enabled as soon as possible.</target>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
 				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>

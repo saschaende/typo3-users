@@ -90,11 +90,18 @@ class RegisterController extends ActionController {
      */
     public function formAction($registration = null, $errors = []) {
 
-        // Redirect to confirmation page
+        // Redirect user to confirmation page
         if (isset($_GET['uid']) && isset($_GET['registerHash'])) {
             $this->forward('confirm', null, null, $_GET);
         }
-
+        // redirect admin to approval page
+        if (isset($_GET['uid']) && isset($_GET['approvalHash'])) {
+            $this->forward('approval', null, null, $_GET);
+        }
+        // redirect user to clearance page after he got approved by admin
+        if (isset($_GET['uid']) && isset($_GET['clearance'])) {
+            $this->forward('clearance', null, null, $_GET);
+        }
 
         if ($registration == null) {
             $registration = new Registration();
@@ -253,6 +260,14 @@ class RegisterController extends ActionController {
                 $registerHash = md5(uniqid() . time());
                 $user->setUsersRegisterhash($registerHash);
 
+                // User needs additional approval by admin
+                if ($this->settings['registrationApproval']) {
+                    $approvalHash = md5(uniqid() . time());
+                    $user->setUsersApprovalhash($approvalHash);
+                } else {
+                    $user->setUsersApprovalhash('');
+                }
+
                 // ID of website
                 $user->setUsersWebsite(t3h::Website()->getWebsiteRootPid());
 
@@ -285,7 +300,11 @@ class RegisterController extends ActionController {
                     $this->settings['subject'],
                     'tx_users',
                     'Email',
-                    ['user' => $user, 'link' => $link],
+                    [
+                        'user' => $user,
+                        'registrationApproval' => $this->settings['registrationApproval'],
+                        'link' => $link
+                    ],
                     [],
                     1,
                     $this->controllerContext
@@ -297,10 +316,15 @@ class RegisterController extends ActionController {
             }
 
         }
-
-
     }
 
+    /**
+     * User clicked on confirm link in email to complete the registration
+     *
+     * @throws \ReflectionException
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
+     */
     public function confirmAction() {
         $arguments = $this->request->getArguments();
 
@@ -310,16 +334,174 @@ class RegisterController extends ActionController {
 
 
         if ($user && !empty($user->getUsersRegisterhash()) && $user->getUsersRegisterhash() == $arguments['registerHash']) {
+            // user activated himself
+
             $user->setUsersRegisterhash('');
-            $user->setDisable(false);
+
+            $approvalHash = $user->getUsersApprovalhash();
+            $approvalNeeded = (bool)$approvalHash;
+            if ($approvalHash) {
+                // approval hash is set means approval is needed
+
+                // send Email to admin for approval
+
+                // Make link, as short as possible
+                $linkApprove = t3h::Uri()->getByPid(
+                    t3h::Page()->getPid(),
+                    false,
+                    true,
+                    [
+                        'uid' => $user->getUid(),
+                        'approvalHash' => $approvalHash,
+                        'decision' => 'approve'
+                    ]
+                );
+
+                $linkReject = t3h::Uri()->getByPid(
+                    t3h::Page()->getPid(),
+                    false,
+                    true,
+                    [
+                        'uid' => $user->getUid(),
+                        'approvalHash' => $approvalHash,
+                        'decision' => 'reject'
+                    ]
+                );
+
+                // Send email
+                t3h::Mail()->sendDynamicTemplate(
+                    $user->getEmail(),
+                    ($this->settings['senderEmailApproval'] ?: $this->settings['senderEmail']),
+                    ($this->settings['senderNameApproval'] ?: $this->settings['senderName']),
+                    ($this->settings['subjectApproval'] ?: $this->settings['subject']),
+                    'tx_users',
+                    'EmailApproval',
+                    ['user' => $user, 'linkApprove' => $linkApprove, 'linkReject' => $linkReject],
+                    [],
+                    1,
+                    $this->controllerContext
+                );
+
+            } else {
+                $user->setDisable(false);
+            }
             $this->frontendUserRepository->update($user);
             t3h::Database()->persistAll();
 
             // Automatically login?
-            if ($this->settings['login']) {
+            if ($this->settings['login'] && !$approvalNeeded) {
                 t3h::FrontendUser()->loginUser($user->getUsername());
             }
 
+            $this->view->assignMultiple([
+                'user' => $user,
+                'success' => true,
+                'approvalNeeded' => $approvalNeeded
+            ]);
+        } else {
+            $this->view->assignMultiple([
+                'success' => false
+            ]);
+        }
+    }
+
+
+    /**
+     * Admin clicked on approval link in email to approve or reject user registration
+     *
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
+     */
+    public function approvalAction() {
+        $arguments = $this->request->getArguments();
+
+        /** @var User $user */
+        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
+
+        if ($user && !empty($user->getUsersApprovalhash()) && $user->getUsersApprovalhash() == $arguments['approvalHash'] && isset($arguments['decision'])) {
+            $user->setUsersApprovalhash('');
+
+            $approved = ($arguments['decision'] === 'approve');
+
+            if ($approved) {
+                $user->setDisable(false);
+
+                // send clearance email
+
+                $loginPid = $this->settings['loginPid'] ?: t3h::Page()->getPid();
+
+                // Make link, as short as possible
+                $link = t3h::Uri()->getByPid(
+                    $loginPid,
+                    false,
+                    true,
+                    [
+                        'uid' => $user->getUid(),
+                        'clearance' => 1
+                    ]
+                );
+
+                // Send email
+                t3h::Mail()->sendDynamicTemplate(
+                    $user->getEmail(),
+                    $this->settings['senderEmail'],
+                    $this->settings['senderName'],
+                    $this->settings['subjectAccepted'],
+                    'tx_users',
+                    'EmailAccepted',
+                    ['user' => $user, 'link' => $link],
+                    [],
+                    1,
+                    $this->controllerContext
+                );
+
+            } else {
+                $user->setDisable(true);
+
+                // Send reject email
+                t3h::Mail()->sendDynamicTemplate(
+                    $user->getEmail(),
+                    $this->settings['senderEmail'],
+                    $this->settings['senderName'],
+                    $this->settings['subjectRejected'],
+                    'tx_users',
+                    'EmailRejected',
+                    ['user' => $user],
+                    [],
+                    1,
+                    $this->controllerContext
+                );
+            }
+
+            $this->frontendUserRepository->update($user);
+            t3h::Database()->persistAll();
+
+            $this->view->assignMultiple([
+                'user' => $user,
+                'success' => true,
+                'approved' => $approved
+            ]);
+        } else {
+            $this->view->assignMultiple([
+                'user' => $user,
+                'success' => false
+            ]);
+        }
+    }
+
+
+    /**
+     * User was approved and got an email. The link in the email call this action which just show a message.
+     * This is only used if approval was activated and no loginPid was configured in registration plugin.
+     */
+    public function clearanceAction() {
+        $arguments = $this->request->getArguments();
+
+        // Load userdata
+        /** @var User $user */
+        $user = $this->frontendUserRepository->findOneByUid($arguments['uid']);
+
+        if ($user && !$user->isDisable()) {
             $this->view->assignMultiple([
                 'user' => $user,
                 'success' => true
