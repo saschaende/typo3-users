@@ -301,7 +301,7 @@
 				<source>Die Registrierung wurde bestätigt und der Benutzer freigeschaltet. Eine Email-Benachrichtigung wird an den Benutzer geschickt.</source>
 			</trans-unit>
 			<trans-unit id="approval.error.message">
-				<source>Fehler! Die Registrierung konte nicht gefunden werden, oder der Account wurde bereits freigeschaltet/abgelehnt.</source>
+				<source>Fehler! Die Registrierung konnte nicht gefunden werden, oder der Account wurde bereits freigeschaltet/abgelehnt.</source>
 			</trans-unit>
 			<trans-unit id="register.email.button">
 				<source>Registrierung bestätigen</source>
