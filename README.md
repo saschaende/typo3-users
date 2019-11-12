@@ -142,6 +142,13 @@ Here a user can register and create an account. The email address is automatical
 * Click on the pencil icon
 * Edit plugin settings
 
+As an option the plugin can be configured to make an additional registration review mandatory:
+
+- approval email will to be send to admins 
+- approval email has links "activate" and "reject"
+- "reject" will send an email to user "sorry rejected"
+- "activate" will send an email to user "you're accepted" with a link to login page
+
 ## Protected userarea plugins
 
 ### Plugin: Logout
