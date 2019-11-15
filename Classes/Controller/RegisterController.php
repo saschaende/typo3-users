@@ -370,9 +370,9 @@ class RegisterController extends ActionController {
 
                 // Send email
                 t3h::Mail()->sendDynamicTemplate(
-                    $user->getEmail(),
-                    ($this->settings['senderEmailApproval'] ?: $this->settings['senderEmail']),
-                    ($this->settings['senderNameApproval'] ?: $this->settings['senderName']),
+                    $this->settings['recipientEmailApproval'] ,
+                    $this->settings['senderEmail'],
+                    $this->settings['senderName'],
                     ($this->settings['subjectApproval'] ?: $this->settings['subject']),
                     'tx_users',
                     'EmailApproval',
