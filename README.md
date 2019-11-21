@@ -1,23 +1,3 @@
-This fork is used to implement following feature:
-
-Sometimes user registration is not open to everyone. Which means an administrator wants to check the registration and then enable the user (or not).
-
-I think it should work like this:
-
-- the registration plugin needs an option "admin registration approval needed"
-- the registration plugin needs a field for (multiple?) admin email adresses
-- extra field approvalhash
-- the mail text to the user needs to be different: "further approval required bla bla"
-- the plugin message after clicking the activation link needs to be different: "further approval required bla bla"
-- approval email has to be send to admins 
-- approval email has links "activate" and "reject"
-- "reject" will send an email to user "sorry rejected" and delete the user record?
-- "activate" will send an email to user "you're accepted" with a link to login page
-
-**STATUS**
-
-It's all working but needs a final review and some translations to english.
-
 # TYPO3 users
 
 Find on 
