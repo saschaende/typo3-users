@@ -31,6 +31,11 @@ class User extends FrontendUser {
      */
     protected $usersRegisterhash = '';
 
+    /**
+     * @var string
+     */
+    protected $usersApprovalhash = '';
+
 
     /**
      * @var bool
@@ -150,6 +155,20 @@ class User extends FrontendUser {
      */
     public function setUsersRegisterhash(string $usersRegisterhash) {
         $this->usersRegisterhash = $usersRegisterhash;
+    }
+
+    /**
+     * @return string
+     */
+    public function getUsersApprovalhash(): string {
+        return $this->usersApprovalhash;
+    }
+
+    /**
+     * @param string $usersApprovalhash
+     */
+    public function setUsersApprovalhash(string $usersApprovalhash) {
+        $this->usersApprovalhash = $usersApprovalhash;
     }
 
     /**

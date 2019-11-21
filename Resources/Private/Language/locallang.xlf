@@ -3,82 +3,6 @@
 	<file source-language="de" datatype="plaintext" original="messages" date="2019-05-23T21:21:35Z" product-name="users">
 		<header/>
 		<body>
-			<trans-unit id="tx_users_domain_model_news">
-				<source>News</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.content">
-				<source>Content</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.shortcontent">
-				<source>Shortcontent</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.image">
-				<source>Image</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.highlight">
-				<source>Highlight</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.categories">
-				<source>Categories</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.company">
-				<source>Company</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.user">
-				<source>User</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_news.groups">
-				<source>Groups</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_newscategory">
-				<source>News Category</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_newscategory.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_company">
-				<source>Company</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_company.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_company.street">
-				<source>Street</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_company.zip">
-				<source>Zip</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_company.city">
-				<source>City</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_company.country">
-				<source>Country</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_company.holding">
-				<source>Holding</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_holding">
-				<source>Holding</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_holding.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_newsbookmark">
-				<source>News Bookmark</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_newsbookmark.user">
-				<source>User</source>
-			</trans-unit>
-			<trans-unit id="tx_users_domain_model_newsbookmark.news">
-				<source>News</source>
-			</trans-unit>
-
-
-
-
 			<trans-unit id="changemail.email.button">
 				<source>Neue E-Mail Addresse bestätigen</source>
 			</trans-unit>
@@ -337,6 +261,9 @@
 			<trans-unit id="register.confirm.message">
 				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
 			</trans-unit>
+			<trans-unit id="register.confirm.message.approval">
+				<source>Dein Account ist nun aktiviert und wird von uns so bald wie möglich überprüft und freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
+			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Weiter</source>
 			</trans-unit>
@@ -346,11 +273,53 @@
 			<trans-unit id="register.confirm.username">
 				<source>Benutzername</source>
 			</trans-unit>
+			<trans-unit id="approval.email.message">
+				<source>Ein neuer Benutzer hat sich registriert. Bitte überprüfe die Daten.</source>
+			</trans-unit>
+			<trans-unit id="approval.email.accept.message">
+				<source>Der Benutzer soll aktiviert werden? Dann klicke auf folgenden Link.</source>
+			</trans-unit>
+			<trans-unit id="approval.email.accept.button">
+				<source>Benutzer aktivieren</source>
+			</trans-unit>
+			<trans-unit id="approval.email.reject.message">
+				<source>Der Benutzer erfüllt nicht die Kriterien und soll abgelehnt werden? Dann klicke auf folgenden Link.</source>
+			</trans-unit>
+			<trans-unit id="approval.email.reject.button">
+				<source>Benutzer ablehnen</source>
+			</trans-unit>
+			<trans-unit id="approval.email.notes">
+				<source>Hinweise: Die Bestätigung bzw. Ablehnung muss über diese Links geschehen damit der Benutzer entsprechende Benachrichtigungs-Email bekommt.</source>
+			</trans-unit>
+			<trans-unit id="approval.title">
+				<source>Registrierung</source>
+			</trans-unit>
+			<trans-unit id="approval.rejected.message">
+				<source>Die Registrierung wurde abgelehnt. Eine Email-Benachrichtigung wird an den Benutzer geschickt.</source>
+			</trans-unit>
+			<trans-unit id="approval.accepted.message">
+				<source>Die Registrierung wurde bestätigt und der Benutzer freigeschaltet. Eine Email-Benachrichtigung wird an den Benutzer geschickt.</source>
+			</trans-unit>
+			<trans-unit id="approval.error.message">
+				<source>Fehler! Die Registrierung konnte nicht gefunden werden, oder der Account wurde bereits freigeschaltet/abgelehnt.</source>
+			</trans-unit>
 			<trans-unit id="register.email.button">
 				<source>Registrierung bestätigen</source>
 			</trans-unit>
 			<trans-unit id="register.email.message">
-				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:</source>
+				<source>Vielen Dank für dein Interesse und deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt aktivieren:</source>
+			</trans-unit>
+			<trans-unit id="register.email.message.approval">
+				<source>Deine Registrierung wird von uns überprüft und baldmöglichst freigeschaltet.</source>
+			</trans-unit>
+			<trans-unit id="register.email.rejected.message">
+				<source>Vielen Dank für dein Interesse und deine Registrierung auf unserer Webseite. Leider hat deine Registrierung nicht die nötigen Kriterien erfüllt, sodaß wir den Zugang leider ablehnen müssen.</source>
+			</trans-unit>
+			<trans-unit id="register.email.accepted.message">
+				<source>Dein Benutzer-Account wurde freigeschaltet.</source>
+			</trans-unit>
+			<trans-unit id="register.email.accepted.button">
+				<source>Zu deinem Account</source>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
 				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
@@ -360,6 +329,9 @@
 			</trans-unit>
 			<trans-unit id="register.email.title">
 				<source>Deine Registrierung auf unserer Webseite</source>
+			</trans-unit>
+			<trans-unit id="register.email.rejected.title">
+				<source>Deine Registrierung auf unserer Webseite wurde abgelehnt.</source>
 			</trans-unit>
 			<trans-unit id="register.emailexists.button">
 				<source>Neues Passwort anfordern</source>
