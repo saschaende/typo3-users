@@ -2,6 +2,8 @@
 <f:layout name="Default"/>
 <f:section name="main">
 
+    <f:comment>This is only used if approval was activated and no loginPid was configured in registration plugin</f:comment>
+    <f:comment>TODO a bit polishing?! Link to ... Login?</f:comment>
 
     <f:if condition="{success}">
         <div class="card login-box">
@@ -10,11 +12,7 @@
                     <f:translate key="register.confirm.title" />
                 </h4>
                 <div class="card-text">
-                    <f:if condition="{approvalNeeded}">
-                        <f:then><p><f:translate key="register.confirm.message.approval" /></p></f:then>
-                        <f:else><p><f:translate key="register.confirm.message" /></p></f:else>
-                    </f:if>
-
+                    <p><f:translate key="register.confirm.message" /></p>
 
                     <p>
                         <b><f:translate key="register.confirm.username" />:</b> {user.username}<br>
@@ -22,7 +20,7 @@
                     </p>
 
                     <!-- SHOW THE LINK, IF REDIRECT IS GIVEN -->
-                    <f:if condition="{approvalNeeded}===false && {settings.successLink}">
+                    <f:if condition="{settings.successLink}">
                         <f:link.action action="redirect" class="btn btn-primary btn-lg">
                             <f:translate key="register.confirm.next" />
                         </f:link.action>

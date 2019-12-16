@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Email"/>
+<f:section name="main">
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+        <tbody>
+        <tr>
+            <td style="border-bottom:1px solid #f6f6f6;"><h1
+                    style="font-size:14px; font-family:arial; margin:0px; font-weight:bold;"><f:translate key="register.email.salutation" /> {user.username},</h1>
+                <p style="margin-top:0px; color:#bbbbbb;"><f:translate key="register.email.rejected.title" /></p></td>
+        </tr>
+        <tr>
+            <td style="padding:10px 0 30px 0;">
+                <p>
+                    <f:translate key="register.email.rejected.message" />
+                </p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</f:section>
+
+</html>

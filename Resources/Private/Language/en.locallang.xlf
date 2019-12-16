@@ -347,6 +347,10 @@
 				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
 				<target>Your account is now activated. Here again the data with which you are registered with us.</target>
 			</trans-unit>
+			<trans-unit id="register.confirm.message.approval">
+				<source>Dein Account ist nun aktiviert und wird von uns so bald wie möglich überprüft und freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
+				<target>Your account is now activated. We will check your registration and enable it as soon as possible. Here again the data with which you are registered with us.</target>
+			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Weiter</source>
 				<target>Next</target>
@@ -359,13 +363,69 @@
 				<source>Benutzername</source>
 				<target>Your username</target>
 			</trans-unit>
+			<trans-unit id="approval.email.message">
+				<source>Ein neuer Benutzer hat sich registriert. Bitte überprüfe die Daten.</source>
+				<target>Please review the new user registration.</target>
+			</trans-unit>
+			<trans-unit id="approval.email.accept.message">
+				<source>Der Benutzer soll aktiviert werden? Dann klicke auf folgenden Link.</source>
+				<target>The user should be enabled? Then click on the following link.</target>
+			</trans-unit>
+			<trans-unit id="approval.email.accept.button">
+				<source>Benutzer aktivieren</source>
+				<target>aktivate user</target>
+			</trans-unit>
+			<trans-unit id="approval.email.reject.message">
+				<source>Der Benutzer erfüllt nicht die Kriterien und soll abgelehnt werden? Dann klicke auf folgenden Link.</source>
+				<target>The user doesn't fulfill the needed criterias and should be rejected? Then click on the following link.</target>
+			</trans-unit>
+			<trans-unit id="approval.email.reject.button">
+				<source>Benutzer ablehnen</source>
+				<target>reject user</target>
+			</trans-unit>
+			<trans-unit id="approval.email.notes">
+				<source>Hinweise: Die Bestätigung bzw. Ablehnung muss über diese Links geschehen damit der Benutzer entsprechende Benachrichtigungs-Email bekommt.</source>
+				<target>Hints: The links provided in this emails has to be used to accpet or reject the registration. Otherwise the user won't get a notification email.</target>
+			</trans-unit>
+			<trans-unit id="approval.title">
+				<source>Registrierung</source>
+				<target>User registration</target>
+			</trans-unit>
+			<trans-unit id="approval.rejected.message">
+				<source>Die Registrierung wurde abgelehnt. Eine Email-Benachrichtigung wird an den Benutzer geschickt.</source>
+				<target>The registration was rejected. A notification email is send to the user.</target>
+			</trans-unit>
+			<trans-unit id="approval.accepted.message">
+				<source>Die Registrierung wurde bestätigt und der Benutzer freigeschaltet. Eine Email-Benachrichtigung wird an den Benutzer geschickt.</source>
+				<target>The registration was accepted. A notification email is send to the user.</target>
+			</trans-unit>
+			<trans-unit id="approval.error.message">
+				<source>Fehler! Die Registrierung konnte nicht gefunden werden, oder der Account wurde bereits freigeschaltet/abgelehnt.</source>
+				<target>Error! The registration wasn't found, or the account is already accepted/rejected.</target>
+			</trans-unit>
 			<trans-unit id="register.email.button">
 				<source>Registrierung bestätigen</source>
 				<target>Confirm registration</target>
 			</trans-unit>
 			<trans-unit id="register.email.message">
-				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt freischalten:</source>
+				<source>Vielen Dank für dein Interesse und deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt aktivieren:</source>
 				<target>Thank you for your interest and your registration on our website. With the following link you can now activate your account:</target>
+			</trans-unit>
+			<trans-unit id="register.email.message.approval">
+				<source>Deine Registrierung wird von uns überprüft und baldmöglichst freigeschaltet.</source>
+				<target>Your registration will be reviewed and your account will be enabled as soon as possible.</target>
+			</trans-unit>
+			<trans-unit id="register.email.rejected.message">
+				<source>Vielen Dank für dein Interesse und deine Registrierung auf unserer Webseite. Leider hat deine Registrierung nicht die nötigen Kriterien erfüllt, sodaß wir den Zugang leider ablehnen müssen.</source>
+				<target>Thank you for your interest and your registration on our website. Unfortunately does your registration not fulfill the needed critery an was rejected.</target>
+			</trans-unit>
+			<trans-unit id="register.email.accepted.message">
+				<source>Dein Benutzer-Account wurde freigeschaltet.</source>
+				<target>Your account is enabled.</target>
+			</trans-unit>
+			<trans-unit id="register.email.accepted.button">
+				<source>Zu deinem Account</source>
+				<target>Go to your account</target>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
 				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
@@ -378,6 +438,10 @@
 			<trans-unit id="register.email.title">
 				<source>Deine Registrierung auf unserer Webseite</source>
 				<target>Your registration on our website</target>
+			</trans-unit>
+			<trans-unit id="register.email.rejected.title">
+				<source>Deine Registrierung auf unserer Webseite wurde abgelehnt.</source>
+				<target>Your registration on our website was rejected.</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.button">
 				<source>Neues Passwort anfordern</source>
