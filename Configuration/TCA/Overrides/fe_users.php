@@ -91,6 +91,7 @@ $temporaryColumns = [
                     '0' => 'Yes'
                 ]
             ],
+            'default'   => '1'
         ],
     ],
     'users_website' => [
