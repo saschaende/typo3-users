@@ -50,6 +50,8 @@ Offical support (fee-based) via https://filmmusic.io/imprint/
 
 * Thanks to Vasyl from http://typo3.net.ua/
     * Commits by Vasyl: https://github.com/saschaende/typo3-users/commits?author=typo3ua
+* Thanks to René Fritz from https://www.colorcube.de/
+   * Commits by René: https://github.com/saschaende/typo3-users/commits?author=colorcube
 
 # Planned / ToDo
 
