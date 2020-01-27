@@ -1,472 +1,627 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-27T12:32:54Z" product-name="users">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2020-01-27T12:32:54Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
 				<source>Confirm new e-mail address</source>
+				<target>Neue E-Mail Addresse bestätigen</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.message">
 				<source>You have requested a change of email address associated with your account. Click on the following link to confirm this change.</source>
+				<target>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
 				<source>If the above button doesn't work, try copying and pasting the URL into your browser. If you still have problems, feel free to contact us.</source>
+				<target>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.salutation">
 				<source>Hello</source>
+				<target>Hallo</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.title">
 				<source>You want to change your e-mail address</source>
+				<target>Du möchtest Deine E-Mail Adresse ändern</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.button">
 				<source>Change e-mail address now</source>
+				<target>E-Mail Adresse jetzt ändern</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.emailnow">
 				<source>Current e-mail address</source>
+				<target>Aktuelle E-Mail Adresse</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.newemail">
 				<source>New e-mail address</source>
+				<target>Neue E-Mail Adresse</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.note">
 				<source>If you change your email address, you will receive an email with a confirmation link if no other account exists with this email address. The change of the e-mail address is only active after a confirmation and only then the new e-mail address is displayed here.</source>
+				<target>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier angezeigt.</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.title">
 				<source>Change email address</source>
+				<target>E-Mail Adresse ändern</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.message">
 				<source>If no other account is linked to the address you entered, you have received an e-mail with a confirmation link to the new e-mail address you entered. Please check your inbox and click on the link. Your new e-mail address will be activated immediately and will be visible here.</source>
+				<target>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert und hier sichtbar.</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.title">
 				<source>Change email address</source>
+				<target>E-Mail Adresse ändern</target>
 			</trans-unit>
 			<trans-unit id="changepass.back">
 				<source>Back to the form</source>
+				<target>Zurück zum Formular</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.button">
 				<source>Change password</source>
+				<target>Passwort ändern</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.newpassword">
 				<source>New password</source>
+				<target>Neues Passwort</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.note">
 				<source>The password must consist of at least 6 characters.</source>
+				<target>Das Passwort muss aus mindestens 6 Zeichen bestehen.</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.repeat">
 				<source>Repeat password</source>
+				<target>Passwort wiederholen</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.title">
 				<source>Change password</source>
+				<target>Passwort ändern</target>
 			</trans-unit>
 			<trans-unit id="changepass.submit.message">
 				<source>Thank you, your password has been changed and is now valid.</source>
+				<target>Vielen Dank, Dein Passwort wurde geändert und ist ab jetzt gültig.</target>
 			</trans-unit>
 			<trans-unit id="changepass.submit.title">
 				<source>Change password</source>
+				<target>Passwort ändern</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.back">
 				<source>Back to the form</source>
+				<target>Zurück zum Formular</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.button">
 				<source>Save profile data</source>
+				<target>Profildaten speichern</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.button">
 				<source>I want to delete my account</source>
+				<target>Ich möchte meinen Account löschen</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.text">
 				<source>If you want to delete your account, you can do this at any time simply, quickly and easily with a few clicks here.</source>
+				<target>Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.title">
 				<source>Delete account</source>
+				<target>Account löschen</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.header">
 				<source>Change profile</source>
+				<target>Profil ändern</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.success">
 				<source>Thank you, the profile data has been saved.</source>
+				<target>Vielen Dank, die Profildaten wurden gespeichert.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
 				<source>Error: Unfortunately we could not change your e-mail address. There may be several reasons for this: Either the link is invalid, the e-mail address has already been changed or the e-mail address is now being used by another account.</source>
+				<target>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
 				<source>Thank you, you have confirmed the change of your e-mail address. Your account is now linked to the following e-mail address:</source>
+				<target>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
 				<source>Change of e-mail address</source>
+				<target>Änderung der E-Mail Adresse</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.error">
 				<source>Error: Either the link is not valid, the account no longer exists or the link has expired. Links to delete the account are only valid for one day.</source>
+				<target>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Löschung des Accounts sind nur einen Tag lang gültig.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.success">
 				<source>Thank you, you have confirmed the deletion of your account. The account has just been deleted.</source>
+				<target>Vielen Dank, Du hast die Löschung Deines Accounts bestätigt. Der Account wurde soeben gelöscht.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.title">
 				<source>Delete account</source>
+				<target>Account löschen</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.button">
 				<source>Now irrevocably delete account</source>
+				<target>Jetzt Account unwiderruflich löschen</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.message">
 				<source>Should the account really now be deleted immediately and irrevocably? Then click on the link in this email.</source>
+				<target>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Link in dieser E-Mail.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.notes">
 				<source>You want to delete your account</source>
+				<target>Du möchtest Deinen Account löschen</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.salutation">
 				<source>Hello</source>
+				<target>Hallo</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.title">
 				<source>Here are the instructions to delete your account.</source>
+				<target>Hier sind die Instruktionen, um Deinen Account zu löschen.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.button">
 				<source>Delete your account now</source>
+				<target>Jetzt Account löschen</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.text">
 				<source>Should the account really now be deleted immediately and irrevocably? Then click on the button.</source>
+				<target>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
 				<source>Delete account</source>
+				<target>Account löschen</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.warning">
 				<source>Attention: For security reasons we will send you an e-mail with a confirmation link. As soon as you click on the link in the e-mail, the account will be deleted.</source>
+				<target>Achtung: Wir schicken Dir aus Sicherheitsgründen eine E-Mail mit einem Bestätigungslink. Sobald Du in der E-Mail auf den Link klickst, wird der Account gelöscht.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.message">
 				<source>We have just sent you an e-mail to the e-mail address stored with us. As soon as you click on the confirmation link in this e-mail, the account will be deleted immediately.</source>
+				<target>Wir haben Dir an die bei uns gespeicherte E-Mail Adresse soeben eine E-Mail geschickt. Sobald Du in dieser E-Mail auf den Bestätigungslink klickst, wird der Account umgehend gelöscht.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.title">
 				<source>Delete account</source>
+				<target>Account löschen</target>
 			</trans-unit>
 			<trans-unit id="email.footer">
 				<source>Copyright 2019 - All rights reserved</source>
+				<target>Copyright 2019 - Alle Rechte vorbehalten</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.error">
 				<source>Error: Either the link is not valid, the account no longer exists or the link has expired. Links to password change are only valid for one hour.</source>
+				<target>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.error2">
 				<source>Error: The entries must match and the password must be at least 6 characters long.</source>
+				<target>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.password">
 				<source>New password</source>
+				<target>Neues Passwort</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.passwordrepeat">
 				<source>Repeat new password</source>
+				<target>Neues Passwort wiederholen</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.submit">
 				<source>Save new password</source>
+				<target>Neues Passwort speichern</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.text">
 				<source>Enter your new password and repeat it once. The password must be at least 6 characters long.</source>
+				<target>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss mindestens aus 6 Zeichen bestehen.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.title">
 				<source>Change password</source>
+				<target>Passwort ändern</target>
 			</trans-unit>
 			<trans-unit id="forgot.changeformsubmit.button">
 				<source>Go to the website</source>
+				<target>Weiter zur Webseite</target>
 			</trans-unit>
 			<trans-unit id="forgot.changeformsubmit.message">
 				<source>Thank you, the password was changed.</source>
+				<target>Vielen Dank, das Passwort wurde erfolgreich geändert.</target>
 			</trans-unit>
 			<trans-unit id="forgot.changeformsubmit.title">
 				<source>Password was changed</source>
+				<target>Passwort wurde geändert</target>
 			</trans-unit>
 			<trans-unit id="forgot.confirm.back">
 				<source>Back</source>
+				<target>Zurück</target>
 			</trans-unit>
 			<trans-unit id="forgot.confirm.text">
 				<source>An email has been sent to the address stored in your account and contains a link to reset your password. If you do not receive an email, your account or email address was not found.</source>
+				<target>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die E-Mail-Adresse nicht gefunden.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.button">
 				<source>Reset Password</source>
+				<target>Passwort zurücksetzen</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.info">
 				<source>If the button above does not work, try copying and pasting the URL into your browser. If you continue to have problems, please feel free to contact us.</source>
+				<target>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.message">
 				<source>A request to reset your Admin password has been made. If you did not make this request, simply ignore this email. If you did make this request, please reset your password:</source>
+				<target>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben, setzen Sie bitte Ihr Passwort zurück.:</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.salutation">
 				<source>Dear Sir/Madam/Customer,</source>
+				<target>Hallo,</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.title">
 				<source>Here are your password reset instructions.</source>
+				<target>Hier sind die Instruktionen, um das Passwort zurückzusetzen.</target>
 			</trans-unit>
 			<trans-unit id="forgot.submit">
 				<source>Request password change</source>
+				<target>Passwortänderung anfordern</target>
 			</trans-unit>
 			<trans-unit id="forgot.text">
 				<source>Please enter your username or email address. Instructions for resetting the password will be immediately emailed to you.</source>
+				<target>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen zum Zurücksetzen des Passworts zugesandt.</target>
 			</trans-unit>
 			<trans-unit id="forgot.title">
 				<source>Forgot password</source>
+				<target>Passwort vergessen</target>
 			</trans-unit>
 			<trans-unit id="forgot.usernameemail">
 				<source>Username or email</source>
+				<target>Benutzername oder E-Mail</target>
 			</trans-unit>
 			<trans-unit id="layouts.error.notlogged">
 				<source>Error: This plugin can only be inserted on a page in a protected area. Make sure that only logged in users have access to this area.</source>
+				<target>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden. Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.</target>
 			</trans-unit>
 			<trans-unit id="logged.and.lastname">
 				<source> and Last name</source>
+				<target> und Nachname</target>
 			</trans-unit>
 			<trans-unit id="logged.firstname">
 				<source>First name</source>
+				<target>Vorname</target>
 			</trans-unit>
 			<trans-unit id="logged.lastname">
 				<source>Last name</source>
+				<target>Nachname</target>
 			</trans-unit>
 			<trans-unit id="logged.text">
 				<source>You are logged in as</source>
+				<target>Du bist eingeloggt als</target>
 			</trans-unit>
 			<trans-unit id="logged.title">
 				<source>Your current status</source>
+				<target>Dein aktueller Status</target>
 			</trans-unit>
 			<trans-unit id="logged.username">
 				<source>Username</source>
+				<target>Benutzername</target>
 			</trans-unit>
 			<trans-unit id="login.error">
 				<source>An error occurred during logon. You probably entered your username/email or password incorrectly. There is a difference between upper and lower case. Another possibility is that you may have disabled cookies in your web browser.</source>
+				<target>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</target>
 			</trans-unit>
 			<trans-unit id="login.error2">
 				<source>Unfortunately, you do not have the authorization to log in to this area.</source>
+				<target>Leider fehlt Dir die Berechtigung, um Dich in diesen Bereich einloggen zu können.</target>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
 				<source>Forgot password?</source>
+				<target>Passwort vergessen?</target>
 			</trans-unit>
 			<trans-unit id="login.password">
 				<source>Password</source>
+				<target>Passwort</target>
 			</trans-unit>
 			<trans-unit id="login.register">
 				<source>Not registered? Signup now</source>
+				<target>Noch nicht registriert? Jetzt registrieren</target>
 			</trans-unit>
 			<trans-unit id="login.submit">
 				<source>Login</source>
+				<target>Einloggen</target>
 			</trans-unit>
 			<trans-unit id="login.title">
 				<source>Login now</source>
+				<target>Jetzt einloggen</target>
 			</trans-unit>
 			<trans-unit id="login.username">
 				<source>Username</source>
+				<target>Benutzername</target>
 			</trans-unit>
 			<trans-unit id="login.usernameemail">
 				<source>Username or email</source>
+				<target>Benutzername oder E-Mail</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.email">
 				<source>Email</source>
+				<target>E-Mail</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.message">
 				<source>This link is no longer valid. Or it has already been used and the account is already activated.</source>
+				<target>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits freigeschaltet.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.title">
 				<source>Error</source>
+				<target>Fehler</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.message">
 				<source>Your account is now activated. Here again the data with which you are registered with us.</source>
+				<target>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.message.approval">
 				<source>Your account is now activated. We will check your registration and enable it as soon as possible. Here again the data with which you are registered with us.</source>
+				<target>Dein Account ist nun aktiviert und wird von uns so bald wie möglich überprüft und freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Next</source>
+				<target>Weiter</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.title">
 				<source>Thank you very much for your registration</source>
+				<target>Vielen Dank für Deine Registrierung</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.username">
 				<source>Your username</source>
+				<target>Benutzername</target>
 			</trans-unit>
 			<trans-unit id="approval.email.message">
 				<source>Please review the new user registration.</source>
+				<target>Ein neuer Benutzer hat sich registriert. Bitte überprüfe die Daten.</target>
 			</trans-unit>
 			<trans-unit id="approval.email.accept.message">
 				<source>The user should be enabled? Then click on the following link.</source>
+				<target>Der Benutzer soll aktiviert werden? Dann klicke auf folgenden Link.</target>
 			</trans-unit>
 			<trans-unit id="approval.email.accept.button">
 				<source>aktivate user</source>
+				<target>Benutzer aktivieren</target>
 			</trans-unit>
 			<trans-unit id="approval.email.reject.message">
 				<source>The user doesn't fulfill the needed criterias and should be rejected? Then click on the following link.</source>
+				<target>Der Benutzer erfüllt nicht die Kriterien und soll abgelehnt werden? Dann klicke auf folgenden Link.</target>
 			</trans-unit>
 			<trans-unit id="approval.email.reject.button">
 				<source>reject user</source>
+				<target>Benutzer ablehnen</target>
 			</trans-unit>
 			<trans-unit id="approval.email.notes">
 				<source>Hints: The links provided in this emails has to be used to accpet or reject the registration. Otherwise the user won't get a notification email.</source>
+				<target>Hinweise: Die Bestätigung bzw. Ablehnung muss über diese Links geschehen damit der Benutzer entsprechende Benachrichtigungs-Email bekommt.</target>
 			</trans-unit>
 			<trans-unit id="approval.title">
 				<source>User registration</source>
+				<target>Registrierung</target>
 			</trans-unit>
 			<trans-unit id="approval.rejected.message">
 				<source>The registration was rejected. A notification email is send to the user.</source>
+				<target>Die Registrierung wurde abgelehnt. Eine Email-Benachrichtigung wird an den Benutzer geschickt.</target>
 			</trans-unit>
 			<trans-unit id="approval.accepted.message">
 				<source>The registration was accepted. A notification email is send to the user.</source>
+				<target>Die Registrierung wurde bestätigt und der Benutzer freigeschaltet. Eine Email-Benachrichtigung wird an den Benutzer geschickt.</target>
 			</trans-unit>
 			<trans-unit id="approval.error.message">
 				<source>Error! The registration wasn't found, or the account is already accepted/rejected.</source>
+				<target>Fehler! Die Registrierung konnte nicht gefunden werden, oder der Account wurde bereits freigeschaltet/abgelehnt.</target>
 			</trans-unit>
 			<trans-unit id="register.email.button">
 				<source>Confirm registration</source>
+				<target>Registrierung bestätigen</target>
 			</trans-unit>
 			<trans-unit id="register.email.message">
 				<source>Thank you for your interest and your registration on our website. With the following link you can now activate your account:</source>
+				<target>Vielen Dank für dein Interesse und deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt aktivieren:</target>
 			</trans-unit>
 			<trans-unit id="register.email.message.approval">
 				<source>Your registration will be reviewed and your account will be enabled as soon as possible.</source>
+				<target>Deine Registrierung wird von uns überprüft und baldmöglichst freigeschaltet.</target>
 			</trans-unit>
 			<trans-unit id="register.email.rejected.message">
 				<source>Thank you for your interest and your registration on our website. Unfortunately does your registration not fulfill the needed critery an was rejected.</source>
+				<target>Vielen Dank für dein Interesse und deine Registrierung auf unserer Webseite. Leider hat deine Registrierung nicht die nötigen Kriterien erfüllt, sodaß wir den Zugang leider ablehnen müssen.</target>
 			</trans-unit>
 			<trans-unit id="register.email.accepted.message">
 				<source>Your account is enabled.</source>
+				<target>Dein Benutzer-Account wurde freigeschaltet.</target>
 			</trans-unit>
 			<trans-unit id="register.email.accepted.button">
 				<source>Go to your account</source>
+				<target>Zu deinem Account</target>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
 				<source>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</source>
+				<target>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</target>
 			</trans-unit>
 			<trans-unit id="register.email.salutation">
 				<source>Hello</source>
+				<target>Hallo</target>
 			</trans-unit>
 			<trans-unit id="register.email.title">
 				<source>Your registration on our website</source>
+				<target>Deine Registrierung auf unserer Webseite</target>
 			</trans-unit>
 			<trans-unit id="register.email.rejected.title">
 				<source>Your registration on our website was rejected.</source>
+				<target>Deine Registrierung auf unserer Webseite wurde abgelehnt.</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.button">
 				<source>Request new password</source>
+				<target>Neues Passwort anfordern</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info">
 				<source>Here again as a reminder your data:</source>
+				<target>Hier nochmal zur Erinnerung Deine Daten:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info.email">
 				<source>Your e-mail:</source>
+				<target>Deine E-Mail:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info.username">
 				<source>Your username:</source>
+				<target>Dein Benutzername:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.message">
 				<source>Someone has just tried to use your email address to create a new account, so we want to inform you with this email. If you did this yourself, you can request a new password here:</source>
+				<target>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren. Solltest Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.salutation">
 				<source>Hi</source>
+				<target>Hallo</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.title">
 				<source>Your e-mail address has just been used again for registration.</source>
+				<target>Deine E-Mail Adresse wurde soeben erneut für eine Registrierung genutzt</target>
 			</trans-unit>
 			<trans-unit id="register.field.address">
 				<source>Street/House No.</source>
+				<target>Straße/Hausnr.</target>
 			</trans-unit>
 			<trans-unit id="register.field.city">
 				<source>City</source>
+				<target>Stadt</target>
 			</trans-unit>
 			<trans-unit id="register.field.country">
 				<source>Country</source>
+				<target>Land</target>
 			</trans-unit>
 			<trans-unit id="register.field.country.chose">
 				<source>- - Please chose - -</source>
+				<target>- - Bitte wählen - -</target>
 			</trans-unit>
 			<trans-unit id="register.field.company">
 				<source>Company</source>
+				<target>Firma</target>
 			</trans-unit>
 			<trans-unit id="register.field.conditions">
 				<source>I agree to the terms and conditions</source>
+				<target>Ich stimme den AGB zu</target>
 			</trans-unit>
 			<trans-unit id="register.field.conditions.read">
 				<source>read here</source>
+				<target>hier lesen</target>
 			</trans-unit>
 			<trans-unit id="register.field.dataprotection">
 				<source>I have read the data protection information</source>
+				<target>Ich habe die Datenschutzinformationen gelesen</target>
 			</trans-unit>
 			<trans-unit id="register.field.dataprotection.read">
 				<source>read here</source>
+				<target>hier lesen</target>
 			</trans-unit>
 			<trans-unit id="register.field.firstname">
 				<source>First name</source>
+				<target>Vorname</target>
 			</trans-unit>
 			<trans-unit id="register.field.lastname">
 				<source>Last name</source>
+				<target>Nachname</target>
 			</trans-unit>
 			<trans-unit id="register.field.newsletter">
 				<source>I subscribe to the newsletter</source>
+				<target>Ich abonniere den Newsletter</target>
 			</trans-unit>
 			<trans-unit id="register.field.telephone">
 				<source>Phone</source>
+				<target>Telefon</target>
 			</trans-unit>
 			<trans-unit id="register.field.zip">
 				<source>Zip</source>
+				<target>Postleitzahl</target>
 			</trans-unit>
 			<trans-unit id="register.form.button">
 				<source>Register now</source>
+				<target>Jetzt registrieren</target>
 			</trans-unit>
 			<trans-unit id="register.form.email">
 				<source>Email address</source>
+				<target>E-Mail Adresse</target>
 			</trans-unit>
 			<trans-unit id="register.form.email.note">
 				<source>At this e-mail address you will receive a link to confirm your account.</source>
+				<target>An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.</target>
 			</trans-unit>
 			<trans-unit id="register.form.loginlink">
 				<source>You are already registered? Login here</source>
+				<target>Du bist bereits registriert? Hier einloggen</target>
 			</trans-unit>
 			<trans-unit id="register.form.password">
 				<source>Password</source>
+				<target>Passwort</target>
 			</trans-unit>
 			<trans-unit id="register.form.password.note">
 				<source>The password must consist of at least 6 characters.</source>
+				<target>Das Passwort muss aus mindestens 6 Zeichen bestehen.</target>
 			</trans-unit>
 			<trans-unit id="register.form.repeatpassword">
 				<source>Repeat password</source>
+				<target>Passwort wiederholen</target>
 			</trans-unit>
 			<trans-unit id="register.form.title">
 				<source>Registration</source>
+				<target>Registrierung</target>
 			</trans-unit>
 			<trans-unit id="register.form.username">
 				<source>Desired username</source>
+				<target>Gewünschter Benutzername</target>
 			</trans-unit>
 			<trans-unit id="register.form.username.note">
 				<source>Choose a username with at least 3 characters. This may contain letters and numbers. Special characters and spaces are not allowed.</source>
+				<target>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.</target>
 			</trans-unit>
 			<trans-unit id="register.submit.email">
 				<source>Email</source>
+				<target>E-Mail</target>
 			</trans-unit>
 			<trans-unit id="register.submit.message">
 				<source>We have now sent an e-mail to the address you provided with a link to confirm your account. Also check your spam folder, sometimes emails get lost there. Here are your details again:</source>
+				<target>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung Deines Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin. Hier nochmal deine Angaben:</target>
 			</trans-unit>
 			<trans-unit id="register.submit.note">
 				<source>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</source>
+				<target>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</target>
 			</trans-unit>
 			<trans-unit id="register.submit.title">
 				<source>Thank you very much for your registration</source>
+				<target>Vielen Dank für Deine Registrierung</target>
 			</trans-unit>
 			<trans-unit id="register.submit.username">
 				<source>Username</source>
+				<target>Benutzername</target>
 			</trans-unit>
 			<trans-unit id="validation.1">
 				<source>The username must be at least 3 and at most 20 characters long.</source>
+				<target>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</target>
 			</trans-unit>
 			<trans-unit id="validation.10">
 				<source>Registration with this e-mail address is not possible.</source>
+				<target>Registrierung mit dieser E-Mail Adresse nicht möglich.</target>
 			</trans-unit>
 			<trans-unit id="validation.2">
 				<source>The user name must not contain any special characters.</source>
+				<target>Der Benutzername darf keine Sonderzeichen enthalten.</target>
 			</trans-unit>
 			<trans-unit id="validation.3">
 				<source>The selected user name already exists.</source>
+				<target>Der gewählte Benutzername existiert bereits.</target>
 			</trans-unit>
 			<trans-unit id="validation.4">
 				<source>No e-mail address given.</source>
+				<target>Keine E-Mail Adresse angegeben.</target>
 			</trans-unit>
 			<trans-unit id="validation.5">
 				<source>This e-mail address has no valid format.</source>
+				<target>Diese E-Mail Adresse hat kein gültiges Format.</target>
 			</trans-unit>
 			<trans-unit id="validation.7">
 				<source>The password must be at least 6 characters long.</source>
+				<target>Das Passwort muss mindestens 6 Zeichen lang sein.</target>
 			</trans-unit>
 			<trans-unit id="validation.8">
 				<source>The password entries must match.</source>
+				<target>Die Passworteingaben müssen übereinstimmen.</target>
 			</trans-unit>
 			<trans-unit id="validation.9">
 				<source>This field is required.</source>
+				<target>Dies ist ein Pflichtfeld.</target>
 			</trans-unit>
 		</body>
 	</file>

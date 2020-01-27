@@ -1,554 +1,626 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="de" target-language="uk" datatype="plaintext" original="messages" date="2019-05-23T21:21:35Z" product-name="users">
+	<file source-language="en" target-language="uk" datatype="plaintext" original="messages" date="2020-01-27T12:32:54Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
-				<source>Neue E-Mail Addresse bestätigen</source>
+				<source>Confirm new e-mail address</source>
 				<target>Підтвердити нову адресу електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.message">
-				<source>Du hast eine Änderung der mit Deinem Account verknüpften E-Mail Adresse beantragt. Klicke auf den folgenden Link, um diese Änderung nun zu bestätigen.</source>
+				<source>You have requested a change of email address associated with your account. Click on the following link to confirm this change.</source>
 				<target>Ви подали запит на зміну адреси електронної пошти, пов'язаної з вашим обліковим записом. Натисніть на наступне посилання, щоб підтвердити цю зміну.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.notes">
-				<source>Wenn die obige Schaltfläche nicht funktioniert, versuche die URL zu kopieren und in Deinen Browser einzufügen. Wenn Du weiterhin Probleme hast, kannst Du uns gerne kontaktieren.</source>
+				<source>If the above button doesn't work, try copying and pasting the URL into your browser. If you still have problems, feel free to contact us.</source>
 				<target>Якщо вищенаведена кнопка не працює, спробуйте скопіювати цю URL-адресу та вставити її у адресний рядок вашого веб-переглядача. Якщо у вас виникають будь-які проблеми, не соромтеся звертатися до нас.</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.salutation">
-				<source>Hallo</source>
+				<source>Hello</source>
 				<target>Привіт</target>
 			</trans-unit>
 			<trans-unit id="changemail.email.title">
-				<source>Du möchtest Deine E-Mail Adresse ändern</source>
+				<source>You want to change your e-mail address</source>
 				<target>Ви змінюєте свою адресу електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.button">
-				<source>E-Mail Adresse jetzt ändern</source>
+				<source>Change e-mail address now</source>
 				<target>Змініти адресу електронної пошти зараз</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.emailnow">
-				<source>Aktuelle E-Mail Adresse</source>
+				<source>Current e-mail address</source>
 				<target>Поточна адреса електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.newemail">
-				<source>Neue E-Mail Adresse</source>
+				<source>New e-mail address</source>
 				<target>Нова адреса електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.note">
-				<source>Wenn Du Deine E-Mail Adresse änderst, erhältst Du eine E-Mail mit einem Bestätigungslink insofern noch kein anderer Account mit dieser E-Mail Adresse existiert. Die Änderung der E-Mail Adresse ist erst nach einer Bestätigung aktiv und auch dann erst wird die neue E-Mail Adresse hier angezeigt.</source>
+				<source>If you change your email address, you will receive an email with a confirmation link if no other account exists with this email address. The change of the e-mail address is only active after a confirmation and only then the new e-mail address is displayed here.</source>
 				<target>Якщо ви зміните адресу електронної пошти, ви отримаєте повідомлення електронною поштою з посиланням на підтвердження у випадку, якщо з цією адресою електронної пошти не існує іншого облікового запису. Зміна адреси електронної пошти активна тільки після підтвердження, і лише після цього з'явиться нова адреса електронної пошти.</target>
 			</trans-unit>
 			<trans-unit id="changemail.form.title">
-				<source>E-Mail Adresse ändern</source>
+				<source>Change email address</source>
 				<target>Змінити адресу електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.message">
-				<source>Insofern mit der von Dir angegebenen Adresse kein anderer Account verknüpft ist, hast Du an die von Dir angegebene neue E-Mail Adresse eine E-Mail mit einem Bestätigungslink erhalten. Bitte prüfe Deinen Posteingang und klicke auf den Link. Deine neue E-Mail Adresse wird dann umgehend aktiviert und hier sichtbar.</source>
+				<source>If no other account is linked to the address you entered, you have received an e-mail with a confirmation link to the new e-mail address you entered. Please check your inbox and click on the link. Your new e-mail address will be activated immediately and will be visible here.</source>
 				<target>Якщо жоден інший обліковий запис не пов'язаний з введеною адресою електронної пошти, Ви отримаєте електронного листа із посиланням для підтвердження намірів на вказану нову адресу електронної пошти. Перевірте папку &quot;Вхідні&quot; та натисніть посилання. Нова адреса електронної пошти буде активована негайно і буде відображатися тут.</target>
 			</trans-unit>
 			<trans-unit id="changemail.submit.title">
-				<source>E-Mail Adresse ändern</source>
+				<source>Change email address</source>
 				<target>Змінити адресу електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="changepass.back">
-				<source>Zurück zum Formular</source>
+				<source>Back to the form</source>
 				<target>Повернутися до форми</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.button">
-				<source>Passwort ändern</source>
+				<source>Change password</source>
 				<target>Змінити секретне слово</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.newpassword">
-				<source>Neues Passwort</source>
+				<source>New password</source>
 				<target>Нове секретне слово</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.note">
-				<source>Das Passwort muss aus mindestens 6 Zeichen bestehen.</source>
+				<source>The password must consist of at least 6 characters.</source>
 				<target>Секретне слово повинен містити щонайменше 6-ть символів.</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.repeat">
-				<source>Passwort wiederholen</source>
+				<source>Repeat password</source>
 				<target>Повторити секретне слово</target>
 			</trans-unit>
 			<trans-unit id="changepass.form.title">
-				<source>Passwort ändern</source>
+				<source>Change password</source>
 				<target>Змінити секретне слово</target>
 			</trans-unit>
 			<trans-unit id="changepass.submit.message">
-				<source>Vielen Dank, Dein Passwort wurde geändert und ist ab jetzt gültig.</source>
+				<source>Thank you, your password has been changed and is now valid.</source>
 				<target>Дякуємо, секретне слово змінено і тепер діє.</target>
 			</trans-unit>
 			<trans-unit id="changepass.submit.title">
-				<source>Passwort ändern</source>
+				<source>Change password</source>
 				<target>Змінити секретне слово</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.back">
-				<source>Zurück zum Formular</source>
+				<source>Back to the form</source>
 				<target>Повернутися до форми</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.button">
-				<source>Profildaten speichern</source>
+				<source>Save profile data</source>
 				<target>Зберегти дані профілю</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.button">
-				<source>Ich möchte meinen Account löschen</source>
+				<source>I want to delete my account</source>
 				<target>Я хочу видалити свій обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.text">
-				<source>Wenn Du Deinen Account löschen möchtest, kannst Du das jederzeit einfach, schnell und unkompliziert mit wenigen Klicks hier erledigen.</source>
+				<source>If you want to delete your account, you can do this at any time simply, quickly and easily with a few clicks here.</source>
 				<target>Якщо ви хочете видалити свій обліковий запис, ви можете зробити це легко, швидко і лише за кілька простих кліків.</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.deleteaccount.title">
-				<source>Account löschen</source>
+				<source>Delete account</source>
 				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.header">
-				<source>Profil ändern</source>
+				<source>Change profile</source>
 				<target>Змінити профіль</target>
 			</trans-unit>
 			<trans-unit id="changeprofile.success">
-				<source>Vielen Dank, die Profildaten wurden gespeichert.</source>
+				<source>Thank you, the profile data has been saved.</source>
 				<target>Дякуємо, дані профілю збережено.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.error">
-				<source>Fehler: Leider konnten wir die Änderung Deiner E-Mail Adresse nicht durchführen. Dies kann verschiedene Gründe haben: Entweder der Link ist ungültig, die E-Mail Addresse wurde bereits geändert oder die E-Mail Addresse wird mittlerweile von einem anderen Account genutzt.</source>
+				<source>Error: Unfortunately we could not change your e-mail address. There may be several reasons for this: Either the link is invalid, the e-mail address has already been changed or the e-mail address is now being used by another account.</source>
 				<target>Помилка: На жаль, ми не змогли змінити вашу адресу електронної пошти. Причини цього можуть бути різні: у посилання для зміни адреси електронної пошти закінчився термін використання, адресу електронної пошти вже змінено, або дана адреса електронної пошти тепер використовується іншим обліковим записом.</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.success">
-				<source>Vielen Dank, Du hast die Änderung Deiner E-Mail Adresse bestätigt. Dein Account ist nun mit folgender E-Mail Adresse verknüpft:</source>
+				<source>Thank you, you have confirmed the change of your e-mail address. Your account is now linked to the following e-mail address:</source>
 				<target>Дякуємо, зміну адреси електронної пошти підтверджено. Тепер обліковий запис пов'язано з такою адресою електронної пошти:</target>
 			</trans-unit>
 			<trans-unit id="confirmmailchange.title">
-				<source>Änderung der E-Mail Adresse</source>
+				<source>Change of e-mail address</source>
 				<target>Зміна адреси електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.error">
-				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Löschung des Accounts sind nur einen Tag lang gültig.</source>
+				<source>Error: Either the link is not valid, the account no longer exists or the link has expired. Links to delete the account are only valid for one day.</source>
 				<target>Помилка: Ось ймовірні причини появи цієї помилки: Облікового запису більше не існує; Посилання для видалення облікового запису вже використано; Посилання для видалення облікового запису більше не діє оскільки закінчився термін його використання. Посилання для видалення облікового запису дійсне лише один день.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.success">
-				<source>Vielen Dank, Du hast die Löschung Deines Accounts bestätigt. Der Account wurde soeben gelöscht.</source>
+				<source>Thank you, you have confirmed the deletion of your account. The account has just been deleted.</source>
 				<target>Дякуємо, видалення облікового запису підтверджено. Обліковий запис видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.confirm.title">
-				<source>Account löschen</source>
+				<source>Delete account</source>
 				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.button">
-				<source>Jetzt Account unwiderruflich löschen</source>
+				<source>Now irrevocably delete account</source>
 				<target>Видалити обліковий запис назавжди</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.message">
-				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Link in dieser E-Mail.</source>
+				<source>Should the account really now be deleted immediately and irrevocably? Then click on the link in this email.</source>
 				<target>Чи потрібно відразу і безповоротно видалити обліковий запис? Якщо дійсно бажаєте видалити обліковий запис натисніть посилання в цьому електронному листі.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.notes">
-				<source>Du möchtest Deinen Account löschen</source>
+				<source>You want to delete your account</source>
 				<target>Хочете видалити свій обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.salutation">
-				<source>Hallo</source>
+				<source>Hello</source>
 				<target>Привіт</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.email.title">
-				<source>Hier sind die Instruktionen, um Deinen Account zu löschen.</source>
+				<source>Here are the instructions to delete your account.</source>
 				<target>Нижче наведено інструкцію щодо видалення облікового запису</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.button">
-				<source>Jetzt Account löschen</source>
+				<source>Delete your account now</source>
 				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.text">
-				<source>Soll der Account wirklich jetzt sofort und unwiderruflich gelöscht werden? Dann klicke auf den Button.</source>
+				<source>Should the account really now be deleted immediately and irrevocably? Then click on the button.</source>
 				<target>Дійсно бажаєте безповоротно видалити обліковий запис? Якщо хочете видалити обліковий запис натисніть кнопку &quot;Видалити обліковий запис&quot; і обліковий запис буде видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.title">
-				<source>Account löschen</source>
+				<source>Delete account</source>
 				<target>Видалення облікового запису</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.form.warning">
-				<source>Achtung: Wir schicken Dir aus Sicherheitsgründen eine E-Mail mit einem Bestätigungslink. Sobald Du in der E-Mail auf den Link klickst, wird der Account gelöscht.</source>
+				<source>Attention: For security reasons we will send you an e-mail with a confirmation link. As soon as you click on the link in the e-mail, the account will be deleted.</source>
 				<target>Застереження: З міркувань безпеки надішлемо електронного листа із посиланням на підтвердження намірів видалити обліковий запис. Як тільки натиснете посилання в електронному листі, обліковий запис буде видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.message">
-				<source>Wir haben Dir an die bei uns gespeicherte E-Mail Adresse soeben eine E-Mail geschickt. Sobald Du in dieser E-Mail auf den Bestätigungslink klickst, wird der Account umgehend gelöscht.</source>
+				<source>We have just sent you an e-mail to the e-mail address stored with us. As soon as you click on the confirmation link in this e-mail, the account will be deleted immediately.</source>
 				<target>Щойно надіслано електронного листа на адресу електронної пошти, збережену в цьому обліковому записі. Як тільки натиснете посилання на підтвердження ваших дій в цьому електронному листі, обліковий запис буде негайно видалено.</target>
 			</trans-unit>
 			<trans-unit id="deleteaccount.submit.title">
-				<source>Account löschen</source>
+				<source>Delete account</source>
 				<target>Видалити обліковий запис</target>
 			</trans-unit>
 			<trans-unit id="email.footer">
-				<source>Copyright 2019 - Alle Rechte vorbehalten</source>
+				<source>Copyright 2019 - All rights reserved</source>
 				<target>Авторське право 2019 - Всі права застережені</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.error">
-				<source>Fehler: Entweder der Link ist nicht gültig, der Account existiert nicht mehr oder der Link ist abgelaufen. Links zur Passwortänderung sind nur eine Stunde gültig.</source>
+				<source>Error: Either the link is not valid, the account no longer exists or the link has expired. Links to password change are only valid for one hour.</source>
 				<target>Помилка: Посилання недійсне з причин, що обліковий запис відсутній або у даного посилання закінчився термін дії та час його використання. Посилання на зміну секретного слова дійсне лише протягом однієї години.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.error2">
-				<source>Fehler: Die Eingaben müssen übereinstimmen und das Passwort muss mindestens 6 Zeichen lang sein.</source>
+				<source>Error: The entries must match and the password must be at least 6 characters long.</source>
 				<target>Помилка: Записи у полях форми з секретним словом повинні збігатися, а секретне слово повинно містити щонайменше 6-ть символів.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.password">
-				<source>Neues Passwort</source>
+				<source>New password</source>
 				<target>Нове секретне слово</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.passwordrepeat">
-				<source>Neues Passwort wiederholen</source>
+				<source>Repeat new password</source>
 				<target>Повторити нове секретне слово</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.submit">
-				<source>Neues Passwort speichern</source>
+				<source>Save new password</source>
 				<target>Зберегти нове секретне слово</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.text">
-				<source>Gebe nun Dein neues gewünschtes Passwort ein und wiederhole es einmal. Das Passwort muss mindestens aus 6 Zeichen bestehen.</source>
+				<source>Enter your new password and repeat it once. The password must be at least 6 characters long.</source>
 				<target>Введіть нове секретне слово і повторіть його ще раз. Секретне слово повинно містити щонайменше 6-ть символів.</target>
 			</trans-unit>
 			<trans-unit id="forgot.change.title">
-				<source>Passwort ändern</source>
+				<source>Change password</source>
 				<target>Змінити секретне слово</target>
 			</trans-unit>
 			<trans-unit id="forgot.changeformsubmit.button">
-				<source>Weiter zur Webseite</source>
+				<source>Go to the website</source>
 				<target>Перейдіть на веб-сайт</target>
 			</trans-unit>
 			<trans-unit id="forgot.changeformsubmit.message">
-				<source>Vielen Dank, das Passwort wurde erfolgreich geändert.</source>
+				<source>Thank you, the password was changed.</source>
 				<target>Дякуємо, секретне слово було змінено.</target>
 			</trans-unit>
 			<trans-unit id="forgot.changeformsubmit.title">
-				<source>Passwort wurde geändert</source>
+				<source>Password was changed</source>
 				<target>Секретне слово було змінено</target>
 			</trans-unit>
 			<trans-unit id="forgot.confirm.back">
-				<source>Zurück</source>
+				<source>Back</source>
 				<target>Назад</target>
 			</trans-unit>
 			<trans-unit id="forgot.confirm.text">
-				<source>Es wurde eine E-Mail mit einem Link zum Zurücksetzen des Passworts an die in Ihrem Benutzerkonto gespeicherte E-Mail-Adresse geschickt. Sollten Sie keine E-Mail erhalten, wurde Ihr Konto oder die E-Mail-Adresse nicht gefunden.</source>
+				<source>An email has been sent to the address stored in your account and contains a link to reset your password. If you do not receive an email, your account or email address was not found.</source>
 				<target>На адресу електронної пошти, збережену в обліковому записі, надіслано електронний лист, який містить посилання для скидання, зміни та відновлення секретного слова. Якщо електронного листа не отримано обліковий запис або адресу електронної пошти не знайдено. Спробуйте також переглянути теку 'спам' повідомлення іноді помилково потрапляють туди.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.button">
-				<source>Passwort zurücksetzen</source>
+				<source>Reset Password</source>
 				<target>Скинути секретне слово</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.info">
-				<source>Wenn die obige Schaltfläche nicht funktioniert, versuchen Sie, die URL zu kopieren und in Ihren Browser einzufügen. Wenn Sie weiterhin Probleme haben, können Sie uns gerne kontaktieren.</source>
+				<source>If the button above does not work, try copying and pasting the URL into your browser. If you continue to have problems, please feel free to contact us.</source>
 				<target>Якщо кнопка з посиланням вище не працює, спробуйте скопіювати та вставити посилання (URL-адресу) в адресний рядок веб-переглядача. Якщо проблеми вказані вище продовжують виникати і далі, будь ласка, не соромтеся зв'яжіться з нами.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.message">
-				<source>Es wurde eine Anfrage zum Zurücksetzen des Admin-Passworts gestellt. Wenn Sie diese Anfrage nicht gestellt haben, ignorieren Sie diese E-Mail einfach. Wenn Sie diese Anfrage gestellt haben, setzen Sie bitte Ihr Passwort zurück.:</source>
+				<source>A request to reset your Admin password has been made. If you did not make this request, simply ignore this email. If you did make this request, please reset your password:</source>
 				<target>Надіслано запит на скидання секретного слова адміністратора. Якщо ви не робили цього запиту, просто проігноруйте це повідомлення. Якщо цей запит зробили сам ви, тоді скиньте та змініть ваше секретне слово:</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.salutation">
-				<source>Hallo,</source>
+				<source>Dear Sir/Madam/Customer,</source>
 				<target>Шановний, користувач.</target>
 			</trans-unit>
 			<trans-unit id="forgot.email.title">
-				<source>Hier sind die Instruktionen, um das Passwort zurückzusetzen.</source>
+				<source>Here are your password reset instructions.</source>
 				<target>Ось інструкції щодо скидання та зміни секретного слова.</target>
 			</trans-unit>
 			<trans-unit id="forgot.submit">
-				<source>Passwortänderung anfordern</source>
+				<source>Request password change</source>
 				<target>Надіслати запит на зміну секретного слова</target>
 			</trans-unit>
 			<trans-unit id="forgot.text">
-				<source>Bitte den Benutzernamen oder die E-Mail-Adresse eingeben. Sie erhalten dann umgehend Anweisungen zum Zurücksetzen des Passworts zugesandt.</source>
+				<source>Please enter your username or email address. Instructions for resetting the password will be immediately emailed to you.</source>
 				<target>Введіть своє ім'я користувача або адресу електронної пошти. Інструкції щодо скидання та зміни секретного слова будуть відразу надіслані.</target>
 			</trans-unit>
 			<trans-unit id="forgot.title">
-				<source>Passwort vergessen</source>
+				<source>Forgot password</source>
 				<target>Забули секретне слово</target>
 			</trans-unit>
 			<trans-unit id="forgot.usernameemail">
-				<source>Benutzername oder E-Mail</source>
+				<source>Username or email</source>
 				<target>Ім'я користувача або адресу електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="layouts.error.notlogged">
-				<source>Fehler: Dieses Plugin kann nur auf einer Seite in einem geschützten Bereich eingefügt werden. Sorge dafür, dass nur eingeloggte Nutzer Zugriff auf diesen Bereich haben.</source>
+				<source>Error: This plugin can only be inserted on a page in a protected area. Make sure that only logged in users have access to this area.</source>
 				<target>Помилка: Ці дані розміщено на захищеній сторінці і призначені лише для зареєстрованих та авторизованих користвачів. Переконайтеся, що ви зареєстровані та авторизовані і як користувач цього веб-сайту маєте доступ до даних, які розміщені на цій сторінці.</target>
 			</trans-unit>
 			<trans-unit id="logged.and.lastname">
-				<source> und Nachname</source>
+				<source> and Last name</source>
 				<target> та прізвище</target>
 			</trans-unit>
 			<trans-unit id="logged.firstname">
-				<source>Vorname</source>
+				<source>First name</source>
 				<target>Ім'я</target>
 			</trans-unit>
 			<trans-unit id="logged.lastname">
-				<source>Nachname</source>
+				<source>Last name</source>
 				<target>Прізвище</target>
 			</trans-unit>
 			<trans-unit id="logged.text">
-				<source>Du bist eingeloggt als</source>
+				<source>You are logged in as</source>
 				<target>Ви ввійшли в систему як</target>
 			</trans-unit>
 			<trans-unit id="logged.title">
-				<source>Dein aktueller Status</source>
+				<source>Your current status</source>
 				<target>Ваш поточний статус</target>
 			</trans-unit>
 			<trans-unit id="logged.username">
-				<source>Benutzername</source>
+				<source>Username</source>
 				<target>Ім'я користувача</target>
 			</trans-unit>
 			<trans-unit id="login.error">
-				<source>Während der Anmeldung ist ein Fehler aufgetreten. Wahrscheinlich hast Du Deinen Benutzernamen/E-Mail oder das Passwort falsch eingegeben. Groß-/Kleinschreibung wird unterschieden. Eine andere Möglichkeit ist, dass Du eventuell die Cookies in Deinem Web-Browser deaktiviert hast.</source>
+				<source>An error occurred during logon. You probably entered your username/email or password incorrectly. There is a difference between upper and lower case. Another possibility is that you may have disabled cookies in your web browser.</source>
 				<target>Під час входу в систему сталася помилка. Можливо неправильно ввели ім'я користувача чи адресу електронної пошти або секретне слово. Існує різниця між верхніми (великими) і нижніми (маленькими) регістрами символів. Інша причина яка може мати місце полягає в тому, що у веб-переглядачі можуть бути вимкнуті файли 'cookie' (Більше про фали 'cookie' дізнатись можна за цим посиланням https://uk.wikipedia.org/wiki/Куки).</target>
 			</trans-unit>
 			<trans-unit id="login.error2">
-				<source>Leider fehlt Dir die Berechtigung, um Dich in diesen Bereich einloggen zu können.</source>
+				<source>Unfortunately, you do not have the authorization to log in to this area.</source>
 				<target>На жаль, у вас немає дозволу на вхід у цю область ймовірною причиною є те, що дію вашого облікового запису тимчасово призупинено. За більше детальною інформацією, будь ласка зверніться до аміністратора.</target>
 			</trans-unit>
 			<trans-unit id="login.forgotpass">
-				<source>Passwort vergessen?</source>
+				<source>Forgot password?</source>
 				<target>Забули секретне слово?</target>
 			</trans-unit>
 			<trans-unit id="login.password">
-				<source>Passwort</source>
+				<source>Password</source>
 				<target>Секретне слово</target>
 			</trans-unit>
 			<trans-unit id="login.register">
-				<source>Noch nicht registriert? Jetzt registrieren</source>
+				<source>Not registered? Signup now</source>
 				<target>Не зареєстровані? Зареєструватися зараз.</target>
 			</trans-unit>
 			<trans-unit id="login.submit">
-				<source>Einloggen</source>
+				<source>Login</source>
 				<target>Увійти</target>
 			</trans-unit>
 			<trans-unit id="login.title">
-				<source>Jetzt einloggen</source>
+				<source>Login now</source>
 				<target>Увійти зараз</target>
 			</trans-unit>
 			<trans-unit id="login.username">
-				<source>Benutzername</source>
+				<source>Username</source>
 				<target>Ім'я користувача</target>
 			</trans-unit>
 			<trans-unit id="login.usernameemail">
-				<source>Benutzername oder E-Mail</source>
+				<source>Username or email</source>
 				<target>Ім'я користувача або адреса електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.email">
-				<source>E-Mail</source>
+				<source>Email</source>
 				<target>Електронна пошта</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.message">
-				<source>Dieser Link ist nicht mehr gültig. Oder er wurde schon benutzt und der Account ist bereits freigeschaltet.</source>
+				<source>This link is no longer valid. Or it has already been used and the account is already activated.</source>
 				<target>Це посилання більше не дійсне або уже використано, а обліковий запис вже активовано.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.error.title">
-				<source>Fehler</source>
+				<source>Error</source>
 				<target>Помилка</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.message">
-				<source>Dein Account ist nun freigeschaltet. Hier nochmal die Daten mit denen Du bei uns angemeldet bist.</source>
+				<source>Your account is now activated. Here again the data with which you are registered with us.</source>
 				<target>Ваш обліковий запис активовано. Дані з якими обліковий запис зареєстровано тут.</target>
 			</trans-unit>
+			<trans-unit id="register.confirm.message.approval">
+				<source>Your account is now activated. We will check your registration and enable it as soon as possible. Here again the data with which you are registered with us.</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="register.confirm.next">
-				<source>Weiter</source>
+				<source>Next</source>
 				<target>Далі</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.title">
-				<source>Vielen Dank für Deine Registrierung</source>
+				<source>Thank you very much for your registration</source>
 				<target>Дякуємо за реєстрацію</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.username">
-				<source>Benutzername</source>
+				<source>Your username</source>
 				<target>Ім'я користувача</target>
 			</trans-unit>
+			<trans-unit id="approval.email.message">
+				<source>Please review the new user registration.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.email.accept.message">
+				<source>The user should be enabled? Then click on the following link.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.email.accept.button">
+				<source>aktivate user</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.email.reject.message">
+				<source>The user doesn't fulfill the needed criterias and should be rejected? Then click on the following link.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.email.reject.button">
+				<source>reject user</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.email.notes">
+				<source>Hints: The links provided in this emails has to be used to accpet or reject the registration. Otherwise the user won't get a notification email.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.title">
+				<source>User registration</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.rejected.message">
+				<source>The registration was rejected. A notification email is send to the user.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.accepted.message">
+				<source>The registration was accepted. A notification email is send to the user.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="approval.error.message">
+				<source>Error! The registration wasn't found, or the account is already accepted/rejected.</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="register.email.button">
-				<source>Registrierung bestätigen</source>
+				<source>Confirm registration</source>
 				<target>Підтвердити реєстрацію</target>
 			</trans-unit>
 			<trans-unit id="register.email.message">
-				<source>Vielen Dank für Dein Interesse und Deine Registrierung auf unserer Webseite. Mit dem folgenden Link kannst Du Deinen Account jetzt aktivieren:</source>
+				<source>Thank you for your interest and your registration on our website. With the following link you can now activate your account:</source>
 				<target>Дякуємо за ваш інтерес до нас і реєстрацію на нашому веб-сайті. За допомогою наведеного нижче посилання ви можете активувати свій обліковий запис:</target>
 			</trans-unit>
+			<trans-unit id="register.email.message.approval">
+				<source>Your registration will be reviewed and your account will be enabled as soon as possible.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="register.email.rejected.message">
+				<source>Thank you for your interest and your registration on our website. Unfortunately does your registration not fulfill the needed critery an was rejected.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="register.email.accepted.message">
+				<source>Your account is enabled.</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="register.email.accepted.button">
+				<source>Go to your account</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="register.email.notes">
-				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
+				<source>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</source>
 				<target>Підказки: Якщо обліковий запис не буде підтверджено протягом 3-х днів, всі надані дані буде автоматично видалено. Якщо надана поштова скринька недоступна чи введено недійсну електронну адресу або реєстрацію відхилено з інших причин, цей обліковий запис буде видалено автоматично протягом наступних кількох годин.</target>
 			</trans-unit>
 			<trans-unit id="register.email.salutation">
-				<source>Hallo</source>
+				<source>Hello</source>
 				<target>Привіт!</target>
 			</trans-unit>
 			<trans-unit id="register.email.title">
-				<source>Deine Registrierung auf unserer Webseite</source>
+				<source>Your registration on our website</source>
 				<target>Ваша реєстрація на нашому сайті</target>
 			</trans-unit>
+			<trans-unit id="register.email.rejected.title">
+				<source>Your registration on our website was rejected.</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="register.emailexists.button">
-				<source>Neues Passwort anfordern</source>
+				<source>Request new password</source>
 				<target>Запит нового секретного слова</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info">
-				<source>Hier nochmal zur Erinnerung Deine Daten:</source>
+				<source>Here again as a reminder your data:</source>
 				<target>Тут, як нагадування представлені дані облікового запису:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info.email">
-				<source>Deine E-Mail:</source>
+				<source>Your e-mail:</source>
 				<target>Ваша електронна адреса:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.info.username">
-				<source>Dein Benutzername:</source>
+				<source>Your username:</source>
 				<target>Ваше ім'я користувача:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.message">
-				<source>Jemand hat soeben versucht, Deine E-Mail Adresse für die Erstellung eines neuen Accounts zu nutzen, darum möchten wir Dich mit dieser E-Mail darüber informieren. Solltest Du das selbst gewesen sein, kannst Du hier ein neues Passwort anfordern:</source>
+				<source>Someone has just tried to use your email address to create a new account, so we want to inform you with this email. If you did this yourself, you can request a new password here:</source>
 				<target>Хтось у даний момент намагався використати вашу адресу електронної пошти для створення нового облікового запису і тому ми повідомляємо вам про це цим електронним повідомленням. Якщо це зробили ви, тоді ви можете надіслати запит на нове секретне слово тут:</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.salutation">
-				<source>Hallo</source>
+				<source>Hi</source>
 				<target>Привіт!</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.title">
-				<source>Deine E-Mail Adresse wurde soeben erneut für eine Registrierung genutzt</source>
+				<source>Your e-mail address has just been used again for registration.</source>
 				<target>Вашу адресу електронної пошти було повторно використано для реєстрації.</target>
 			</trans-unit>
 			<trans-unit id="register.field.address">
-				<source>Straße/Hausnr.</source>
+				<source>Street/House No.</source>
 				<target>Вулиця/Будинок Номер.</target>
 			</trans-unit>
 			<trans-unit id="register.field.city">
-				<source>Stadt</source>
+				<source>City</source>
 				<target>Місто</target>
 			</trans-unit>
+			<trans-unit id="register.field.country">
+				<source>Country</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="register.field.country.chose">
+				<source>- - Please chose - -</source>
+				<target></target>
+			</trans-unit>
 			<trans-unit id="register.field.company">
-				<source>Firma</source>
+				<source>Company</source>
 				<target>Компанія</target>
 			</trans-unit>
 			<trans-unit id="register.field.conditions">
-				<source>Ich stimme den AGB zu</source>
+				<source>I agree to the terms and conditions</source>
 				<target>Я погоджуюся з умовами</target>
 			</trans-unit>
 			<trans-unit id="register.field.conditions.read">
-				<source>hier lesen</source>
+				<source>read here</source>
 				<target>читайте тут</target>
 			</trans-unit>
 			<trans-unit id="register.field.dataprotection">
-				<source>Ich habe die Datenschutzinformationen gelesen</source>
+				<source>I have read the data protection information</source>
 				<target>Я прочитав інформацію про захист особистих даних</target>
 			</trans-unit>
 			<trans-unit id="register.field.dataprotection.read">
-				<source>hier lesen</source>
+				<source>read here</source>
 				<target>читайте тут</target>
 			</trans-unit>
 			<trans-unit id="register.field.firstname">
-				<source>Vorname</source>
+				<source>First name</source>
 				<target>Ім'я</target>
 			</trans-unit>
 			<trans-unit id="register.field.lastname">
-				<source>Nachname</source>
+				<source>Last name</source>
 				<target>Прізвище</target>
 			</trans-unit>
 			<trans-unit id="register.field.newsletter">
-				<source>Ich abonniere den Newsletter</source>
+				<source>I subscribe to the newsletter</source>
 				<target>Я підписуюся на розсилку новин</target>
 			</trans-unit>
 			<trans-unit id="register.field.telephone">
-				<source>Telefon</source>
+				<source>Phone</source>
 				<target>Телефон</target>
 			</trans-unit>
 			<trans-unit id="register.field.zip">
-				<source>Postleitzahl</source>
+				<source>Zip</source>
 				<target>Поштовий індекс</target>
 			</trans-unit>
 			<trans-unit id="register.form.button">
-				<source>Jetzt registrieren</source>
+				<source>Register now</source>
 				<target>Зареєструйтися зараз</target>
 			</trans-unit>
 			<trans-unit id="register.form.email">
-				<source>E-Mail Adresse</source>
+				<source>Email address</source>
 				<target>Адреса електронної пошти</target>
 			</trans-unit>
 			<trans-unit id="register.form.email.note">
-				<source>An diese E-Mail Adresse erhältst Du einen Link zur Bestätigung Deines Accounts.</source>
+				<source>At this e-mail address you will receive a link to confirm your account.</source>
 				<target>На цю адресу електронної пошту отримаєте посилання для підтвердження створення облікового запису.</target>
 			</trans-unit>
 			<trans-unit id="register.form.loginlink">
-				<source>Du bist bereits registriert? Hier einloggen</source>
+				<source>You are already registered? Login here</source>
 				<target>Вже зареєстровані? Вхід тут.</target>
 			</trans-unit>
 			<trans-unit id="register.form.password">
-				<source>Passwort</source>
+				<source>Password</source>
 				<target>Секретне слово</target>
 			</trans-unit>
 			<trans-unit id="register.form.password.note">
-				<source>Das Passwort muss aus mindestens 6 Zeichen bestehen.</source>
+				<source>The password must consist of at least 6 characters.</source>
 				<target>Секретне слово повинен складатися щонайменше з 6-ти символів.</target>
 			</trans-unit>
 			<trans-unit id="register.form.repeatpassword">
-				<source>Passwort wiederholen</source>
+				<source>Repeat password</source>
 				<target>Повторіть секретне слово</target>
 			</trans-unit>
 			<trans-unit id="register.form.title">
-				<source>Registrierung</source>
+				<source>Registration</source>
 				<target>Реєстрація</target>
 			</trans-unit>
 			<trans-unit id="register.form.username">
-				<source>Gewünschter Benutzername</source>
+				<source>Desired username</source>
 				<target>Бажане ім'я користувача</target>
 			</trans-unit>
 			<trans-unit id="register.form.username.note">
-				<source>Wähle einen Benutzernamen mit mindestens 3 Zeichen. Dieser darf Buchstaben und Zahlen enthalten. Sonderzeichen und Leerzeichen sind nicht erlaubt.</source>
+				<source>Choose a username with at least 3 characters. This may contain letters and numbers. Special characters and spaces are not allowed.</source>
 				<target>Виберіть ім'я користувача щонайменше з 3-х символів. Ім'я користувача може містити букви верхнього і нижнього регістрів та цифри. Спеціальні символи та пробіли заборонені.</target>
 			</trans-unit>
 			<trans-unit id="register.submit.email">
-				<source>E-Mail</source>
+				<source>Email</source>
 				<target>Електронна пошта</target>
 			</trans-unit>
 			<trans-unit id="register.submit.message">
-				<source>Wir haben nun an die von Dir angegebene Adresse eine E-Mail mit einem Link zur Bestätigung Deines Accounts geschickt. Schaue auch in Deinen Spam-Ordner, manchmal verirren sich E-Mails dorthin. Hier nochmal deine Angaben:</source>
+				<source>We have now sent an e-mail to the address you provided with a link to confirm your account. Also check your spam folder, sometimes emails get lost there. Here are your details again:</source>
 				<target>Щойно ми надіслали електронного листа на надану вами адресу електронної пошти, з посиланням для підтвердження створення облікового запису. Якщо ви не бачите цього листа, спробуйте перевірте папку зі спамом, іноді листи помилково потрапляють туди. Ось деталі вказаних вами даних:</target>
 			</trans-unit>
 			<trans-unit id="register.submit.note">
-				<source>Hinweise: Solltest Du Deinen Account nicht innerhalb von 3 Tagen bestätigen, werden wir alle Daten automatisch wieder löschen. Wenn Dein Postfach nicht erreichbar ist, Du eine ungültige E-Mail angegeben hast oder die Bestätigungsemail aus anderen Gründen abgelehnt wird, wird dieser Account innerhalb der nächsten Stunden ebenfalls automatisch wieder entfernt.</source>
+				<source>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</source>
 				<target>Підказки: Якщо ви не підтвердите свій обліковий запис протягом 3-х днів, ми автоматично видалимо всі дані. Якщо ваша поштова скринька недоступна чи ви ввели недійсну адресу електронної пошти або підтвердження реєстрації буде відхилено з інших причин, цей обліковий запис буде автоматично видалено протягом наступних кількох годин.</target>
 			</trans-unit>
 			<trans-unit id="register.submit.title">
-				<source>Vielen Dank für Deine Registrierung</source>
+				<source>Thank you very much for your registration</source>
 				<target>Дякуємо за реєстрацію</target>
 			</trans-unit>
 			<trans-unit id="register.submit.username">
-				<source>Benutzername</source>
+				<source>Username</source>
 				<target>Ім'я користувача</target>
 			</trans-unit>
 			<trans-unit id="validation.1">
-				<source>Der Benutzername muss mindestens 3 und darf maximal 20 Zeichen haben.</source>
+				<source>The username must be at least 3 and at most 20 characters long.</source>
 				<target>Це поле у даний момент порожнє. Будь ласка, введіть бажане ім'я користувача. Ім’я користувача повинно бути не менше 3-х та не більше 20-ти символів.</target>
 			</trans-unit>
 			<trans-unit id="validation.10">
-				<source>Registrierung mit dieser E-Mail Adresse nicht möglich.</source>
+				<source>Registration with this e-mail address is not possible.</source>
 				<target>Реєстрація з цією адресою електронної пошти неможлива. Будь ласка, введіть іншу адресу електронної пошти.</target>
 			</trans-unit>
 			<trans-unit id="validation.2">
-				<source>Der Benutzername darf keine Sonderzeichen enthalten.</source>
+				<source>The user name must not contain any special characters.</source>
 				<target>Ім'я користувача не повинно містити спеціальних символів та пробілів.</target>
 			</trans-unit>
 			<trans-unit id="validation.3">
-				<source>Der gewählte Benutzername existiert bereits.</source>
+				<source>The selected user name already exists.</source>
 				<target>Вибране ім'я користувача не може бути додане. Будь ласка, спробуйте інше ім'я користувача.</target>
 			</trans-unit>
 			<trans-unit id="validation.4">
-				<source>Keine E-Mail Adresse angegeben.</source>
+				<source>No e-mail address given.</source>
 				<target>Це поле у даний момент порожнє. Будь ласка, введіть дійсну адресу електронної пошти.</target>
 			</trans-unit>
 			<trans-unit id="validation.5">
-				<source>Diese E-Mail Adresse hat kein gültiges Format.</source>
+				<source>This e-mail address has no valid format.</source>
 				<target>Дані у цьому полі не є адресою електронної поштои. Будь ласка, введіть дійсну адресу електронної пошти. Ця адреса необхідна для отримання вами важливих повідомлень.</target>
 			</trans-unit>
 			<trans-unit id="validation.7">
-				<source>Das Passwort muss mindestens 6 Zeichen lang sein.</source>
+				<source>The password must be at least 6 characters long.</source>
 				<target>Секретне слово повинне містити щонайменше 6-ть символів.</target>
 			</trans-unit>
 			<trans-unit id="validation.8">
-				<source>Die Passworteingaben müssen übereinstimmen.</source>
+				<source>The password entries must match.</source>
 				<target>Введені секретні слова в обох полях мають бути однаковими і повинні збігатися.</target>
 			</trans-unit>
 			<trans-unit id="validation.9">
-				<source>Dies ist ein Pflichtfeld.</source>
+				<source>This field is required.</source>
 				<target>Це поле є обов'язковим.</target>
 			</trans-unit>
 		</body>
