@@ -173,6 +173,18 @@ call_user_func(
             ]
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'SaschaEnde.Users',
+            'profile',
+            [
+                'Profile' => 'show'
+            ],
+            // non-cacheable actions
+            [
+                'Profile' => 'show'
+            ]
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -303,6 +315,15 @@ call_user_func(
                         tt_content_defValues {
                             CType = list
                             list_type = users_usermanagement
+                        }
+                    }
+                    users_profile {
+                        iconIdentifier = users
+                        title = [Users] Show user profile
+                        description = Show a user profile
+                        tt_content_defValues {
+                            CType = list
+                            list_type = users_profile
                         }
                     }
                 }

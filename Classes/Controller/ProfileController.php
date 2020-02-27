@@ -7,7 +7,7 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class ProfileController extends ActionController {
 
-    public function show(User $user){
+    public function showAction(User $user){
         $this->view->assignMultiple([
             'user' => $user
         ]);

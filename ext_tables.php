@@ -88,6 +88,12 @@ call_user_func(
             '[Users] User management'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'SaschaEnde.Users',
+            'profile',
+            '[Users] Show user profile'
+        );
+
         // ------------------------------------------------------------------------------
         // Add Backend Module
         // ------------------------------------------------------------------------------
@@ -136,5 +142,6 @@ call_user_func(
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('changeprofile');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('deleteaccount');
         \t3h\t3h::Inject()->setExtension('users')->addFlexform('dashboard');
+        \t3h\t3h::Inject()->setExtension('users')->addFlexform('profile');
     }
 );
