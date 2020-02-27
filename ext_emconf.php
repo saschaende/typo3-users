@@ -6,7 +6,7 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'plugin',
     'author' => 'Sascha Ende',
     'author_email' => 'typo3@sascha-ende.de',
-    'state' => 'stable',
+    'state' => 'beta',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-9.9.99',
-            't3helpers' => '0.9.32',
+            't3helpers' => '0.9.4',
             'static_info_tables'    => '6.7.4'
         ],
         'conflicts' => [],
