@@ -89,7 +89,7 @@ plugin.tx_users {
             register = {$plugin.tx_users.settings.iconClass.register}
         }
         // Define Page IDs here
-        pages {
+        pageUIDs {
             // This will be used by the viewhelper to link user profiles anywhere
             profile = 795
         }

@@ -40,7 +40,7 @@ class UserprofileViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractVie
     public function render()
     {
         // Get Settings
-        $profilePid = t3h::Settings()->getExtension('tx_users')['pages.']['profile'];
+        $profilePid = t3h::Settings()->getExtension('tx_users')['pageUIDs.']['profile'];
 
         // Generate Link to profile
         $link = t3h::Uri()->getByAction(
