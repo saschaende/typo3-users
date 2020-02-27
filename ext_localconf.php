@@ -338,6 +338,12 @@ call_user_func(
 
         \t3h\t3h::Icons()->setExtension('users')->add('Extension.png','users');
 
+        // --------------------------------------------
+        // AAdd viewhelper namespace
+        // --------------------------------------------
+
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['users'] = ['SaschaEnde\\Users\\ViewHelpers'];
+
 
     }
 );

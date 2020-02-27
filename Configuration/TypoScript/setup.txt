@@ -88,5 +88,10 @@ plugin.tx_users {
             email = {$plugin.tx_users.settings.iconClass.email}
             register = {$plugin.tx_users.settings.iconClass.register}
         }
+        // Define Page IDs here
+        pages {
+            // This will be used by the viewhelper to link user profiles anywhere
+            profile = 795
+        }
     }
 }
