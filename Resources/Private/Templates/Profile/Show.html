@@ -3,5 +3,11 @@
 <div class="card">
     <div class="card-body">
         We are currently working on the new user profiles, they will be available soon.
+
+        <f:link.action></f:link.action>
+
+        <f:security.ifAuthenticated>
+            <p><usersmessenger:writeMessage userId="{user.uid}" class="btn btn-primary">Write message</usersmessenger:writeMessage></p>
+        </f:security.ifAuthenticated>
     </div>
 </div>
