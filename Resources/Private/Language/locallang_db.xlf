@@ -9,6 +9,27 @@
 			<trans-unit id="tx_users_domain_model_bannedhosts.host">
 				<source>Host</source>
 			</trans-unit>
+			<trans-unit id="tx_users_domain_model_notification">
+				<source>Notification</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_notification.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_notification.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_notification.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_notification.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_notification.flag_read">
+				<source>Flag Read</source>
+			</trans-unit>
+			<trans-unit id="tx_users_domain_model_notification.user">
+				<source>User</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

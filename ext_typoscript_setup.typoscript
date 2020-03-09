@@ -1,0 +1,24 @@
+config.tx_extbase {
+    persistence {
+        classes {
+            TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+                subclasses {
+                    Tx_Users_User = SaschaEnde\Users\Domain\Model\User
+                }
+            }
+
+            SaschaEnde\Users\Domain\Model\User {
+                mapping {
+                    tableName = fe_users
+                    recordType = 0
+                }
+            }
+
+            SaschaEnde\Users\Domain\Model\Pages {
+                mapping {
+                    tableName = pages
+                }
+            }
+        }
+    }
+}

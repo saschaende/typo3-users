@@ -56,6 +56,17 @@ CREATE TABLE tx_users_domain_model_bannedmails (
 	KEY parent (pid)
 );
 
+CREATE TABLE tx_users_domain_model_notification (
+
+	type int(11) DEFAULT '0' NOT NULL,
+	title varchar(255) DEFAULT '' NOT NULL,
+	text text,
+	link varchar(255) DEFAULT '' NOT NULL,
+	flag_read smallint(5) unsigned DEFAULT '0' NOT NULL,
+	user int(11) unsigned DEFAULT '0',
+
+);
+
 
 CREATE TABLE pages (
     users_dashboard_image int(11) unsigned NOT NULL default '0',
