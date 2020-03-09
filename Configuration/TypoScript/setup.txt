@@ -93,5 +93,10 @@ plugin.tx_users {
             // This will be used by the viewhelper to link user profiles anywhere
             profile = 795
         }
+        // Define Storage PIDs that are used everywhere
+        storageUIDs {
+            // Notifications will be saved here
+            notifications = 0
+        }
     }
 }

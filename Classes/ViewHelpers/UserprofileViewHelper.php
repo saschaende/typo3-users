@@ -2,7 +2,6 @@
 
 namespace SaschaEnde\Users\ViewHelpers;
 
-use SaschaEnde\Users\Domain\Model\User;
 use t3h\t3h;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithContentArgumentAndRenderStatic;
 

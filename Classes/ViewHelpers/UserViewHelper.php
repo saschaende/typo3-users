@@ -2,7 +2,10 @@
 
 namespace SaschaEnde\Users\ViewHelpers;
 
+use t3h\t3h;
+
 /**
+ * Show fields of the current user
  * {namespace users=SaschaEnde\Users\ViewHelpers}
  */
 class UserViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper {
@@ -15,7 +18,7 @@ class UserViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
     }
 
     public function render() {
-        $user = $GLOBALS['TSFE']->fe_user->user;
+        $user = t3h::FrontendUser()->getCurrentUser()->user;
         return $user[$this->arguments['fieldname']];
     }
 }

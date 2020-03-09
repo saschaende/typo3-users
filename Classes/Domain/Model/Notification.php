@@ -26,6 +26,11 @@ class Notification extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $text = '';
 
     /**
+     * @var int
+     */
+    protected $pageUid = 0;
+
+    /**
      * link
      * 
      * @var string
@@ -107,6 +112,22 @@ class Notification extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setText($text)
     {
         $this->text = $text;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPageUid()
+    {
+        return $this->pageUid;
+    }
+
+    /**
+     * @param int $pageUid
+     */
+    public function setPageUid(int $pageUid)
+    {
+        $this->pageUid = $pageUid;
     }
 
     /**

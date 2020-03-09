@@ -130,6 +130,10 @@ class LoginController extends ActionController {
         // Login success
         // ---------------------------------------------------------------
 
+        /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
+        $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
+        $signalSlotDispatcher->dispatch(__CLASS__, 'beforeLoginSuccess', [$user, $this]);
+
         // Save last login
         $dt = new \DateTime();
         $user->setUsersLastlogin($dt);

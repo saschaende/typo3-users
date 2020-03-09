@@ -12,14 +12,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,text,link',
+        'searchFields' => 'title,text,page_uid,link',
         'iconfile' => 'EXT:users/Resources/Public/Icons/Extension.png'
     ],
     'interface' => [
-        'showRecordFieldList' => 'hidden, type, title, text, link, flag_read, user',
+        'showRecordFieldList' => 'hidden, type, title, text, page_uid, link, flag_read, user',
     ],
     'types' => [
-        '1' => ['showitem' => 'hidden, type, title, text, link, flag_read, user, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'hidden, type, title, text, page_uid, link, flag_read, user, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'hidden' => [
@@ -99,6 +99,15 @@ return [
                 'rows' => 15,
                 'eval' => 'trim'
             ]
+        ],
+        'page_uid' => [
+            'exclude' => true,
+            'label' => 'Page UID',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'int'
+            ],
         ],
         'link' => [
             'exclude' => true,
