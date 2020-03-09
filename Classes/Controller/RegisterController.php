@@ -15,14 +15,14 @@ use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
  * Class RegisterController
  * @package SaschaEnde\Users\Controller
  * @todo Show page, if the user is already logged in (or configure redirect page?)
  */
-class RegisterController extends ActionController {
+class RegisterController extends ActionController
+{
 
     /**
      * @var CountryRepository
@@ -54,7 +54,8 @@ class RegisterController extends ActionController {
      */
     protected $test;
 
-    public function initializeAction() {
+    public function initializeAction()
+    {
 
         // Load groups repo
         $this->frontendUserGroupRepository = $this->objectManager->get(FrontendUserGroupRepository::class);
@@ -72,7 +73,7 @@ class RegisterController extends ActionController {
         $this->frontendUserRepository = $this->objectManager->get(UserRepository::class);
 
         $this->countryRepository = $this->objectManager->get(CountryRepository::class);
-        $this->countryRepository->setDefaultOrderings(['shortNameEn'=>QueryInterface::ORDER_ASCENDING]);
+        $this->countryRepository->setDefaultOrderings(['shortNameEn' => QueryInterface::ORDER_ASCENDING]);
 
         /** @var Typo3QuerySettings $querysettings */
         $querysettings = $this->objectManager->get(\TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings::class);
@@ -88,7 +89,8 @@ class RegisterController extends ActionController {
      * @param \SaschaEnde\Users\Domain\Model\Registration $registration
      * @param array $errors
      */
-    public function formAction($registration = null, $errors = []) {
+    public function formAction($registration = null, $errors = [])
+    {
 
         // Redirect user to confirmation page
         if (isset($_GET['uid']) && isset($_GET['registerHash'])) {
@@ -134,7 +136,8 @@ class RegisterController extends ActionController {
     /**
      * @param \SaschaEnde\Users\Domain\Model\Registration $registration
      */
-    public function submitAction(Registration $registration) {
+    public function submitAction(Registration $registration)
+    {
 
         // Lets make some checks
         $errors = [];
@@ -163,8 +166,7 @@ class RegisterController extends ActionController {
         } // Check if banned
         elseif ($this->bannedHostsRepository->checkIfBanned($registration->getEmail())) {
             $errors['email'][] = '10';
-        }
-        elseif ($this->bannedmailsRepository->findOneByEmail($registration->getEmail())) {
+        } elseif ($this->bannedmailsRepository->findOneByEmail($registration->getEmail())) {
             $errors['email'][] = '10';
         }
 
@@ -310,6 +312,10 @@ class RegisterController extends ActionController {
                     $this->controllerContext
                 );
 
+                /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
+                $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
+                $signalSlotDispatcher->dispatch(__CLASS__, 'afterRegistrationSuccess', [$user, $this]);
+
                 $this->view->assignMultiple([
                     'user' => $user
                 ]);
@@ -325,7 +331,8 @@ class RegisterController extends ActionController {
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
      */
-    public function confirmAction() {
+    public function confirmAction()
+    {
         $arguments = $this->request->getArguments();
 
         // Load userdata
@@ -370,7 +377,7 @@ class RegisterController extends ActionController {
 
                 // Send email
                 t3h::Mail()->sendDynamicTemplate(
-                    $this->settings['recipientEmailApproval'] ,
+                    $this->settings['recipientEmailApproval'],
                     $this->settings['senderEmail'],
                     $this->settings['senderName'],
                     ($this->settings['subjectApproval'] ?: $this->settings['subject']),
@@ -412,7 +419,8 @@ class RegisterController extends ActionController {
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\IllegalObjectTypeException
      * @throws \TYPO3\CMS\Extbase\Persistence\Exception\UnknownObjectException
      */
-    public function approvalAction() {
+    public function approvalAction()
+    {
         $arguments = $this->request->getArguments();
 
         /** @var User $user */
@@ -494,7 +502,8 @@ class RegisterController extends ActionController {
      * User was approved and got an email. The link in the email call this action which just show a message.
      * This is only used if approval was activated and no loginPid was configured in registration plugin.
      */
-    public function clearanceAction() {
+    public function clearanceAction()
+    {
         $arguments = $this->request->getArguments();
 
         // Load userdata
@@ -516,7 +525,8 @@ class RegisterController extends ActionController {
     /**
      * Seperate redirect ation, so given links will also work with user areas...
      */
-    public function redirectAction() {
+    public function redirectAction()
+    {
         $link = t3h::Uri()->getByPid($this->settings['successLink']);
         $this->redirectToUri($link);
     }

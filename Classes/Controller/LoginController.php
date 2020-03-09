@@ -149,6 +149,10 @@ class LoginController extends ActionController {
         // Login now
         t3h::FrontendUser()->loginUser($user->getUsername());
 
+        /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
+        $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
+        $signalSlotDispatcher->dispatch(__CLASS__, 'afterLoginSuccess', [$user, $this]);
+
         // Redirect to redirect action
         $this->redirect('redirect');
 

@@ -140,6 +140,10 @@ class ForgotController extends ActionController {
             $this->frontendUserRepository->update($user);
             t3h::Database()->persistAll();
 
+            /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
+            $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
+            $signalSlotDispatcher->dispatch(__CLASS__, 'afterForgotChangeSuccess', [$user,$this]);
+
             // Automatically login?
             if ($this->settings['login']) {
                 t3h::FrontendUser()->loginUser($user->getUsername());
