@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="uk" datatype="plaintext" original="messages" date="2020-01-27T12:32:54Z" product-name="users">
+	<file source-language="en" target-language="uk" datatype="plaintext" original="messages" date="2020-04-4T13:40:54Z" product-name="users">
 		<header/>
 		<body>
 			<trans-unit id="changemail.email.button">
@@ -349,7 +349,7 @@
 			</trans-unit>
 			<trans-unit id="register.confirm.message.approval">
 				<source>Your account is now activated. We will check your registration and enable it as soon as possible. Here again the data with which you are registered with us.</source>
-				<target></target>
+				<target>Ваш обліковий запис активовано. Ми перевіримо вашу реєстрацію та включимо її якнайшвидше. Це дані, з якими ви у нас зареєстровані.</target>
 			</trans-unit>
 			<trans-unit id="register.confirm.next">
 				<source>Next</source>
@@ -365,43 +365,43 @@
 			</trans-unit>
 			<trans-unit id="approval.email.message">
 				<source>Please review the new user registration.</source>
-				<target></target>
+				<target>Будь ласка перевірте реєстрацію нового користувача.</target>
 			</trans-unit>
 			<trans-unit id="approval.email.accept.message">
 				<source>The user should be enabled? Then click on the following link.</source>
-				<target></target>
+				<target>Користувача слід увімкнути? Потім натисніть на наступне посилання.</target>
 			</trans-unit>
 			<trans-unit id="approval.email.accept.button">
 				<source>aktivate user</source>
-				<target></target>
+				<target>активувати користувача</target>
 			</trans-unit>
 			<trans-unit id="approval.email.reject.message">
 				<source>The user doesn't fulfill the needed criterias and should be rejected? Then click on the following link.</source>
-				<target></target>
+				<target>Користувач не відповідає необхідним критеріям, його слід відхилити? Потім натисніть на наступне посилання.</target>
 			</trans-unit>
 			<trans-unit id="approval.email.reject.button">
 				<source>reject user</source>
-				<target></target>
+				<target>відхилити користувача</target>
 			</trans-unit>
 			<trans-unit id="approval.email.notes">
 				<source>Hints: The links provided in this emails has to be used to accpet or reject the registration. Otherwise the user won't get a notification email.</source>
-				<target></target>
+				<target>Підказки: Посилання, надані в цьому електронному листі, повинні використовуватися для прийняття або відхилення реєстрації. Інакше користувач не отримає сповіщення електронною поштою.</target>
 			</trans-unit>
 			<trans-unit id="approval.title">
 				<source>User registration</source>
-				<target></target>
+				<target>Реєстрація користувача</target>
 			</trans-unit>
 			<trans-unit id="approval.rejected.message">
 				<source>The registration was rejected. A notification email is send to the user.</source>
-				<target></target>
+				<target>Реєстрації було відхилено. Користувачеві надсилається повідомлення про відхилення та скасування реєстрації.</target>
 			</trans-unit>
 			<trans-unit id="approval.accepted.message">
 				<source>The registration was accepted. A notification email is send to the user.</source>
-				<target></target>
+				<target>Реєстрація була прийнята. Користувачеві надсилається повідомлення про прийняття та активацію облікового запису.</target>
 			</trans-unit>
 			<trans-unit id="approval.error.message">
 				<source>Error! The registration wasn't found, or the account is already accepted/rejected.</source>
-				<target></target>
+				<target>Помилка! Реєстрацію не знайдено, або обліковий запис уже фктивовано або відхилено.</target>
 			</trans-unit>
 			<trans-unit id="register.email.button">
 				<source>Confirm registration</source>
@@ -413,19 +413,19 @@
 			</trans-unit>
 			<trans-unit id="register.email.message.approval">
 				<source>Your registration will be reviewed and your account will be enabled as soon as possible.</source>
-				<target></target>
+				<target>Ваша реєстрація буде переглянута і ваш обліковий запис буде активовано якнайшвидше.</target>
 			</trans-unit>
 			<trans-unit id="register.email.rejected.message">
 				<source>Thank you for your interest and your registration on our website. Unfortunately does your registration not fulfill the needed critery an was rejected.</source>
-				<target></target>
+				<target>Дякуємо за вашу зацікавленість і реєстрацію на нашому вебсайті. На жаль ваша реєстрація не відповідає необхідному критерію і тому було відхилено.</target>
 			</trans-unit>
 			<trans-unit id="register.email.accepted.message">
 				<source>Your account is enabled.</source>
-				<target></target>
+				<target>Ваш обліковий запис увімкнено.</target>
 			</trans-unit>
 			<trans-unit id="register.email.accepted.button">
 				<source>Go to your account</source>
-				<target></target>
+				<target>Перейдіть до свого акаунта</target>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
 				<source>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</source>
@@ -441,7 +441,7 @@
 			</trans-unit>
 			<trans-unit id="register.email.rejected.title">
 				<source>Your registration on our website was rejected.</source>
-				<target></target>
+				<target>Вашу реєстрацію на нашому вебсайті відхилено.</target>
 			</trans-unit>
 			<trans-unit id="register.emailexists.button">
 				<source>Request new password</source>
@@ -481,11 +481,11 @@
 			</trans-unit>
 			<trans-unit id="register.field.country">
 				<source>Country</source>
-				<target></target>
+				<target>Країна</target>
 			</trans-unit>
 			<trans-unit id="register.field.country.chose">
 				<source>- - Please chose - -</source>
-				<target></target>
+				<target>- - Будь-ласка оберіть - -</target>
 			</trans-unit>
 			<trans-unit id="register.field.company">
 				<source>Company</source>
