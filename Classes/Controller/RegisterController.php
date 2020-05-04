@@ -228,7 +228,7 @@ class RegisterController extends ActionController
                     'EmailExists',
                     ['user' => $user, 'link' => $link],
                     [],
-                    1,
+                    3,
                     $this->controllerContext
                 );
 
@@ -308,7 +308,7 @@ class RegisterController extends ActionController
                         'link' => $link
                     ],
                     [],
-                    1,
+                    3,
                     $this->controllerContext
                 );
 
@@ -385,7 +385,7 @@ class RegisterController extends ActionController
                     'EmailApproval',
                     ['user' => $user, 'linkApprove' => $linkApprove, 'linkReject' => $linkReject],
                     [],
-                    1,
+                    3,
                     $this->controllerContext
                 );
 
@@ -459,7 +459,7 @@ class RegisterController extends ActionController
                     'EmailAccepted',
                     ['user' => $user, 'link' => $link],
                     [],
-                    1,
+                    3,
                     $this->controllerContext
                 );
 
@@ -476,7 +476,7 @@ class RegisterController extends ActionController
                     'EmailRejected',
                     ['user' => $user],
                     [],
-                    1,
+                    3,
                     $this->controllerContext
                 );
             }

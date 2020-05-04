@@ -89,7 +89,7 @@ class ForgotController extends ActionController {
                 'Email',
                 ['user' => $user, 'link' => $link],
                 [],
-                1,
+                3,
                 $this->controllerContext
             );
         }

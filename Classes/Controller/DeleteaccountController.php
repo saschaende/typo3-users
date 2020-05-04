@@ -78,7 +78,7 @@ class DeleteaccountController extends ActionController {
             'Email',
             ['user' => $this->user, 'link' => $link],
             [],
-            1,
+            3,
             $this->controllerContext
         );
     }
