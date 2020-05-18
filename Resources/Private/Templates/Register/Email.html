@@ -1,39 +1,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:layout name="Email"/>
+<f:layout name="Emailthemes"/>
 <f:section name="main">
 
+    <h1 class="first"><f:translate key="register.email.title" /></h1>
 
-    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
-        <tbody>
-        <tr>
-            <td style="border-bottom:1px solid #f6f6f6;"><h1
-                    style="font-size:14px; font-family:arial; margin:0px; font-weight:bold;"><f:translate key="register.email.salutation" /> {user.username},</h1>
-                <p style="margin-top:0px; color:#bbbbbb;"><f:translate key="register.email.title" /></p></td>
-        </tr>
-        <tr>
-            <td style="padding:10px 0 30px 0;">
-                <p><f:translate key="register.email.message" /></p>
-
-                <center>
-                    <a href="{link}"
-                       style="display: inline-block; padding: 11px 30px; margin: 20px 0px 30px; font-size: 15px; color: #ffffff; background: #00c0c8; border-radius: 60px; text-decoration:none;">
-                        &nbsp;&nbsp;<f:translate key="register.email.button" />&nbsp;&nbsp;
-                    </a>
-                </center>
-
-                <f:if condition="{registrationApproval}">
-                    <p><f:translate key="register.email.message.approval" /></p>
-                </f:if>
-            </td>
-        </tr>
-        <tr>
-            <td style="border-top:1px solid #f6f6f6; padding-top:20px; color:#777">
-                <f:translate key="register.email.notes" />
-            </td>
-        </tr>
-        </tbody>
-    </table>
-
+    <p><f:translate key="register.email.salutation" /> {user.username},</p>
+    <p><f:translate key="register.email.message" /></p>
+    <p><a href="{link}" class="btn-primary"><f:translate key="register.email.button" /></a></p>
+    <f:if condition="{registrationApproval}">
+        <p><f:translate key="register.email.message.approval" /></p>
+    </f:if>
+    <p><f:translate key="register.email.notes" /></p>
 
 </f:section>
 

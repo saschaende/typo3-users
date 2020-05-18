@@ -11,6 +11,7 @@ plugin.tx_users {
         layoutRootPaths {
             0 = EXT:users/Resources/Private/Layouts/
             1 = {$plugin.tx_users.view.layoutRootPath}
+            2 = EXT:emailthemes/Resources/Private/Layouts/
         }
     }
     settings {

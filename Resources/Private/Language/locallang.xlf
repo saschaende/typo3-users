@@ -322,7 +322,11 @@
 				<source>Go to your account</source>
 			</trans-unit>
 			<trans-unit id="register.email.notes">
-				<source>Hints: If you do not confirm your account within 3 days, we will automatically delete all data again. If your mailbox is not reachable, if you enter an invalid e-mail or if the confirmation e-mail is rejected for other reasons, this account will also be removed automatically within the next few hours.</source>
+				<source>Please note: If you do not confirm your account within 3 days,
+					all of your data will be deleted automatically.
+					If your mailbox is not accessible, if you enter an invalid e-mail address
+					or if the confirmation e-mail is rejected for other reasons,
+					this account will also be removed automatically within the next few hours.</source>
 			</trans-unit>
 			<trans-unit id="register.email.salutation">
 				<source>Hello</source>
