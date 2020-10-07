@@ -92,6 +92,11 @@ class User extends FrontendUser
     protected $usersDeletehashValid;
 
     /**
+     * @var bool
+     */
+    protected $usersBeta = false;
+
+    /**
      * @return \DateTime
      */
     public function getUsersLastlogin()
@@ -345,6 +350,22 @@ class User extends FrontendUser
     public function setUsersDeletehashValid($usersDeletehashValid)
     {
         $this->usersDeletehashValid = $usersDeletehashValid;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isUsersBeta(): bool
+    {
+        return $this->usersBeta;
+    }
+
+    /**
+     * @param bool $usersBeta
+     */
+    public function setUsersBeta(bool $usersBeta): void
+    {
+        $this->usersBeta = $usersBeta;
     }
 
     // ----------------------------------------------------------------------------------

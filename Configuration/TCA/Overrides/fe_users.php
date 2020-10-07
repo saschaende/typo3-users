@@ -175,6 +175,21 @@ $temporaryColumns = [
             'default' => '0',
         ],
     ],
+    'users_beta' => [
+        'exclude' => true,
+        'label' => 'This user is in the beta programm',
+        'description' => '',
+        'config' => [
+            'type' => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                [
+                    0 => '',
+                    1 => ''
+                ]
+            ],
+        ],
+    ],
 
 ];
 
@@ -185,5 +200,5 @@ $temporaryColumns = [
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'fe_users',
-    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_approvalhash,users_newemail,users_newemailhash,users_conditions,users_dataprotection,users_newsletter,users_website,users_language,users_deletehash,users_deletehash_valid'
+    '--div--;Users,users_lastlogin,users_logincount,users_forgothash,users_forgothash_valid,users_registerhash,users_approvalhash,users_newemail,users_newemailhash,users_conditions,users_dataprotection,users_newsletter,users_website,users_language,users_deletehash,users_deletehash_valid,users_beta'
 );

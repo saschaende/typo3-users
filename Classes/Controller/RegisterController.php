@@ -238,7 +238,7 @@ class RegisterController extends ActionController
                 ]);
             } else {
                 // User does not exist, so add user now
-                $user = $this->objectManager->get(User::class);
+                $user = new User();
                 $user->setUsername($registration->getUsername());
                 $user->setEmail($registration->getEmail());
                 $user->setPassword(t3h::Password()->getHashedPassword($registration->getPassword()));
