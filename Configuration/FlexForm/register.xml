@@ -234,6 +234,53 @@
             </ROOT>
         </email>
 
+        <googleCaptcha>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>google Captcha</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.googleCaptcha.enabled>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Captcha is anabled</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.googleCaptcha.enabled>
+
+                    <settings.googleCaptcha.websiteKey>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Website Key</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.googleCaptcha.websiteKey>
+
+                    <settings.googleCaptcha.secretKey>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>Secret Key</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.googleCaptcha.secretKey>
+
+
+                </el>
+            </ROOT>
+        </googleCaptcha>
+
         <approval>
             <ROOT>
                 <TCEforms>

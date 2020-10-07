@@ -9,12 +9,14 @@ use SaschaEnde\Users\Domain\Repository\BannedMailsRepository;
 use SaschaEnde\Users\Domain\Repository\UserRepository;
 use SJBR\StaticInfoTables\Domain\Repository\CountryRepository;
 use t3h\t3h;
+use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup;
 use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserGroupRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 /**
  * Class RegisterController
@@ -109,6 +111,21 @@ class RegisterController extends ActionController
             $registration = new Registration();
         }
 
+        // Ad JS for google captcha
+        if($this->settings['googleCaptcha']['enabled'] == 1){
+            /** @var PageRenderer $pageRenderer */
+            $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
+            $pageRenderer->addJsLibrary(
+                md5('https://www.google.com/recaptcha/api.js'),
+                'https://www.google.com/recaptcha/api.js',
+                'text/javascript',
+                FALSE,
+                FALSE,
+                '',
+                TRUE
+            );
+        }
+
         // Setup optionalfields
         $optionalFields = [];
         $requiredFields = explode(',', $this->settings['requiredFields']);
@@ -176,6 +193,24 @@ class RegisterController extends ActionController
         } // Same passwords
         elseif ($registration->getPassword() != $registration->getPasswordrepeat()) {
             $errors['password'][] = '8';
+        }
+
+        // Captcha?
+        if($this->settings['googleCaptcha']['enabled'] == 1){
+            $captchaResult = t3h::Request()
+                ->setUrl('https://www.google.com/recaptcha/api/siteverify')
+                ->setType('POST')
+                ->setPostData([
+                    'secret' => $this->settings['googleCaptcha']['secretKey'],
+                    'response' => $_REQUEST['g-recaptcha-response'],
+                    'remoteip' => $_SERVER['REMOTE_ADDR']
+                ])
+                ->setJson(true,false)
+                ->request()->getResult();
+
+            if(!$captchaResult['success']){
+                $errors['captcha'][] = '11';
+            }
         }
 
         // ---------------------------------------------------------------------

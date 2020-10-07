@@ -9,8 +9,7 @@
             </h4>
 
             <div class="card-text">
-                <f:form action="submit" class="needs-validation form" method="POST" object="{registration}"
-                        objectName="registration">
+                <f:form action="submit" id="registerform" class="needs-validation form" method="POST" object="{registration}" objectName="registration">
 
 
                     <!-- USERNAME -->
@@ -124,7 +123,24 @@
 
                     <!-- SUBMIT BUTTON -->
                     <div class="mt-3">
-                        <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'register.form.button')}"/>
+
+                        <f:if condition="{settings.googleCaptcha.enabled} == 1">
+
+                            <f:then>
+                                <script>
+                                    function onRegisterformSubmit(token) {
+                                        document.getElementById("registerform").submit();
+                                    }
+                                </script>
+                                <f:form.button class="g-recaptcha btn btn-primary btn-lg" data="{sitekey:settings.googleCaptcha.websiteKey,callback:'onRegisterformSubmit',action:'submit'}">{f:translate(key: 'register.form.button')}</f:form.button>
+                            </f:then>
+
+                            <f:else>
+                                <f:form.submit class="btn btn-primary btn-lg" value="{f:translate(key: 'register.form.button')}"/>
+                            </f:else>
+
+                        </f:if>
+
                     </div>
                     <!-- SUBMIT BUTTON -->
 

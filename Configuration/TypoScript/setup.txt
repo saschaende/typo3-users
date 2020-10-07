@@ -89,6 +89,11 @@ plugin.tx_users {
             email = {$plugin.tx_users.settings.iconClass.email}
             register = {$plugin.tx_users.settings.iconClass.register}
         }
+        googleCaptcha {
+            enabled = 0
+            websiteKey =
+            secretKey =
+        }
         // Define Page IDs here
         pageUIDs {
             // This will be used by the viewhelper to link user profiles anywhere
