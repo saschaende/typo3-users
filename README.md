@@ -1,5 +1,5 @@
 # TYPO3 users
-# This extension will not be developed further, I don't have the time. Sorry!
+# This extension is no longer developed, unfortunately I lack the time to maintain this extension independently of our platform. Sorry! Maybe later once again.
 
 Find on 
 
