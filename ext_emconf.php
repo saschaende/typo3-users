@@ -15,8 +15,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.7.0-9.9.99',
             't3helpers' => '0.9.33',
-            'static_info_tables'    => '6.7.4',
-            'emailthemes' => '1.0.0'
+            'static_info_tables'    => '6.7.4'
         ],
         'conflicts' => [],
         'suggests' => [],
