@@ -1,4 +1,5 @@
 # TYPO3 users
+# This extension will not be developed further, I don't have the time. Sorry!
 
 Find on 
 
