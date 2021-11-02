@@ -1,5 +1,5 @@
 # TYPO3 users
-# Actually I am working on a new version compatibel with TYPO3 11. Stay tuned!
+# Actually I am working on a new version compatible with TYPO3 11. Stay tuned!
 
 Find on 
 
