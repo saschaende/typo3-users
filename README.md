@@ -1,5 +1,5 @@
 # TYPO3 users
-# This extension is no longer developed, unfortunately I lack the time to maintain this extension independently of our platform. Sorry! Maybe later once again.
+# Actually I am working on a new version compatibel with TYPO3 11. Stay tuned!
 
 Find on 
 
