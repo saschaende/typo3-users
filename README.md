@@ -1,4 +1,4 @@
-# TYPO3 users
+# TYPO3 users (TYPO3 9)
 # Actually I am working on a new version compatible with TYPO3 11. Stay tuned!
 
 Find on 
